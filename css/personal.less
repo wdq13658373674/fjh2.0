@@ -13,14 +13,10 @@ body{
         background-color: #dbe0ed;
         float: left;
         ul{
-          .active{
-            background: #ffffff;
-            border-left: 3px solid #fd5b5f;
-          }
           li{
             height: 57px;
             line-height: 57px;
-            border-bottom: 2px solid @gray-border;
+            border-bottom: 1px solid @gray-border;
             .personalIcon-per{
               .icon("../images/icon/group-12.png",no-repeat,37px,19px);
             }
@@ -52,6 +48,11 @@ body{
               }
             }
           }
+          .active{
+            background: #ffffff;
+            border-left: 3px solid #fd5b5f;
+            border-bottom: 1px solid #fff;
+          }
         }
       }
 
@@ -62,7 +63,7 @@ body{
       float: left;
       .personalInfo{
         padding-bottom: 32px;
-        border-bottom: 1px solid @gray-border;
+        border-bottom: 1px solid @gray-hover;
         .consumer{
           float: left;
           .phone{
@@ -130,7 +131,7 @@ body{
 
       .personalMoney{
         padding: 32px 0;
-        border-bottom: 1px solid @gray-border;
+        border-bottom: 1px solid @gray-hover;
         position: relative;
         .userMoney-txt{
           color: @gray;
