@@ -106,7 +106,16 @@ css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明�
 .rgba(@rgba_a:.4,@rgb_b:40){
   filter: alpha(opacity=@rgb_b);
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{rgb_b})";
-  opacity:@rgb_a;
+  opacity:@rgba_a;
+}
+
+/*
+透明背景
+*/
+.bg-rgba(@bg:rgba(43, 48, 77, 0.7)){
+  background-color: @bg;
+  -webkit-background-color: @bg;
+  -moz-background-color: @bg;
 }
 
 /*背景渐变

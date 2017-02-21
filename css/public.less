@@ -2,7 +2,7 @@
 
 /*初始化样式*/
 *{margin:0px;padding:0px}
-body{height:100%;width:100%;font-size:14px;font-family:'Microsoft YaHei','微软雅黑','Heiti SC',simhei,'Lucida Sans Unicode','Myriad Pro','Hiragino Sans GB',Verdana;}
+body{height:100%;width:100%;font-size:14px;font-family:'Microsoft YaHei','微软雅黑','Helvetica','Heiti SC',simhei,'Lucida Sans Unicode','Myriad Pro','Hiragino Sans GB',Verdana;}
 
 dl,dd,ul{list-style:none}
 img{vertical-align: middle;}
@@ -110,3 +110,12 @@ textarea {resize: none;}
   }
 }
 .footer-bottom{text-align:center;background: @gray-bg;height:87px;line-height:87px;font-size:12px;color:@gray;}
+
+/*hover：VR链接动画遮罩层*/
+.dark-mask-box{display:block;position:absolute;top:0px;left:0px;.wh(100%,100%);overflow: hidden;background:@gray-dark;.bg-rgba(rgba(43, 48, 77, 0.7));text-align: center;.round(3px);.rgba(0,0);
+  &.line-height{line-height:365px;}
+  &:hover{.rgba(1,100);.transition(.6s);
+    .img{.rotate();.transition(.6s);}
+  }
+}
+
