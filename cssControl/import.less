@@ -142,6 +142,17 @@ IE不支持 滤镜支持0，1，2，3
   -o-transform: rotate(@ro);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
+/*背景图*/
+/*
+@url    图片路径
+@r      是否重复(no-repeat)
+@x      背景定位 x 轴
+@y      背景定位 y 轴
+*/
+.icon(@url,@r,@x:0,@y:0){
+  background: url(@url) @r;
+  background-position: @x @y;
+}
 
 /*按钮预定义文件*/
 @import "button";

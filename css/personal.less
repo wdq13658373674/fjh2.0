@@ -1,0 +1,183 @@
+@import "../cssControl/import";
+
+.personalContainer{
+  margin-top: 30px;
+  background: #eff2f9;
+  clear: both;
+  .personalContainerBox{
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+      .personalLeftNav{
+        .wh(250px,1029px);
+        background-color: #dbe0ed;
+        float: left;
+        ul{
+          .active{
+            background: #ffffff;
+            border-left: 3px solid #fd5b5f;
+          }
+          li{
+            height: 57px;
+            line-height: 57px;
+            border-bottom: 2px solid @gray-border;
+            .personalIcon-per{
+              .icon("../images/icon/group-12.png",no-repeat,37px,19px);
+            }
+            .personalIcon-rec{
+              .icon("../images/icon/group-22.png",no-repeat,36px,17px);
+            }
+            .personalIcon-cus{
+              .icon("../images/icon/group-25.png",no-repeat,36px,18px);
+            }
+            .personalIcon-acc{
+              .icon("../images/icon/page-1.png",no-repeat,35px,17px);
+            }
+            .personalIcon-mes{
+              .icon("../images/icon/group-26.png",no-repeat,36px,20px);
+            }
+            .personalIcon-dat{
+              .icon("../images/icon/group-27.png",no-repeat,36px,17px);
+            }
+            .personalIcon-cli{
+              .icon("../images/icon/group-28.png",no-repeat,36px,16px);
+            }
+            a{
+              color: @txt-black;
+              font-size: 14px;
+              display: block;
+              padding-left: 117px;
+              &:hover{
+                background-color: #c3cad8;
+              }
+            }
+          }
+        }
+      }
+
+    .personalRight{
+      .wh(950px,1029px);
+      padding: 56px 58px;
+      background-color: #fff;
+      float: left;
+      .personalInfo{
+        padding-bottom: 32px;
+        border-bottom: 1px solid @gray-border;
+        .consumer{
+          float: left;
+          .phone{
+            margin-top: 12px;
+            color: #58a4e8;
+          }
+        }
+        .safe{
+          float: right;
+          ul{
+            li{
+              margin-left: 54px;
+              float: left;
+              a{
+                span{
+                  width: 40px;
+                  height: 40px;
+                  display: block;
+                  margin: 0 auto;
+                  position: relative;
+                  b{
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    top: 22px;
+                    left: 28px;
+                    .icon("../images/icon/dangerous_tips.png",no-repeat);
+                  }
+                }
+                p{
+                  margin-top: 7px;
+                  color: #7f85a3;
+                }
+                .safeIcon-phone{
+                  .icon("../images/icon/group-9.png",no-repeat);
+                }
+                .safeIcon-idCard{
+                  .icon("../images/icon/oval-2.png",no-repeat);
+                }
+                .safeIcon-bankCard{
+                  .icon("../images/icon/group-23.png",no-repeat);
+                }
+                .safeIcon-means{
+                  .icon("../images/icon/group-41.png",no-repeat);
+                }
+              }
+            }
+            .safeSuccess{
+              span{
+                b{
+                  .icon("../images/icon/success_tips.png",no-repeat);
+                }
+              }
+              .safeIcon-phone{
+                .icon("../images/icon/group-21.png",no-repeat);
+              }
+              .safeIcon-idCard{
+                .icon("../images/icon/group-45.png",no-repeat);
+              }
+            }
+          }
+        }
+      }
+
+      .personalMoney{
+        padding: 32px 0;
+        border-bottom: 1px solid @gray-border;
+        position: relative;
+        .userMoney-txt{
+          color: @gray;
+        }
+        .TB-icon{
+          width: 52px;
+          height: 52px;
+          .icon("../images/icon/group-6.png",no-repeat)
+        }
+        .userMoney-sum{
+          position: absolute;
+          left: 70px;
+          top: 34px;
+        }
+        .userMoney-frozen{
+          position: absolute;
+          left: 183px;
+          top: 34px;
+        }
+      }
+
+      .userCustomItem{
+        padding: 32px 0;
+        .userCustomItem-title{
+          font-weight: normal;
+          color: @txt-black;
+        }
+        .userCustomItem-item{
+          margin-top: 32px;
+          width: 100%;
+          min-height: 150px;
+          background-color: @gray-bg;
+          border: solid 1px #dbe0ed;
+          .round();
+          position: relative;
+          .nothingItem{
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            display: inline-block;
+            .icon("../images/icon/warning_tips.png",no-repeat);
+            .line-height(20px);
+            padding-left: 28px;
+            color: @gray;
+          }
+        }
+      }
+    }
+  }
+}
