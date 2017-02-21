@@ -12,5 +12,24 @@ input,button{font-size:14px;}
 
     &:hover ul{display: block;}
   }
+}
 
+/*input输入框
+@h:输入框高度
+*/
+.input(@h:45px){height:@h;line-height:@h;.round(3px);background-color:@gray-bg;border:1px solid @gray-border;.box-shadow(0,1px,3px,rgba(127, 133, 163, 0.53) inset);padding:0 18px;color:@gray;font-size:14px;
+  &::-webkit-input-placeholder {
+    color: @gray;
+  }
+  &:-moz-placeholder {/* Firefox 18- */
+    color: @gray;
+  }
+  &::-moz-placeholder{/* Firefox 19+ */
+    color: @gray;
+  }
+  &:-ms-input-placeholder {
+    color: @gray;
+  }
+
+  &:focus{background: #ffffff;.transition(.4s);}
 }
