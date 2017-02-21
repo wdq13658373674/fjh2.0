@@ -121,4 +121,13 @@ textarea {resize: none;}
 
 
 /*登陆弹窗*/
-.input{.input();width:262px;}
+.login-box{.wh(465px,auto);.round(10px);overflow: hidden;.box-shadow(0,4px,6px,rgba(0, 0, 0, 0.1));background: #ffffff;
+  .title{.wh(100%,101px,101px);text-align: center;background: @red;}
+
+  .input-group{width:326px;margin: 0 auto;margin-top:20px;
+    .ico-user{background: url("../images/icon/name_ico.png") center no-repeat;}
+    .ico-pas{background: url("../images/icon/pas_ico.png") center no-repeat;}
+  }
+
+  .login-btn{width:326px;.btn-red-full();margin-top:30px;}
+}

@@ -19,8 +19,8 @@
   .tit{font-size: 14px;color:@gray;margin-top:15px;}
 }
 /*查看更多*/
-.link-more{display:block;margin-top:20px;color:@gray;.main-width;height:43px;line-height:43px;background: @gray-bg;text-align: center;.box-shadow(0,1px,3px,rgba(127, 133, 163, 0.6) inset);
-  &:hover{.box-shadow(0px,5px,8px,#ddd inset); text-decoration: none;.transition(0.3s);}
+.link-more{display:block;margin-top:20px;color:@gray;.main-width;height:43px;line-height:43px;background: @gray-bg;text-align: center;
+  &:hover{.box-shadow(0,1px,3px 0,rgba(127, 133, 163, 0.6) inset);text-decoration: none;.transition(0.3s);}
 }
 
 /*定制项目*/
@@ -40,8 +40,9 @@
     }
 
     .dz-msg-list{margin-top:20px;
-      li{.ellipse;width:100%;margin-top:16px;}
+      li{.ellipse;.wh(100%,30px,30px);}
       .tit{margin-right:12px;color:@gray;}
+      .con{color:@txt-black;}
     }
 
     .btn-sign{.btn-red-full();width:173px;margin-top:46px;font-size:16px;}
@@ -57,19 +58,23 @@
   .title{.wh(100%,64px,64px);
     .tit{color:@txt-black;font-size: 18px;}
     .article-more{color:@gray;font-size: 12px;.wh(75px,25px,25px);.round(100px);margin-top:19px;text-align: right;
-      &.bg{background: @gray-bg;border:1px solid @gray-border;text-align: center;
-        &:hover{.box-shadow(0px,5px,8px,#ddd inset); text-decoration: none;.transition(0.3s);}
-      }
+      &:hover{background: @gray-bg;border:1px solid @gray-border;text-align: center;text-decoration: none;.transition(0.3s);}
     }
   }
   .msg-list{overflow: hidden;.wh(100%,260px);
     a{display:block;}
-    li{.wh(100%,64px,64px);border-bottom:1px solid @gray-border;
-      .tit{display:block;width:70%;.ellipse;font-size:16px;color: @txt-black;}
-      .day{font-size:14px;color:@gray;}
-      &:hover{background: @gray-bg;.transition(0.3s);}
-      &.pad{padding:0 23px;}
+    .tit{display:block;width:70%;.ellipse;font-size:16px;color: @txt-black;}
+    .day{font-size:14px;color:@gray;}
+
+    &.list1{
+      li{.wh(100%,64px,64px);border-bottom:1px solid @gray-bg;}
     }
-    &.border{border:1px solid @gray-border;border-width:1px 1px 0px 1px;.round(10px);}
+
+    &.list2{
+      li{.wh(100%,64px,64px);border-bottom:1px solid @gray-border2;padding:0 23px;
+        &:hover{background: @gray-bg;.transition(0.3s);}
+      }
+      &.border{border:1px solid @gray-border2;border-width:1px 1px 0px 1px;.round(10px);}
+    }
   }
 }

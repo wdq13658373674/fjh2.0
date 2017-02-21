@@ -16,8 +16,9 @@ input,button{font-size:14px;}
 
 /*input输入框
 @h:输入框高度
+@p:文本框座padding
 */
-.input(@h:45px){height:@h;line-height:@h;.round(3px);background-color:@gray-bg;border:1px solid @gray-border;.box-shadow(0,1px,3px,rgba(127, 133, 163, 0.53) inset);padding:0 18px;color:@gray;font-size:14px;
+.input(@h:46px,@pl:38px){height:@h;line-height:@h;padding-left:@pl;padding-right:18px;.round(3px);background-color:@gray-bg;border:1px solid @gray-border;.box-shadow(0,1px,3px,rgba(127, 133, 163, 0.53) inset);color:@gray;font-size:14px;
   &::-webkit-input-placeholder {
     color: @gray;
   }
@@ -33,3 +34,9 @@ input,button{font-size:14px;}
 
   &:focus{background: #ffffff;.transition(.4s);}
 }
+.input-group{position: relative;
+  .input{.input();width:100%;}
+
+  .ico-input{.wh(20px,20px);display:block;position:absolute;left:9px;top:12px;  }
+}
+
