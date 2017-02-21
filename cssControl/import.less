@@ -2,7 +2,7 @@
 @base-url:"..";
 
 /*网站总宽*/
-.main-width{width:1200px; margin-left: auto; margin-right: auto}
+.main-width{width:1200px;min-width:1200px; margin-left: auto; margin-right: auto}
 
 /*网站主色*/
 @red:#FD5B5F;
@@ -62,9 +62,9 @@
 @color 阴影颜色
 */
 .box-shadow(@x: 0, @y: 0, @blur: 1px, @color: #ddd) {
-  box-shadow:inset @x @y @blur @color;
-  -moz-box-shadow:inset @x @y @blur @color;
-  -webkit-box-shadow:inset @x @y @blur @color;
+  box-shadow:@x @y @blur @color;
+  -moz-box-shadow:@x @y @blur @color;
+  -webkit-box-shadow:@x @y @blur @color;
 }
 
 .wh(@w:auto,@h:auto,@numb:" "){
