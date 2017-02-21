@@ -5,6 +5,8 @@
     <title>header</title>
 
     <link rel="stylesheet" href="../css/public.css"/>
+
+    <script src="../js/jQuery1.12.3-min.js" type="text/javascript"></script>
 </head>
 <body>
 <!--header start-->
@@ -15,10 +17,11 @@
         <div class="btn-box pull-right">
             <!--登陆前-->
             <a class="btn-res" href="#">注册</a>
-            <a class="btn-in" href="#">登陆</a>
+            <a class="btn-in" href="javascript:login();">登陆</a>
 
             <!--登陆后-->
             <!--<div class="home">
+                <a href="#" style="display:block;width:136px;height:108px;"></a>
                 <div class="home-menu">
                     <a href="#">个人中心</a>
                     <a href="#">交易记录</a>
@@ -41,29 +44,54 @@
 </div>
 <!--header end-->
 
-<!--登陆弹窗-->
-<div class="login-box">
-    <div class="title">
-        <img src="../images/public/login.png" alt=""/>
-    </div>
+<!--登陆弹窗 start-->
+<div class="login-wrap" style="display:none;">
+    <div class="login-box">
+        <div class="title">
+            <img src="../images/public/login.png" alt=""/>
+        </div>
 
-    <div class="input-group">
-        <i class="ico-input ico-user"></i>
-        <input class="input" type="text" placeholder="请输入正确的手机号"/>
-    </div>
-    <div class="input-group">
-        <i class="ico-input ico-pas"></i>
-        <input class="input" type="text" placeholder="请输入正确的手机号"/>
-    </div>
+        <form action="">
+            <div class="input-group">
+                <i class="ico-input ico-user"></i>
+                <input class="input" type="text" placeholder="请输入手机号或者邮箱"/>
+            </div>
+            <div class="input-group">
+                <i class="ico-input ico-pas"></i>
+                <input class="input" type="text" placeholder="输入6-16位密码"/>
+            </div>
 
-    <button class="login-btn">立即登陆</button>
+            <button class="login-btn">立即登陆</button>
+        </form>
 
-    <div class="link-box clear">
-        <a href="#" class="pull-left red">忘记密码 >></a>
-        <a href="#" class="pull-right red">点击注册 >></a>
-        <span class="pull-right">还没有房计划账号？</span>
+        <div class="link-box clear">
+            <a href="#" class="pull-left red">忘记密码 >></a>
+            <a href="#" class="pull-right red">点击注册 >></a>
+            <span class="pull-right">还没有房计划账号？</span>
+        </div>
     </div>
 </div>
+<!--登陆弹窗 end-->
 
+<script src="../js/addons/layer/layer.js" type="text/javascript"></script>
+<script>
+    var pub_html;
+    function login(){
+        if($(".login-wrap").length>0){
+            var html=$(".login-wrap").html();
+            this.pub_html=html;
+        }
+        $(".login-wrap").remove();
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: true,
+            area: ['465px', '425px'],
+            shadeClose: true,
+            skin: 'default',
+            content: pub_html
+        });
+    }
+</script>
 </body>
 </html>

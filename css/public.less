@@ -118,9 +118,13 @@ textarea {resize: none;}
   }
 }
 
+/*layer插件样式重置*/
+.layui-layer.default{background: none;
+  .layui-layer-setwin{right:36px;top:36px;}
+}
 
 /*登陆弹窗*/
-.login-box{.wh(465px,auto);border-bottom:13px solid @red-bg;.round(10px);overflow: hidden;.box-shadow(0,4px,6px,rgba(0, 0, 0, 0.1));background: #ffffff;
+.login-box{height:425px;border-bottom:13px solid @red-bg;.round(10px);overflow: hidden;.box-shadow(0,4px,6px,rgba(0, 0, 0, 0.1));background: #ffffff;
   .title{.wh(100%,101px,101px);text-align: center;background: @red;}
 
   .input-group{width:326px;margin: 20px auto;
@@ -128,7 +132,7 @@ textarea {resize: none;}
     .ico-pas{background: url("../images/icon/pas_ico.png") center no-repeat;}
   }
 
-  .login-btn{width:326px;.btn-red-full();.round(3px);margin:30px auto 0;.textshadow(0,-1px,0,@red-dark);}
+  .login-btn{width:326px;.btn-red-full();.round(3px);font-size:16px;margin:30px auto 0;.textshadow(0,-1px,0,@red-dark);}
   .link-box{font-size:12px;color:@gray;width: 326px;margin:12px auto 50px;
   }
   .red{color:@red;}
