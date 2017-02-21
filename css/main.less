@@ -45,7 +45,7 @@
       .con{color:@txt-black;}
     }
 
-    .btn-sign{.btn-red-full();width:173px;margin-top:46px;font-size:16px;}
+    .btn-sign{.btn-red-full();width:173px;margin-top:46px;font-size:16px;.textshadow(0,-1px,0,@red-dark);}
   }
 }
 
@@ -57,10 +57,11 @@
   /*标题列表*/
   .title{.wh(100%,64px,64px);
     .tit{color:@txt-black;font-size: 18px;}
-    .article-more{color:@gray;font-size: 12px;.wh(75px,25px,25px);.round(100px);margin-top:19px;text-align: right;
-      &:hover{background: @gray-bg;border:1px solid @gray-border;text-align: center;text-decoration: none;.transition(0.3s);}
+    .article-more{color:@gray;font-size: 12px;.wh(75px,25px,25px);.round(100px);margin-top:19px;padding:0 12px;
+      &:hover{background: @gray-bg;border:1px solid @gray-border;text-decoration: none;}
     }
   }
+
   .msg-list{overflow: hidden;.wh(100%,260px);
     a{display:block;}
     .tit{display:block;width:70%;.ellipse;font-size:16px;color: @txt-black;}
