@@ -22,3 +22,10 @@ function times() {
         }, 1000)
     }
 }
+
+/*
+* 表单验证
+* */
+$('.register-box').Validform({
+    tiptype:2
+})
