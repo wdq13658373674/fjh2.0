@@ -24,8 +24,9 @@ function times() {
 }
 
 /*
-* 表单验证
+* 注册表单验证
 * */
 $('.register-box').Validform({
-    tiptype:2
+    tiptype:2,
+    label:""
 })
