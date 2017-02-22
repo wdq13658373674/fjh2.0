@@ -77,6 +77,25 @@
 <script src="../js/addons/layer/layer.js" type="text/javascript"></script>
 <!--<script src="../js/addons/Validform_v5.3.2_min.js" type="text/javascript"></script>-->
 <script>
+    /*登陆弹窗*/
+    var pub_html;
+    function login(){
+        if($(".login-wrap").length>0){
+            var html=$(".login-wrap").html();
+            this.pub_html=html;
+        }
+        $(".login-wrap").remove();
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: true,
+            area: ['465px', '425px'],
+            shadeClose: true,
+            skin: 'default',
+            content: pub_html
+        });
+    }
+
     $(function(){
         var phone=$('#phone').val(),
             pas=$('#password').val(),
@@ -101,23 +120,6 @@
             }*/
         });
     })
-    var pub_html;
-    function login(){
-        if($(".login-wrap").length>0){
-            var html=$(".login-wrap").html();
-            this.pub_html=html;
-        }
-        $(".login-wrap").remove();
-        layer.open({
-            type: 1,
-            title: false,
-            closeBtn: true,
-            area: ['465px', '425px'],
-            shadeClose: true,
-            skin: 'default',
-            content: pub_html
-        });
-    }
 </script>
 </body>
 </html>
