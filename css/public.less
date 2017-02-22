@@ -57,6 +57,7 @@ textarea {resize: none;}
 /*颜色*/
 .red{color:@red !important;}
 .gray{color:@gray !important;}
+.blue{color:@blue !important;}
 
 /*公共头部*/
 .header-wrap{.wh(100%,108px);background: #ffffff;
@@ -90,7 +91,7 @@ textarea {resize: none;}
 }
 
 /*公共底部*/
-.footer-top{.wh(100%,auto);border-top:1px solid @gray-border;margin-top:30px; background-color: #fff;
+.footer-top{.wh(100%,auto);border-top:1px solid @gray-border;background-color: #fff;
   .top-box{.main-width;background: #ffffff;
     .left-box{margin:70px 0;
       a{color:@txt-black;
@@ -124,19 +125,23 @@ textarea {resize: none;}
 }
 
 /*登陆弹窗*/
-.login-box{height:425px;border-bottom:13px solid @red-bg;.round(10px);overflow: hidden;.box-shadow(0,4px,6px,rgba(0, 0, 0, 0.1));background: #ffffff;
+.input-group{position: relative;width:100%;
+  .input{.input(38px);width:100%;}
+  .ico-input{.wh(20px,20px);display:block;position:absolute;left:9px;top:12px;}
+}
+
+.form-box{height:425px;border-bottom:13px solid @red-bg;.round(10px);overflow: hidden;.box-shadow(0,4px,6px,rgba(0, 0, 0, 0.1));background: #ffffff;
   .title{.wh(100%,101px,101px);text-align: center;background: @red url('../images/public/login.png') center no-repeat;}
-  .login-box{width:326px;margin:55px auto 0px;}
 
-  .input-group{width:100%;margin-top:20px;
-    .ico-user{background: url("../images/icon/name_ico.png") center no-repeat;}
-    .ico-pas{background: url("../images/icon/pas_ico.png") center no-repeat;}
+  .login-box{width:326px;margin:55px auto 0px;
+    .input-group{margin-top:20px;
+      .ico-user{background: url("../images/icon/name_ico.png") center no-repeat;}
+      .ico-pas{background: url("../images/icon/pas_ico.png") center no-repeat;}
+    }
   }
-
   .login-btn{width:100%;.btn-red-full();.round(3px);font-size:16px;.textshadow(0,-1px,0,@red-dark);}
 
   .link-box{font-size:12px;color:@gray;width: 326px;margin:12px auto 50px;}
-  .red{color:@red;}
 }
 
 /*登录注册错误提示*/
