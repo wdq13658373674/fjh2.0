@@ -150,4 +150,46 @@ textarea {resize: none;}
 .Validform_wrong{color:#d9534f;background: url("../images/icon/err_tips.png") left center no-repeat;padding-left:15px;}
 
 
+/*分页公共样式*/
+.pages {
+  margin-top: 50px;
+  text-align: right;
+  ul {
+    li {
+      width: auto;
+      display: inline-block;
+      *display: inline;
+      *margin: 0 3px;
+      *zoom: 1;
+      a {
+        padding: 7px 11px;
+        line-height: 28px;
+        min-width: 28px;
+        color: #333;
+        border: 1px solid #dfdfdf;
+        &:hover {
+          border-color: #ff8b3d;
+          background: #ff8b3d;
+          color: #fff
+        }
+      }
+    }
+    .previous + .first a {
+      margin: 0 10px 0 0
+    }
+    .next a + .last a {
+      margin: 0 0 0 10px;
+      *margin: 0
+    }
+    .selected a {
+      border-color: #ff8b3d;
+      color: #ff8b3d;
+      cursor: auto;
+      &:hover {
+        background: #fff;
+        color: #ff8b3d;
+      }
+    }
+  }
+}
 
