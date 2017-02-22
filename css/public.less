@@ -122,6 +122,10 @@ textarea {resize: none;}
 /*layer插件样式重置*/
 .layui-layer.default{background: none; overflow: hidden; .round(10px);
   .layui-layer-setwin{right:36px;top:36px;}
+  .layui-layer-close{.rotate(-90deg);.transition(.3s);
+    &.layui-layer-ico{background: url("../images/icon/layer_close.png") center no-repeat;}
+    &:hover{background: url("../images/icon/layer_close.png") center no-repeat;.rotate(90deg);.transition(.3s);}
+  }
 }
 
 /*登陆弹窗*/
