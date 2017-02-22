@@ -108,7 +108,7 @@ textarea {resize: none;}
 
   }
 }
-.footer-bottom{text-align:center;background: @gray-bg;height:87px;line-height:87px;font-size:12px;color:@gray;}
+.footer-bottom{.wh(100%,87px,87px);text-align:center;background: @gray-bg;font-size:12px;color:@gray;}
 
 /*hover：VR链接动画遮罩层*/
 .dark-mask-box{display:block;position:absolute;top:0px;left:0px;.wh(100%,100%);overflow: hidden;background:@gray-dark;.bg-rgba(rgba(43, 48, 77, 0.7));text-align: center;.round(3px);.rgba(0,0);
@@ -125,15 +125,22 @@ textarea {resize: none;}
 
 /*登陆弹窗*/
 .login-box{height:425px;border-bottom:13px solid @red-bg;.round(10px);overflow: hidden;.box-shadow(0,4px,6px,rgba(0, 0, 0, 0.1));background: #ffffff;
-  .title{.wh(100%,101px,101px);text-align: center;background: @red;}
+  .title{.wh(100%,101px,101px);text-align: center;background: @red url('../images/public/login.png') center no-repeat;}
+  .login-box{width:326px;margin:55px auto 0px;}
 
-  .input-group{width:326px;margin: 20px auto;
+  .input-group{width:100%;margin-top:20px;
     .ico-user{background: url("../images/icon/name_ico.png") center no-repeat;}
     .ico-pas{background: url("../images/icon/pas_ico.png") center no-repeat;}
   }
 
-  .login-btn{width:326px;.btn-red-full();.round(3px);font-size:16px;margin:30px auto 0;.textshadow(0,-1px,0,@red-dark);}
-  .link-box{font-size:12px;color:@gray;width: 326px;margin:12px auto 50px;
-  }
+  .login-btn{width:100%;.btn-red-full();.round(3px);font-size:16px;.textshadow(0,-1px,0,@red-dark);}
+
+  .link-box{font-size:12px;color:@gray;width: 326px;margin:12px auto 50px;}
   .red{color:@red;}
 }
+
+/*登录注册错误提示*/
+.err-tips{height:16px;line-height:16px;margin:12px 0;color:#d9534f;font-size:12px;}
+
+
+
