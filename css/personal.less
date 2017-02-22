@@ -1,10 +1,10 @@
-@import "../cssControl/import";
-
+@import "../cssControl/control";
 body{
   background-color: #eff2f9;
 }
 .personalContainer{
   margin-top: 30px;
+  margin-bottom: 30px;
   .personalContainerBox{
     width: 1200px;
     margin: 0 auto;
@@ -62,10 +62,9 @@ body{
         }
       }
 
-    .personalRight{
+    .personalRightCon{
       .wh(950px);
       min-height: 1029px;
-      padding: 56px 58px;
       background-color: #fff;
       float: left;
       .personalInfo{
@@ -185,6 +184,32 @@ body{
             color: @gray;
           }
         }
+      }
+    }
+
+    .personalRight{
+      padding: 56px 58px;
+    }
+
+    .personalTra{
+      padding: 29px 57px 60px 58px;
+      .crumbs{
+        color: @gray;
+        a{
+          color: @gray;
+          &:hover{
+            color: @gray-hover;
+          }
+        }
+      }
+      .classify{
+        margin-top: 60px;
+        ul{
+          li{
+            float: left;
+          }
+        }
+        .btn-red-empty{.btn-red-empty();}
       }
     }
   }
