@@ -28,5 +28,8 @@ function times() {
 * */
 $('.register-box').Validform({
     tiptype:2,
-    label:""
+    showAllError:true,
+    callback: function () {
+
+    }
 })

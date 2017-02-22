@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/public.css"/>
 
     <script src="../js/jQuery1.12.3-min.js" type="text/javascript"></script>
-    <script src="../js/public.js" type="text/javascript"></script>
 </head>
 <body>
 <!--header start-->
@@ -53,14 +52,14 @@
         <form id="loginForm" class="login-box" action="">
             <div class="input-group">
                 <i class="ico-input ico-user"></i>
-                <input class="input" id="phone" type="text" placeholder="请输入手机号或者邮箱"/>
+                <input class="input" id="phone" type="text" errormsg="手机号或者邮箱输入不正确" sucmsg=" " datatype="m | e" placeholder="请输入手机号或者邮箱"/>
             </div>
             <div class="input-group">
                 <i class="ico-input ico-pas"></i>
                 <input class="input" id="password" type="text" placeholder="输入6-16位密码"/>
             </div>
             <!--错误提示-->
-            <div class="err-tips Validform_wrong">密码错误，重新输入</div>
+            <div id="err-tips" class="err-tips"></div>
 
             <button type="submit" class="login-btn">立即登陆</button>
         </form>
@@ -75,7 +74,7 @@
 <!--登陆弹窗 end-->
 
 <script src="../js/addons/layer/layer.js" type="text/javascript"></script>
-<!--<script src="../js/addons/Validform_v5.3.2_min.js" type="text/javascript"></script>-->
+<script src="../../js/addons/Validform_v5.3.2_min.js" type="text/javascript"></script>
 <script>
     /*登陆弹窗*/
     var pub_html;
@@ -97,28 +96,14 @@
     }
 
     $(function(){
-        var phone=$('#phone').val(),
-            pas=$('#password').val(),
-            tip=$('.err-tips');
-
-        $('.input').blur(function(){
-            console.log(1);
-            /*if(this.value == ''){
-                tip.text('请填写完整，不能为空！');
-            }else{
-                if(self.is('#phone')){
-                    if(is_email(phone) || is_mobile(phone)){
-                        tip.text('手机号或者邮箱输入错误！');
-                    }
-                }
-
-                if(self.is('#password')){
-                    if(this.value.length < 6 || this.value.length > 16){
-                        tip.text('密码长度为6～16位！');
-                    }
-                }
-            }*/
-        });
+        /*表单验证*/
+        $('#loginForm').Validform({
+            tiptype:function(msg,o,cssctl){
+                var objtip=$("#err-tips");
+                cssctl(objtip,o.type);
+                objtip.text(msg);
+            }
+        })
     })
 </script>
 </body>
