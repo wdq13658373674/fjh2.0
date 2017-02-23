@@ -5,3 +5,16 @@
   .left-box{.wh(798px,605px);background: #ffffff;overflow: hidden;}
   .right-box{.wh(377px,605px);background: #ffffff;overflow: hidden}
 }
+/*menu-tab*/
+.menu-tab{.main-width;margin-top:50px;
+  .tab{.wh(140px,55px,55px);float: left;text-align: center;font-size: 16px;color: @txt-black;cursor: pointer;
+    &.active{background: #ffffff;border-top:4px solid @red;
+      &:hover{background: #ffffff;}
+    }
+    &:hover{background: @gray-hover;}
+  }
+}
+.tab-box{.main-width;background: #ffffff;min-height:800px;margin-bottom:150px;overflow: hidden;display:none;
+  &.active{display: block;}
+  .tab-content{.wh(1131px,auto);margin:35px auto;height:300px;overflow: hidden;}
+}

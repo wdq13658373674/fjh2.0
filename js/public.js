@@ -1,7 +1,7 @@
-/*
-*下拉选择框
-* */
 $(function () {
+    /*
+     *下拉选择框
+     * */
     $(".select-box").hover(function () {
         $(this).find("ul").show();
     }, function () {
@@ -17,6 +17,16 @@ $(function () {
         obj.find(".form-control").html(selectText);
         obj.find("input").val(selectVlaue);
         obj.find("ul").hide();
+    });
+
+    /*
+     * tab切换
+     * */
+    $('.menu-tab>.tab').click(function(){
+        var self=$(this),
+            inx=self.index();
+        self.addClass('active').siblings().removeClass('active');
+        $('.tab-box').eq(inx).addClass('active').siblings().removeClass('active');
     });
 });
 
