@@ -77,13 +77,11 @@
         tiptype:2,
         ajaxPost: true,
         showAllError:true,
+        beforeCheck:function(curform){
+            $('.login-btn').addClass('disabled');
+        },
         callback:function(curform){
-            /*if(!curform['status']){
-                console.log(1);
-                $('.login-btn').addClass('disabled');
 
-                console.log();
-             }*/
         }
     })
 </script>
