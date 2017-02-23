@@ -195,7 +195,8 @@ body{
     a{
       color: @gray;
       &:hover{
-        color: @gray-hover;
+        padding-bottom: 1px;
+        border-bottom: 1px solid @gray;
       }
     }
   }
@@ -204,6 +205,7 @@ body{
   .personalTra{
     padding: 29px 57px 60px 58px;
     .classify{
+      font-size: 12px;
       margin-top: 60px;
       ul{
         li{
@@ -211,14 +213,22 @@ body{
           height: 27px;
           line-height: 27px;
           margin-left: 7px;
-          .active{.btn-red-full(@h:27px);}
+          font-size: 14px;
+          .active{.btn-red-full(@h:27px); font-size: 12px;}
           .unActive{
             &:hover{
-              border: 0;
-              .btn-gray-empty(@h:27px);
+              border: 1px solid #eff2f9;
+              height:27px;
+              line-height:27px;
+              display:block;
+              background: #eff2f9;
+              color:@txt-black;
+              .round(3px);
+              text-align: center;
             }
           }
           a{
+            font-size: 12px;
             display: inline-block;
             color: @txt-black;
             padding: 0 20px;
@@ -238,6 +248,7 @@ body{
         line-height: 27px;
         float: left;
         li{
+          font-size: 14px;
           float: left;
           margin-left: 7px;
           &:first-child{
@@ -245,6 +256,8 @@ body{
           }
         }
         .laydate-icon{
+          border-radius: 3px;
+          border: solid 1px #c3cad8;
           padding-left: 9px;
           width: 126px;
         }
@@ -257,11 +270,18 @@ body{
           height: 27px;
           line-height: 27px;
           margin-left: 7px;
-          .active{.btn-red-full(@h:27px);}
+          font-size: 12px;
+          .active{.btn-red-full(@h:27px); font-size: 12px;}
           .unActive{
             &:hover{
-              border: 0;
-              .btn-gray-empty(@h:27px);
+              border: 1px solid #eff2f9;
+              height:27px;
+              line-height:27px;
+              display:block;
+              background: #eff2f9;
+              color:@txt-black;
+              .round(3px);
+              text-align: center;
             }
           }
           a{
