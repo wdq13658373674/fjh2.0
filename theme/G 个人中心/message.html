@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>personal-消息中心</title>
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/personal.css">
+    <script src="../../js/jQuery1.12.3-min.js"></script>
+    <script src="../../js/public.js"></script>
+
+</head>
+<body>
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+
+<!--个人中心-->
+<div class="personalContainer clear center">
+    <!--左边菜单-->
+    <div class="personalLeftNav">
+        <ul>
+            <li><a class="personalIcon-per" href="#">个人中心</a></li>
+            <li><a class="personalIcon-rec" href="#">交易记录</a></li>
+            <li><a class="personalIcon-cus" href="#">我的定制</a></li>
+            <li><a class="personalIcon-acc" href="#">账户管理</a></li>
+            <li class="active"><a class="personalIcon-mes" href="#">消息中心</a></li>
+            <li><a class="personalIcon-dat" href="#">个人资料</a></li>
+            <li><a class="personalIcon-cli" href="#">推荐客户</a></li>
+        </ul>
+    </div>
+    <!--左边菜单结束-->
+    <!--右边内容-->
+    <div class="personalRightCon messageBox">
+        <!--面包屑-->
+        <div class="crumbs">
+            <a href="#">个人中心</a> >
+            <span>消息中心</span>
+        </div>
+        <!--全选按钮组-->
+        <div class="btnGroup clear">
+            <div class="btn_chk" id="btn_chk">
+                <div class="a_checkbox">
+                    <input type="checkbox" id="checkbox_all" class="chk" />
+                    <label for="checkbox_all"></label>
+                </div>
+                <span>全选</span>
+            </div>
+            <a class="btn_pu" href="#">删除</a>
+            <a class="btn_pu" href="#">标记为已读</a>
+        </div>
+        <!--有消息-->
+        <table class="tableBox">
+            <!--
+                tr 标签无 "read" 类时 表示 未阅读
+
+                tr 标签有 "read"  类时 表示 已阅读 ，第二个 td 标签 需要添加  “c_ico” 类
+            -->
+            <tr>
+                <td class="c_chk">
+                    <div class="a_checkbox">
+                        <input type="checkbox" id="checkbox_1" class="chk" />
+                        <label for="checkbox_1"></label>
+                    </div>
+                </td>
+                <td class="c_ico"> </td>
+                <td>房计划</td>
+                <td>缴10000元优惠20000元</td>
+                <td class="s_time">2017.12.30</td>
+            </tr>
+            <tr class="read">
+                <td class="c_chk">
+                    <div class="a_checkbox">
+                        <input type="checkbox" id="checkbox_2" class="chk" />
+                        <label for="checkbox_2"></label>
+                    </div>
+                </td>
+                <td> </td>
+                <td>房计划</td>
+                <td>缴10000元优惠20000元</td>
+                <td class="s_time">2017.12.30</td>
+            </tr>
+        </table>
+        <!--分页-->
+        <div class="pages">
+            <ul>
+                <li class="previous">
+                    <a href="#">&lt;</a>
+                </li>
+                <li class="page">
+                    <a href="#">1</a>
+                </li>
+                <li class="page selected ">
+                    <a>2</a>
+                </li>
+                <li class="page">
+                    <a href="#">3</a>
+                </li>
+                <li class="page">
+                    <a href="#">4</a>
+                </li>
+                <li class="page">
+                    <a href="#">5</a>
+                </li>
+                <li class="page">
+                    <a href="#">6</a>
+                </li>
+                <li class="page">
+                    <a href="#">7</a>
+                </li>
+                <li class="page">
+                    <a href="#">8</a>
+                </li>
+                <li class="page">
+                    <a href="#">9</a>
+                </li>
+                <li class="page">
+                    <a href="#">10</a>
+                </li>
+                <li class="next">
+                    <a href="#">&gt;</a>
+                </li>
+                <li class="last">
+                    <a href="#">末页&gt;&gt;</a>
+                </li>
+            </ul>
+        </div>
+        <!--无消息-->
+        <!--<div class="messg_none">-->
+            <!--<div class="messg_none_item">-->
+                <!--<span class="nothingItem f14">暂无新消息</span>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    </div>
+    <!--右边内容结束-->
+</div>
+
+<!--footer-->
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+
+<script>
+
+//    function SelectAll() {
+//        var select_chk = document.getElementById("checkbox_all");
+//        var checklist = document.getElementsByClassName ("chk");
+//        var arry = [];
+//        if(select_chk.checked){
+//            this.checked = 0;
+//            for(var j=0;j<checklist.length;j++){
+//                checklist[j].checked = 0;
+//            }
+//        }else{
+//            this.checked = 1;
+//            for(var i=0;i<checklist.length;i++){
+//                checklist[i].checked = 1;
+//                arry[i] = i;
+//            }
+//        }
+//    }
+
+
+    var btn_chk = document.getElementById("btn_chk");
+    btn_chk.addEventListener("click",SelectAll);
+    function SelectAll(){
+        var select_chk = document.getElementById("checkbox_all");
+        var checklist = document.getElementsByClassName ("chk");
+        var arry = [];
+        if(select_chk.checked){
+            this.checked = 0;
+            for(var j=0;j<checklist.length;j++){
+                checklist[j].checked = 0;
+            }
+        }else{
+            this.checked = 1;
+            for(var i=0;i<checklist.length;i++){
+                checklist[i].checked = 1;
+                arry[i] = i;
+            }
+            alert("你已选中"+arry);
+        }
+    }
+</script>
+
+</body>
+</html>

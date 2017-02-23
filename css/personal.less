@@ -5,308 +5,479 @@ body{
 .personalContainer{
   margin-top: 30px;
   margin-bottom: 30px;
-    width: 1200px;
-      .personalLeftNav{
-        .wh(250px);
-        min-height: 1029px;
-        background-color: #dbe0ed;
+  width: 1200px;
+    .personalLeftNav{
+      .wh(250px);
+      min-height: 1029px;
+      background-color: #dbe0ed;
+      float: left;
+      ul{
+        li{
+          height: 57px;
+          line-height: 57px;
+          border-bottom: 1px solid @gray-border;
+          .personalIcon-per{
+            .icon("../images/icon/group-12.png",no-repeat,37px,19px);
+          }
+          .personalIcon-rec{
+            .icon("../images/icon/group-22.png",no-repeat,36px,17px);
+          }
+          .personalIcon-cus{
+            .icon("../images/icon/group-25.png",no-repeat,36px,18px);
+          }
+          .personalIcon-acc{
+            .icon("../images/icon/page-1.png",no-repeat,35px,17px);
+          }
+          .personalIcon-mes{
+            .icon("../images/icon/group-26.png",no-repeat,36px,20px);
+          }
+          .personalIcon-dat{
+            .icon("../images/icon/group-27.png",no-repeat,36px,17px);
+          }
+          .personalIcon-cli{
+            .icon("../images/icon/group-28.png",no-repeat,36px,16px);
+          }
+          a{
+            color: @txt-black;
+            font-size: 14px;
+            display: block;
+            padding-left: 117px;
+            &:hover{
+              background-color: #c3cad8;
+            }
+          }
+        }
+        .active{
+          background: #ffffff;
+          border-left: 3px solid #fd5b5f;
+          border-bottom: 1px solid #fff;
+          a{
+            &:hover{
+              background-color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+  .personalRightCon{
+    position: relative;
+    .wh(950px);
+    min-height: 1029px;
+    background-color: #fff;
+    float: left;
+    .personalInfo{
+      padding-bottom: 32px;
+      border-bottom: 1px solid @gray-hover;
+      .consumer{
         float: left;
+        .phone{
+          margin-top: 12px;
+          color: #58a4e8;
+        }
+      }
+      .safe{
+        float: right;
         ul{
           li{
-            height: 57px;
-            line-height: 57px;
-            border-bottom: 1px solid @gray-border;
-            .personalIcon-per{
-              .icon("../images/icon/group-12.png",no-repeat,37px,19px);
-            }
-            .personalIcon-rec{
-              .icon("../images/icon/group-22.png",no-repeat,36px,17px);
-            }
-            .personalIcon-cus{
-              .icon("../images/icon/group-25.png",no-repeat,36px,18px);
-            }
-            .personalIcon-acc{
-              .icon("../images/icon/page-1.png",no-repeat,35px,17px);
-            }
-            .personalIcon-mes{
-              .icon("../images/icon/group-26.png",no-repeat,36px,20px);
-            }
-            .personalIcon-dat{
-              .icon("../images/icon/group-27.png",no-repeat,36px,17px);
-            }
-            .personalIcon-cli{
-              .icon("../images/icon/group-28.png",no-repeat,36px,16px);
-            }
+            margin-left: 54px;
+            float: left;
             a{
-              color: @txt-black;
-              font-size: 14px;
-              display: block;
-              padding-left: 117px;
-              &:hover{
-                background-color: #c3cad8;
-              }
-            }
-          }
-          .active{
-            background: #ffffff;
-            border-left: 3px solid #fd5b5f;
-            border-bottom: 1px solid #fff;
-            a{
-              &:hover{
-                background-color: #ffffff;
-              }
-            }
-          }
-        }
-      }
-
-    .personalRightCon{
-      .wh(950px);
-      min-height: 1029px;
-      background-color: #fff;
-      float: left;
-      .personalInfo{
-        padding-bottom: 32px;
-        border-bottom: 1px solid @gray-hover;
-        .consumer{
-          float: left;
-          .phone{
-            margin-top: 12px;
-            color: #58a4e8;
-          }
-        }
-        .safe{
-          float: right;
-          ul{
-            li{
-              margin-left: 54px;
-              float: left;
-              a{
-                span{
-                  width: 40px;
-                  height: 40px;
-                  display: block;
-                  margin: 0 auto;
-                  position: relative;
-                  b{
-                    width: 20px;
-                    height: 20px;
-                    display: block;
-                    position: absolute;
-                    top: 22px;
-                    left: 28px;
-                    .icon("../images/icon/dangerous_tips.png",no-repeat);
-                  }
-                }
-                p{
-                  margin-top: 7px;
-                  color: #7f85a3;
-                }
-                .safeIcon-phone{
-                  .icon("../images/icon/group-9.png",no-repeat);
-                }
-                .safeIcon-idCard{
-                  .icon("../images/icon/oval-2.png",no-repeat);
-                }
-                .safeIcon-bankCard{
-                  .icon("../images/icon/group-23.png",no-repeat);
-                }
-                .safeIcon-means{
-                  .icon("../images/icon/group-41.png",no-repeat);
-                }
-              }
-            }
-            .safeSuccess{
               span{
+                width: 40px;
+                height: 40px;
+                display: block;
+                margin: 0 auto;
+                position: relative;
                 b{
-                  .icon("../images/icon/success_tips.png",no-repeat);
+                  width: 20px;
+                  height: 20px;
+                  display: block;
+                  position: absolute;
+                  top: 22px;
+                  left: 28px;
+                  .icon("../images/icon/dangerous_tips.png",no-repeat);
                 }
+              }
+              p{
+                margin-top: 7px;
+                color: #7f85a3;
               }
               .safeIcon-phone{
-                .icon("../images/icon/group-21.png",no-repeat);
+                .icon("../images/icon/group-9.png",no-repeat);
               }
               .safeIcon-idCard{
-                .icon("../images/icon/group-45.png",no-repeat);
+                .icon("../images/icon/oval-2.png",no-repeat);
               }
+              .safeIcon-bankCard{
+                .icon("../images/icon/group-23.png",no-repeat);
+              }
+              .safeIcon-means{
+                .icon("../images/icon/group-41.png",no-repeat);
+              }
+            }
+          }
+          .safeSuccess{
+            span{
+              b{
+                .icon("../images/icon/success_tips.png",no-repeat);
+              }
+            }
+            .safeIcon-phone{
+              .icon("../images/icon/group-21.png",no-repeat);
+            }
+            .safeIcon-idCard{
+              .icon("../images/icon/group-45.png",no-repeat);
             }
           }
         }
       }
+    }
 
-      .personalMoney{
-        padding: 32px 0;
-        border-bottom: 1px solid @gray-hover;
+    .personalMoney{
+      padding: 32px 0;
+      border-bottom: 1px solid @gray-hover;
+      position: relative;
+      .userMoney-txt{
+        color: @gray;
+      }
+      .TB-icon{
+        width: 52px;
+        height: 52px;
+        .icon("../images/icon/group-6.png",no-repeat)
+      }
+      .userMoney-sum{
+        position: absolute;
+        left: 70px;
+        top: 34px;
+      }
+      .userMoney-frozen{
+        position: absolute;
+        left: 183px;
+        top: 34px;
+      }
+    }
+
+    .userCustomItem{
+      padding: 32px 0;
+      .userCustomItem-title{
+        font-weight: normal;
+        color: @txt-black;
+      }
+      .userCustomItem-item{
+        margin-top: 32px;
+        width: 100%;
+        min-height: 150px;
+        background-color: @gray-bg;
+        border: solid 1px #dbe0ed;
+        .round();
         position: relative;
-        .userMoney-txt{
+        .nothingItem{
+          position: absolute;
+          left: 40%;
+          top: 40%;
+          display: inline-block;
+          .icon("../images/icon/warning_tips.png",no-repeat);
+          .line-height(20px);
+          padding-left: 28px;
           color: @gray;
         }
-        .TB-icon{
-          width: 52px;
-          height: 52px;
-          .icon("../images/icon/group-6.png",no-repeat)
-        }
-        .userMoney-sum{
-          position: absolute;
-          left: 70px;
-          top: 34px;
-        }
-        .userMoney-frozen{
-          position: absolute;
-          left: 183px;
-          top: 34px;
+      }
+    }
+  }
+
+  .personalRight{
+    padding: 56px 58px;
+  }
+  /*面包屑样式*/
+  .crumbs{
+    color: @gray;
+    a{
+      color: @gray;
+      &:hover{
+        color: @gray-hover;
+      }
+    }
+  }
+
+  /*交易记录样式*/
+  .personalTra{
+    padding: 29px 57px 60px 58px;
+    .classify{
+      margin-top: 60px;
+      ul{
+        li{
+          float: left;
+          height: 27px;
+          line-height: 27px;
+          margin-left: 7px;
+          .active{.btn-red-full(@h:27px);}
+          .unActive{
+            &:hover{
+              border: 0;
+              .btn-gray-empty(@h:27px);
+            }
+          }
+          a{
+            display: inline-block;
+            color: @txt-black;
+            padding: 0 20px;
+            line-height: 27px;
+            border: 1px solid #fff;
+          }
+          &:first-child{
+            margin-left: 0;
+          }
         }
       }
-
-      .userCustomItem{
-        padding: 32px 0;
-        .userCustomItem-title{
-          font-weight: normal;
-          color: @txt-black;
+    }
+    .screen{
+      margin-top: 28px;
+      padding-top: 10px;
+      .date{
+        line-height: 27px;
+        float: left;
+        li{
+          float: left;
+          margin-left: 7px;
+          &:first-child{
+            margin-left: 0;
+          }
         }
-        .userCustomItem-item{
-          margin-top: 32px;
-          width: 100%;
-          min-height: 150px;
-          background-color: @gray-bg;
-          border: solid 1px #dbe0ed;
-          .round();
-          position: relative;
-          .nothingItem{
-            position: absolute;
-            left: 40%;
-            top: 40%;
+        .laydate-icon{
+          padding-left: 9px;
+          width: 126px;
+        }
+      }
+      .quickBtn{
+        float: left;
+        margin-left: 17px;
+        li{
+          float: left;
+          height: 27px;
+          line-height: 27px;
+          margin-left: 7px;
+          .active{.btn-red-full(@h:27px);}
+          .unActive{
+            &:hover{
+              border: 0;
+              .btn-gray-empty(@h:27px);
+            }
+          }
+          a{
             display: inline-block;
-            .icon("../images/icon/warning_tips.png",no-repeat);
-            .line-height(20px);
-            padding-left: 28px;
+            color: @txt-black;
+            padding: 0 20px;
+            line-height: 27px;
+            border: 1px solid #fff;
+          }
+          &:first-child{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .transactionTable{
+      margin-top: 28px;
+      width: 100%;
+      border-collapse: collapse;
+      .tr{
+        text-align: right;
+      }
+      tr{
+        th{
+          padding: 26px 0 28px 0;
+          text-align: left;
+          border-top: 3px solid #eff2f9;
+          font-weight: normal;
+          font-size: 14px;
+        }
+        td{
+          text-align: left;
+          border-top: 1px solid #eff2f9;
+          height: 72px;
+          font-size: 14px;
+          .txt_gray{
             color: @gray;
           }
         }
-      }
-    }
-
-    .personalRight{
-      padding: 56px 58px;
-    }
-
-    /*交易记录样式*/
-    .personalTra{
-      padding: 29px 57px 60px 58px;
-      .crumbs{
-        color: @gray;
-        a{
-          color: @gray;
-          &:hover{
-            color: @gray-hover;
-          }
+        .f18{
+          font-size: 18px;
         }
-      }
-      .classify{
-        margin-top: 60px;
-        ul{
-          li{
-            float: left;
-            height: 27px;
-            line-height: 27px;
-            margin-left: 7px;
-            .active{.btn-red-full(@h:27px);}
-            .unActive{
-              &:hover{
-                border: 0;
-                .btn-gray-empty(@h:27px);
-              }
-            }
-            a{
-              display: inline-block;
-              color: @txt-black;
-              padding: 0 20px;
-              line-height: 27px;
-              border: 1px solid #fff;
-            }
-            &:first-child{
-              margin-left: 0;
-            }
-          }
-        }
-      }
-      .screen{
-        margin-top: 28px;
-        padding-top: 10px;
-        .date{
-          line-height: 27px;
-          float: left;
-          li{
-            float: left;
-            margin-left: 7px;
-            &:first-child{
-              margin-left: 0;
-            }
-          }
-          .laydate-icon{
-            padding-left: 9px;
-            width: 126px;
-          }
-        }
-        .quickBtn{
-          float: left;
-          margin-left: 17px;
-          li{
-            float: left;
-            height: 27px;
-            line-height: 27px;
-            margin-left: 7px;
-            .active{.btn-red-full(@h:27px);}
-            .unActive{
-              &:hover{
-                border: 0;
-                .btn-gray-empty(@h:27px);
-              }
-            }
-            a{
-              display: inline-block;
-              color: @txt-black;
-              padding: 0 20px;
-              line-height: 27px;
-              border: 1px solid #fff;
-            }
-            &:first-child{
-              margin-left: 0;
-            }
-          }
-        }
-      }
-      .transactionTable{
-        margin-top: 28px;
-        width: 100%;
-        .tr{
-          text-align: right;
-        }
-        tr{
-          th{
-            padding: 26px 0 28px 0;
-            text-align: left;
-            border-top: 3px solid #eff2f9;
-            font-weight: normal;
-            font-size: 14px;
-          }
+        &:last-child{
           td{
-            text-align: left;
-            border-top: 1px solid #eff2f9;
-            height: 72px;
-            font-size: 14px;
-            .txt_gray{
-              color: @gray;
-            }
-          }
-          .f18{
-            font-size: 18px;
-          }
-          &:last-child{
-            td{
-              border-bottom: 1px solid #eff2f9;
-            }
+            border-bottom: 1px solid #eff2f9;
           }
         }
       }
     }
+  }
+  /*消息中心样式*/
+  .messageBox{
+    padding: 29px 57px 60px 58px;
+
+    /*checkbox 样式*/
+    .a_checkbox{
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      float: left;
+      .chk {
+        display: none;
+      }
+
+      .chk + label {
+        background-color: #FFF;
+        border: 1px solid #C1CACA;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 8px;
+        border-radius: 5px;
+        display: inline-block;
+        position: absolute;
+      }
+      .chk + label:active {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 1px 3px rgba(0,0,0,0.1);
+      }
+
+      .chk:checked + label {
+        background-color: #ECF2F7;
+        border: 1px solid #92A1AC;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: #243441;
+      }
+
+      .chk:checked + label:after {
+        content: '\2714'; //勾选符号
+        position: absolute;
+        top: -5px;
+        left: 0;
+        color: #09bb07;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        padding: 1px 0 0 0;
+        vertical-align: text-top;
+      }
+    }
+
+    .btnGroup{
+      margin-top: 63px;
+      .btn_chk{
+        .btn-gray-empty(@h:27px);
+        display: inline-block;
+        padding: 0 5px;
+        cursor: pointer;
+        span{
+          margin-left: 22px;
+        }
+      }
+      .a_checkbox .chk+label{
+        top: 4px;
+      }
+      .btn_pu{
+        .btn-gray-empty(@h:27px);
+        display: inline-block;
+        padding: 0 5px;
+      }
+    }
+
+    table{
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .tableBox{
+      margin-top: 18px;
+      .read{
+        color: @gray;
+      }
+      tr{
+        td{
+          height: 40px;
+          border-top: 1px solid @gray-border2;
+          border-left:0;
+          border-right: 0;
+          border-bottom: 0;
+        }
+        &:last-child{
+          td{
+            border-bottom: 1px solid @gray-border2;
+          }
+        }
+        &:hover{
+          background-color: #eff2f9;
+          cursor: pointer;
+        }
+      }
+      .a_checkbox{
+        .chk+label{
+          width: 10px;
+          top: -8px;
+          left: 4px;
+        }
+        .chk:checked + label:after{
+          top: 0;
+        }
+      }
+      .c_chk{
+        width: 40px;
+      }
+      .c_ico{
+        width: 50px;
+        .icon("../images/icon/group-copy.png",no-repeat,7px,15px);
+      }
+      .s_time{
+        text-align: right;
+        padding-right: 12px;
+        color: @gray;
+      }
+    }
+
+    .pages{
+      position: absolute;
+      bottom: 60px;
+      right: 58px;
+    }
+    .messg_none{
+      margin-top: 17px;
+      border-top: 1px solid @gray-border2;
+      .messg_none_item{
+        margin-top: 32px;
+        width: 100%;
+        min-height: 150px;
+        background-color: @gray-bg;
+        border: solid 1px #dbe0ed;
+        .round();
+        position: relative;
+        .nothingItem{
+          position: absolute;
+          left: 40%;
+          top: 40%;
+          display: inline-block;
+          .icon("../images/icon/warning_tips.png",no-repeat);
+          .line-height(20px);
+          padding-left: 28px;
+          color: @gray;
+        }
+      }
+    }
+    .message_article{
+      margin-top: 18px;
+      .readmailinfo{
+        padding: 29px 0;
+        border-top: 1px solid @gray-border2;
+        border-bottom: 1px solid @gray-border2;
+        .sub_title{
+          margin-top: 11px;
+        }
+        .sub_time{
+          margin-top: 10px;
+          color: @gray;
+        }
+      }
+      .message_article_box{
+        margin-top: 29px;
+      }
+    }
+  }
 }
