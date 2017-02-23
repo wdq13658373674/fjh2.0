@@ -71,5 +71,27 @@
 
 <script src="../../js/addons/Validform_v5.3.2_min.js" type="text/javascript"></script>
 <script src="../../js/public/register.js" type="text/javascript"></script>
+
+<script>
+    $('.register-box').Validform({
+        tiptype:2,
+        showAllError:true,
+        /*datatype:{
+            'checkbox':function(gets,obj){
+                console.log(obj.is(':checked'));
+                return obj.is(':checked');
+            }
+        },*/
+        callback:function(curform){
+            if(curform){
+                console.log(1);
+                $('.login-btn').addClass('disabled');
+             }else{
+                console.log(2);
+                $('.login-btn').removeClass('disabled');
+             }
+        }
+    })
+</script>
 </body>
 </html>

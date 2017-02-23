@@ -26,21 +26,23 @@ function times() {
 /*
 * 注册表单验证
 * */
-$('.register-box').Validform({
-    tiptype:2,
-    showAllError:true,
-    datatype:{
-        'checkbox':function(gets,obj){
-            console.log(obj.is(':checked'));
-            return obj.is(':checked');
+$(function(){
+    $('.register-box').Validform({
+        tiptype:2,
+        showAllError:true,
+        datatype:{
+            'checkbox':function(gets,obj){
+                console.log(obj.is(':checked'));
+                return obj.is(':checked');
+            }
+        },
+        callback:function(){
+            console.log(1);
+            /*if(curform){
+             $('.login-btn').addClass('disabled');
+             }else{
+             $('.login-btn').removeClass('disabled');
+             }*/
         }
-    },
-    callback:function(){
-        console.log(1);
-        /*if(curform){
-            $('.login-btn').addClass('disabled');
-        }else{
-            $('.login-btn').removeClass('disabled');
-        }*/
-    }
+    })
 })
