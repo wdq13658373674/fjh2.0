@@ -4,6 +4,7 @@
 .flexslider a:focus  {outline: none;}
 
 /* FlexSlider Necessary Styles*/
+.flexslider{overflow: hidden;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;}
 .flexslider .slides img {display: block;}
 .flex-pauseplay span {text-transform: capitalize;}
