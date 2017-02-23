@@ -40,7 +40,10 @@
     }
 
     .dz-msg-list{margin-top:20px;
-      li{.ellipse;.wh(100%,30px,30px);}
+      li{.ellipse;.wh(100%,30px,30px);
+        &:nth-child(odd){background: @gray-bg;}
+        &:nth-child(even){background: @gray-hover;}
+      }
       .tit{margin-right:12px;color:@gray;}
       .con{color:@txt-black;}
     }

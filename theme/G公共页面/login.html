@@ -57,9 +57,14 @@
     $(function(){
         /*表单验证*/
         $('#loginForm').Validform({
-            tiptype:function(msg,o,cssctl){
+            tiptype:function(msg,obj,cssctl){
+                /*
+                * msg:提示信息
+                * obj:当前表单对象
+                * cssctl:提示样式函数
+                * */
                 var objtip=$("#err-tips");
-                cssctl(objtip,o.type);
+                cssctl(objtip,obj.type);
                 objtip.text(msg);
             }
         })
