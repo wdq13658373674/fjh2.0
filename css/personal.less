@@ -350,8 +350,8 @@ body{
         background-color: #FFF;
         border: 1px solid #C1CACA;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 -15px 10px -12px rgba(0, 0, 0, 0.05);
-        padding: 8px;
-        border-radius: 5px;
+        padding: 5px;
+        border-radius: 3px;
         display: inline-block;
         position: absolute;
       }
@@ -369,7 +369,7 @@ body{
       .chk:checked + label:after {
         content: '\2714'; //勾选符号
         position: absolute;
-        top: -5px;
+        top: -9px;
         left: 0;
         color: #09bb07;
         width: 100%;
@@ -382,9 +382,11 @@ body{
 
     .btnGroup{
       margin-top: 63px;
-      .btn_chk{
+      .btn_sub{
+        font-size: 12px;
+        width: 65px;
         height:27px;
-        line-height:27px;
+        line-height:26px;
         background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
         color:#2b314d;
         border:1px solid #c3cad8;
@@ -394,25 +396,28 @@ body{
         padding: 0 5px;
         cursor: pointer;
         span{
-          margin-left: 22px;
+          margin-left: 15px;
+          font-size: 12px;
         }
         &:hover{
           background-image: linear-gradient(to bottom, #eff2f9, #ffffff);
         }
       }
       .a_checkbox .chk+label{
-        top: 4px;
+        top: 8px;
+        left: 6px;
       }
       .btn_pu{
+        font-size: 12px;
         height:27px;
-        line-height:27px;
+        line-height:26px;
         background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
         color:#2b314d;
         border:1px solid #c3cad8;
         .round(3px);
         text-align: center;
         display: inline-block;
-        padding: 0 5px;
+        padding: 0 12px;
         &:hover{
           background-image: linear-gradient(to bottom, #eff2f9, #ffffff);
         }
@@ -451,10 +456,10 @@ body{
         .chk+label{
           width: 10px;
           top: -8px;
-          left: 4px;
+          left: 12px;
         }
         .chk:checked + label:after{
-          top: 0;
+          top: -5px;
         }
       }
       .c_chk{
