@@ -363,21 +363,39 @@ body{
     .btnGroup{
       margin-top: 63px;
       .btn_chk{
-        .btn-gray-empty(@h:27px);
+        height:27px;
+        line-height:27px;
+        background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
+        color:#2b314d;
+        border:1px solid #c3cad8;
+        .round(3px);
+        text-align: center;
         display: inline-block;
         padding: 0 5px;
         cursor: pointer;
         span{
           margin-left: 22px;
         }
+        &:hover{
+          background-image: linear-gradient(to bottom, #eff2f9, #ffffff);
+        }
       }
       .a_checkbox .chk+label{
         top: 4px;
       }
       .btn_pu{
-        .btn-gray-empty(@h:27px);
+        height:27px;
+        line-height:27px;
+        background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
+        color:#2b314d;
+        border:1px solid #c3cad8;
+        .round(3px);
+        text-align: center;
         display: inline-block;
         padding: 0 5px;
+        &:hover{
+          background-image: linear-gradient(to bottom, #eff2f9, #ffffff);
+        }
       }
     }
 
