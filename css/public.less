@@ -120,7 +120,7 @@ textarea {resize: none;}
   }
 }
 
-/*layer插件样式重置*/
+/*layer的close插件样式重置*/
 .layui-layer.default{background: none; overflow: hidden; .round(10px);
   .layui-layer-setwin{right:36px;top:36px;}
   .layui-layer-close{.rotate(-90deg);.transition(.3s);
@@ -129,15 +129,16 @@ textarea {resize: none;}
   }
 }
 
-/*登陆弹窗*/
+/*带图标的表单输入框*/
 .input-group{position: relative;width:100%;
   .input{.input(38px);width:100%;}
   .ico-input{.wh(20px,20px);display:block;position:absolute;left:9px;top:12px;}
 }
-
+/*登录注册表单*/
 .form-box{height:425px;border-bottom:13px solid @red-bg;.round(10px);overflow: hidden; .box-shadow(0,4px,6px,rgba(0, 0, 0, 0.1));background: #ffffff;
   .title{.wh(100%,101px,101px);text-align: center;background: @red url('../images/public/login.png') center no-repeat;}
 
+  /*登陆弹窗*/
   .login-box{width:326px;margin:55px auto 0px;
     .input-group{margin-top:20px;
       .ico-user{background: url("../images/icon/name_ico.png") center no-repeat;}
@@ -145,7 +146,6 @@ textarea {resize: none;}
     }
   }
   .login-btn{width:100%;.btn-red-full();.round(3px);font-size:16px;.textshadow(0,-1px,0,@red-dark);}
-
   .link-box{font-size:12px;color:@gray;width: 326px;margin:12px auto 50px;}
 }
 
