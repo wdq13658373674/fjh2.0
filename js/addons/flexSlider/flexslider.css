@@ -19,10 +19,10 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav .flex-prev { left:336px;background:url("slide_arr.png") center no-repeat;}
 .flex-direction-nav .flex-next { right: 336px;background:url("slide_arr2.png") center no-repeat;}
 .flex-direction-nav .flex-prev:hover,.flex-direction-nav .flex-next:hover{background-color:#FD5B5F;border-radius: 5px;background-color: rgba(253, 91, 95, 0.8);border: solid 1px #dc4144;
-  transition:All .3s ease-in-out;
-  -webkit-transition:All .3s ease-in-out;
-  -moz-transition:All .3s ease-in-out;
-  -o-transition:All .3s ease-in-out
+    transition:All .3s ease-in-out;
+    -webkit-transition:All .3s ease-in-out;
+    -moz-transition:All .3s ease-in-out;
+    -o-transition:All .3s ease-in-out
 }
 
 /* Control Nav */
