@@ -1,11 +1,9 @@
 @import "../cssControl/control";
 
+/*灰色背景（body）*/
 .wrap-gray-bg{background: @gray-bg;}
-.dz-house-wrap{.main-width;margin-top:25px;
-  .left-box{.wh(798px,605px);background: #ffffff;overflow: hidden;}
-  .right-box{.wh(377px,605px);background: #ffffff;overflow: hidden}
-}
-/*menu-tab*/
+
+/*tab切换*/
 .menu-tab{.main-width;margin-top:50px;
   .tab{.wh(140px,55px,55px);float: left;text-align: center;font-size: 16px;color: @txt-black;cursor: pointer;
     &.active{background: #ffffff;border-top:4px solid @red;
@@ -17,4 +15,10 @@
 .tab-box{.main-width;background: #ffffff;min-height:800px;margin-bottom:150px;overflow: hidden;display:none;
   &.active{display: block;}
   .tab-content{.wh(1131px,auto);margin:35px auto;height:300px;overflow: hidden;}
+}
+
+/*定制房详情*/
+.dz-house-wrap{.main-width;margin-top:25px;
+  .left-box{.wh(798px,605px);background: #ffffff;overflow: hidden;}
+  .right-box{.wh(377px,605px);background: #ffffff;overflow: hidden}
 }
