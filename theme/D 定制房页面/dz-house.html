@@ -144,11 +144,14 @@
 
             <div class="img-box">
                 <div style="position: relative;">
-                    <img class="img" src="../../images/test/house.jpg" alt=""/>
+                    <img class="img" src="../../images/test/slider1.png" alt=""/><!--大图路径-->
 
                     <!--hover效果-->
-                    <a href="javascript:void(0);" class="dark-mask-box">
-                        <img class="vr-img zoom-img" src="../../images/house/zoom_add.png" alt=""/>
+                    <a  id="map" href="javascript:void(0);" class="dark-mask-box">
+                        <!--layer-src路径：
+                                layer-src 路径为上述大图路径
+                        -->
+                        <img class="vr-img zoom-img" layer-src="../../images/test/slider1.png" src="../../images/house/zoom_add.png" alt=""/>
                     </a>
                 </div>
             </div>
@@ -243,6 +246,7 @@
         });
 
         bigImg('#progress-img');//建设进度
+        bigImg('#map');//建设进度
     });
 
 
