@@ -123,8 +123,8 @@
 <!--menu-tab start-->
 <ul class="menu-tab clear">
     <li class="tab">项目介绍</li>
-    <li class="tab active">位置及周边</li>
-    <li class="tab">建设进度</li>
+    <li class="tab">位置及周边</li>
+    <li class="tab active">建设进度</li>
     <li class="tab">项目介绍</li>
 </ul>
 <!--menu-tab start-->
@@ -137,7 +137,7 @@
 </div>
 
 <!--位置及周边-->
-<div class="tab-box  active">
+<div class="tab-box">
     <div class="tab-content pro-address clear">
         <div class="left-box pull-left">
             <div class="title">项目区位图</div>
@@ -147,7 +147,7 @@
                     <img class="img" src="../../images/test/house.jpg" alt=""/>
 
                     <!--hover效果-->
-                    <a href="#" class="dark-mask-box">
+                    <a href="javascript:void(0);" class="dark-mask-box">
                         <img class="vr-img zoom-img" src="../../images/house/zoom_add.png" alt=""/>
                     </a>
                 </div>
@@ -179,9 +179,9 @@
 </div>
 
 <!--建设进度-->
-<div class="tab-box">
+<div class="tab-box  active">
     <div class="tab-content pro-progress">
-        <ul class="pro-list">
+        <ul id="pro-list" class="pro-list">
             <li class="clear">
                 <div class="date pull-left">
                     <p class="year">2016</p>
@@ -190,6 +190,21 @@
                 <div class="content pull-left">
                     <p class="tit">土石方开标</p>
                     <p class="con">9月5日——土石方开标（施工材料准备）</p>
+
+                    <!--图片列表 start-->
+                    <div id="progress-img" class="progress-img-list clear">
+                        <div class="img-box">
+                            <img class="img" src="../../images/test/slider1.png" alt=""/>
+                        </div>
+                        <div class="img-box">
+                            <img class="img" src="../../images/test/slider2.png" alt=""/>
+                        </div>
+                        <div class="img-box">
+                            <img class="img" src="../../images/test/slider1.png" alt=""/>
+                        </div>
+                    </div>
+                    <!--图片列表 end-->
+
                 </div>
             </li>
             <li class="clear">
@@ -217,13 +232,30 @@
 <!--footer-->
 <iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
 
+<script src="../../js/addons/layer/layer.js" type="text/javascript"></script>
 <script>
-    /*phone hover*/
-    $('.phone').hover(function(){
-        $('.float-phone').show();
-    },function(){
-        $('.float-phone').hide();
+    $(function(){
+        /*phone hover*/
+        $('.phone').hover(function(){
+            $('.float-phone').show();
+        },function(){
+            $('.float-phone').hide();
+        });
+
+        bigImg('#progress-img');//建设进度
     });
+
+
+    /*图片弹出层*/
+    function bigImg(id){
+        layer.ready(function(){
+            layer.photos({
+                closeBtn:true,
+                photos: id,
+                shift:5
+            });
+        });
+    }
 </script>
 </body>
 </html>
