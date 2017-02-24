@@ -14,11 +14,104 @@
 }
 .tab-box{.main-width;background: #ffffff;min-height:800px;margin-bottom:150px;overflow: hidden;display:none;
   &.active{display: block;}
-  .tab-content{.wh(1131px,auto);margin:35px auto;height:300px;overflow: hidden;}
+  .tab-content{.wh(1131px,auto);margin:35px auto;overflow: hidden;}
 }
 
 /*定制房详情*/
 .dz-house-wrap{.main-width;margin-top:25px;
-  .left-box{.wh(798px,605px);background: #ffffff;overflow: hidden;}
-  .right-box{.wh(377px,605px);background: #ffffff;overflow: hidden}
+  .left-box{.wh(798px,auto);background: #ffffff;overflow: hidden;
+    .progress-box{.wh(100%,41px,41px);overflow: hidden;
+      /*进度说明
+        bg1：报名
+        bg2：定制
+        bg3：签约
+      */
+      &.bg1{background: url("../images/house/progress1.png") left center no-repeat;
+        .progress1{color:#fff;}
+      }
+      &.bg2{background: url("../images/house/progress2.png") left center no-repeat;
+        .progress2{color:#fff;}
+      }
+      &.bg3{background: url("../images/house/progress3.png") left center no-repeat;
+        .progress3{color:#fff;}
+      }
+
+      li{.wh(266px,41px,41px);float:left;text-align: center;color:@txt-black;}
+    }
+
+    .nav-box{.wh(100%,116px,116px);overflow: hidden;background: #fff;
+      li{.wh(207px,116px,116px);float: left;margin-left:59px;padding-left:62px;color:@txt-black;
+        &.icon1{background: url("../images/house/nav1.png") left center no-repeat;}
+        &.icon2{background: url("../images/house/nav2.png") left center no-repeat;}
+        &.icon3{background: url("../images/house/nav3.png") left center no-repeat;padding-left:0;
+          a{display:block;color:@txt-black;padding-left:62px;}
+          &:hover{background: url("../images/house/nav_hover3.png") left center no-repeat;}
+        }
+      }
+    }
+  }
+
+  .right-box{.wh(377px,auto);
+    .top-box{.wh(100%,391px);background: #ffffff;overflow: hidden;
+      .house-title{.wh(325px,40px,20px);overflow:hidden;font-size: 18px;color:@txt-black;margin:26px auto 0px;}
+      .desc-list{.wh(325px,75px);margin:0 26px;overflow: hidden;
+        span{margin-top:8px;float:left;color:@blue;font-size:12px;.rotate(4px);display:block;height:29px;line-height:29px;padding:0 10px;margin-right:10px;border:1px solid @blue;.round(4px);}
+      }
+
+      .dz-msg-list{.wh(325px,auto);margin:0 auto;
+        li{.wh(100%,40px,40px);overflow: hidden;background: url("../images/house/solid.png") left center repeat-x;
+          .tit{color:@gray;padding-right:12px;float: left;background: #ffffff;}
+          .con{color:@txt-black;padding-left:12px;float: right;background: #ffffff;}
+        }
+      }
+    }
+
+    .bottom-box{.wh(100%,189px);background: #ffffff;margin-top:25px;padding-top:49px;
+      .icon{.wh(35px,35px);overflow: hidden;margin-left:8px;display:block;float:right;
+        &.thumbs{background: url("../images/house/thumbs.png") no-repeat;
+          &:hover{background: url("../images/house/thumbs_hover.png") no-repeat;}
+        }
+        &.phone{background: url("../images/house/phone.png") no-repeat;
+          &:hover{background: url("../images/house/phone_hover.png") no-repeat;}
+        }
+      }
+      .float-phone{display:none;background:#ffffff;color:@txt-black;font-size:12px;position: absolute;top:-65px;right:-58px;padding:11px 14px 11px 15px;.box-shadow(0,1px,7px 0,#c3cad8);}
+
+      .price{.wh(326px,32px,32px);margin:0 auto;position:relative;}
+      .dz-btn{.btn-red-full();width:326px;margin:45px auto 0;font-size:16px;}
+    }
+  }
+}
+
+.pro-introduction{
+  img{width:100%;}
+}
+
+/*位置及周边*/
+.pro-address{
+  .title{font-size:16px;color:@txt-black;}
+  .left-box{.wh(604px,auto);
+    .img-box{.wh(604px,auto);background:@gray-bg;border: solid 1px @gray-hover;margin-top:29px;padding:29px;
+      .img{width:100%;}
+      .zoom-img{position: absolute;top:50%;margin-top:-26px;left:50%;margin-left:-26px;}
+    }
+  }
+
+  .right-box{.wh(481px,auto);
+    .tit{color:@blue;margin-top:29px;margin-bottom:8px;}
+    .con{color:@txt-black;}
+  }
+}
+
+/*建设进度*/
+.pro-progress{
+  li{padding:20px 0;border-bottom:1px solid @gray-hover;}
+  .date{margin-right:42px;width:77px;
+    .year{font-size:12px;color:@gray;}
+    .mon{font-size: 30px;color:@gray;}
+  }
+  .content{width:1012px;
+    .tit{font-size:16px;color:@txt-black;}
+    .con{color:@gray;margin-top:8px;}
+  }
 }
