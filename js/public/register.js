@@ -30,19 +30,8 @@ $(function(){
     $('.register-box').Validform({
         tiptype:2,
         showAllError:true,
-        datatype:{
-            'checkbox':function(gets,obj){
-                console.log(obj.is(':checked'));
-                return obj.is(':checked');
-            }
-        },
-        callback:function(){
+        callback:function(curform){
             console.log(1);
-            /*if(curform){
-             $('.login-btn').addClass('disabled');
-             }else{
-             $('.login-btn').removeClass('disabled');
-             }*/
         }
     })
 })
