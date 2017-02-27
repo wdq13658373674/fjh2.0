@@ -2,7 +2,7 @@
 
 /*初始化样式*/
 *{margin:0px;padding:0px}
-body{height:100%;width:100%;font-size:14px;color:@txt-black;font-family:'Microsoft YaHei','微软雅黑','Helvetica','Heiti SC',simhei,'Lucida Sans Unicode','Myriad Pro','Hiragino Sans GB',Verdana;}
+body{height:100%;width:100%;font-size:14px;color:@txt-black;font-family:'Microsoft YaHei','微软雅黑','Helvetica','Heiti SC',simhei,'sans-serif';}
 
 dl,dd,ul{list-style:none}
 img{vertical-align: middle;}
@@ -39,6 +39,14 @@ textarea {resize: none;}
   box-sizing: border-box;
 }
 
+sup{
+  top: -0.5em;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
 /*左右浮动*/
 .pull-left{display:inline;float: left;}
 .pull-right{display:inline;float: right;}
@@ -57,6 +65,7 @@ textarea {resize: none;}
 .f26{font-size: 26px}
 
 /*颜色*/
+.bold{font-weight: bold;}
 .red{color:@red !important;}
 .gray{color:@gray !important;}
 .blue{color:@blue !important;}
@@ -73,8 +82,13 @@ textarea {resize: none;}
   }
 
   .btn-box{
-    .btn-res{width:54px;.btn-red-full(29px);margin-right:10px;float: left;.textshadow(0,-1px,0,#cd373a);.round(5px);margin-top:39px;.linear-gradient(@red,#da3d41);  .box-shadow(0,2px,0 0,@red inset);border: solid 1px #d23639;}
-    .btn-in{width:54px;.btn-gray-empty(29px);float: left;margin-top:39px;border: solid 1px @gray;.round(5px);}
+    .btn-res{.wh(54px,29px,27px);margin-right:10px;float: left;text-align:center;color:#ffffff;.textshadow(0,-1px,0,#cd373a);.round(3px);margin-top:39px;.linear-gradient(@red,#da3d41);  .box-shadow(0,2px,0 0,@red inset);border: solid 1px #d23639;
+      &:hover{.linear-gradient(#fb7074,#f44b4f);}
+      &:active{.linear-gradient(#e9484c,#d63b3f);}
+    }
+    .btn-in{.wh(51px,29px,27px);background:#ffffff;float: left;text-align:center;color:@txt-black;margin-top:39px;border: solid 1px @gray;.round(5px);
+      &:hover{background: #eff2f9;}
+    }
   }
 
 
@@ -94,7 +108,7 @@ textarea {resize: none;}
 }
 
 /*公共底部*/
-.footer-top{.wh(100%,auto);border-top:1px solid @gray-hover;background-color: #fff;
+.footer-top{.wh(100%,auto);min-width:1200px;border-top:1px solid @gray-hover;background-color: #fff;
   .top-box{.main-width;background: #ffffff;
     .left-box{margin:70px 0;
       a{color:@txt-black;

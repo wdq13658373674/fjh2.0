@@ -53,7 +53,9 @@
         &.icon2{background: url("../images/house/nav2.png") left center no-repeat;}
         &.icon3{background: url("../images/house/nav3.png") left center no-repeat;padding-left:0;
           a{display:block;color:@txt-black;padding-left:62px;}
-          &:hover{background: url("../images/house/nav_hover3.png") left center no-repeat;}
+          &:hover{background: url("../images/house/nav_hover3.png") left center no-repeat;
+            a{color:@red;}
+          }
         }
       }
     }
@@ -61,10 +63,10 @@
 
   .right-box{.wh(377px,auto);
     .top-box{.wh(100%,391px);background: #ffffff;overflow: hidden;
-      .house-title{.wh(325px,40px,20px);overflow:hidden;font-size: 18px;color:@txt-black;margin:26px auto 0px;}
+      .house-title{.wh(325px,35px,20px);overflow:hidden;font-size: 18px;color:@txt-black;margin:26px auto 0px;}
       /*描述列表（通用两行）*/
       .desc-list{.wh(325px,75px);margin:0 26px;overflow: hidden;
-        span{margin-top:8px;float:left;color:@blue;font-size:12px;.rotate(4px);display:block;height:29px;line-height:29px;padding:0 10px;margin-right:10px;border:1px solid @blue;.round(4px);}
+        span{margin-top:5px;float:left;color:@blue;font-size:12px;.rotate(4px);display:block;height:29px;line-height:29px;padding:0 10px;margin-right:10px;border:1px solid @blue;.round(4px);}
       }
 
       .dz-msg-list{.wh(325px,auto);margin:0 auto;
@@ -76,18 +78,18 @@
     }
 
     .bottom-box{.wh(100%,189px);background: #ffffff;margin-top:25px;padding-top:49px;
-      .icon{.wh(35px,35px);overflow: hidden;margin-left:8px;display:block;float:right;
-        &.thumbs{background: url("../images/house/thumbs.png") no-repeat;
-          &:hover{background: url("../images/house/thumbs_hover.png") no-repeat;}
+      .icon{.wh(34px,34px);overflow: hidden;margin-left:8px;display:block;float:right;.round(50%);
+        &.thumbs{background: url("../images/house/thumbs.png") center no-repeat;
+          &:hover{background: url("../images/house/thumbs_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);}
         }
-        &.phone{background: url("../images/house/phone.png") no-repeat;
-          &:hover{background: url("../images/house/phone_hover.png") no-repeat;}
+        &.phone{background: url("../images/house/phone.png") center no-repeat;
+          &:hover{background: url("../images/house/phone_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);}
         }
       }
       .float-phone{display:none;background:#ffffff;color:@txt-black;font-size:12px;position: absolute;top:-65px;right:-58px;padding:11px 14px 11px 15px;.box-shadow(0,1px,7px 0,#c3cad8);}
 
       .price{.wh(326px,32px,32px);margin:0 auto;position:relative;}
-      .dz-btn{.btn-red-full();width:326px;margin:45px auto 0;font-size:16px;}
+      .dz-btn{.btn-red-full();width:326px;margin:41px auto 0;font-size:16px;}
     }
   }
 }

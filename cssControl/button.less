@@ -34,21 +34,21 @@
 @h：按钮高度变量
 通过外部自定义 width 控制按钮宽度
 */
-.btn-red-empty(@h:46px){height:@h;line-height:@h;display:block;background: #fff;color:@red;border:1px solid @red;.round(3px);text-align: center;
+.btn-red-empty(@h:46px){height:@h;line-height:@h - 2;display:block;background: #fff;color:@red;border:1px solid @red;.round(3px);text-align: center;
   &:hover{text-decoration: none; background: @red;color: #fff}
   &:active{
     .btn-active(@red-dark);
   }
 }
 
-.btn-blue-empty(@h:46px){height:@h;line-height:@h;display:block;background: #fff;color:@blue;border:1px solid @blue;.round(3px);text-align: center;
+.btn-blue-empty(@h:46px){height:@h;line-height:@h - 2;display:block;background: #fff;color:@blue;border:1px solid @blue;.round(3px);text-align: center;
   &:hover{text-decoration: none; background: @blue;color: #fff}
   &:active{
     .btn-active(@blue-dark);
   }
 }
 
-.btn-gray-empty(@h:46px){height:@h;line-height:@h;display:block;background: #fff;color:@txt-black;border:1px solid @gray;.round(3px);text-align: center;
+.btn-gray-empty(@h:46px){height:@h;line-height:@h - 2;display:block;background: #fff;color:@txt-black;border:1px solid @gray;.round(3px);text-align: center;
   &:hover{text-decoration: none; background: @gray-bg;color: @txt-black;}
 }
 
@@ -56,4 +56,4 @@
 失效按钮（禁止点击）
 @h：高度变量
 */
-.btn-disabled(@h:46px){height:@h;line-height:@h;display:block;cursor:not-allowed;background:@disabled-bg;color:@disabled-color;text-align: center;.round(3px);border:1px solid @disabled-border;}
+.btn-disabled(@h:46px){height:@h;line-height:@h - 2;display:block;cursor:not-allowed;background:@disabled-bg;color:@disabled-color;text-align: center;.round(3px);border:1px solid @disabled-border;}
