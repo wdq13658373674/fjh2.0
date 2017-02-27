@@ -194,7 +194,7 @@
                     <p class="tit">土石方开标</p>
                     <p class="con">9月5日——土石方开标（施工材料准备）</p>
 
-                    <!--图片列表 start-->
+                    <!--进度图片列表 start-->
                     <div id="progress-img" class="progress-img-list clear">
                         <div class="img-box">
                             <img class="img" src="../../images/test/slider1.png" alt=""/>
@@ -206,7 +206,7 @@
                             <img class="img" src="../../images/test/slider1.png" alt=""/>
                         </div>
                     </div>
-                    <!--图片列表 end-->
+                    <!--进度图片列表 end-->
 
                 </div>
             </li>
@@ -236,6 +236,9 @@
 <iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
 
 <script src="../../js/addons/layer/layer.js" type="text/javascript"></script>
+<!--layui-->
+<script src="../../js/addons/layer/layui.js" type="text/javascript"></script>
+<script src="../../js/addons/layer/lay/modules/flow.js" type="text/javascript"></script>
 <script>
     $(function(){
         /*phone hover*/
@@ -245,16 +248,63 @@
             $('.float-phone').hide();
         });
 
+        /*大图显示*/
         bigImg('#progress-img');//建设进度
-        bigImg('#map');//建设进度
+        bigImg('#map');//位置及周边
+
+        /*滚动刷新*/
+        layui.use('flow',function(){
+            var flow = layui.flow;
+
+            flow.load({
+                elem:'#pro-list'
+                ,end:'哦～！没有更多了'
+                ,mb:100
+                ,done:function(page,next){
+                    //模拟数据插入
+                    setTimeout(function(){
+                        var lis = [];
+                        for(var i = 0; i < 8; i++){
+                            lis.push('<li>'+ ( (page-1)*8 + i + 1 ) +'</li>')
+                        }
+
+                        //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                        //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+                        next(lis.join(''), page < 2); //假设总页数为 10
+                    }, 500);
+                }
+
+                /*
+                 * 下面jQuery的Ajax请求例子
+                 *
+                 * */
+                /*,done: function(page, next){ //到达临界点（默认滚动触发），触发下一页
+                    var lis = [];
+
+                    //以jQuery的Ajax请求为例，请求下一页数据（注意：page是从2开始返回）
+
+                    $.get('/api/list?page='+page, function(res){
+                        //假设你的列表返回在data集合中
+                        layui.each(res.data, function(index, item){
+                            lis.push('<li>'+ item.title +'</li>');
+                        });
+
+                        //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                        //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+
+                        next(lis.join(''), page < res.pages);
+                    });
+                }*/
+            });
+        });
+
     });
 
-
-    /*图片弹出层*/
+    /*大图显示弹出层函数*/
     function bigImg(id){
         layer.ready(function(){
             layer.photos({
-                closeBtn:true,
+                closeBtn:1,
                 photos: id,
                 shift:5
             });

@@ -17,6 +17,14 @@
   .tab-content{.wh(1131px,auto);margin:35px auto;overflow: hidden;}
 }
 
+/*
+滚动加载loading重置
+<i class="layui-anim layui-anim-rotate layui-anim-loop layui-icon ">&#xe63e;</i>
+*/
+.layui-scoll-load{height:50px;display:block;background: url("../js/addons/layer/skin/default/loading-2.gif") center no-repeat;}
+.layui-flow-more{margin:10px 0;text-align:center;color:#999;font-size:14px}
+.layui-flow-more>a{display:block;color:@txt-black;}
+
 /*定制房详情*/
 .dz-house-wrap{.main-width;margin-top:25px;
   .left-box{.wh(798px,auto);background: #ffffff;overflow: hidden;
@@ -54,6 +62,7 @@
   .right-box{.wh(377px,auto);
     .top-box{.wh(100%,391px);background: #ffffff;overflow: hidden;
       .house-title{.wh(325px,40px,20px);overflow:hidden;font-size: 18px;color:@txt-black;margin:26px auto 0px;}
+      /*描述列表（通用两行）*/
       .desc-list{.wh(325px,75px);margin:0 26px;overflow: hidden;
         span{margin-top:8px;float:left;color:@blue;font-size:12px;.rotate(4px);display:block;height:29px;line-height:29px;padding:0 10px;margin-right:10px;border:1px solid @blue;.round(4px);}
       }
@@ -83,6 +92,7 @@
   }
 }
 
+/*项目介绍*/
 .pro-introduction{
   img{width:100%;}
 }
