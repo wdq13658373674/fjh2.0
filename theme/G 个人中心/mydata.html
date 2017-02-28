@@ -9,8 +9,10 @@
 
     <link rel="stylesheet" href="../../css/public.css"/>
     <link rel="stylesheet" href="../../css/personal.css">
+    <link rel="stylesheet" href="../../js/addons/laydate/need/laydate.css"/>
     <script src="../../js/jQuery1.12.3-min.js"></script>
     <script src="../../js/public.js"></script>
+    <script type="text/javascript" src="../../js/addons/laydate/laydate.js"></script>
 
 </head>
 <body>
@@ -49,7 +51,7 @@
         </div>
 
         <div class="s-userDetail">
-            <div class="d-userDetail d-k">
+            <div class="d-userDetail">
                 <ul class="p-verticalBor">
                     <li>
                         <em>手机号码</em>
@@ -63,33 +65,83 @@
                     </li>
                 </ul>
 
-                <ul>
+                <ul class="u-succeed" id="u-succeed">
                     <li>
                         <em>会员昵称</em>
                         <span>tai</span>
-                        <a href="#">修改</a>
+                        <a class="btn_modify" href="javascript:void(0);">修改</a>
                     </li>
                     <li>
                         <em>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</em>
                         <span>女</span>
-                        <a href="#">修改</a>
+                        <a class="btn_modify" href="javascript:void(0);">修改</a>
                     </li>
                     <li>
                         <em>出生日期</em>
                         <span>1992-07-09</span>
-                        <a href="#">修改</a>
+                        <a class="btn_modify" href="javascript:void(0);">修改</a>
                     </li>
                     <li>
                         <em>联系地址</em>
                         <span>重庆市渝北区金洲大道东原星樾</span>
-                        <a href="#">修改</a>
+                        <a class="btn_modify" href="javascript:void(0);">修改</a>
                     </li>
                     <li>
                         <em>婚姻情况</em>
                         <span>未婚</span>
-                        <a href="#">修改</a>
+                        <a class="btn_modify" href="javascript:void(0);">修改</a>
                     </li>
                 </ul>
+
+
+                <form class="u-update" id="u-update" action="#">
+                    <ul>
+
+                        <li>
+                            <em>会员昵称</em>
+                            <span><input type="text" placeholder="输入昵称"></span>
+                        </li>
+                        <li>
+                            <em>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</em>
+                            <div class="select">
+                                <div class="select-box">
+                                    <div class="form-control"><span>请选择</span></div>
+                                    <input type="hidden" datatype="check" id="sex" value="" name="" />
+                                    <ul>
+                                        <li value="1">男</li>
+                                        <li value="2">女</li>
+                                        <i class="ico"></i>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <em>出生日期</em>
+                            <span><input type="text" id="birth" class="laydate-icon" value="2017-02-24"></span>
+                        </li>
+                        <li>
+                            <em>联系地址</em>
+                            <span><input class="addr" type="text" placeholder="输入联系地址"></span>
+                        </li>
+                        <li>
+                            <em>婚姻情况</em>
+                            <div class="select">
+                                <div class="select-box">
+                                    <div class="form-control"><span>请选择</span></div>
+                                    <input type="hidden" datatype="check" id="marry" value="" name="" />
+                                    <ul>
+                                        <li value="1">已婚</li>
+                                        <li value="2">未婚</li>
+                                        <i class="ico"></i>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-act">
+                        <input class="d-enter" type="button" value="保存资料">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -98,6 +150,24 @@
 
 <!--footer-->
 <iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+<script>
+    laydate({
+        elem: '#birth',
+        event: 'focus'
+    });
+    (function($){
+        $(".btn_modify").click(function(){
+            $(".u-update").show();
+            $(".u-succeed").hide();
+        });
+        $(".d-enter").click(function () {
+            $(".u-update").hide();
+            $(".u-succeed").show();
+        })
+    })(jQuery);
 
+
+
+</script>
 </body>
 </html>
