@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
     <title>header</title>
 
     <link rel="stylesheet" href="../css/public.css"/>
@@ -85,9 +86,11 @@
             this.pub_html=html;
         }
         $(".login-wrap").remove();
+
         layer.open({
             type: 1,
             title: false,
+            resize:false,
             closeBtn: true,
             area: ['465px', '425px'],
             shadeClose: true,

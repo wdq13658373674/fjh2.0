@@ -15,6 +15,13 @@
 
     <!--slider-->
     <link rel="stylesheet" href="../../js/addons/flexSlider/flexslider.css"/>
+    <style>
+        .flex-control-nav {
+            text-align: right;
+            font-size:0;
+            padding-right:28px;
+        }
+    </style>
     <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
     <script type="text/javascript">
         $(function(){
@@ -23,23 +30,10 @@
                 nextText:'',
                 directionNav: false,
                 slideshowSpeed: 4000,
-                animationSpeed: 400,
-                touch: true
+                animationSpeed: 400
             });
         });
     </script>
-
-    <style>
-        .flex-control-nav {
-            width: 100%;
-            position: absolute;
-            bottom: 20px;
-            text-align: right;
-            font-size:0;
-            padding-right:28px;
-            z-index: 10;
-        }
-    </style>
 </head>
 
 <body class="wrap-gray-bg">
@@ -52,9 +46,9 @@
         <!--slider-->
         <div class="flexslider" style="width:100%;height:448px;">
             <ul class="slides">
-                <li><img src="../../images/test/slider2.png" /></li>
-                <li><img src="../../images/test/slider2.png" /></li>
-                <li><img src="../../images/test/slider2.png" /></li>
+                <li><a href="#"><img src="../../images/test/slider2.png" /></a></li>
+                <li><a href="#"><img src="../../images/test/slider2.png" /></a></li>
+                <li><a href="#"><img src="../../images/test/slider2.png" /></a></li>
             </ul>
         </div>
 
@@ -298,7 +292,6 @@
 
                         //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
                         //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
-
                         next(lis.join(''), page < res.pages);
                     });
                 }*/
@@ -317,6 +310,7 @@
         layer.ready(function(){
             layer.photos({
                 closeBtn:1,
+                resize:false,
                 photos: id,
                 shift:5
             });

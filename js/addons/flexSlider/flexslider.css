@@ -6,7 +6,8 @@
 /* FlexSlider Necessary Styles*/
 .flexslider{overflow: hidden;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;}
-.flexslider .slides img {display: block;}
+.flexslider .slides > li a {display:block;}
+.flexslider .slides img {display: block;height:100%;}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
