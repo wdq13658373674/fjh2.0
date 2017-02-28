@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>personal-个人资料</title>
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/personal.css">
+    <script src="../../js/jQuery1.12.3-min.js"></script>
+    <script src="../../js/public.js"></script>
+    <script type="text/javascript" src="../../js/jquery.validate.js"></script>
+
+</head>
+<body>
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+
+<div class="personalContainer clear center">
+    <!--左边菜单-->
+    <div class="personalLeftNav">
+        <ul>
+            <li><a class="personalIcon-per" href="#">个人中心</a></li>
+            <li><a class="personalIcon-rec" href="#">交易记录</a></li>
+            <li><a class="personalIcon-cus" href="#">我的定制</a></li>
+            <li><a class="personalIcon-acc" href="#">账户管理</a></li>
+            <li><a class="personalIcon-mes" href="#">消息中心</a></li>
+            <li><a class="personalIcon-dat" href="#">个人资料</a></li>
+            <li class="active"><a class="personalIcon-cli" href="#">推荐客户</a></li>
+        </ul>
+    </div>
+    <!--左边菜单结束-->
+
+    <!--右边内容-->
+    <div class="personalRightCon recommendBox">
+        <!--面包屑-->
+        <div class="crumbs">
+            <a href="#">个人中心</a> >
+            <span>个人资料</span>
+        </div>
+
+        <form class="d-form" id="d-form">
+            <div class="d-form-group clear">
+                <label for="name">被推荐人姓名</label>
+                <div class="d-form-control">
+                    <input type="text" id="name" name="name" validate='[{"type":"notNull","msg":"荐人姓名不能为空！"},{"type":"regex","reg":"^[\u4e00-\u9fa5]","msg":"荐人姓名必须是汉字"}]' placeholder="请输入荐人姓名">
+                </div>
+            </div>
+            <div class="d-form-group clear">
+                <label for="phone">被推荐人电话</label>
+                <div class="d-form-control">
+                    <input type="text" id="phone" name="phone" validate='[{"type":"regex","reg":"^(1+[34578][0-9]{9})$","msg":"手机号码不符合规范!"}]' placeholder="请输入手机号">
+                </div>
+            </div>
+            <div class="d-form-group clear">
+                <label>推荐购买项目</label>
+                <div class="d-form-control">
+                    <div class="select">
+                        <div class="select-box">
+                            <div class="form-control"><span>请选择项目</span></div>
+                            <input type="hidden" datatype="check" id="marry" value="" name="" />
+                            <ul>
+                                <li value="1">已婚</li>
+                                <li value="2">未婚</li>
+                                <i class="ico"></i>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-form-group clear">
+                <button>立即推荐</button>
+            </div>
+        </form>
+
+        <div class="r-customer">
+            <h2 class="title">我的客户</h2>
+            <div class="earn clear">
+                <ul>
+                    <li>
+                        <p>累计赚取T币（个）</p>
+                        <span>999,999.90</span>
+                    </li>
+                    <li>
+                        <p>冻结T币(个)</p>
+                        <span>50</span>
+                    </li>
+                    <li>
+                        <p>累计推荐客户(个)</p>
+                        <span>10</span>
+                    </li>
+                    <li>
+                        <a href="#">T币获取规则&gt;&gt;</a>
+                    </li>
+                </ul>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>姓名</td>
+                        <td>电话</td>
+                        <td>推荐项目</td>
+                        <td>推荐时间</td>
+                        <td>状态</td>
+                        <td class="tr">赚取佣金</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>刘松</td>
+                        <td>18680722507</td>
+                        <td>御临天下</td>
+                        <td>2017-12-30</td>
+                        <td>推荐成功</td>
+                        <td class="tr"><a href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>刘松</td>
+                        <td>18680722507</td>
+                        <td>御临天下</td>
+                        <td>2017-12-30</td>
+                        <td>推荐成功</td>
+                        <td class="tr"><a href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>刘松</td>
+                        <td>18680722507</td>
+                        <td>御临天下</td>
+                        <td>2017-12-30</td>
+                        <td>推荐成功</td>
+                        <td class="tr"><a href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>刘松</td>
+                        <td>18680722507</td>
+                        <td>御临天下</td>
+                        <td>2017-12-30</td>
+                        <td>推荐成功</td>
+                        <td class="tr"><a href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>刘松</td>
+                        <td>18680722507</td>
+                        <td>御临天下</td>
+                        <td>2017-12-30</td>
+                        <td>推荐成功</td>
+                        <td class="tr"><a href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>刘松</td>
+                        <td>18680722507</td>
+                        <td>御临天下</td>
+                        <td>2017-12-30</td>
+                        <td>推荐成功</td>
+                        <td class="tr"><a href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>刘松</td>
+                        <td>18680722507</td>
+                        <td>御临天下</td>
+                        <td>2017-12-30</td>
+                        <td>推荐成功</td>
+                        <td class="tr"><a href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>刘松</td>
+                        <td>18680722507</td>
+                        <td>御临天下</td>
+                        <td>2017-12-30</td>
+                        <td>推荐成功</td>
+                        <td class="tr"><a href="#">详情</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!--分页-->
+            <div class="pages">
+                <ul>
+                    <li class="previous">
+                        <a href="#">&lt;</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="page selected ">
+                        <a>2</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">3</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">4</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">5</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">6</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">7</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">8</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">9</a>
+                    </li>
+                    <li class="page">
+                        <a href="#">10</a>
+                    </li>
+                    <li class="next">
+                        <a href="#">&gt;</a>
+                    </li>
+                    <li class="last">
+                        <a href="#">末页&gt;&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--右边内容结束-->
+</div>
+
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+<script>
+    $(function () {
+        var h = $(".personalRightCon").height();
+        if(h > 1029){
+            $(".personalLeftNav").css("height", h+58);
+        }
+    });
+
+    $(function(){
+        $("#d-form").validate();
+    });
+</script>
+</body>
+</html>

@@ -66,6 +66,7 @@ body{
     min-height: 1029px;
     background-color: #fff;
     float: left;
+    padding: 29px 57px 29px 60px;
     .personalInfo{
       padding-bottom: 32px;
       border-bottom: 1px solid @gray-hover;
@@ -203,7 +204,6 @@ body{
 
   /*交易记录样式*/
   .personalTra{
-    padding: 29px 57px 60px 58px;
     .classify{
       font-size: 12px;
       margin-top: 60px;
@@ -334,8 +334,6 @@ body{
   }
   /*消息中心样式*/
   .messageBox{
-    padding: 29px 57px 60px 58px;
-
     /*checkbox 样式*/
     .a_checkbox{
       position: relative;
@@ -527,7 +525,6 @@ body{
   }
   //个人中心样式
   .m-userInfo{
-    padding: 29px 57px 29px 60px;
     .s-userBar{
       margin-top: 60px;
       .d-round-mask{
@@ -695,6 +692,198 @@ body{
             cursor: pointer;
           }
         }
+      }
+    }
+  }
+}
+
+.recommendBox{
+  .d-form{
+    padding: 40px 0;
+    border-bottom:7px solid #fff;
+    border-image:url("../images/myData/border.png") 15 0 15 0 round;
+    -o-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+    -moz-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+    -webkit-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+    .d-form-group{
+      margin-top: 35px;
+      label{
+        float: left;
+        font-size: 14px;
+        line-height: 35px;
+      }
+      .d-form-control{
+        height: 35px;
+        margin-left: 14px;
+        float: left;
+        .tips-msg{
+          color: red;
+          display: inline-block;
+          line-height: 20px;
+          margin-left: 15px;
+          height: 20px;
+          top: 24%;
+          left: 364px;
+          font{
+            font-size: 12px;
+            padding-left: 25px;
+            display: inline-block;
+          }
+          .err{
+            .icon("../images/icon/dangerous_tips.png",no-repeat);
+          }
+          .suss{
+            .icon("../images/icon/success_tips.png",no-repeat);
+          }
+        }
+        input{
+          color: #7f85a3;
+          padding-left: 11px;
+          width: 222px;
+          height: 35px;
+          border-radius: 3px;
+          background-color: #eff2f9;
+          border: solid 1px #c3c9d8;
+          box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+          -o-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+          -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+          -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        }
+        .select{
+          width: 222px;
+          height: 35px;
+          line-height: 35px;
+          .form-control{
+            height: 35px;
+            line-height: 35px;
+          }
+          .select-box {
+            ul {
+              li{
+                height: 35px;
+                line-height: 35px;
+                border-left: 1px solid #C3C9D8;
+                border-right: 1px solid #C3C9D8;
+              }
+            }
+          }
+        }
+      }
+      button{
+        width: 173px;
+        height: 46px;
+        border-radius: 3px;
+        background-color: #fd5b5f;
+        border: solid 0 #979797;
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+    .d-danger{
+      .d-form-control{
+        input{
+          box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+          border: solid 1px #fd5b5f;
+          background: #ffffff;
+        }
+      }
+    }
+  }
+  .r-customer{
+    margin-top: 40px;
+    .title{
+      font-size: 16px;
+      font-weight: normal;
+    }
+    .earn{
+      margin-top: 40px;
+      ul{
+        li{
+          float: left;
+          padding: 0 25px;
+          border-right: 1px solid #c3cad8;
+          p{
+            font-size: 14px;
+            color: #7f85a3;
+          }
+          span{
+            display: inline-block;
+            margin-top: 14px;
+            font-size: 25px;
+          }
+          &:first-child{
+            padding-left: 0;
+          }
+          &:nth-child(3){
+            border-right: 0;
+          }
+          &:last-child{
+            float: right;
+            border-right: 0;
+            a{
+              font-size: 14px;
+              color: #58a4e8;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+    table{
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+      thead{
+        tr{
+          td{
+            color: #7f85a3;
+            font-size: 14px;
+            border-bottom: 2px solid #dbe0ed;
+            height: 60px;
+            width: 120px;;
+            &:first-child{
+              width: 70px;
+            }
+            &:nth-child(2){
+              width: 140px;
+            }
+            &:nth-child(3){
+              width: 330px;
+            }
+            &:nth-child(5){
+              width: 60px;
+            }
+          }
+        }
+      }
+
+      tbody{
+        tr{
+          td{
+            height: 60px;
+            color: #2b314d;
+            font-size: 14px;
+            border-bottom: 1px solid #dbe0ed;
+            a{
+              text-align: center;
+              color: #2b314d;
+              font-size: 12px;
+              display: inline-block;
+              padding: 5px 20px;
+              border-radius: 3px;
+              background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
+              border: solid 1px #c3cad8;
+              &:hover{
+                background-image: linear-gradient(to bottom, #eff2f9, #ffffff);
+              }
+            }
+          }
+        }
+      }
+      .tr{
+        text-align: right;
       }
     }
   }
