@@ -65,3 +65,14 @@ function is_email(emails) {
         return false; //错误
     }
 }
+
+/*
+* 个人中心 左边菜单与右边内容高度保持一直
+*
+* */
+$(function () {
+    var h = $(".personalRightCon").height();
+    if(h > 1029) {
+        $(".personalLeftNav").css("height", h + 58);
+    }
+});
