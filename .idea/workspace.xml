@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccb60cda-b841-4a59-a5a6-1a92919cedfa" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/D 定制房页面/dz-house-list.html" afterPath="$PROJECT_DIR$/theme/D 定制房页面/dz-house-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/house/bank1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/house/bank2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/house/bank3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/house/bank4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/house/line_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/house/suc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/house/tit_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html" afterPath="$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/house.css" afterPath="$PROJECT_DIR$/css/house.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/house.less" afterPath="$PROJECT_DIR$/css/house.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -30,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="house.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="house.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/house.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75490195" vertical-offset="0" max-vertical-offset="816">
-              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+            <state vertical-scroll-proportion="-19.935484" vertical-offset="86" max-vertical-offset="902">
+              <caret line="139" column="129" selection-start-line="139" selection-start-column="129" selection-end-line="139" selection-end-column="129" />
               <folding>
                 <element signature="e#106#391#0" expanded="false" />
                 <element signature="e#400#598#0" expanded="false" />
@@ -49,40 +55,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dz-house-reg.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html">
+      <file leaf-file-name="public.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/public.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.1290324" vertical-offset="242" max-vertical-offset="1078">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.59068626" vertical-offset="970" max-vertical-offset="3278">
+              <caret line="66" column="6" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="6" />
               <folding>
-                <element signature="n#style#0;n#iframe#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theme/Z 主页面/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.774193" vertical-offset="0" max-vertical-offset="1452">
-              <caret line="204" column="6" selection-start-line="68" selection-start-column="0" selection-end-line="204" selection-end-column="6" />
-              <folding>
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dz-house-list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/dz-house-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.096774" vertical-offset="110" max-vertical-offset="4862">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3413#3884#0" expanded="false" />
+                <element signature="e#4040#4342#0" expanded="false" />
+                <element signature="e#4773#4921#0" expanded="false" />
+                <element signature="e#4942#5646#0" expanded="false" />
+                <element signature="e#6036#6818#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -162,8 +145,18 @@
               <option name="myItemId" value="fjh2.0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
+              <option name="myItemId" value="fjh2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fjh2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -177,29 +170,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Z 主页面" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fjh2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fjh2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="G 个人中心" />
+              <option name="myItemId" value="house" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,21 +188,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="D 定制房页面" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fjh2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fjh2.0" />
+              <option name="myItemId" value="cssControl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -641,7 +602,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488358373705</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="房计划">
+      <created>1488359127608</created>
+      <option name="number" value="00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1488359127608</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -655,7 +622,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19244604" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19244604" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20863748" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -723,41 +690,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/house/progress2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house/progress3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house/thumbs.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house/thumbs_hover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house/phone_hover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house/phone.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house/solid.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/house/zoom_add.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -926,14 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cssControl/import.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="63.870968" vertical-offset="1980" max-vertical-offset="3520">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13664596" vertical-offset="0" max-vertical-offset="1166">
@@ -962,12 +886,12 @@
         <state vertical-scroll-proportion="-17.870968" vertical-offset="2130" max-vertical-offset="4862">
           <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#8802#8851#0" expanded="false" />
           </folding>
         </state>
@@ -1026,20 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/public.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5686275" vertical-offset="988" max-vertical-offset="3278">
-          <caret line="66" column="6" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="6" />
-          <folding>
-            <element signature="e#3413#3884#0" expanded="false" />
-            <element signature="e#4040#4342#0" expanded="false" />
-            <element signature="e#4773#4921#0" expanded="false" />
-            <element signature="e#4942#5646#0" expanded="false" />
-            <element signature="e#6036#6818#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05392157" vertical-offset="1694" max-vertical-offset="2662">
@@ -1061,30 +971,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.1290324" vertical-offset="242" max-vertical-offset="1078">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#iframe#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/dz-house-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.096774" vertical-offset="110" max-vertical-offset="4862">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5661765" vertical-offset="0" max-vertical-offset="4862">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cssControl/import.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3520">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78431374" vertical-offset="262" max-vertical-offset="1188">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#iframe#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house/line_bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house/suc.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house/bank1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house/bank2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house/bank3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house/bank4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/house/tit_bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/house.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75490195" vertical-offset="0" max-vertical-offset="816">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+        <state vertical-scroll-proportion="-19.935484" vertical-offset="86" max-vertical-offset="902">
+          <caret line="139" column="129" selection-start-line="139" selection-start-column="129" selection-end-line="139" selection-end-column="129" />
           <folding>
             <element signature="e#106#391#0" expanded="false" />
             <element signature="e#400#598#0" expanded="false" />
@@ -1094,6 +1047,20 @@
             <element signature="e#4192#4214#0" expanded="false" />
             <element signature="e#4238#4665#0" expanded="false" />
             <element signature="e#4689#5167#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/public.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59068626" vertical-offset="970" max-vertical-offset="3278">
+          <caret line="66" column="6" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="6" />
+          <folding>
+            <element signature="e#3413#3884#0" expanded="false" />
+            <element signature="e#4040#4342#0" expanded="false" />
+            <element signature="e#4773#4921#0" expanded="false" />
+            <element signature="e#4942#5646#0" expanded="false" />
+            <element signature="e#6036#6818#0" expanded="false" />
           </folding>
         </state>
       </provider>
