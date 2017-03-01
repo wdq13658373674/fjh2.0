@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>personal-个人资料</title>
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/personal.css">
+    <script src="../../js/jQuery1.12.3-min.js"></script>
+    <script src="../../js/public.js"></script>
+
+</head>
+<body>
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+
+<div class="personalContainer clear center">
+    <!--左边菜单-->
+    <div class="personalLeftNav">
+        <ul>
+            <li><a class="personalIcon-per" href="#">个人中心</a></li>
+            <li><a class="personalIcon-rec" href="#">交易记录</a></li>
+            <li><a class="personalIcon-cus" href="#">我的定制</a></li>
+            <li><a class="personalIcon-acc" href="#">账户管理</a></li>
+            <li><a class="personalIcon-mes" href="#">消息中心</a></li>
+            <li><a class="personalIcon-dat" href="#">个人资料</a></li>
+            <li class="active"><a class="personalIcon-cli" href="#">推荐客户</a></li>
+        </ul>
+    </div>
+    <!--左边菜单结束-->
+
+    <!--右边内容-->
+    <div class="personalRightCon recommendBox">
+        <!--面包屑-->
+        <div class="crumbs">
+            <a href="#">个人中心</a> >
+            <a href="#"> 推荐客户</a> >
+            <a href="#">我的客户</a> >
+            <span>详细信息</span>
+        </div>
+
+        <div class="customer-info clear">
+            <h2 class="title">客户基本信息</h2>
+            <ul>
+                <li>
+                    <p class="t-t">姓名</p>
+                    <p class="t-c">刘宾</p>
+                </li>
+                <li>
+                    <p class="t-t">电话</p>
+                    <p class="t-c">15856552154</p>
+                </li>
+                <li>
+                    <p class="t-t">推荐时间</p>
+                    <p class="t-c">2015.05.08</p>
+                </li>
+                <li>
+                    <p class="t-t">注册时间</p>
+                    <p class="t-c">2015.05.20</p>
+                </li>
+                <li>
+                    <p class="t-t">是否认证</p>
+                    <p class="t-c">未认证</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="partake-pro">
+            <h2 class="title">参与项目情况</h2>
+            <div class="partake-pro-con">
+                <ul>
+                    <li>
+                        <p class="p-t">项目名称</p>
+                        <div class="p-c">邻水县丨云鼎府邸</div>
+                    </li>
+                    <li>
+                        <p class="p-t">项目阶段</p>
+                        <div class="p-c">
+                            <div class="step step-1">报名</div>
+                            <!--<div class="step step-2">定制选房</div>-->
+                            <!--<div class="step step-3">签约</div>-->
+                        </div>
+                    </li>
+                    <li>
+                        <p class="p-t">参与情况</p>
+                        <div class="p-c">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td class="tl">参与阶段</td>
+                                        <td>参与情况</td>
+                                        <td>参与时间</td>
+                                        <td>获得T币数量</td>
+                                        <td class="p-pos">
+                                            冻结T币数量
+                                            <span class="p-tip-icon"></span>
+                                            <div class="p-tips">
+                                                <p class="speech">
+                                                    用户成功报名后可以获得的T币数量
+                                                    <span class="triangle-down"></span>
+                                                </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tl">报名</td>
+                                        <td class="p-pos">
+                                            已参与
+                                            <span class="p-suss-icon"></span>
+                                        </td>
+                                        <td>2015.05.08</td>
+                                        <td>10</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tl">定制选房</td>
+                                        <td class="c-gray">——</td>
+                                        <td class="c-gray">——</td>
+                                        <td class="c-gray">——</td>
+                                        <td class="c-gray">——</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tl">签约</td>
+                                        <td class="c-gray">——</td>
+                                        <td class="c-gray">——</td>
+                                        <td class="c-gray">——</td>
+                                        <td class="c-gray">——</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <!--右边内容结束-->
+</div>
+
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+<script>
+    $(function () {
+        var h = $(".personalRightCon").height();
+        if(h > 1029){
+            $(".personalLeftNav").css("height", h+58);
+        }
+        $(".p-tip-icon").mouseover(function(){
+           $(".p-tips").show();
+        });
+        $(".p-tip-icon").mouseout(function(){
+            $(".p-tips").hide();
+        });
+    });
+</script>
+</body>
+</html>

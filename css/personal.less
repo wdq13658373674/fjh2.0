@@ -562,8 +562,29 @@ body{
         -moz-border-image:url("../images/myData/border.png") 15 0 15 0 round;
         -webkit-border-image:url("../images/myData/border.png") 15 0 15 0 round;
         li{
+          position: relative;
+          a{
+            display: none;
+            position: absolute;
+            width: 65px;
+            height: 27px;
+            text-align: center;
+            line-height: 26px;
+            border: 1px solid #c3cad8;
+            border-radius: 3px;
+            background-image: linear-gradient(to bottom,#fff,#eff2f9);
+            color: #2b314d;
+            overflow: hidden;
+            top: 14px;
+            right: 0;
+          }
           &:last-child{
             border: 0;
+          }
+          &:hover{
+            a{
+              display: block;
+            }
           }
         }
       }
@@ -884,6 +905,166 @@ body{
       }
       .tr{
         text-align: right;
+      }
+    }
+  }
+
+  .customer-info{
+    margin-top: 47px;
+    .title{
+      font-weight: normal;
+      font-size: 25px;
+    }
+    ul{
+      margin-top: 30px;
+      border-top: 2px solid #dbe0ed;
+      li{
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid #dbe0ed;
+        p{
+          font-size: 14px;
+          color: #2b314d;
+          float: left;
+        }
+        .t-t{
+          color: #7f85a3;
+          width: 70px;
+        }
+        .t-c{
+          margin-left: 59px;
+        }
+      }
+    }
+  }
+
+  .partake-pro{
+    margin-top: 47px;
+    .title{
+      font-weight: normal;
+      font-size: 25px;
+    }
+    .partake-pro-con{
+      margin-top: 51px;
+      ul{
+        li{
+          zoom:1;
+          line-height: 42px;
+          margin-top: 25px;
+          &:after{
+            content:'';
+            display:block;
+            clear:both;
+            overflow:hidden;
+            visibility:hidden;
+          }
+          .p-t{
+            float: left;
+            color: #7f85a3;
+            font-size: 14px;
+          }
+          .p-c{
+            width: 742px;
+            float: left;
+            font-size: 14px;
+            margin-left: 25px;
+            .step{
+              width: 743px;
+              height: 42px;
+              font-size: 14px;
+              color: #fff;
+            }
+            .step-1{
+              padding-left: 114px;
+              .icon("../images/user/step-1.png",no-repeat);
+            }
+            .step-2{
+              padding-left: 345px;
+              .icon("../images/user/step-2.png",no-repeat);
+            }
+            .step-3{
+              padding-left: 600px;
+              .icon("../images/user/step-3.png",no-repeat);
+            }
+            table{
+              width: 100%;
+              padding: 20px;
+              border-collapse: collapse;
+              border-top: 1px solid #c3cad8;
+              border-left: 1px solid #c3cad8;
+              border-right: 1px solid #c3cad8;
+              thead{
+                td{
+                  color: #7f85a3;
+                }
+              }
+              tr{
+                td{
+                  border-bottom: 1px solid #c3cad8;
+                  height: 59px;
+                  line-height: 59px;
+                  text-align: center;
+                  font-size: 14px;
+                  &:first-child{
+                    padding-left: 20px;
+                  }
+                }
+                .p-pos{
+                  position: relative;
+                  .p-tips{
+                    display: none;
+                    position: absolute;
+                    top: -37px;
+                    left: 50px;
+                      .speech{
+                        position: relative;
+                        width: 163px;
+                        text-align: left;
+                        padding: 0 15px;
+                        line-height: 22px;
+                        background-color: #fff;
+                        -webkit-box-shadow:  0 1px 7px 0 #c3cad8;
+                        -moz-box-shadow:  0 1px 7px 0 #c3cad8;
+                        box-shadow:  0 1px 7px 0 #c3cad8;
+                        .triangle-down{
+                          position: absolute;
+                          width: 15px;
+                          height: 10px;
+                          bottom: -10px;
+                          left: 46%;
+                          .icon("../images/user/triangle-down.png",no-repeat);
+                        }
+                      }
+                  }
+                  .p-tip-icon{
+                    position: absolute;
+                    display: inline-block;
+                    top: 20px;
+                    right: 20px;
+                    width: 19px;
+                    height: 19px;
+                    .icon("../images/icon/ask.png",no-repeat);
+                  }
+                  .p-suss-icon{
+                    position: absolute;
+                    display: inline-block;
+                    top: 20px;
+                    right: 15px;
+                    width: 19px;
+                    height: 19px;
+                    .icon("../images/icon/success_tips.png",no-repeat);
+                  }
+                }
+                .tl{
+                  text-align: left;
+                }
+                .c-gray{
+                  color: #c3c9d8;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

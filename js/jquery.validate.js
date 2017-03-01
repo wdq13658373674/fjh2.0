@@ -40,7 +40,6 @@
                         var func = eval(validate.type);
                         if(func(inputObj,validate)){
                                 tip(inputObj,'&nbsp;','suss');
-
                         }else{
                                 tip(inputObj,validate.msg,'err');
                                 flag = false;
@@ -78,8 +77,8 @@
             return false;
         }
         function tip(obj,msg,Class){
+            var _this = obj;
             var parent = obj.parent();
-            console.log(parent);
             var tips = parent.find("span");
             if(tips.length==0){
                 obj.parent().append("<span class='tips-msg'><font class="+Class+">"+msg+"</font></span>");
