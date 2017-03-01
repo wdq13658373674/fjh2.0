@@ -1,3 +1,11 @@
 @import "../cssControl/control";
 
-.test{.btn-blue-empty(29px);}
+*{box-sizing: inherit;}
+body{.main-width;}
+
+.container{.wh(100%,auto);min-height:100px;
+  .wrap{margin-left:210px;margin-right:160px;}
+  .main{float:left;width:100%;min-height:300px;background: @red;}
+  .sub{float:left;width:200px;min-height:300px;background: @blue;margin-left:-100%;}
+  .extra{float:left;width:150px;min-height:300px;background: @blue;margin-left:-150px;}
+}
