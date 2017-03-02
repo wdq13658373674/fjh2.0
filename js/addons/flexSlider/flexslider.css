@@ -40,6 +40,6 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active-slide {border:2px solid #FD5B5F;}
 
 .flex-control-thumbs .flex-direction-nav a  {text-decoration:none; display: block; width: 22px; height: 60px;position: absolute; top:0; z-index: 10; overflow: hidden;cursor: pointer; }
-.flex-control-thumbs .flex-direction-nav .flex-prev { left:-28px;background: url("slide_arr.png") center no-repeat;background-color: #c3c9d8 ;}
-.flex-control-thumbs .flex-direction-nav .flex-next { right:-28px;background:url("slide_arr2.png") center no-repeat;background-color: #c3c9d8 ;}
+.flex-control-thumbs .flex-direction-nav .flex-prev { left:-28px;background: url("slide_arr.png") center no-repeat;background-size:35%;background-color: #c3c9d8 ;}
+.flex-control-thumbs .flex-direction-nav .flex-next { right:-28px;background:url("slide_arr2.png") center no-repeat;background-size:35%;background-color: #c3c9d8 ;}
 .flex-control-thumbs .flex-direction-nav .flex-prev:hover,.flex-direction-nav .flex-next:hover{background-color: #77bfff;}
