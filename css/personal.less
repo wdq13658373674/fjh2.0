@@ -2,6 +2,82 @@
 body{
   background-color: #eff2f9;
 }
+
+.d-form{
+  .d-form-group{
+    margin-top: 35px;
+    label{
+      color: #7f85a3;
+      float: left;
+      font-size: 14px;
+      line-height: 35px;
+    }
+    .d-form-control{
+      height: 35px;
+      margin-left: 14px;
+      float: left;
+      .tips-msg{
+        display: inline-block;
+        line-height: 12px;
+        margin-left: 15px;
+        height: 12px;
+        top: 24%;
+        left: 364px;
+      }
+      .Validform_error{
+        border-radius: 3px;
+        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        border: solid 1px #fd5b5f;
+        background: #fff;
+      }
+      input{
+        color: #7f85a3;
+        padding-left: 11px;
+        width: 222px;
+        height: 35px;
+        border-radius: 3px;
+        background-color: #eff2f9;
+        border: solid 1px #c3c9d8;
+        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        -o-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+      }
+      .select{
+        width: 222px;
+        height: 35px;
+        line-height: 35px;
+        .form-control{
+          height: 35px;
+          line-height: 35px;
+        }
+        .select-box {
+          ul {
+            li{
+              height: 35px;
+              line-height: 35px;
+              border-left: 1px solid #C3C9D8;
+              border-right: 1px solid #C3C9D8;
+            }
+          }
+        }
+      }
+    }
+    .f-btn{
+      .btn-red-full();
+      width: 173px;
+    }
+  }
+  .d-danger{
+    .d-form-control{
+      input{
+        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        border: solid 1px #fd5b5f;
+        background: #ffffff;
+      }
+    }
+  }
+}
 .personalContainer{
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1036,78 +1112,42 @@ body{
   }
 }
 
-.d-form{
-  .d-form-group{
-    margin-top: 35px;
-    label{
-      color: #7f85a3;
-      float: left;
-      font-size: 14px;
-      line-height: 35px;
-    }
-    .d-form-control{
-      height: 35px;
-      margin-left: 14px;
-      float: left;
-      .tips-msg{
-        display: inline-block;
-        line-height: 12px;
-        margin-left: 15px;
-        height: 12px;
-        top: 24%;
-        left: 364px;
+/*实名认证*/
+.real{
+  .d-form{
+    .d-form-group{
+      margin-top: 0;
+      height: 80px;
+      line-height: 80px;
+      &:nth-child(1){
+         border-bottom: 1px solid #eff2f9;
+       }
+      &:nth-child(2){
+        border-bottom: 1px solid #eff2f9;
       }
-      .Validform_error{
-        border-radius: 3px;
-        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-        border: solid 1px #fd5b5f;
-        background: #fff;
+      label{
+        width: 100px;
+        line-height: 80px;
       }
-      input{
-        color: #7f85a3;
-        padding-left: 11px;
-        width: 222px;
-        height: 35px;
-        border-radius: 3px;
-        background-color: #eff2f9;
-        border: solid 1px #c3c9d8;
-        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-        -o-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-        -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-        -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+      .f-btn{
+        margin: 55px auto;
       }
-      .select{
-        width: 222px;
-        height: 35px;
-        line-height: 35px;
-        .form-control{
-          height: 35px;
-          line-height: 35px;
-        }
-        .select-box {
-          ul {
-            li{
-              height: 35px;
-              line-height: 35px;
-              border-left: 1px solid #C3C9D8;
-              border-right: 1px solid #C3C9D8;
-            }
-          }
-        }
-      }
-    }
-    .f-btn{
-      .btn-red-full();
-      width: 173px;
     }
   }
-  .d-danger{
-    .d-form-control{
-      input{
-        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-        border: solid 1px #fd5b5f;
-        background: #ffffff;
-      }
+}
+
+.explain{
+  margin-top: 90px;
+  .title{
+    font-size: 14px;
+    font-weight: normal;
+    color: #2b314d;
+  }
+  .con{
+    margin-top: 20px;
+    p{
+      color: #7f85a3;
+      line-height: 24px;
     }
   }
 }
