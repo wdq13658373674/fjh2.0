@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/personal.css">
     <script src="../../js/jQuery1.12.3-min.js"></script>
     <script src="../../js/public.js"></script>
-    <script type="text/javascript" src="../../js/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../js/addons/Validform_v5.3.2_min.js"></script>
 
 </head>
 <body>
@@ -43,15 +43,17 @@
 
         <form class="d-form" id="d-form">
             <div class="d-form-group clear">
-                <label for="name">被推荐人姓名</label>
+                <label class="label" for="name">被推荐人姓名</label>
                 <div class="d-form-control">
-                    <input type="text" id="name" name="name" validate='[{"type":"notNull","msg":"荐人姓名不能为空！"},{"type":"regex","reg":"^[\u4e00-\u9fa5]","msg":"荐人姓名必须是汉字"}]' placeholder="请输入荐人姓名">
+                    <input class="inputText" type="text" id="name" name="name"  placeholder="请输入荐人姓名">
+                    <span class="Validform_checktip tips-msg"></span>
                 </div>
             </div>
             <div class="d-form-group clear">
-                <label for="phone">被推荐人电话</label>
+                <label class="label" for="phone">被推荐人电话</label>
                 <div class="d-form-control">
-                    <input type="text" id="phone" name="phone" validate='[{"type":"regex","reg":"^(1+[34578][0-9]{9})$","msg":"手机号码不符合规范!"}]' placeholder="请输入手机号">
+                    <input class="inputText" type="text" id="phone" name="phone" placeholder="请输入手机号">
+                    <span class="Validform_checktip tips-msg"></span>
                 </div>
             </div>
             <div class="d-form-group clear">
@@ -60,7 +62,7 @@
                     <div class="select">
                         <div class="select-box">
                             <div class="form-control"><span>请选择项目</span></div>
-                            <input type="hidden" datatype="check" id="marry" value="" name="" />
+                            <input type="hidden" id="marry" value="" name="" />
                             <ul>
                                 <li value="1">已婚</li>
                                 <li value="2">未婚</li>
@@ -237,7 +239,25 @@
     });
 
     $(function(){
-        $("#d-form").validate();
+        var Dform=$(".d-form").Validform({
+            tiptype:3,
+            label:".label",
+            showAllError:true,
+            datatype:{
+                "zh1-6":/^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/
+            },
+            ajaxPost:true
+        });
+        Dform.tipmsg.w["zh1-6"]="请输入1到6个中文字符！";
+
+        Dform.addRule([{
+                ele:".inputText:eq(0)",
+                datatype:"zh2-12"
+            },
+            {
+                ele:".inputText:eq(1)",
+                datatype:"m"
+            }]);
     });
 </script>
 </body>
