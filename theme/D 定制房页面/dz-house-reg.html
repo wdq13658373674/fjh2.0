@@ -18,13 +18,45 @@
     <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
     <script type="text/javascript">
         $(function(){
-            $(".flexslider").flexslider({
+            $('#carousel').flexslider({
                 prevText:'',
                 nextText:'',
-                directionNav: false,
-                slideshowSpeed: 4000,
-                animationSpeed: 400
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                maxItems:4,
+                slideshow: false,
+                itemWidth: 60,
+                itemMargin: 0,
+                asNavFor: '#slider1'
             });
+            $('#slider1').flexslider({
+                animation: "slide",
+                controlsContainer: "#menu span",
+                directionNav: false,
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                sync: "#carousel",
+                before:function(e){
+                    console.log(e.animatingTo);
+                    var slide=$('#slider2 .slides>li');
+                    slide.eq(e.animatingTo).addClass('flex-active-slide').siblings().removeClass('flex-active-slide');
+                }
+            });
+            $('#slider2').flexslider({
+                prevText:'',
+                nextText:'',
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                sync: "#carousel",
+                before:function(e){
+                    console.log(e);
+                }
+            });
+
         });
     </script>
 </head>
@@ -35,6 +67,7 @@
 
 <!--dz-reg-msg-->
 <div class="dz-reg-wrap mb150">
+    <!--dz-reg-msg-->
     <div class="dz-reg-msg clear">
         <div class="msg-tit pull-left">
             <span class="gray">项目名称</span><br/>
@@ -83,9 +116,100 @@
         </div>
     </div>
 
-    <!--slide-->
-    <div class="dz-house-type">
+    <!--dz-house-type-->
+    <div class="dz-house-type clear">
 
+        <!--slider1-->
+        <div class="pull-left">
+            <div id="slider1" class="flexslider" style="width:343px;height:333px;">
+                <ul class="slides">
+                    <li>
+                        <div class="title">A-5-1户型</div>
+
+                        <div class="house-type-dsc">
+                            <span class="tit">户型结构</span>
+                            <span class="con">三室两厅两卫</span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">建筑面积</span>
+                            <span class="con">三室两厅两卫</span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">户型描述</span>
+                            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="f30">A-5-1户型2</div>
+                    </li>
+                    <li>
+                        <div class="f30">A-5-1户型3</div>
+                    </li>
+                    <li>
+                        <div class="f30">A-5-1户型3</div>
+                    </li>
+                    <li>
+                        <div class="f30">A-5-1户型3</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="thumbs-box">
+                <div id="carousel" class="carousel flex-control-thumbs" style="width:240px;height:60px;">
+                    <ul class="slides">
+                        <li class="flex-active-slide"><img src="../../images/test/slider1.png" /></li>
+                        <li><img src="../../images/test/slider2.png" /></li>
+                        <li><img src="../../images/test/slider1.png" /></li>
+                        <li><img src="../../images/test/slider1.png" /></li>
+                        <li><img src="../../images/test/slider1.png" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--slider2-->
+        <div id="slider2" class="flexslider pull-right" style="width:767px;height:449px;">
+            <ul class="slides">
+                <li><img src="../../images/test/slider1.png" /></li>
+                <li><img src="../../images/test/slider1.png" /></li>
+                <li><img src="../../images/test/slider1.png" /></li>
+                <li><img src="../../images/test/slider1.png" /></li>
+                <li><img src="../../images/test/slider1.png" /></li>
+            </ul>
+            <div class="caption">户型图</div>
+        </div>
+    </div>
+
+    <div class="house-type-tab">
+        <a href="#" class="active">全部</a>
+        <a href="#">一居(2)</a>
+        <a href="#">二居(2)</a>
+        <a href="#">三居(2)</a>
+    </div>
+    <div class="house-type-wrap">
+        <ul class="house-type-content clear">
+            <li class="active">
+                <a href="javascript:void(0);">
+                    <p class="p p1">A-5-1户型</p>
+                    <p class="p p2">二室两厅两卫</p>
+                    <p class="p p3">
+                        <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                    </p>
+                </a>
+
+                <i class="icon-suc"></i>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <p class="p p1">A-5-1户型</p>
+                    <p class="p p2">二室两厅两卫</p>
+                    <p class="p p3">
+                        <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                    </p>
+                </a>
+                <i class="icon-suc"></i>
+            </li>
+        </ul>
     </div>
 
     <div class="single-title">其它个性化定制需求</div>
@@ -148,7 +272,7 @@
 
 <script>
     $(function(){
-        $('.pay-list>li').click(function(){
+        $('.pay-list>li,.house-type-content>li').click(function(){
             $(this).addClass('active').siblings().removeClass('active');
         })
     })
