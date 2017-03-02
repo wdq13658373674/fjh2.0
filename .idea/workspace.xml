@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ccb60cda-b841-4a59-a5a6-1a92919cedfa" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html" afterPath="$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/addons/flexSlider/flexslider.css" afterPath="$PROJECT_DIR$/js/addons/flexSlider/flexslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/house.css" afterPath="$PROJECT_DIR$/css/house.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/house.less" afterPath="$PROJECT_DIR$/css/house.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="fjh2.0.iws" />
@@ -28,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="house.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="house.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/house.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.612903" vertical-offset="2110" max-vertical-offset="2926">
-              <caret line="186" column="52" selection-start-line="186" selection-start-column="52" selection-end-line="186" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.6789216" vertical-offset="1998" max-vertical-offset="3190">
+              <caret line="194" column="37" selection-start-line="194" selection-start-column="37" selection-end-line="194" selection-end-column="37" />
               <folding>
                 <element signature="e#106#391#0" expanded="false" />
                 <element signature="e#400#598#0" expanded="false" />
@@ -41,18 +42,7 @@
                 <element signature="e#4238#4665#0" expanded="false" />
                 <element signature="e#4689#5167#0" expanded="false" />
                 <element signature="e#5422#5709#0" expanded="false" />
-                <element signature="e#5724#6081#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="flexslider.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/addons/flexSlider/flexslider.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1714802" vertical-offset="275" max-vertical-offset="1122">
-              <caret line="42" column="87" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -60,12 +50,17 @@
       <file leaf-file-name="dz-house-reg.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.903225" vertical-offset="5190" max-vertical-offset="6710">
-              <caret line="289" column="17" selection-start-line="289" selection-start-column="17" selection-end-line="289" selection-end-column="17" />
+            <state vertical-scroll-proportion="-34.870968" vertical-offset="1427" max-vertical-offset="3630">
+              <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
               <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#8;n#ul#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#9;n#ul#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -644,7 +639,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488445532630</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="房计划">
+      <created>1488446028300</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1488446028300</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -653,7 +654,7 @@
     <layout>
       <window_info id="更改" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32847533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1068,31 +1069,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/house.less">
+    <entry file="file://$PROJECT_DIR$/js/addons/flexSlider/flexslider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.612903" vertical-offset="2110" max-vertical-offset="2926">
-          <caret line="186" column="52" selection-start-line="186" selection-start-column="52" selection-end-line="186" selection-end-column="52" />
-          <folding>
-            <element signature="e#106#391#0" expanded="false" />
-            <element signature="e#400#598#0" expanded="false" />
-            <element signature="e#1023#2313#0" expanded="false" />
-            <element signature="e#4192#4214#0" expanded="false" />
-            <element signature="e#4238#4665#0" expanded="false" />
-            <element signature="e#4689#5167#0" expanded="false" />
-            <element signature="e#5422#5709#0" expanded="false" />
-            <element signature="e#5724#6081#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="275" max-vertical-offset="1122">
+          <caret line="42" column="87" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/dz-house-reg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.903225" vertical-offset="5190" max-vertical-offset="6710">
-          <caret line="289" column="17" selection-start-line="289" selection-start-column="17" selection-end-line="289" selection-end-column="17" />
+        <state vertical-scroll-proportion="-34.870968" vertical-offset="1427" max-vertical-offset="3630">
+          <caret line="120" column="30" selection-start-line="120" selection-start-column="30" selection-end-line="120" selection-end-column="30" />
           <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#8;n#ul#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#9;n#ul#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1105,11 +1102,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/addons/flexSlider/flexslider.css">
+    <entry file="file://$PROJECT_DIR$/css/house.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1714802" vertical-offset="275" max-vertical-offset="1122">
-          <caret line="42" column="87" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
-          <folding />
+        <state vertical-scroll-proportion="0.6789216" vertical-offset="1998" max-vertical-offset="3190">
+          <caret line="194" column="37" selection-start-line="194" selection-start-column="37" selection-end-line="194" selection-end-column="37" />
+          <folding>
+            <element signature="e#106#391#0" expanded="false" />
+            <element signature="e#400#598#0" expanded="false" />
+            <element signature="e#1023#2313#0" expanded="false" />
+            <element signature="e#4192#4214#0" expanded="false" />
+            <element signature="e#4238#4665#0" expanded="false" />
+            <element signature="e#4689#5167#0" expanded="false" />
+            <element signature="e#5422#5709#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
