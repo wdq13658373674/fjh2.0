@@ -135,8 +135,41 @@
 }
 
 
-/*我要报名*/
+/*定制房我要报名*/
 .dz-reg-wrap{.main-width;margin-top:25px;overflow: hidden;background: #ffffff;
-  .num-title{.wh(1132px,78px,78px);margin:91px auto 0;background: #ffffff url("../images/house/tit_bg.png") left bottom no-repeat;}
-  .dz-reg-msg{.wh(1132px,196px);margin:34px auto 0;.round(5px);border:1px solid @gray-hover;.box-shadow(0,7px,4px 0,@gray-bg);}
+  /*num-title*/
+  .num-title{.wh(1132px,78px);margin:90px auto 0;background:#ffffff url("../images/house/tit_line.png") left bottom no-repeat;background-size: 100% auto;
+    .num{.wh(auto,78px,65px);font-size:70px;color:@blue-light;vertical-align: top;}
+    .tit{font-size:16px;
+      .top{font-size:8px;}
+    }
+  }
+
+  .dz-reg-msg{.wh(1132px,196px);margin:34px auto 0;.round(5px);border:1px solid @gray-hover;.box-shadow(0,7px,4px 0,@gray-bg);
+    .msg-tit{margin-left:40px;margin-top:67px;}
+    .msg-list{.wh(776px,196px);overflow: hidden;margin-right:40px;
+      li{.wh(100%,66px,64px);float:left;border-bottom:1px solid @gray-border2;
+        .column{.wh(50%,auto);}
+      }
+    }
+  }
+
+  .dz-house-type{margin-top:28px;min-height:200px;border:1px solid @gray;}
+
+  .single-title{.wh(1132px,auto);margin:48px auto 0;}
+  .textarea{margin-top:18px;.textarea();width:554px;margin-left:35px;}
+
+  .pay-type-wrap{.wh(1132px,auto);margin:42px auto 0;}
+
+  .pay-list{margin-top:28px;
+    li{position:relative;.wh(166px,69px);float: left;;.round(5px);margin-top:10px;margin-right:17px;overflow: hidden;
+      &.active{border:2px solid @red;
+        .icon-suc{.wh(28px,28px);position: absolute;bottom:0px;right:0px;background: url("../images/house/suc.png") no-repeat;}
+        img{margin-left:-2px;margin-top:-2px;}
+      }
+    }
+  }
+
+  .rule-box{text-align: center;}
+  .order-btn{.btn-red-full();width:326px;.textshadow(0,-1px,0,#dc4144);font-size:16px;margin:28px auto 156px;}
 }
