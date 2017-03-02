@@ -45,19 +45,19 @@
             <div class="d-form-group clear">
                 <label class="label" for="name">被推荐人姓名</label>
                 <div class="d-form-control">
-                    <input class="inputText" type="text" id="name" name="name"  placeholder="请输入荐人姓名">
+                    <input class="inputxt" type="text" id="name" name="name"  placeholder="请输入荐人姓名">
                     <span class="Validform_checktip tips-msg"></span>
                 </div>
             </div>
             <div class="d-form-group clear">
                 <label class="label" for="phone">被推荐人电话</label>
                 <div class="d-form-control">
-                    <input class="inputText" type="text" id="phone" name="phone" placeholder="请输入手机号">
+                    <input class="inputxt" type="text" id="phone" name="phone" placeholder="请输入手机号">
                     <span class="Validform_checktip tips-msg"></span>
                 </div>
             </div>
             <div class="d-form-group clear">
-                <label>推荐购买项目</label>
+                <label class="label">推荐购买项目</label>
                 <div class="d-form-control">
                     <div class="select">
                         <div class="select-box">
@@ -74,7 +74,7 @@
             </div>
 
             <div class="d-form-group clear">
-                <button>立即推荐</button>
+                <button class="f-btn">立即推荐</button>
             </div>
         </form>
 
@@ -251,11 +251,11 @@
         Dform.tipmsg.w["zh1-6"]="请输入1到6个中文字符！";
 
         Dform.addRule([{
-                ele:".inputText:eq(0)",
+                ele:".inputxt:eq(0)",
                 datatype:"zh2-12"
             },
             {
-                ele:".inputText:eq(1)",
+                ele:".inputxt:eq(1)",
                 datatype:"m"
             }]);
     });

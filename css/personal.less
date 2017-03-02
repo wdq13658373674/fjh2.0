@@ -531,6 +531,12 @@ body{
   .m-userInfo{
     .s-userBar{
       margin-top: 60px;
+      padding-bottom: 20px;
+      border-bottom:7px solid #fff;
+      border-image:url("../images/myData/border.png") 15 0 15 0 round;
+      -o-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+      -moz-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+      -webkit-border-image:url("../images/myData/border.png") 15 0 15 0 round;
       .d-round-mask{
         width: 97px;
         height: 97px;
@@ -557,9 +563,7 @@ body{
 
 
     .s-userDetail{
-      margin-top: 20px;
       .p-verticalBor{
-        border-top:7px solid #fff;
         border-bottom:7px solid #fff;
         border-image:url("../images/myData/border.png") 15 0 15 0 round;
         -o-border-image:url("../images/myData/border.png") 15 0 15 0 round;
@@ -705,16 +709,10 @@ body{
         }
         .d-act{
           margin-top: 55px;
-          text-align: center;
           .d-enter{
+            margin: 0 auto;
             width: 90px;
-            height: 34px;
-            border-radius: 2px;
-            background-color: #fd5b5f;
-            border: solid 0 #979797;
-            color: #ffffff;
-            text-shadow: 0 -1px 0 #dc4144;
-            cursor: pointer;
+            .btn-red-full(34px);
           }
         }
       }
@@ -723,92 +721,6 @@ body{
 }
 
 .recommendBox{
-  .d-form{
-    padding: 40px 0;
-    border-bottom:7px solid #fff;
-    border-image:url("../images/myData/border.png") 15 0 15 0 round;
-    -o-border-image:url("../images/myData/border.png") 15 0 15 0 round;
-    -moz-border-image:url("../images/myData/border.png") 15 0 15 0 round;
-    -webkit-border-image:url("../images/myData/border.png") 15 0 15 0 round;
-    .d-form-group{
-      margin-top: 35px;
-      label{
-        color: #7f85a3;
-        float: left;
-        font-size: 14px;
-        line-height: 35px;
-      }
-      .d-form-control{
-        height: 35px;
-        margin-left: 14px;
-        float: left;
-        .tips-msg{
-          display: inline-block;
-          line-height: 12px;
-          margin-left: 15px;
-          height: 12px;
-          top: 24%;
-          left: 364px;
-        }
-        .Validform_error{
-          border-radius: 3px;
-          box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-          border: solid 1px #fd5b5f;
-          background: #fff;
-        }
-        input{
-          color: #7f85a3;
-          padding-left: 11px;
-          width: 222px;
-          height: 35px;
-          border-radius: 3px;
-          background-color: #eff2f9;
-          border: solid 1px #c3c9d8;
-          box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-          -o-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-          -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-          -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-        }
-        .select{
-          width: 222px;
-          height: 35px;
-          line-height: 35px;
-          .form-control{
-            height: 35px;
-            line-height: 35px;
-          }
-          .select-box {
-            ul {
-              li{
-                height: 35px;
-                line-height: 35px;
-                border-left: 1px solid #C3C9D8;
-                border-right: 1px solid #C3C9D8;
-              }
-            }
-          }
-        }
-      }
-      button{
-        width: 173px;
-        height: 46px;
-        border-radius: 3px;
-        background-color: #fd5b5f;
-        border: solid 0 #979797;
-        font-size: 16px;
-        color: #fff;
-      }
-    }
-    .d-danger{
-      .d-form-control{
-        input{
-          box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
-          border: solid 1px #fd5b5f;
-          background: #ffffff;
-        }
-      }
-    }
-  }
   .r-customer{
     margin-top: 40px;
     .title{
@@ -1111,6 +1023,90 @@ body{
             }
           }
         }
+      }
+    }
+  }
+  .d-form{
+    padding: 40px 0;
+    border-bottom:7px solid #fff;
+    border-image:url("../images/myData/border.png") 15 0 15 0 round;
+    -o-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+    -moz-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+    -webkit-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+  }
+}
+
+.d-form{
+  .d-form-group{
+    margin-top: 35px;
+    label{
+      color: #7f85a3;
+      float: left;
+      font-size: 14px;
+      line-height: 35px;
+    }
+    .d-form-control{
+      height: 35px;
+      margin-left: 14px;
+      float: left;
+      .tips-msg{
+        display: inline-block;
+        line-height: 12px;
+        margin-left: 15px;
+        height: 12px;
+        top: 24%;
+        left: 364px;
+      }
+      .Validform_error{
+        border-radius: 3px;
+        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        border: solid 1px #fd5b5f;
+        background: #fff;
+      }
+      input{
+        color: #7f85a3;
+        padding-left: 11px;
+        width: 222px;
+        height: 35px;
+        border-radius: 3px;
+        background-color: #eff2f9;
+        border: solid 1px #c3c9d8;
+        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        -o-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+      }
+      .select{
+        width: 222px;
+        height: 35px;
+        line-height: 35px;
+        .form-control{
+          height: 35px;
+          line-height: 35px;
+        }
+        .select-box {
+          ul {
+            li{
+              height: 35px;
+              line-height: 35px;
+              border-left: 1px solid #C3C9D8;
+              border-right: 1px solid #C3C9D8;
+            }
+          }
+        }
+      }
+    }
+    .f-btn{
+      .btn-red-full();
+      width: 173px;
+    }
+  }
+  .d-danger{
+    .d-form-control{
+      input{
+        box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        border: solid 1px #fd5b5f;
+        background: #ffffff;
       }
     }
   }

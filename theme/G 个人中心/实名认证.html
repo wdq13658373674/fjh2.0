@@ -9,10 +9,8 @@
 
     <link rel="stylesheet" href="../../css/public.css"/>
     <link rel="stylesheet" href="../../css/personal.css">
-    <link rel="stylesheet" href="../../js/addons/laydate/need/laydate.css"/>
     <script src="../../js/jQuery1.12.3-min.js"></script>
     <script src="../../js/public.js"></script>
-    <script type="text/javascript" src="../../js/addons/laydate/laydate.js"></script>
 
 </head>
 <body>
@@ -39,7 +37,7 @@
         <!--面包屑-->
         <div class="crumbs">
             <a href="#">个人中心</a> >
-            <span>个人资料</span>
+            <span>实名认证</span>
         </div>
         <!--全选按钮组-->
         <div class="s-userBar clear">
@@ -50,32 +48,48 @@
             </div>
         </div>
 
-        <div class="s-userDetail">
-            <div class="d-userDetail clear">
-                    <ul class="p-verticalBor">
-                        <li>
-                            <em>手机号码</em>
-                            <span>18680722507</span>
-                        </li>
-                        <li>
-                            <em>真实姓名</em>
-                            <span>等待验证</span>
-                        </li>
-                    </ul>
-
+        <form class="d-form" id="d-form">
+            <div class="d-form-group clear">
+                <label class="label" for="name">真实姓名</label>
+                <div class="d-form-control">
+                    <input class="inputText" type="text" id="name" name="name"  placeholder="请输入姓名">
+                    <span class="Validform_checktip tips-msg"></span>
+                </div>
             </div>
-        </div>
+            <div class="d-form-group clear">
+                <label class="label" for="IDcard">身份证号码</label>
+                <div class="d-form-control">
+                    <input class="inputText" type="number" id="IDcard" name="phone" placeholder="请输入身份证号码">
+                    <span class="Validform_checktip tips-msg"></span>
+                </div>
+            </div>
+            <div class="d-form-group clear">
+                <button type="submit" class="f-btn">确认提交</button>
+            </div>
+        </form>
+
+
+
+                    <!--<ul class="">-->
+                        <!--<li>-->
+                            <!--<em>手机号码</em>-->
+                            <!--<span>-->
+                                <!--<input type="text">-->
+                            <!--</span>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<em>真实姓名</em>-->
+                            <!--<span>-->
+                                <!--<input type="text">-->
+                            <!--</span>-->
+                        <!--</li>-->
+                    <!--</ul>-->
     </div>
     <!--右边内容结束-->
 </div>
 
 <!--footer-->
 <iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
-<script>
-    laydate({
-        elem: '#birth',
-        event: 'focus'
-    });
-</script>
+
 </body>
 </html>
