@@ -30,7 +30,7 @@
                         <span class="ui-step-text">验证身份</span>
                     </div>
                 </li>
-                <li>
+                <li class="ui-step-active">
                     <div class="ui-step-line">-</div>
                     <div class="ui-step-icon">
                         <i class="ui-icon ui-step-2"></i>
@@ -47,7 +47,7 @@
             </ol>
 
             <div class="veriForm center">
-                <p>为了保证您的帐号安全，更换手机前请先进行安全验证</p>
+                <p>输入你的新手机号码</p>
                 <form action="#" method="post" class="d-form" id="d-form">
                     <div class="d-form-group clear">
                         <div class="d-form-control">
@@ -58,8 +58,7 @@
                     <div class="d-form-group clear">
                         <div class="d-form-control">
                             <input class="inputxt d-code" type="text" nullmsg="验证码不能为空" sucmsg=" " id="code" name="code" placeholder="请输入验证码">
-                            <button type="button" class="code-btn" onclick="settime(this);">获取验证码</button>
-                            <!--<input type="button" class="code-btn" id="btn" value="免费获取验证码" onclick="settime(this)" />-->
+                            <button type="button" class="code-btn ">获取验证码</button>
                         </div>
                         <span class="Validform_checktip"></span>
                     </div>
@@ -78,26 +77,6 @@
 
 </body>
 <script>
-
-    var countdown=10;
-    function settime(obj) {
-        if (countdown == 0) {
-            obj.removeAttribute("disabled");
-            obj.innerHTML="获取验证码";
-            obj.setAttribute("class", "code-btn");
-            countdown = 60;
-            return;
-        } else {
-            obj.setAttribute("disabled", true);
-            obj.innerHTML="重新发送(" + countdown + ")";
-            obj.setAttribute("class", "btn-disabled");
-            countdown--;
-        }
-        setTimeout(function() {
-                settime(obj) }
-            ,1000)
-    }
-
     $(function(){
         var Dform=$(".d-form").Validform({
             tiptype:3,
