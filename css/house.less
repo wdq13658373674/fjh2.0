@@ -78,15 +78,19 @@
     }
 
     .bottom-box{.wh(100%,189px);background: #ffffff;margin-top:25px;padding-top:49px;
-      .icon{.wh(34px,34px);overflow: hidden;margin-left:8px;display:block;float:right;.round(50%);
+      .icon{position:relative;.wh(34px,34px);margin-left:8px;display:block;float:right;.round(50%);
         &.thumbs{background: url("../images/house/thumbs.png") center no-repeat;
-          &:hover{background: url("../images/house/thumbs_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);}
+          &:hover{background: url("../images/house/thumbs_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);
+            .float-phone{display:block;}
+          }
         }
         &.phone{background: url("../images/house/phone.png") center no-repeat;
-          &:hover{background: url("../images/house/phone_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);}
+          &:hover{background: url("../images/house/phone_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);
+            .float-phone{display:block;}
+          }
         }
       }
-      .float-phone{display:none;background:#ffffff;color:@txt-black;font-size:12px;position: absolute;top:-65px;right:-58px;padding:11px 14px 11px 15px;.box-shadow(0,1px,7px 0,#c3cad8);}
+      .float-phone{display:none;min-width:163px;background:#ffffff;color:@txt-black;font-size:12px;position: absolute;top:-65px;left:50%;margin-left:-81.5px;padding:11px 14px 11px 15px;.box-shadow(0,1px,7px 0,#c3cad8);}
 
       .price{.wh(326px,32px,32px);margin:0 auto;position:relative;}
       .dz-btn{.btn-red-full();width:326px;margin:41px auto 0;font-size:16px;}
