@@ -1220,4 +1220,160 @@ body{
       }
     }
   }
+  .pro-details{
+    box-shadow: 0 7px 10px 0 #c3cad8;
+    &:hover{
+      border: solid 1px #c3cad8;
+    }
+  }
+}
+
+.pro-table{
+  margin-top: 70px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #c3cad8;
+  td{
+    line-height: 80px;
+    height: 80px;
+    border-bottom: 1px solid #c3cad8;
+    text-align: center;
+    font-size: 14px;
+    &:first-child{
+      width: 135px;
+      text-align: left;
+      padding-left: 35px;
+    }
+    &:nth-child(6){
+      width: 140px;
+    }
+  }
+  .payment{
+    position: relative;
+    a{
+      display: inline-block;
+      margin: 0 auto;
+      width: 90px;
+      .btn-red-full(34px);
+    }
+    .icon-suss{
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      display: block;
+      .icon("../images/icon/success_tips.png",no-repeat);
+      top: 30px;
+      right: 52px;
+    }
+    b{
+      display: inline;
+      font-style: normal;
+      position: absolute;
+      font-weight: normal;
+      left: 52px;
+      top: 0;
+    }
+  }
+  .tip-gray{
+    color: #c3c9d8;
+  }
+  .btn-see{
+    padding: 5px 9px;
+    font-size: 12px;
+    height: 27px;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
+    border: solid 1px #c3cad8;
+    &:hover{
+      background-image: linear-gradient(to bottom, #eff2f9, #ffffff);
+    }
+  }
+  .download{
+    position: relative;
+    a{
+      color: #77bfff;
+    }
+    .tips-download-box{
+      position: absolute;
+      display: none;
+      width: 120px;
+      height: 80px;
+      line-height: 40px;
+      border: 1px solid #c3c9d8;
+      border-radius: 3px;
+      background: #fff;
+      z-index: 3;
+      bottom: -56px;
+      left: 11px;
+      .tips-download{
+        position: relative;
+        a{
+          display: block;
+          height: 40px;
+          border-bottom: 1px solid #c3c9d8;
+          &:last-child{
+            border-bottom: none;
+          }
+          &:hover{
+            background: #eff2f9;
+          }
+        }
+        .triangle-up{
+          position: absolute;
+          top:-7px;
+          left: 50%;
+          margin-left: -7px;
+          width: 14px;
+          height: 7px;
+          display: block;
+          .icon("../images/user/triangle-up.png",no-repeat);
+        }
+      }
+    }
+  }
+  thead{
+    color: #7f85a3;
+  }
+  tbody{
+    tr{
+      &:last-child{
+        td{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .table-icon, em{
+    float: left;
+  }
+  em{
+    font-style: normal;
+    margin-left: 8px;
+  }
+  .table-icon{
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin-top: 29px;
+  }
+  .icon-one{
+    .icon("../images/icon/icon-one.png",no-repeat);
+  }
+  .icon-one-full{
+    .icon("../images/icon/icon-one-full.png",no-repeat);
+  }
+
+  .icon-two{
+    .icon("../images/icon/icon-two.png",no-repeat);
+  }
+  .icon-two-full{
+    .icon("../images/icon/icon-two-full.png",no-repeat);
+  }
+
+  .icon-three{
+    .icon("../images/icon/icon-three.png",no-repeat);
+  }
+  .icon-three-full{
+    .icon("../images/icon/icon-three-full.png",no-repeat);
+  }
 }

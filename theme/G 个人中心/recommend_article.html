@@ -153,10 +153,12 @@
         if(h > 1029){
             $(".personalLeftNav").css("height", h+58);
         }
-        $(".p-tip-icon").mouseover(function(){
-           $(".p-tips").show();
-        });
-        $(".p-tip-icon").mouseout(function(){
+
+        $('.p-tip-icon').hover(function(){
+            //你要显示的层，div放到li里面。默认css属性是隐藏
+            $(".p-tips").show();
+        },function(){
+            //你要显示的列表形式
             $(".p-tips").hide();
         });
     });
