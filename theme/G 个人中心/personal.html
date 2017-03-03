@@ -20,7 +20,7 @@
 <!--个人中心-->
     <div class="personalContainer clear center">
         <!--左边菜单-->
-        <div class="personalLeftNav">
+        <div class="personalLeftNav" id="leftBox">
             <ul>
                 <li class="active"><a class="personalIcon-per" href="#">个人中心</a></li>
                 <li><a class="personalIcon-rec" href="#">交易记录</a></li>
@@ -33,7 +33,7 @@
         </div>
         <!--左边菜单结束-->
         <!--右边内容-->
-        <div class="personalRightCon personalRight">
+        <div class="personalRightCon personalRight" id="rightBox">
             <!--用户信息-->
             <!--用户基本信息-->
             <div class="personalInfo clear">
@@ -95,8 +95,59 @@
             <!--定制项目-->
             <div class="userCustomItem">
                 <h4 class="userCustomItem-title f16">我的定制项目</h4>
-                <div class="userCustomItem-item">
-                    <span class="nothingItem f14">你还未参加定制项目</span>
+
+                <!--无“定制项目”数据时显示-->
+                <!--<div class="userCustomItem-item">-->
+                    <!--<span class="nothingItem f14">你还未参加定制项目</span>-->
+                <!--</div>-->
+
+                <!--有“定制项目”数据时显示-->
+                <div class="my-project-box">
+                    <a class="my-project" href="#">
+                        <div class="pro-title">
+                            <span>项目名称</span>
+                            <em>邻水县丨云鼎府邸</em>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pro-con">
+                            <div class="pro-img">
+                                <img src="../../images/main/img.png" alt="">
+                            </div>
+                            <ul>
+                                <li>
+                                    <span>项目地址</span>
+                                    <em>四川省邻水县西部新城</em>
+                                </li>
+                                <li>
+                                    <span>建筑类型</span>
+                                    <em>花园洋房</em>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <span>项目状态</span>
+                                    <em>报名中</em>
+                                </li>
+                                <li>
+                                    <span>市场价（均价）</span>
+                                    <em>4505.00<i>元/m<sup>2</sup></i></em>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--
+                            pro-status 状态说明
+                            pro-status-1 当前状态为 报名
+                            pro-status-2 当前状态为 定制选房
+                            pro-status-3 当前状态为 签约
+                        -->
+
+                        <div class="pro-status pro-status-1">
+                            <span>报名</span>
+                            <span>定制选房</span>
+                            <span>签约</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             <!--定制项目结束-->

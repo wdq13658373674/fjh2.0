@@ -82,60 +82,6 @@ body{
   margin-top: 30px;
   margin-bottom: 30px;
   width: 1200px;
-    .personalLeftNav{
-      .wh(250px);
-      min-height: 1029px;
-      background-color: #dbe0ed;
-      float: left;
-      ul{
-        li{
-          height: 57px;
-          line-height: 57px;
-          border-bottom: 1px solid @gray-border;
-          .personalIcon-per{
-            .icon("../images/icon/group-12.png",no-repeat,37px,19px);
-          }
-          .personalIcon-rec{
-            .icon("../images/icon/group-22.png",no-repeat,36px,17px);
-          }
-          .personalIcon-cus{
-            .icon("../images/icon/group-25.png",no-repeat,36px,18px);
-          }
-          .personalIcon-acc{
-            .icon("../images/icon/page-1.png",no-repeat,35px,17px);
-          }
-          .personalIcon-mes{
-            .icon("../images/icon/group-26.png",no-repeat,36px,20px);
-          }
-          .personalIcon-dat{
-            .icon("../images/icon/group-27.png",no-repeat,36px,17px);
-          }
-          .personalIcon-cli{
-            .icon("../images/icon/group-28.png",no-repeat,36px,16px);
-          }
-          a{
-            color: @txt-black;
-            font-size: 14px;
-            display: block;
-            padding-left: 117px;
-            &:hover{
-              background-color: #c3cad8;
-            }
-          }
-        }
-        .active{
-          background: #ffffff;
-          border-left: 3px solid #fd5b5f;
-          border-bottom: 1px solid #fff;
-          a{
-            &:hover{
-              background-color: #ffffff;
-            }
-          }
-        }
-      }
-    }
-
   .personalRightCon{
     position: relative;
     .wh(950px);
@@ -1148,6 +1094,130 @@ body{
     p{
       color: #7f85a3;
       line-height: 24px;
+    }
+  }
+}
+.my-project-box{
+  margin-top: 23px;
+  .my-project{
+    padding: 26px 18px 22px 18px;
+    display: block;
+    border: solid 1px #c3cad8;
+    margin-top: 55px;
+    &:hover{
+      box-shadow: 0 7px 10px 0 #c3cad8;
+      border: solid 1px #fd5b5f;
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+    .pro-title{
+      span{
+        color: #7f85a3;
+        font-size: 14px;
+      }
+      em{
+        font-style: normal;
+        font-size: 18px;
+        color: #2b314d;
+        margin-left: 12px;
+      }
+    }
+    .line{
+      height: 1px;
+      border-bottom: 1px dashed #c3cad8;
+      margin-top: 22px;
+      margin-bottom: 25px;
+    }
+    .pro-con{
+      position: relative;
+      zoom: 1;
+      height: 83px;
+      &:after{
+        clear: both;
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+      }
+      .pro-img, ul{
+        float: left;
+      }
+      .pro-img{
+        width: 148px;
+        height: 83px;
+        border-radius: 3px;
+        img{
+          width: 100%;
+        }
+      }
+
+      ul{
+        float: left;
+        margin-left: 28px;
+        li{
+          padding-top: 11px;
+          padding-bottom: 14px;
+          font-size: 14px;
+          em,i{
+            font-style: normal;
+          }
+          span,i{
+            color: #7f85a3;
+          }
+          em{
+            margin-left: 12px;
+          }
+          i{
+            margin-left: 4px;
+          }
+        }
+        &:last-child{
+          position: absolute;
+          right: 120px;
+        }
+      }
+    }
+    .pro-status{
+      width: 100%;
+      height: 42px;
+      line-height: 42px;
+      margin-top: 25px;
+      span{
+        font-size: 14px;
+        color: #2b314d;
+        display: inline-block;
+        width: 260px;
+        text-align: center;
+      }
+    }
+    .pro-status-1{
+      .icon("../images/user/step-1.png",no-repeat);
+      background-size: 100%;
+      span{
+        &:first-child{
+          color: #fff;
+        }
+      }
+    }
+    .pro-status-2{
+      .icon("../images/user/step-2.png",no-repeat);
+      background-size: 100%;
+      span{
+        &:nth-child(2){
+          color: #fff;
+        }
+      }
+    }
+    .pro-status-3{
+      .icon("../images/user/step-3.png",no-repeat);
+      background-size: 100%;
+      span{
+        &:last-child{
+          color: #fff;
+        }
+      }
     }
   }
 }

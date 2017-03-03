@@ -222,5 +222,58 @@ sup{
     }
   }
 }
-
+/*左边菜单*/
+.personalLeftNav{
+  .wh(250px);
+  min-height: 1029px;
+  background-color: #dbe0ed;
+  float: left;
+  ul{
+    li{
+      height: 57px;
+      line-height: 57px;
+      border-bottom: 1px solid @gray-border;
+      .personalIcon-per{
+        .icon("../images/icon/group-12.png",no-repeat,37px,19px);
+      }
+      .personalIcon-rec{
+        .icon("../images/icon/group-22.png",no-repeat,36px,17px);
+      }
+      .personalIcon-cus{
+        .icon("../images/icon/group-25.png",no-repeat,36px,18px);
+      }
+      .personalIcon-acc{
+        .icon("../images/icon/page-1.png",no-repeat,35px,17px);
+      }
+      .personalIcon-mes{
+        .icon("../images/icon/group-26.png",no-repeat,36px,20px);
+      }
+      .personalIcon-dat{
+        .icon("../images/icon/group-27.png",no-repeat,36px,17px);
+      }
+      .personalIcon-cli{
+        .icon("../images/icon/group-28.png",no-repeat,36px,16px);
+      }
+      a{
+        color: @txt-black;
+        font-size: 14px;
+        display: block;
+        padding-left: 117px;
+        &:hover{
+          background-color: #c3cad8;
+        }
+      }
+    }
+    .active{
+      background: #ffffff;
+      border-left: 3px solid #fd5b5f;
+      border-bottom: 1px solid #fff;
+      a{
+        &:hover{
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
+}
 
