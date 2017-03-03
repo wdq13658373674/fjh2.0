@@ -71,8 +71,8 @@ function is_email(emails) {
 *
 * */
 $(function () {
-    var nowH = document.getElementById("personalRightCon").offsetHeight;
-    var left = document.getElementById("personalLeftNav");
+    var nowH = document.getElementById("leftBox").offsetHeight;
+    var left = document.getElementById("rightBox");
     if(nowH > 1029) {
         left.style.height = nowH + 'px';
     }
