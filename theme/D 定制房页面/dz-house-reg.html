@@ -27,7 +27,7 @@
                 maxItems:4,
                 slideshow: false,
                 itemWidth: 60,
-                itemMargin: 0,
+                itemMargin: 3,
                 asNavFor: '#slider1'
             });
             $('#slider1').flexslider({
@@ -52,7 +52,7 @@
                 slideshow: false,
                 sync: "#carousel",
                 before:function(e){
-                    console.log(e);
+//                    console.log(e);
                 }
             });
 
@@ -155,13 +155,33 @@
 
             <!--thumbs-box-->
             <div class="thumbs-box">
-                <div id="carousel" class="carousel flex-control-thumbs" style="width:240px;height:60px;">
+                <div id="carousel" class="carousel flex-control-thumbs" style="width:249px;height:60px;">
                     <ul class="slides">
-                        <li class="flex-active-slide"><img src="../../images/test/slider1.png" /></li>
-                        <li><img src="../../images/test/slider2.png" /></li>
-                        <li><img src="../../images/test/slider1.png" /></li>
-                        <li><img src="../../images/test/slider1.png" /></li>
-                        <li><img src="../../images/test/slider1.png" /></li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider1.png" />
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider2.png" />
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider1.png" />
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider1.png" />
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider1.png" />
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
