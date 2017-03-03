@@ -36,24 +36,20 @@
                 controlNav: false,
                 animationLoop: false,
                 slideshow: false,
-                sync: "#carousel"
-                /*before:function(e){
-                    console.log(e.animatingTo);
-                    var slide=$('#slider2 .slides>li');
-                    slide.eq(e.animatingTo).addClass('flex-active-slide').siblings().removeClass('flex-active-slide');
-                }*/
+                sync: "#carousel",
+                before:function(e){
+                    var nav=$('#slider2 .flex-control-nav a');
+                    nav.eq(e.animatingTo).click();
+                }
             });
             $('#slider2').flexslider({
                 prevText:'',
                 nextText:'',
                 animation: "slide",
-                controlNav: false,
+                controlNav: true,
                 animationLoop: false,
                 slideshow: false,
-                sync: "#carousel",
-                before:function(e){
-//                    console.log(e);
-                }
+                sync: "#carousel"
             });
 
         });
@@ -377,7 +373,9 @@
     $(function(){
         $('.pay-list>li,.house-type-content>li').click(function(){
             $(this).addClass('active').siblings().removeClass('active');
-        })
+
+            /*控制slider*/
+        });
     })
 </script>
 </body>
