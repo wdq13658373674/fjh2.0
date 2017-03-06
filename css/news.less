@@ -33,7 +33,14 @@
 }
 
 /*合作伙伴*/
-.partner>img{width:100%;}
+.partner-list{.wh(870px,auto);
+  li{.wh(257px,78px);float: left;margin-right:32px;margin-bottom:33px;
+    img{width:100%;}
+    a{display:block;.round(10px);
+      &:hover{.box-shadow(0,5px,6px 0,@gray-border2);}
+    }
+  }
+}
 
 /*资讯详情*/
 .news-details-wrap{.main-width;background: #ffffff;margin-top:30px;min-height:1029px;}
