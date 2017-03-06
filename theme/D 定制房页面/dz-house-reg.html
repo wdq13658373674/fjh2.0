@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
     <script type="text/javascript">
         $(function(){
-            $('.carousel-l').flexslider({
+            $('#carousel').flexslider({
                 prevText:'',
                 nextText:'',
                 animation: "slide",
@@ -27,29 +27,28 @@
                 slideshow: false,
                 itemWidth: 60,
                 itemMargin: 3,
-                asNavFor: '.slider-l'
+                asNavFor: '#slider1'
             });
-            $('.slider-l').flexslider({
+            $('#slider1').flexslider({
                 animation: "slide",
                 directionNav: false,
                 controlNav: false,
                 animationLoop: false,
                 slideshow: false,
-                sync: ".carousel-l",
+                sync: "#carousel",
                 before:function(e){
-                    var nav=$('.slider-r .flex-control-nav a');
+                    var nav=$('#slider2 .flex-control-nav a');
                     nav.eq(e.animatingTo).click();
                 }
             });
-            $('.slider-r').flexslider({
+            $('#slider2').flexslider({
                 prevText:'',
                 nextText:'',
                 animation: "slide",
                 controlNav: true,
                 animationLoop: false,
                 slideshow: false,
-//                manualControls: ".house-type-wrap ul li",
-                sync: ".carousel-l"
+                sync: "#carousel"
             });
 
         });
@@ -115,7 +114,7 @@
     <div class="dz-house-type clear">
         <!--slider1-->
         <div class="pull-left">
-            <div class="flexslider slider-l" style="width:343px;height:333px;">
+            <div id="slider1" class="flexslider" style="width:343px;height:333px;">
                 <ul class="slides">
                     <!--list1 start-->
                     <li>
@@ -136,17 +135,43 @@
                     </li>
                     <!--list1 end-->
                     <li>
-                        <div class="f30">A-5-1户型2</div>
+                        <div class="title">A-5-1户型2</div>
+
+                        <div class="house-type-dsc">
+                            <span class="tit">户型结构</span>
+                            <span class="con">三室两厅两卫</span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">建筑面积</span>
+                            <span class="con">三室两厅两卫</span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">户型描述</span>
+                            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                        </div>
                     </li>
                     <li>
-                        <div class="f30">A-5-1户型3</div>
+                        <div class="title">A-5-1户型3</div>
+
+                        <div class="house-type-dsc">
+                            <span class="tit">户型结构</span>
+                            <span class="con">三室两厅两卫</span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">建筑面积</span>
+                            <span class="con">三室两厅两卫</span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">户型描述</span>
+                            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                        </div>
                     </li>
                 </ul>
             </div>
 
             <!--thumbs-box-->
             <div class="thumbs-box">
-                <div class="carousel carousel-l flex-control-thumbs" style="width:249px;height:60px;">
+                <div id="carousel" class="carousel flex-control-thumbs" style="width:249px;height:60px;">
                     <ul class="slides">
                         <li class="flex-active-slide">
                             <div class="img-box">
@@ -168,7 +193,7 @@
             </div>
         </div>
         <!--slider2-->
-        <div class="flexslider slider-r pull-right arr-gray" style="width:767px;height:449px;">
+        <div id="slider2" class="flexslider pull-right arr-gray" style="width:767px;height:449px;">
             <ul class="slides">
                 <li><img src="../../images/test/house.png" /></li>
                 <li><img src="../../images/test/slider1.png" /></li>
