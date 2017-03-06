@@ -15,6 +15,7 @@ body{
     .d-form-control{
       height: 35px;
       margin-left: 14px;
+      line-height: 35px;
       float: left;
       .tips-msg{
         display: inline-block;
@@ -1375,5 +1376,98 @@ body{
   }
   .icon-three-full{
     .icon("../images/icon/icon-three-full.png",no-repeat);
+  }
+}
+
+//账户管理
+.account{
+  margin-top: 60px;
+  .title{
+    h2{
+      font-size: 14px;
+      font-weight: normal;
+      width: 110px;
+      padding: 0 19px;
+      border-right: 1px solid #c3cad8;
+    }
+    .line{
+      margin-top: 12px;
+      height: 1px;
+      position: relative;
+      border-bottom: 2px solid #c3cad8;
+      .t-line{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 110px;
+        border-bottom: 2px solid #fd5b5f;
+      }
+    }
+  }
+  .bind-card{
+    .title{
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .d-form{
+      label{
+        width: 88px;
+      }
+    }
+  }
+}
+//我的银行卡
+.my-card{
+  li{
+    width: 352px;
+    height: 177px;
+    border-radius: 10px;
+    float: left;
+    border: 1px solid #c3cad8;
+    overflow: hidden;
+    margin-top: 32px;
+    &:hover{
+      box-shadow: 0 5px 4px 0 #dbe0ed;
+    }
+    &:nth-child(2n){
+      //margin-left: 130px;
+      float: right;
+    }
+  }
+
+  .my-bank-name{
+    height: 47px;
+    line-height: 47px;
+    background-image: linear-gradient(100deg, #48a9ff, #4987ff);
+    color: #fff;
+    padding: 0 20px;
+  }
+  .bank-icon{
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+  .my-card-num{
+    padding: 0 20px;
+    span{
+      font-size: 20px;
+      float: left;
+    }
+    a{
+      float: right;
+      display: block;
+      padding: 5px 9px;
+      font-size: 12px;
+      height: 27px;
+      border-radius: 3px;
+      background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
+      border: solid 1px #c3cad8;
+      &:hover{
+        background-image: linear-gradient(to bottom, #eff2f9, #ffffff);
+      }
+    }
+  }
+  .line{
+    width: 312px;
+    margin: 9px auto 16px auto;
   }
 }

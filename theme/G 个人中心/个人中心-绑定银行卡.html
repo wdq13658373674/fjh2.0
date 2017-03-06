@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>personal</title>
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/personal.css">
+    <script src="../../js/jQuery1.12.3-min.js"></script>
+    <script src="../../js/public.js"></script>
+    <script type="text/javascript" src="../../js/addons/Validform_v5.3.2_min.js"></script>
+</head>
+<body>
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+
+<!--个人中心-->
+    <div class="personalContainer clear center">
+        <!--左边菜单-->
+        <div class="personalLeftNav" id="leftBox">
+            <ul>
+                <li class="active"><a class="personalIcon-per" href="#">个人中心</a></li>
+                <li><a class="personalIcon-rec" href="#">交易记录</a></li>
+                <li><a class="personalIcon-cus" href="#">我的定制</a></li>
+                <li><a class="personalIcon-acc" href="#">账户管理</a></li>
+                <li><a class="personalIcon-mes" href="#">消息中心</a></li>
+                <li><a class="personalIcon-dat" href="#">个人资料</a></li>
+                <li><a class="personalIcon-cli" href="#">推荐客户</a></li>
+            </ul>
+        </div>
+        <!--左边菜单结束-->
+        <!--右边内容-->
+        <div class="personalRightCon personalRight" id="rightBox">
+            <div class="crumbs">
+                <a href="#">个人中心</a> >
+                <span>账户管理</span>
+            </div>
+
+            <div class="account">
+                <div class="title">
+                    <h2>结算卡管理</h2>
+                    <div class="line">
+                        <div class="t-line"></div>
+                    </div>
+                </div>
+                <div class="bind-card">
+                    <h2 class="title">绑定银行卡</h2>
+
+                    <form class="d-form" id="d-form">
+                        <div class="d-form-group clear">
+                            <label>开户名</label>
+                            <div class="d-form-control">流氓兔</div>
+                        </div>
+
+                        <div class="d-form-group clear">
+                            <label class="label" for="bank">选择银行</label>
+                            <div class="d-form-control">
+                                <input class="inputxt" type="text" id="bank" sucmsg=" " name="bank" placeholder="请选择你的开户银行">
+                                <span class="Validform_checktip tips-msg"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-form-group clear">
+                            <label class="label" for="bankaddrs">开户行所在地</label>
+                            <div class="d-form-control">
+                                <input class="inputxt" type="text" id="bankaddrs" sucmsg=" " name="bankaddrs" placeholder="请输入你的开户行所在地">
+                                <span class="Validform_checktip tips-msg"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-form-group clear">
+                            <label class="label" for="bank-branch">开户行支行</label>
+                            <div class="d-form-control">
+                                <input class="inputxt" type="text" id="bank-branch" sucmsg=" " name="bank-branch" placeholder="请输入你的开户行支行">
+                                <span class="Validform_checktip tips-msg"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-form-group clear">
+                            <label class="label" for="cardnum">银行卡号</label>
+                            <div class="d-form-control">
+                                <input class="inputxt" type="text" id="cardnum" sucmsg=" " name="cardnum" placeholder="请输入你的银行卡卡号">
+                                <span class="Validform_checktip tips-msg"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-form-group clear">
+                            <label class="label" for="re-cardnum">确认银行卡号</label>
+                            <div class="d-form-control">
+                                <input class="inputxt" type="text" id="re-cardnum" sucmsg=" " name="re-cardnum" recheck="cardnum" placeholder="请确认你的银行卡卡号">
+                                <span class="Validform_checktip tips-msg"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-form-group clear">
+                            <label class="label" for="bank-phone">预留手机号</label>
+                            <div class="d-form-control">
+                                <input class="inputxt" type="text" id="bank-phone" sucmsg=" " name="bank-phone" placeholder="请输入你的预留手机号">
+                                <span class="Validform_checktip tips-msg"></span>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="d-form-group clear">
+                            <button class="f-btn center">立即推荐</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--右边内容结束-->
+    </div>
+
+<!--footer-->
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+</body>
+<script>
+    $(function(){
+        var Dform=$(".d-form").Validform({
+            tiptype:3,
+            label:".label",
+            showAllError:true,
+            datatype:{
+                "zh1-6":/^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/
+            }
+        });
+        Dform.tipmsg.w["zh1-6"]="请输入1到6个中文字符！";
+
+        Dform.addRule([{
+                ele:"#bank",
+                datatype:"zh4-12"
+            },{
+                ele:"#bankaddrs",
+                datatype:"zh4-12"
+            },{
+                ele:"#bank-branch",
+                datatype:"zh4-12"
+            },{
+                ele:"#cardnum",
+                datatype:"n16-19"
+            },{
+                ele:"#re-cardnum",
+                datatype:"n16-19"
+            },{
+                ele:"#bank-phone",
+                datatype:"m"
+            }]);
+    });
+</script>
+</html>
