@@ -4,5 +4,8 @@
   #input{.input();width:400px;}
 }
 
-.auto-hide{position: absolute;.wh(400px,auto);}
-.auto-show{position: absolute;.wh(400px,auto);border:1px solid @gray-border2;}
+.auto-hide{position: absolute;.wh(400px,auto);display:none;}
+.auto-show{position: absolute;.wh(400px,auto);border:1px solid @gray-border2;z-index:999;display:block;}
+
+.lighten{color:#ffffff;background-color:highlight;width:100%;}
+.unlighten{color:#000000;width:100%;background-color: #ffffff;}
