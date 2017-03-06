@@ -80,15 +80,35 @@ body{
   }
 }
 .personalContainer{
+  position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
   width: 1200px;
+  .userCustomItem-item{
+    margin-top: 32px;
+    width: 100%;
+    min-height: 150px;
+    background-color: @gray-bg;
+    border: solid 1px #dbe0ed;
+    .round();
+    position: relative;
+    .nothingItem{
+      position: absolute;
+      left: 40%;
+      top: 40%;
+      display: inline-block;
+      .icon("../images/icon/warning_tips.png",no-repeat);
+      .line-height(20px);
+      padding-left: 28px;
+      color: @gray;
+    }
+  }
   .personalRightCon{
+    margin-left: 250px;
     position: relative;
     .wh(950px);
     min-height: 1029px;
     background-color: #fff;
-    float: left;
     padding: 29px 57px 29px 60px;
     .personalInfo{
       padding-bottom: 32px;
@@ -187,25 +207,6 @@ body{
       .userCustomItem-title{
         font-weight: normal;
         color: @txt-black;
-      }
-      .userCustomItem-item{
-        margin-top: 32px;
-        width: 100%;
-        min-height: 150px;
-        background-color: @gray-bg;
-        border: solid 1px #dbe0ed;
-        .round();
-        position: relative;
-        .nothingItem{
-          position: absolute;
-          left: 40%;
-          top: 40%;
-          display: inline-block;
-          .icon("../images/icon/warning_tips.png",no-repeat);
-          .line-height(20px);
-          padding-left: 28px;
-          color: @gray;
-        }
       }
     }
   }
@@ -460,6 +461,7 @@ body{
       margin-top: 18px;
       .read{
         color: @gray;
+        .c_ico{background: none}
       }
       tr{
         td{
@@ -468,6 +470,9 @@ body{
           border-left:0;
           border-right: 0;
           border-bottom: 0;
+          a{
+            color: #2b314d;
+          }
         }
         &:last-child{
           td{
@@ -1078,6 +1083,9 @@ body{
       }
       .f-btn{
         margin: 55px auto;
+      }
+      .d-form-control{
+        margin-top: 24px;
       }
     }
   }

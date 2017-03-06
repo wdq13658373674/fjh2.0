@@ -65,17 +65,3 @@ function is_email(emails) {
         return false; //错误
     }
 }
-
-/*
-* 个人中心 左边菜单与右边内容高度保持一直
-*
-* */
-$(function() {
-    if(document.getElementById("rightBox")){
-        var nowH = document.getElementById("rightBox").offsetHeight;
-        var left = document.getElementById("leftBox");
-        if(nowH > 1029) {
-            left.style.height = nowH + 'px';
-        }
-    }
-});
