@@ -14,45 +14,6 @@
 
     <!--slider-->
     <link rel="stylesheet" href="../../js/addons/flexSlider/flexslider.css"/>
-    <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $('#carousel').flexslider({
-                prevText:'',
-                nextText:'',
-                animation: "slide",
-                controlNav: false,
-                animationLoop: false,
-                maxItems:4,
-                slideshow: false,
-                itemWidth: 60,
-                itemMargin: 3,
-                asNavFor: '#slider1'
-            });
-            $('#slider1').flexslider({
-                animation: "slide",
-                directionNav: false,
-                controlNav: false,
-                animationLoop: false,
-                slideshow: false,
-                sync: "#carousel",
-                before:function(e){
-                    var nav=$('#slider2 .flex-control-nav a');
-                    nav.eq(e.animatingTo).click();
-                }
-            });
-            $('#slider2').flexslider({
-                prevText:'',
-                nextText:'',
-                animation: "slide",
-                controlNav: true,
-                animationLoop: false,
-                slideshow: false,
-                sync: "#carousel"
-            });
-
-        });
-    </script>
 </head>
 
 <body class="wrap-gray-bg">
@@ -110,98 +71,190 @@
         </div>
     </div>
 
-    <!--dz-house-type-->
-    <div class="dz-house-type clear">
-        <!--slider1-->
-        <div class="pull-left">
-            <div id="slider1" class="flexslider" style="width:343px;height:333px;">
-                <ul class="slides">
-                    <!--list1 start-->
-                    <li>
-                        <div class="title">A-5-1户型</div>
+    <!--page-wrap-->
+    <div class="page-wrap">
+        <!--page1-->
+        <div class="dz-house-type active clear">
+            <!--left-box-->
+            <div class="left-box pull-left">
+                <div class="type-msg">
+                    <div class="title">A-5-1户型</div>
 
-                        <div class="house-type-dsc">
-                            <span class="tit">户型结构</span>
-                            <span class="con">三室两厅两卫</span>
-                        </div>
-                        <div class="house-type-dsc">
-                            <span class="tit">建筑面积</span>
-                            <span class="con">三室两厅两卫</span>
-                        </div>
-                        <div class="house-type-dsc">
-                            <span class="tit">户型描述</span>
-                            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
-                        </div>
-                    </li>
-                    <!--list1 end-->
-                    <li>
-                        <div class="title">A-5-1户型2</div>
+                    <div class="house-type-dsc">
+                        <span class="tit">户型结构</span>
+                        <span class="con">三室两厅两卫</span>
+                    </div>
+                    <div class="house-type-dsc">
+                        <span class="tit">建筑面积</span>
+                        <span class="con">三室两厅两卫</span>
+                    </div>
+                    <div class="house-type-dsc">
+                        <span class="tit">户型描述</span>
+                        <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                    </div>
+                </div>
 
-                        <div class="house-type-dsc">
-                            <span class="tit">户型结构</span>
-                            <span class="con">三室两厅两卫</span>
-                        </div>
-                        <div class="house-type-dsc">
-                            <span class="tit">建筑面积</span>
-                            <span class="con">三室两厅两卫</span>
-                        </div>
-                        <div class="house-type-dsc">
-                            <span class="tit">户型描述</span>
-                            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="title">A-5-1户型3</div>
-
-                        <div class="house-type-dsc">
-                            <span class="tit">户型结构</span>
-                            <span class="con">三室两厅两卫</span>
-                        </div>
-                        <div class="house-type-dsc">
-                            <span class="tit">建筑面积</span>
-                            <span class="con">三室两厅两卫</span>
-                        </div>
-                        <div class="house-type-dsc">
-                            <span class="tit">户型描述</span>
-                            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <!--thumbs-box-->
-            <div class="thumbs-box">
-                <div id="carousel" class="carousel flex-control-thumbs" style="width:249px;height:60px;">
-                    <ul class="slides">
-                        <li class="flex-active-slide">
-                            <div class="img-box">
-                                <img src="../../images/test/slider1.png" />
-                            </div>
-                        </li>
-                        <li class="flex-active-slide">
-                            <div class="img-box">
-                                <img src="../../images/test/slider2.png" />
-                            </div>
-                        </li>
-                        <li class="flex-active-slide">
-                            <div class="img-box">
-                                <img src="../../images/test/slider1.png" />
-                            </div>
-                        </li>
-                    </ul>
+                <!--thumbs-box-->
+                <div class="thumbs-box">
+                    <div class="carousel carousel-r flex-control-thumbs" style="width:249px;height:60px;">
+                        <ul class="slides">
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider1.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider2.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider1.png" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <!--slider-r-->
+            <div class="flexslider slider-r pull-right arr-gray" style="width:767px;height:449px;">
+                <ul class="slides">
+                    <li> <object width="100%" height="449px" data="../../images/test/house.png"></object></li>
+                    <li> <object width="100%" height="449px" data="../../images/test/slider1.png"></object></li>
+                    <li> <object width="100%" height="449px" data="https://720yun.com/t/9434gq993piyjx78i8?pano_id=sIKurFUs9e0ot6RG"></object></li>
+                </ul>
+                <div class="caption">户型图</div>
+            </div>
         </div>
-        <!--slider2-->
-        <div id="slider2" class="flexslider pull-right arr-gray" style="width:767px;height:449px;">
-            <ul class="slides">
-                <li><img src="../../images/test/house.png" /></li>
-                <li><img src="../../images/test/slider1.png" /></li>
-                <li><img src="../../images/test/slider2.png" /></li>
-            </ul>
-            <div class="caption">户型图</div>
+        <!--page2-->
+        <div class="dz-house-type clear">
+            <!--left-box-->
+            <div class="left-box pull-left">
+                <div class="type-msg">
+                    <div class="title">A-5-1户型2</div>
+
+                    <div class="house-type-dsc">
+                        <span class="tit">户型结构</span>
+                        <span class="con">三室两厅两卫</span>
+                    </div>
+                    <div class="house-type-dsc">
+                        <span class="tit">建筑面积</span>
+                        <span class="con">三室两厅两卫</span>
+                    </div>
+                    <div class="house-type-dsc">
+                        <span class="tit">户型描述</span>
+                        <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                    </div>
+                </div>
+
+                <!--thumbs-box-->
+                <div class="thumbs-box">
+                    <div class="carousel carousel-r flex-control-thumbs" style="width:249px;height:60px;">
+                        <ul class="slides">
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider1.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider2.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider1.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider1.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider2.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider1.png" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--slider-r-->
+            <div class="flexslider slider-r pull-right arr-gray" style="width:767px;height:449px;">
+                <ul class="slides">
+                    <li> <object width="100%" height="449px" data="../../images/test/house.png"></object></li>
+                    <li> <object width="100%" height="449px" data="../../images/test/slider1.png"></object></li>
+                    <li> <object width="100%" height="449px" data="https://720yun.com/t/9434gq993piyjx78i8?pano_id=sIKurFUs9e0ot6RG"></object></li>
+                    <li> <object width="100%" height="449px" data="../../images/test/house.png"></object></li>
+                    <li> <object width="100%" height="449px" data="../../images/test/slider1.png"></object></li>
+                    <li> <object width="100%" height="449px" data="https://720yun.com/t/9434gq993piyjx78i8?pano_id=sIKurFUs9e0ot6RG"></object></li>
+                </ul>
+                <div class="caption">户型图</div>
+            </div>
+        </div>
+        <!--page3-->
+        <div class="dz-house-type clear">
+            <!--left-box-->
+            <div class="left-box pull-left">
+                <div class="type-msg">
+                    <div class="title">A-5-1户型3</div>
+
+                    <div class="house-type-dsc">
+                        <span class="tit">户型结构</span>
+                        <span class="con">三室两厅两卫</span>
+                    </div>
+                    <div class="house-type-dsc">
+                        <span class="tit">建筑面积</span>
+                        <span class="con">三室两厅两卫</span>
+                    </div>
+                    <div class="house-type-dsc">
+                        <span class="tit">户型描述</span>
+                        <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                    </div>
+                </div>
+
+                <!--thumbs-box-->
+                <div class="thumbs-box">
+                    <div class="carousel carousel-r flex-control-thumbs" style="width:249px;height:60px;">
+                        <ul class="slides">
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider1.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider2.png" />
+                                </div>
+                            </li>
+                            <li class="flex-active-slide">
+                                <div class="img-box">
+                                    <img src="../../images/test/slider1.png" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--slider-r-->
+            <div class="flexslider slider-r pull-right arr-gray" style="width:767px;height:449px;">
+                <ul class="slides">
+                    <li> <object width="100%" height="449px" data="../../images/test/house.png"></object></li>
+                    <li> <object width="100%" height="449px" data="../../images/test/slider1.png"></object></li>
+                    <li> <object width="100%" height="449px" data="https://720yun.com/t/9434gq993piyjx78i8?pano_id=sIKurFUs9e0ot6RG"></object></li>
+                </ul>
+                <div class="caption">户型图</div>
+            </div>
         </div>
     </div>
+
 
     <!--house-type-tab-->
     <div class="house-type-tab">
@@ -327,7 +380,7 @@
         <div class="num pull-left">02</div>
         <div class="tit pull-left">
             <span class="top">STEP</span><br/>
-            <span>选择意向户型</span>
+            <span>选择支付方式</span>
         </div>
     </div>
 
@@ -368,7 +421,6 @@
             我已阅读并同意
             <a href="#" class="red">《房计划注册协议》</a>
         </div>
-        <!--<div class="pull-right"></div>-->
     </div>
     <a href="#" class="order-btn">立即定制</a>
 </div>
@@ -376,12 +428,53 @@
 <!--footer-->
 <iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
 
+<script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script>
     $(function(){
-        $('.pay-list>li,.house-type-content>li').click(function(){
+        /*选择支付方式*/
+        $('.pay-list>li').click(function(){
             $(this).addClass('active').siblings().removeClass('active');
         });
+
+        /*选择意向户型*/
+        sliders(0);
+        $('.house-type-content>li').click(function(){
+            var page=$('.page-wrap .dz-house-type');
+            $(this).addClass('active').siblings().removeClass('active');
+            var inx=$(this).index();
+            page.eq(inx).addClass('active').siblings().removeClass('active');
+            sliders(inx);//sliders
+        });
+
     })
+
+    /*sliders*/
+    function sliders(inx){
+        var nav=$('.slider-r').eq(inx);
+        var sync=$('.carousel-r').eq(inx);
+
+        $('.carousel-r').eq(inx).flexslider({
+            prevText:'',
+            nextText:'',
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            maxItems:4,
+            slideshow: false,
+            itemWidth: 60,
+            itemMargin: 3,
+            asNavFor: nav
+        });
+        $('.slider-r').eq(inx).flexslider({
+            prevText:'',
+            nextText:'',
+            animation: "slide",
+            controlNav: true,
+            animationLoop: false,
+            slideshow: false,
+            sync: sync
+        });
+    }
 </script>
 </body>
 </html>
