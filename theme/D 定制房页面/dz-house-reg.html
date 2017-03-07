@@ -420,6 +420,7 @@
             <input type="checkbox" id="rule" name="rule" datatype="*" nullmsg="请同意注册协议" sucmsg=" " checked="checked"/>
             我已阅读并同意
             <a href="#" class="red">《房计划注册协议》</a>
+            <!--<span class="Validform_wrong f12" style="display:none;">请同意并选择</span>-->
         </div>
     </div>
     <a href="#" class="order-btn">立即定制</a>
@@ -445,6 +446,15 @@
             page.eq(inx).addClass('active').siblings().removeClass('active');
             sliders(inx);//sliders
         });
+
+        /*协议同意验证*/
+        /*$('#rule').click(function(){
+            if(!this.checked){
+                $('.Validform_wrong').show();
+            }else{
+                $('.Validform_wrong').hide();
+            }
+        });*/
 
     })
 
