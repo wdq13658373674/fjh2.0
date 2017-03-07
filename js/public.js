@@ -22,11 +22,11 @@ $(function () {
     /*
      * tab切换
      * */
-    $('.menu-tab>.tab').click(function(){
+    $('.menu-tab>.tab,.menu-tab2>.tab').click(function(){
         var self=$(this),
             inx=self.index();
         self.addClass('active').siblings().removeClass('active');
-        $('.tab-box').eq(inx).addClass('active').siblings().removeClass('active');
+        $('.tab-box,.tab-box2').eq(inx).addClass('active').siblings().removeClass('active');
     });
 });
 
