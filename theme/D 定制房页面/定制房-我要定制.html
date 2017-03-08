@@ -387,8 +387,92 @@
 
     <!--house-select-wrap-->
     <div class="house-select-wrap clear">
-        <div class="left-box pull-left"></div>
-        <div class="right-box pull-right"></div>
+        <div class="left-box pull-left">
+            <img src="../../images/test/map.jpg" alt="" style="width:1300px;height:1900px;"/>
+            <!--标注-->
+            <div class="house-mark">
+                <span class="mark" style="top:40%;left:200px;">1#</span>
+                <span class="mark active" style="top:50%;left:250px;">2#</span>
+            </div>
+        </div>
+        <div class="right-box pull-right">
+            <!--占位-->
+            <div class="top">
+                <div id="thumbs" class="flex-control-thumbs">
+                    <ul class="slides hosue-num-list">
+                        <li>1#</li>
+                        <li>2#</li>
+                        <li>3#</li>
+                        <li  class="active">4#</li>
+                        <li>5#</li>
+                        <li>6#</li>
+                        <li>6#</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <!--slider-->
+                <div id="slider" class="flexslider" style="width:100%;height:auto;margin:20px 0;">
+                    <ul class="slides">
+                        <li>
+                            <div class="msg-line">
+                                <span class="tit">楼栋信息</span>
+                                <span class="con">御临天下[4号楼]</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">单元数量</span>
+                                <span class="con">1个单元</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">楼栋层数</span>
+                                <span class="con">23层</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">梯户配比</span>
+                                <span class="con">两梯六户</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="msg-line">
+                                <span class="tit">楼栋信息</span>
+                                <span class="con">御临天下[4号楼]</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">单元数量</span>
+                                <span class="con">1个单元</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">楼栋层数</span>
+                                <span class="con">23层</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">梯户配比</span>
+                                <span class="con">两梯六户</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="msg-line">
+                                <span class="tit">楼栋信息</span>
+                                <span class="con">御临天下[4号楼]</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">单元数量</span>
+                                <span class="con">1个单元</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">楼栋层数</span>
+                                <span class="con">23层</span>
+                            </div>
+                            <div class="msg-line">
+                                <span class="tit">梯户配比</span>
+                                <span class="con">两梯六户</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--dot-title-->
@@ -397,20 +481,19 @@
         <span class="pull-left">房源表</span>
     </div>
 
-    <!--menu-tab start-->
+    <!--menu-tab-->
     <ul class="menu-tab2 clear">
         <li class="tab active">4号楼</li>
         <li class="tab">3号楼</li>
         <li class="tab">2号楼</li>
         <li class="tab">8号楼</li>
     </ul>
-    <!--menu-tab start-->
 
-    <!--项目介绍-->
-    <!--4号楼-->
+    <!--tab-box2-->
+    <!--1-->
     <div class="tab-box2 active">
         <div class="tab-content tab-table">
-            <table class="table" cellspacing="0" cellpadding="0">
+            <table data-num="4" class="table" cellspacing="0" cellpadding="0">
                 <thead>
                 <tr>
                     <td width="125px">楼栋</td>
@@ -464,7 +547,7 @@
             </table>
         </div>
     </div>
-    <!--3号楼-->
+    <!--2-->
     <div class="tab-box2">
         <div class="tab-content tab-table">
             <table class="table" cellspacing="0" cellpadding="0">
@@ -509,7 +592,7 @@
             </table>
         </div>
     </div>
-    <!--2号楼-->
+    <!--3-->
     <div class="tab-box2">
         <div class="tab-content tab-table">
             <table class="table" cellspacing="0" cellpadding="0">
@@ -554,7 +637,7 @@
             </table>
         </div>
     </div>
-    <!--8号楼-->
+    <!--4-->
     <div class="tab-box2">
         <div class="tab-content tab-table">
             <table class="table" cellspacing="0" cellpadding="0">
@@ -658,5 +741,36 @@
 
 <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../../js/public/house.js"></script>
+
+<script>
+    $('#thumbs').flexslider({
+        prevText:'',
+        nextText:'',
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        maxItems:6,
+        directionNav: true,
+        slideshow: false,
+        itemWidth: 62,
+        itemMargin: 0
+    });
+    $('#slider').flexslider({
+        prevText:'',
+        nextText:'',
+        animation: "slide",
+        controlNav: true,
+        directionNav: false,
+        animationLoop: false,
+        manualControls: ".tab-table .select-btn",
+        slideshow: false,
+        before:function(e){
+            console.log(e);
+           /* var thumbs=$('#thumbs li');
+
+            thumbs.eq(e.animatingTo).addClass('active').siblings().removeClass('active');*/
+        }
+    });
+</script>
 </body>
 </html>
