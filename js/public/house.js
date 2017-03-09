@@ -18,6 +18,7 @@ $(function(){
     $('.house-type-content>li').click(function(){
         var page=$('.page-wrap .dz-house-type');
         $(this).addClass('active').siblings().removeClass('active');
+
         var inx=$(this).index();
         page.eq(inx).addClass('active').siblings().removeClass('active');
         sliders(inx);//sliders
@@ -34,7 +35,7 @@ $(function(){
 
 })
 
-/*sliders*/
+/*选择意向户型sliders*/
 function sliders(inx){
     var nav=$('.slider-r').eq(inx);
     var sync=$('.carousel-r').eq(inx);
