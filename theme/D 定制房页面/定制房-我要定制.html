@@ -408,8 +408,8 @@
                         <li>4#</li>
                         <li>5#</li>
                         <li>6#</li>
-                        <!--<li>7#</li>
-                        <li>8#</li>-->
+                        <li>7#</li>
+                        <li>8#</li>
                     </ul>
                 </div>
 
@@ -576,8 +576,8 @@
         <li class="tab">4号楼</li>
         <li class="tab">5号楼</li>
         <li class="tab">6号楼</li>
-        <!--<li class="tab">7号楼</li>
-        <li class="tab">8号楼</li>-->
+        <li class="tab">7号楼</li>
+        <li class="tab">8号楼</li>
     </ul>
 
     <!--tab-box2-->
@@ -834,22 +834,7 @@
 <script type="text/javascript" src="../../js/public/imgView.min.js"></script>
 <script>
     $(function(){
-        /*房源表tab切换*/
-        sliders2(0);
-        $('.menu-tab2 .tab').click(function(){
-            var inx=$(this).index()
-                ,mark=$('.house-mark .mark')
-                ,num=$('.house-num-list li')
-                ,slider=$('.num-slider');
-
-            num.eq(inx).addClass('active').siblings().removeClass('active');
-            mark.eq(inx).addClass('active').siblings().removeClass('active');
-            slider.eq(inx).addClass('active').siblings().removeClass('active');
-            sliders2(inx);
-        });
-
-
-        /*#thumbs .flex-direction-nav隐藏与显示*/
+        /*.flex-direction-nav隐藏与显示*/
         if($('.house-num-list>li').length <= 6){
             $('#thumbs .flex-direction-nav').hide();
         }
@@ -861,35 +846,6 @@
             cursor:'move'
         });
     })
-
-    /*选择楼栋房源sliders*/
-    function sliders2(inx){
-        var btn='.tab-table .table' + inx +' .select-btn';
-
-        $('#thumbs').flexslider({
-            prevText:'',
-            nextText:'',
-            animation: "slide",
-            controlNav: false,
-            animationLoop: false,
-            maxItems:6,
-            directionNav: true,
-            slideshow: false,
-            itemWidth: 62,
-            itemMargin: 0
-        });
-        $('.num-slider').eq(inx).flexslider({
-            prevText:'',
-            nextText:'',
-            animation: "slide",
-            controlNav: true,
-            directionNav: false,
-            animationLoop: false,
-            manualControls: btn,
-            slideshow: false
-        });
-    }
-
 </script>
 </body>
 </html>

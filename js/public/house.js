@@ -2,15 +2,12 @@
  * 定制房：我要报名，我要定制公共js
  */
 $(function(){
-    /*选择支付方式*/
+    /*
+    * 我要报名
+    * 选择支付方式
+    * */
     $('.pay-list>li').click(function(){
         $(this).addClass('active').siblings().removeClass('active');
-    });
-
-    /*选定此房源*/
-    $('.table .select-btn').click(function(){
-        $('.table tr').removeClass('active');
-        $(this).parents('tr').addClass('active');
     });
 
     /*选择意向户型*/
@@ -33,6 +30,38 @@ $(function(){
      }
      });*/
 
+
+    /*
+    * 我要定制
+    * 选定此房源
+    * */
+    $('.table .select-btn').click(function(){
+        $('.table tr').removeClass('active');
+        $(this).parents('tr').addClass('active');
+    });
+
+    /*房源表tab切换*/
+    sliders2(0);
+    $('.menu-tab2 .tab').click(function(){
+        var inx=$(this).index()
+            ,mark=$('.house-mark .mark')
+            ,num=$('.house-num-list li')
+            ,slider=$('.num-slider');
+
+        if(inx > 5){
+            var l=-(inx-5) * 62 + 'px';
+            console.log(l);
+            $('.house-num-list').css({
+                marginLeft:-l
+            })
+            //transform: translate3d(-124px, 0px, 0px)
+        }
+
+        num.eq(inx).addClass('active').siblings().removeClass('active');
+        mark.eq(inx).addClass('active').siblings().removeClass('active');
+        slider.eq(inx).addClass('active').siblings().removeClass('active');
+        sliders2(inx);
+    });
 })
 
 /*选择意向户型sliders*/
@@ -60,5 +89,33 @@ function sliders(inx){
         animationLoop: false,
         slideshow: false,
         sync: sync
+    });
+}
+
+/*选择楼栋房源sliders*/
+function sliders2(inx){
+    var btn='.tab-table .table' + inx +' .select-btn';
+
+    $('#thumbs').flexslider({
+        prevText:'',
+        nextText:'',
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        maxItems:6,
+        directionNav: true,
+        slideshow: false,
+        itemWidth: 62,
+        itemMargin: 0
+    });
+    $('.num-slider').eq(inx).flexslider({
+        prevText:'',
+        nextText:'',
+        animation: "slide",
+        controlNav: true,
+        directionNav: false,
+        animationLoop: false,
+        manualControls: btn,
+        slideshow: false
     });
 }
