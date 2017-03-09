@@ -48,15 +48,6 @@ $(function(){
             ,num=$('.house-num-list li')
             ,slider=$('.num-slider');
 
-        if(inx > 5){
-            var l=-(inx-5) * 62 + 'px';
-            console.log(l);
-            $('.house-num-list').css({
-                marginLeft:-l
-            })
-            //transform: translate3d(-124px, 0px, 0px)
-        }
-
         num.eq(inx).addClass('active').siblings().removeClass('active');
         mark.eq(inx).addClass('active').siblings().removeClass('active');
         slider.eq(inx).addClass('active').siblings().removeClass('active');
