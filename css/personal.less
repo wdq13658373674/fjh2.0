@@ -43,6 +43,10 @@ body{
         -o-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
         -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
         -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+        &:focus{
+          .transition();
+          background: #fff;
+        }
       }
       .select{
         width: 222px;
@@ -1230,7 +1234,7 @@ body{
     }
   }
   .pro-details{
-    box-shadow: 0 7px 10px 0 #c3cad8;
+    box-shadow: 0 2px 5px 0 #c3cad8;
     &:hover{
       border: solid 1px #c3cad8;
     }
@@ -1418,6 +1422,12 @@ body{
       font-weight: normal;
     }
     .d-form{
+      .d-form-group {
+        margin-top: 28px;
+      }
+      input{
+        width: 346px;
+      }
       label{
         width: 88px;
       }
