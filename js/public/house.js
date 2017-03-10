@@ -3,7 +3,7 @@
  */
 $(function(){
     /*
-    * 我要报名
+    * 1、我要报名
     * 选择支付方式
     * */
     $('.pay-list>li').click(function(){
@@ -32,7 +32,7 @@ $(function(){
 
 
     /*
-    * 我要定制
+    * 2、我要定制
     * 选定此房源
     * */
     $('.table .select-btn').click(function(){
@@ -48,7 +48,7 @@ $(function(){
             ,num=$('.house-num-list li')
             ,slider=$('.num-slider');
 
-        /*超出滚动*/
+        /*楼栋超出滚动*/
         var n= parseInt(inx / 6);
         $('#thumbs .flex-control-nav>li a').eq(n).click();
 
