@@ -387,18 +387,19 @@
 
     <!--house-select-wrap-->
     <div class="house-select-wrap clear">
-        <div id="imgView" class="left-box pull-left">
-            <img src="../../images/test/map.jpg" alt="" style="width:1300px;height:1900px;position:absolute;"/>
-            <!--标注-->
-            <div class="house-mark">
-                <span class="mark active" style="top:50px;left:200px;">1#</span>
-                <span class="mark" style="top:80px;left:250px;">2#</span>
-                <span class="mark" style="top:100px;left:100px;">3#</span>
-                <span class="mark" style="top:100px;left:400px;">4#</span>
+        <div class="left-box pull-left">
+            <div id="imgView">
+                <img src="../../images/test/map.jpg" alt="" style="position: relative;"/>
+                <div class="house-mark">
+                    <span class="mark active" style="top:50px;left:200px;">1#</span>
+                    <span class="mark" style="top:80px;left:250px;">2#</span>
+                    <span class="mark" style="top:100px;left:100px;">3#</span>
+                    <span class="mark" style="top:100px;left:400px;">4#</span>
+                </div>
             </div>
         </div>
+
         <div class="right-box pull-right">
-            <!--占位-->
             <div class="top">
                 <div id="thumbs" class="flex-control-thumbs">
                     <ul class="slides house-num-list">
@@ -831,12 +832,23 @@
 
 <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../../js/public/house.js"></script>
+<script type="text/javascript" src="../../js/addons/imgView/spryMap-min2.js"></script>
 <script>
     $(function(){
         /*.flex-direction-nav隐藏与显示*/
         if($('.house-num-list>li').length <= 6){
             $('#thumbs .flex-direction-nav').hide();
         }
+
+        /*大图拖动*/
+        var map = new SpryMap({
+            id : "imgView",
+            height: 450,
+            width: 745,
+            startX: 200,
+            startY: 200,
+            cssClass: "mappy"
+        });
     })
 </script>
 </body>
