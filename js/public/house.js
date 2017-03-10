@@ -48,6 +48,11 @@ $(function(){
             ,num=$('.house-num-list li')
             ,slider=$('.num-slider');
 
+        /*超出滚动*/
+        var n= parseInt(inx / 6);
+        $('#thumbs .flex-control-nav>li a').eq(n).click();
+
+        /*连带样式*/
         num.eq(inx).addClass('active').siblings().removeClass('active');
         mark.eq(inx).addClass('active').siblings().removeClass('active');
         slider.eq(inx).addClass('active').siblings().removeClass('active');
@@ -91,7 +96,7 @@ function sliders2(inx){
         prevText:'',
         nextText:'',
         animation: "slide",
-        controlNav: false,
+        controlNav: true,
         animationLoop: false,
         maxItems:6,
         directionNav: true,

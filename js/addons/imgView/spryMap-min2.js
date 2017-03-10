@@ -9,4 +9,4 @@ m.mouseLocations.pop();}else{var totalTics=m.scrollTime/20;var fractionRemaining
 m.timerId=setInterval(OnScrollTimer,20);}
 e.preventDefault();});AddListener(document,"mouseup",function(){if(m.mouseDown){var handler=MouseMove;if(document.detachEvent){document.detachEvent("onmousemove",document["mousemove"+handler]);document["mousemove"+handler]=null;}else{document.removeEventListener("mousemove",handler,false);}
 m.mouseDown=false;if(m.mouseLocations.length>0){var clickCount=m.mouseLocations.length;m.velocity.x=(m.mouseLocations[clickCount-1].x-m.mouseLocations[0].x)/clickCount;m.velocity.y=(m.mouseLocations[clickCount-1].y-m.mouseLocations[0].y)/clickCount;m.mouseLocations.length=0;}}
-m.viewingBox.style.cursor="auto";});};
+m.viewingBox.style.cursor="move";});};
