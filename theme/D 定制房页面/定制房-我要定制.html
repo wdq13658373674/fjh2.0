@@ -388,13 +388,13 @@
     <!--house-select-wrap-->
     <div class="house-select-wrap clear">
         <div id="imgView" class="left-box pull-left">
-            <img src="../../images/test/map.jpg" alt="" style="width:1300px;height:1900px;"/>
+            <img src="../../images/test/map.jpg" alt="" style="width:1300px;height:1900px;position:absolute;"/>
             <!--标注-->
             <div class="house-mark">
-                <span class="mark active" style="top:40%;left:200px;">1#</span>
-                <span class="mark" style="top:50%;left:250px;">2#</span>
-                <span class="mark" style="top:60%;left:250px;">3#</span>
-                <span class="mark" style="top:50%;left:400px;">4#</span>
+                <span class="mark active" style="top:50px;left:200px;">1#</span>
+                <span class="mark" style="top:80px;left:250px;">2#</span>
+                <span class="mark" style="top:100px;left:100px;">3#</span>
+                <span class="mark" style="top:100px;left:400px;">4#</span>
             </div>
         </div>
         <div class="right-box pull-right">
@@ -407,9 +407,9 @@
                         <li>3#</li>
                         <li>4#</li>
                         <li>5#</li>
-                        <li>6#</li>
+                        <!--<li>6#</li>
                         <li>7#</li>
-                        <li>8#</li>
+                        <li>8#</li>-->
                     </ul>
                 </div>
 
@@ -575,9 +575,9 @@
         <li class="tab">3号楼</li>
         <li class="tab">4号楼</li>
         <li class="tab">5号楼</li>
-        <li class="tab">6号楼</li>
+        <!--<li class="tab">6号楼</li>
         <li class="tab">7号楼</li>
-        <li class="tab">8号楼</li>
+        <li class="tab">8号楼</li>-->
     </ul>
 
     <!--tab-box2-->
@@ -831,20 +831,12 @@
 
 <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../../js/public/house.js"></script>
-<script type="text/javascript" src="../../js/public/imgView.min.js"></script>
 <script>
     $(function(){
         /*.flex-direction-nav隐藏与显示*/
         if($('.house-num-list>li').length <= 6){
             $('#thumbs .flex-direction-nav').hide();
         }
-
-        /*大图拖动*/
-        $('#imgView').imageView({
-            width: 745,
-            height:450,
-            cursor:'move'
-        });
     })
 </script>
 </body>
