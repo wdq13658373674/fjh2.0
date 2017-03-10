@@ -29,15 +29,134 @@
             <span>相册 </span>
         </div>
 
-        <div class="line-title">
-            <span class="line"></span>
-            <span class="title">邻水县丨云鼎府邸</span>
-            <span class="line"></span>
+        <!--line-title-->
+        <div class="line-title mt30">
+            <div class="inline-block">
+                <span class="title">邻水县丨云鼎府邸</span>
+            </div>
         </div>
+        <!--desc-list-->
+        <div class="desc-list mt20 clear">
+            <span>纯洋房社区</span>
+            <span>纯洋房社区</span>
+            <span>纯洋房社区</span>
+        </div>
+
+        <!--vr-tab-wrap-->
+        <div class="vr-tab-wrap mt30 clear">
+            <!--left-box-->
+            <div class="left-box pull-left">
+                <!--1-->
+                <div class="tab-box3 active">
+                    <div class="tab-content">
+                        1
+                    </div>
+                </div>
+                <!--2-->
+                <div class="tab-box3">
+                    <div class="tab-content">
+                        2
+                    </div>
+                </div>
+                <!--3-->
+                <div class="tab-box3">
+                    <div class="tab-content">
+                        3
+                    </div>
+                </div>
+            </div>
+
+            <!--right-box-->
+            <div class="right-box pull-right">
+                <div class="menu-tab3">
+                    <span class="title">VR看房</span>
+                    <span data-num="0" class="tab active icon1">虚拟样板间</span>
+                    <span class="title">楼盘相册</span>
+                    <span data-num="1" class="tab icon2">户型图</span>
+                    <span data-num="2" class="tab icon3">效果图</span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav-box clear">
+            <li class="box icon1">
+                <span class="tit">房计划优惠均价</span>
+                <span class="red f20">4890.00</span>
+                <span class="tit">元/m<sup>2</sup></span>
+                <span class="v-line pull-right"></span>
+            </li>
+            <li class="box icon2">
+                <span class="tit">项目阶段</span>
+                <span>报名中</span>
+                <span class="v-line pull-right"></span>
+            </li>
+            <li class="box icon3">
+                <span class="tit">更多优惠电话详询</span>
+                <span> 400-135-6677</span>
+            </li>
+        </ul>
+
+        <!--line-title-->
+        <div class="line-title mt60">
+            <div class="inline-block">
+                <span class="title">了解更多</span>
+            </div>
+        </div>
+
+        <table class="vr-table">
+            <tbody>
+            <tr>
+                <td>
+                    <div class="tit">房计划优惠均价</div>
+                    <div class="con">普通住宅</div>
+                </td>
+                <td>
+                    <div class="tit">建筑形态</div>
+                    <div class="con">普通住宅</div>
+                </td>
+                <td>
+                    <div class="tit">绿化率</div>
+                    <div class="con">普通住宅</div>
+                </td>
+                <td>
+                    <div class="tit">绿化率</div>
+                    <div class="con">普通住宅</div>
+                </td>
+            </tr>
+            <tr class="no-border">
+                <td>
+                    <div class="tit">建筑面积</div>
+                    <div class="con">普通住宅</div>
+                </td>
+                <td>
+                    <div class="tit">开发商</div>
+                    <div class="con">普通住宅</div>
+                </td>
+                <td>
+                    <div class="tit">项目地址</div>
+                    <div class="con">重庆市渝北区冉家坝扬子江商子江商子江商子江商务大厦22楼</div>
+                </td>
+                <td>
+                    <div class="tit">售房部地址</div>
+                    <div class="con">--</div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
 <!--footer-->
 <iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
+<script>
+    $(function(){
+        $('.menu-tab3>.tab').click(function(e){
+            var self=$(this);
+            var inx=self.attr('data-num');
+            self.addClass('active').siblings().removeClass('active');
+            $('.tab-box3').eq(inx).addClass('active').siblings().removeClass('active');
+        })
+    })
+</script>
 </body>
 </html>

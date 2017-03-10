@@ -25,6 +25,31 @@
   .tab-content{.wh(1071px,auto);margin:30px auto;overflow: hidden;background: #ffffff;}
 }
 
+.menu-tab3{.wh(100%,auto);
+  .tab{.wh(100%,60px,60px);cursor: pointer;padding-left:69px;display:block;
+    &.icon1{background: url("../images/house/nav_s1.png") 31px center no-repeat;
+      &:hover{background: url("../images/house/nav_sh1.png") 31px center no-repeat;}
+      &.active{background: url("../images/house/nav_sh1.png") 31px center no-repeat;}
+    }
+    &.icon2{background: url("../images/house/nav_s2.png") 31px center no-repeat;
+      &:hover{background: url("../images/house/nav_sh2.png") 31px center no-repeat;}
+      &.active{background: url("../images/house/nav_sh2.png") 31px center no-repeat;}
+    }
+    &.icon3{background: url("../images/house/nav_s3.png") 31px center no-repeat;
+      &:hover{background: url("../images/house/nav_sh3.png") 31px center no-repeat;}
+      &.active{background: url("../images/house/nav_sh3.png") 31px center no-repeat;}
+    }
+    
+    &.active{color:@red;}
+    &:hover{color:@red;}
+  }
+
+  .title{background: @gray-bg;.wh(100%,40px,40px);text-align: center;border: solid 1px #c3cad8;display: block;border-width: 1px 0;}
+}
+.tab-box3{display:none;
+  &.active{display:block;}
+}
+
 /*
 滚动加载loading重置
 <i class="layui-anim layui-anim-rotate layui-anim-loop layui-icon ">&#xe63e;</i>
@@ -35,6 +60,11 @@
 
 /*下三角*/
 .tangle{display:block;.wh(16px,8px);background: url("../images/icon/rectangle.png") center no-repeat;position: absolute;bottom:-7px;left:50%;margin-left:-8px;}
+/*描述列表*/
+.desc-list{overflow: hidden;text-align: center;
+  span{color:@blue;font-size:12px;display:inline-block;*zoom:1;height:29px;line-height:29px;padding:0 10px;margin-right:10px;border:1px solid @blue;.round(4px);}
+}
+
 
 /*定制房详情*/
 .dz-house-wrap{.main-width;margin-top:25px;
@@ -76,8 +106,8 @@
     .top-box{.wh(100%,391px);background: #ffffff;overflow: hidden;
       .house-title{.wh(325px,49px,20px);overflow:hidden;font-size: 18px;color:@txt-black;margin:26px auto 0px;}
       /*描述列表*/
-      .desc-list{.wh(325px,29px);margin:0 auto 32px;overflow: hidden;
-        span{float:left;color:@blue;font-size:12px;display:block;height:29px;line-height:29px;padding:0 10px;margin-right:10px;border:1px solid @blue;.round(4px);}
+      .desc-list{.wh(325px,29px);margin:0 auto 32px;
+        span{float:left;}
       }
 
       .dz-msg-list{.wh(325px,auto);margin:0 auto;
@@ -308,11 +338,45 @@
 }
 
 /*VR展示*/
-.line-title{height:40px;line-height:40px;/*background: url("../images/house/solid.png") left center repeat-x;*/text-align: center;
-  .title{padding:0 56px;background: #ffffff;font-size:30px;}
-  .line{.wh(101px,0,0);border-bottom:1px solid @gray-border2;}
+.line-title{text-align: center;
+  .inline-block{.wh(auto,40px,40px);display:inline-block;*zoom:1;background: url("../images/house/solid.png") left center repeat-x;padding:0 100px;}
+  .title{padding:0 56px;background: #ffffff;font-size:30px;text-align: center;}
 }
-.white-bg-wrap{.main-width;margin-top:25px;background: #ffffff;overflow: hidden;
-  .vr-wrap{.wh(1100px,auto);margin:28px auto 0;}
+
+.white-bg-wrap{.main-width;margin-top:25px;background: #ffffff;overflow: hidden;}
+.vr-wrap{.wh(1100px,auto);margin:28px auto 0;
+  /*描述列表*/
+  .desc-list{
+    span{margin:0 5px;}
+  }
+
+  .vr-tab-wrap{.wh(100%,auto);overflow: hidden;
+    .left-box{.wh(917px,515px);overflow: hidden;border: solid 1px #c3cad8;border-width: 1px 0px 1px 1px;}
+    .right-box{.wh(183px,515px);overflow: hidden;border: solid 1px #c3cad8;border-top-width:0;}
+  }
+
+  .nav-box{.wh(1200px,auto);overflow: hidden;background: #fff;border-bottom:1px solid @gray-border2;
+    .box{.wh(326.6px,137px,137px);float: left;padding-left:62px;color:@txt-black;margin-right:60px;overflow: hidden;
+      &:last-child{border-right:0;}
+      &.icon1{background: url("../images/house/nav4.png") left center no-repeat;}
+      &.icon2{background: url("../images/house/nav2.png") left center no-repeat;}
+      &.icon3{background: url("../images/house/nav5.png") left center no-repeat;}
+
+      .tit{color:@gray;margin-right:5px;}
+      .v-line{display:block;.wh(3px,34px);border-right:1px solid @gray-border2;margin-top:51.5px;}
+    }
+  }
+
+  .vr-table{.wh(100%,auto);
+    tr{
+      &.no-border>td{border:none;}
+      td{width:275px;padding-top:86px;padding-bottom:48px;border-bottom:1px dotted @gray-border2;padding-right:10px;}
+      .tit{font-size:12px;color:@gray;}
+      .con{margin-top:13px;}
+    }
+  }
 }
+
+
+
 
