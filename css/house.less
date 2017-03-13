@@ -344,15 +344,16 @@
 }
 
 .white-bg-wrap{.main-width;margin-top:25px;background: #ffffff;overflow: hidden;}
-.vr-wrap{.wh(1100px,auto);margin:28px auto 0;
+.vr-wrap{.wh(1100px,auto);margin:28px auto 0;overflow: hidden;
   /*描述列表*/
-  .desc-list{
-    span{margin:0 5px;}
+  .desc-list{margin-top:10px;
+    span{margin:10px 5px 0;}
   }
 
   .vr-tab-wrap{.wh(100%,auto);overflow: hidden;
     .left-box{.wh(917px,515px);overflow: hidden;border: solid 1px #c3cad8;border-width: 1px 0px 1px 1px;}
     .right-box{.wh(183px,515px);overflow: hidden;border: solid 1px #c3cad8;border-top-width:0;}
+    .slide-caption{.wh(100%,40px,40px);background: @gray-bg;padding:0 23px;}
   }
 
   .nav-box{.wh(1200px,auto);overflow: hidden;background: #fff;border-bottom:1px solid @gray-border2;
