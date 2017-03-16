@@ -84,7 +84,11 @@ function sliders(inx){
         controlNav: false,
         animationLoop: false,
         slideshow: false,
-        sync: sync
+        sync: sync,
+        before:function(e){
+            var tit=$('.slider-r').eq(inx).find('object').eq(e.animatingTo).prop('title');
+            $('.caption').eq(inx).text(tit);
+        }
     });
 }
 
