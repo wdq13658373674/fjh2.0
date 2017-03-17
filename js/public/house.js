@@ -86,6 +86,7 @@ function sliders(inx){
         slideshow: false,
         sync: sync,
         before:function(e){
+            console.log(e);
             var tit=$('.slider-r').eq(inx).find('object').eq(e.animatingTo).prop('title');
             $('.caption').eq(inx).text(tit);
         }
