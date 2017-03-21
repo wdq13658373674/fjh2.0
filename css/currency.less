@@ -1,14 +1,15 @@
 @import "../cssControl/control";
-body{
+
+body {
   background: #eff2f9;
 }
 
-.d-form{
-  .d-form-group{
+.d-form {
+  .d-form-group {
     margin-top: 44px;
-    .d-form-control{
-      position: relative;
-      input{
+    position: relative;
+    .d-form-control {
+      input {
         width: 100%;
         height: 46px;
         padding-left: 18px;
@@ -16,28 +17,28 @@ body{
         background-color: #eff2f9;
         box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
         border: solid 1px #c3c9d8;
-        &:focus{
+        &:focus {
           .transition();
           background: #fff;
         }
       }
-      .Validform_error{
+      .Validform_error {
         border-radius: 3px;
         box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
         border: solid 1px #fd5b5f;
         background: #fff;
       }
-      .d-code{
+      .d-code {
         width: 64%;
       }
-      .code-btn{
+      .code-btn {
         width: 173px;
         .btn-red-full();
         display: inline-block;
         font-size: 16px;
         float: right;
       }
-      .btn-disabled{
+      .btn-disabled {
         float: right;
         width: 173px;
         height: 46px;
@@ -54,12 +55,13 @@ body{
         font-size: 16px;
       }
     }
-    .Validform_checktip{
+    .Validform_checktip {
       position: absolute;
       bottom: -30px;
       display: block;
+      color: #d9534f;
     }
-    .f-btn{
+    .f-btn {
       width: 100%;
       .btn-red-full();
       font-size: 16px;
@@ -67,50 +69,51 @@ body{
   }
 }
 
-
-.j-container{
+.j-container {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 1200px;
+  min-height: 1029px;
   background: #fff;
   padding: 50px;
-  .d-form{
+  .d-form {
     margin-bottom: 359px;
   }
 }
+
 //系统跳转页
-.jump{
+.jump {
   text-align: center;
   padding-bottom: 263px;
-  img{
+  img {
     margin-top: 209px;
   }
-  h2{
+  h2 {
     font-size: 24px;
     font-weight: normal;
     color: #fd5b5f;
   }
-  .line{
+  .line {
     width: 674px;
     margin: 18px auto 20px auto;
-    height:1px;
-    border:none;
-    border-top:1px solid #dbe0ed;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #dbe0ed;
   }
-  p{
+  p {
     font-size: 14px;
     color: #7f85a3;
-    span{
+    span {
       color: #58a4e8;
-      em{
+      em {
         font-style: normal;
       }
     }
-    a{
+    a {
       color: #58a4e8;
     }
   }
-  .goto{
+  .goto {
     width: 90px;
     margin: 20px auto 0 auto;
     .btn-red-full();
@@ -118,21 +121,20 @@ body{
 }
 
 //手机号码验证
-.verification{
-  .title{
+.verification {
+  .title {
     font-size: 24px;
     font-weight: normal;
     color: #2b314d;
     padding-bottom: 35px;
-    border-bottom:7px solid #fff;
-    border-image:url("../images/myData/border.png") 15 0 15 0 round;
-    -o-border-image:url("../images/myData/border.png") 15 0 15 0 round;
-    -moz-border-image:url("../images/myData/border.png") 15 0 15 0 round;
-    -webkit-border-image:url("../images/myData/border.png") 15 0 15 0 round;
+    border-bottom: 7px solid #fff;
+    border-image: url("../images/myData/border.png") 15 0 15 0 round;
+    -o-border-image: url("../images/myData/border.png") 15 0 15 0 round;
+    -moz-border-image: url("../images/myData/border.png") 15 0 15 0 round;
+    -webkit-border-image: url("../images/myData/border.png") 15 0 15 0 round;
   }
 
-
-  .stepBox{
+  .stepBox {
     margin-top: 72px;
     .ui-step {
       width: 740px;
@@ -144,7 +146,7 @@ body{
       position: relative;
       color: #b7b7b7;
       overflow: hidden;
-      &:after{
+      &:after {
         clear: both;
         content: " ";
         display: block;
@@ -152,7 +154,7 @@ body{
         height: 0;
         visibility: hidden;
       }
-      li{
+      li {
         float: left;
         height: 54px;
         margin: 0;
@@ -180,6 +182,7 @@ body{
     }
   }
 }
+
 .ui-step-icon {
   height: 50px;
   position: absolute;
@@ -187,19 +190,19 @@ body{
   width: 150px;
   text-align: center;
   left: -25px;
-  .ui-icon{
+  .ui-icon {
     display: block;
     width: 44px;
     height: 44px;
   }
-  .ui-step-1{
-    .icon("../images/user/group.png",no-repeat);
+  .ui-step-1 {
+    .icon("../images/user/group.png", no-repeat);
   }
-  .ui-step-2{
-    .icon("../images/user/group-2.png",no-repeat);
+  .ui-step-2 {
+    .icon("../images/user/group-2.png", no-repeat);
   }
-  .ui-step-3{
-    .icon("../images/user/group-3.png",no-repeat);
+  .ui-step-3 {
+    .icon("../images/user/group-3.png", no-repeat);
   }
   .ui-step-text {
     font-size: 14px;
@@ -223,54 +226,214 @@ body{
 .ui-step .ui-step-active {
   color: #fd5b5f
 }
-.ui-step-active{
-  .ui-step-2{
-    .icon("../images/user/group-9.png",no-repeat);
+
+.ui-step-active {
+  .ui-step-2 {
+    .icon("../images/user/group-9.png", no-repeat);
   }
-  .ui-step-3{
-    .icon("../images/user/group-11.png",no-repeat);
+  .ui-step-3 {
+    .icon("../images/user/group-11.png", no-repeat);
   }
 }
 
-.veriForm{
+.veriForm {
   margin-top: 113px;
   width: 492px;
-  p{
+  p {
     text-align: left;
     font-size: 20px;
   }
 }
 
-.upDate-suss{
+.upDate-suss {
   margin-top: 100px;
   text-align: center;
-  h2{
+  h2 {
     margin-top: 38px;
     font-size: 24px;
     font-weight: normal;
     color: #fd5b5f;
   }
-  hr{
+  hr {
     width: 674px;
     margin: 20px auto 20px auto;
-    height:1px;
-    border:none;
-    border-top:1px solid #dbe0ed;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #dbe0ed;
   }
-  p{
+  p {
     margin-bottom: 320px;
     color: #7f85a3;
     font-size: 14px;
-    span{
+    span {
       color: #58a4e8;
-      em{
+      em {
         font-style: normal;
       }
     }
-    a{
+    a {
       color: #58a4e8;
     }
   }
 }
 
+//pos支付
+.pos-box {
+  margin-top: 72px;
+  p {
+    font-size: 16px;
+    &.pos-money {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #7f85a3;
+    }
+  }
+  .pos-money {
+    span {
+      font-size: 24px;
+      color: #fd5b5f;
+    }
+  }
+}
 
+.orderNumber-box {
+  margin-top: 34px;
+  p {
+    font-size: 16px;
+  }
+  .orderNumber {
+    text-align: center;
+    line-height: 47px;
+    margin-top: 11px;
+    width: 327px;
+    height: 47px;
+    background: #ebf6ff;
+    font-size: 20px;
+    color: #58a4e8;
+  }
+}
+
+.pos-tips {
+  margin-top: 72px;
+  .line {
+    margin: 15px 0;
+  }
+}
+
+//微信支付
+.weChat-payment-box {
+  margin-top: 72px;
+  width: 219px;
+}
+
+.payment-amount {
+  .pull-right {
+    p {
+      font-size: 16px;
+      color: #2b314d;
+    }
+    .amount {
+      margin-top: 12px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #fd5b5f;
+    }
+  }
+}
+
+.payment-scanning {
+  text-align: center;
+  margin-top: 16px;
+  width: 219px;
+  border-radius: 8px;
+  border: solid 1px #c3cad8;
+  padding: 31px;
+  .ewm {
+    width: 157px;
+    height: 157px;
+    border-radius: 8px;
+    background-color: #dbe0ed;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 26px;
+    color: #2b314d;
+  }
+  .weChat {
+    margin-top: 47px;
+  }
+}
+
+//选择支付方式
+.selective-payment-box {
+  margin-top: 72px;
+  p {
+    font-size: 16px;
+    color: #2b314d;
+  }
+  .payment-money {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #7f85a3;
+    span {
+      font-size: 30px;
+      color: #fd5b5f;
+      font-weight: bold;
+    }
+  }
+}
+
+.pay-list {
+  margin-top: 28px;
+  li {
+    position: relative;
+    .wh(166px, 69px);
+    float: left;;
+    .round(5px);
+    margin-top: 10px;
+    margin-right: 17px;
+    overflow: hidden;
+    &.active {
+      border: 2px solid @red;
+      .box-shadow(0, 5px, 4px 0, #c3cad8);
+      .icon-suc {
+        display: block;
+      }
+      img {
+        margin-left: -2px;
+        margin-top: -2px;
+      }
+      &:hover {
+        border: solid 2px @red;
+        img {
+          margin-left: -2px;
+          margin-top: -2px;
+        }
+      }
+    }
+
+    &:hover {
+      border: 1px solid @red;
+      .box-shadow(0, 5px, 4px 0, #c3cad8);
+      img {
+        margin-left: -1px;
+        margin-top: -1px;
+      }
+    }
+  }
+  .icon-suc {
+    width: 28px;
+    height: 28px;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(../images/house/suc.png) no-repeat;
+  }
+}
+.pay-next{
+  margin-top: 72px;
+  a{
+    .btn-red-full();width:326px;.textshadow(0,-1px,0,#dc4144);font-size:16px;
+  }
+}
