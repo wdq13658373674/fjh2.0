@@ -1272,6 +1272,7 @@ body{
     }
   }
   .payment{
+    width: 112px;
     position: relative;
     a{
       display: inline-block;
@@ -1286,14 +1287,14 @@ body{
       display: block;
       .icon("../images/icon/success_tips.png",no-repeat);
       top: 32px;
-      right: 45px;
+      right: 16%;
     }
     b{
       display: inline;
       font-style: normal;
       position: absolute;
       font-weight: normal;
-      left: 52px;
+      left: 25%;
       top: 0;
     }
   }
@@ -1301,8 +1302,12 @@ body{
     color: #c3c9d8;
   }
   .btn-see{
+    margin: 0 auto;
+    display: block;
     padding: 5px 9px;
     font-size: 12px;
+    width: 100px;
+    line-height: normal;
     height: 27px;
     border-radius: 3px;
     background-image: linear-gradient(to bottom, #ffffff, #eff2f9);
@@ -1310,6 +1315,24 @@ body{
     &:hover{
       background-image: linear-gradient(to bottom, #eff2f9, #ffffff);
     }
+  }
+  .btn-st{
+    margin: 0 auto;
+    display: block;
+    padding: 5px 9px;
+    width: 100px;
+    height: 27px;
+    color: #77bfff;
+    line-height: normal;
+  }
+  .tips-tk{
+    margin: 0 auto;
+    display: block;
+    padding: 5px 9px;
+    width: 100px;
+    height: 27px;
+    color: #77bfff;
+    line-height: normal;
   }
   .download{
     position: relative;
@@ -1320,27 +1343,24 @@ body{
       position: absolute;
       display: none;
       width: 120px;
-      height: 80px;
       line-height: 40px;
       border: 1px solid #c3c9d8;
       border-radius: 3px;
       background: #fff;
       z-index: 3;
-      bottom: -56px;
+      top: 56px;
       left: 11px;
-      overflow: hidden;
       .tips-download{
         position: relative;
-        >a{
+        a{
           display: block;
           height: 39px;
-          border-bottom: 1px solid #c3c9d8;
-          &:nth-child(2){
-            border-bottom: 0;
+          border-top: 1px solid #c3c9d8;
+          &:first-child{
+            border: 0;
           }
           &:hover{
             background: #eff2f9;
-            background-origin: border-box;
           }
         }
         .triangle-up{
