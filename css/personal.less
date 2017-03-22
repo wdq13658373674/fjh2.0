@@ -1322,17 +1322,19 @@ body{
       z-index: 3;
       bottom: -56px;
       left: 11px;
+      overflow: hidden;
       .tips-download{
         position: relative;
-        a{
+        >a{
           display: block;
-          height: 40px;
+          height: 39px;
           border-bottom: 1px solid #c3c9d8;
-          &:last-child{
-            border-bottom: none;
+          &:nth-child(2){
+            border-bottom: 0;
           }
           &:hover{
             background: #eff2f9;
+            background-origin: border-box;
           }
         }
         .triangle-up{
