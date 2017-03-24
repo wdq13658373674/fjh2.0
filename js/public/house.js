@@ -41,22 +41,23 @@ $(function(){
     });
 
     /*房源表tab切换*/
-    sliders2(0);
+    sliders2();
     $('.menu-tab2 .tab').click(function(){
-        var inx=$(this).index()
+        var inx=$(this).attr('data-value')
             ,mark=$('.house-mark .mark')
             ,num=$('.house-num-list li')
-            ,slider=$('.num-slider');
+            ,slider=$('.num-slider .flex-control-nav>li a');
+
 
         /*楼栋超出滚动*/
         var n= parseInt(inx / 6);
         $('#thumbs .flex-control-nav>li a').eq(n).click();
+        $('.num-slider .flex-control-nav>li a').eq(inx).click();
 
         /*连带样式*/
         num.eq(inx).addClass('active').siblings().removeClass('active');
         mark.eq(inx).addClass('active').siblings().removeClass('active');
-        slider.eq(inx).addClass('active').siblings().removeClass('active');
-        sliders2(inx);
+        sliders2();
     });
 })
 
@@ -94,9 +95,7 @@ function sliders(inx){
 }
 
 /*选择楼栋房源sliders*/
-function sliders2(inx){
-    var btn='.tab-table .table' + inx +' .select-btn';
-
+function sliders2(){
     $('#thumbs').flexslider({
         prevText:'',
         nextText:'',
@@ -109,14 +108,13 @@ function sliders2(inx){
         itemWidth: 62,
         itemMargin: 0
     });
-    $('.num-slider').eq(inx).flexslider({
+    $('.num-slider').flexslider({
         prevText:'',
         nextText:'',
         animation: "slide",
         controlNav: true,
         directionNav: false,
         animationLoop: false,
-        manualControls: btn,
         slideshow: false
     });
 }
