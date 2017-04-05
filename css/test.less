@@ -1,11 +1,6 @@
 @import "../cssControl/control";
 
-#input-box{text-align: center;margin-top:20px;
-  #input{.input();width:400px;}
-}
-
-.auto-hide{position: absolute;.wh(400px,auto);display:none;}
-.auto-show{position: absolute;.wh(400px,auto);border:1px solid @gray-border2;z-index:999;display:block;}
-
-.lighten{color:#ffffff;background-color:highlight;width:100%;}
-.unlighten{color:#000000;width:100%;background-color: #ffffff;}
+#parent{.wh(10px,500px);background: @gray;position: relative;float:left;}
+#child{.wh(10px,80px);.round(20px);background: @red;position: absolute;}
+#box{float:left;.wh(500px,500px);position: relative;overflow: hidden;border:1px solid @gray-border2;}
+#content{position: absolute ;}
