@@ -72,10 +72,10 @@ function sliders(inx){
         animation: "slide",
         controlNav: false,
         animationLoop: false,
-        maxItems:4,
+        maxItems:5,
         slideshow: false,
-        itemWidth: 60,
-        itemMargin: 3,
+        itemWidth: 128,
+        itemMargin: 11,
         asNavFor: nav
     });
     $('.slider-r').eq(inx).flexslider({
@@ -83,14 +83,10 @@ function sliders(inx){
         nextText:'',
         animation: "slide",
         controlNav: false,
+        directionNav: false,
         animationLoop: false,
         slideshow: false,
-        sync: sync,
-        before:function(e){
-            console.log(e);
-            var tit=$('.slider-r').eq(inx).find('object').eq(e.animatingTo).prop('title');
-            $('.caption').eq(inx).text(tit);
-        }
+        sync: sync
     });
 }
 
