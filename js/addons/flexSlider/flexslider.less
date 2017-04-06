@@ -63,10 +63,11 @@ html[xmlns] .slides {display: block;}
   }
 
   .flex-direction-nav{
-    a{text-decoration:none; display: block; width: 30px; height: 104px;position: absolute; top:0; z-index: 10; overflow: hidden;cursor: pointer; }
-    .flex-prev { left:-41px;background: url("slide_arr.png") center no-repeat;background-size:35%;background-color: #c3c9d8 ;}
-    .flex-next { right:-41px;background:url("slide_arr2.png") center no-repeat;background-size:35%;background-color: #c3c9d8 ;}
+    a{outline:none;text-decoration:none; display: block; width: 22px; height: 60px;position: absolute; top:0; z-index: 10; overflow: hidden;cursor: pointer; }
+    .flex-prev { left:-30px;background: url("slide_arr.png") center no-repeat;background-size:35%;background-color: #c3c9d8 ;}
+    .flex-next { right:-30px;background:url("slide_arr2.png") center no-repeat;background-size:35%;background-color: #c3c9d8 ;}
 
     .flex-prev:hover,.flex-next:hover{background-color: #77bfff;}
+    .flex-prev:active,.flex-next:active{outline: none;}
   }
 }
