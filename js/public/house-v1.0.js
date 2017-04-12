@@ -43,7 +43,8 @@ $(function(){
     /*房源表tab切换*/
     sliders2();
     $('.menu-tab2 .tab').click(function(){
-        var inx=$(this).data('data-value')
+
+        var inx=$(this).data('value')
             ,mark=$('.house-mark .mark')
             ,num=$('.house-num-list li')
             ,slider=$('.num-slider .flex-control-nav>li a');

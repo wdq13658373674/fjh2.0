@@ -21,19 +21,8 @@
             font-size:0;
             padding-right:28px;
         }
+        .house-num-list{cursor: pointer;}
     </style>
-    <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-            $(".flexslider").flexslider({
-                prevText:'',
-                nextText:'',
-                directionNav: false,
-                slideshowSpeed: 4000,
-                animationSpeed: 400
-            });
-        });
-    </script>
 </head>
 
 <body class="wrap-gray-bg">
@@ -44,7 +33,7 @@
 <div class="dz-house-wrap clear">
     <div class="left-box pull-left">
         <!--slider-->
-        <div class="flexslider" style="width:100%;height:448px;">
+        <div id="top-slider" class="flexslider" style="width:100%;height:448px;">
             <ul class="slides">
                 <li><a href="#"><img src="../../images/test/slider2.png" /></a></li>
                 <li><a href="#"><img src="../../images/test/slider1.png" /></a></li>
@@ -139,8 +128,9 @@
 <ul class="menu-tab clear">
     <li class="tab">项目介绍</li>
     <li class="tab">位置及周边</li>
-    <li class="tab active">建设进度</li>
+    <li class="tab">建设进度</li>
     <li class="tab">项目介绍</li>
+    <li class="tab active">户型图</li>
 </ul>
 <!--menu-tab start-->
 
@@ -197,7 +187,7 @@
 </div>
 
 <!--建设进度-->
-<div class="tab-box  active">
+<div class="tab-box">
     <div class="tab-content pro-progress">
         <ul id="pro-list" class="pro-list">
             <li class="clear">
@@ -246,14 +236,401 @@
     </div>
 </div>
 
+<!--户型图-->
+<div class="tab-box  active">
+    <div class="tab-content dz-reg-wrap">
+        <!--dot-title-->
+        <div class="dot-title clear" style="margin-top:0;">
+            <span class="pull-left">楼栋分布图</span>
+        </div>
+
+        <!--house-select-wrap start-->
+        <div class="house-select-wrap clear">
+            <div class="left-box pull-left">
+                <div id="imgView">
+                    <img src="../../images/test/map.jpg" alt="" style="position: relative;"/>
+                    <div class="house-mark">
+                        <span class="mark active" style="top:50px;left:200px;">1#</span>
+                        <span class="mark" style="top:80px;left:250px;">2#</span>
+                        <span class="mark" style="top:100px;left:100px;">3#</span>
+                        <span class="mark" style="top:100px;left:400px;">4#</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-box pull-right">
+                <div class="top">
+                    <div id="thumbs2" class="flex-control-thumbs">
+                        <ul class="slides house-num-list">
+                            <li>1#</li>
+                            <li>2#</li>
+                            <li>3#</li>
+                            <li>4#</li>
+                            <li>5#</li>
+                            <li>6#</li>
+                            <li>7#</li>
+                            <li>8#</li>
+                        </ul>
+                    </div>
+                    <script>
+                        $(function(){
+                            if($('.house-num-list>li').length <= 6){
+                                $('#thumbs .flex-direction-nav').hide();
+                            }
+                            /*.house-mark .mark添加active*/
+                            $('.house-num-list>li').click(function(){
+                                var mark=$('.house-mark .mark'),inx=$(this).index();
+                                mark.eq(inx).addClass('active').siblings().removeClass('active');
+                            })
+                        })
+                    </script>
+                </div>
+                <div class="bottom">
+                    <div class="flexslider num-slider2" style="width:100%;height:auto;margin:20px 0;">
+                        <ul class="slides">
+                            <!--#1-->
+                            <li>
+                                <div class="msg-line">
+                                    <span class="tit">楼栋信息</span>
+                                    <span class="con">御临天下[1号楼]</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">单元数量</span>
+                                    <span class="con">1个单元</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">楼栋层数</span>
+                                    <span class="con">23层</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">梯户配比</span>
+                                    <span class="con">两梯六户</span>
+                                </div>
+                            </li>
+                            <!--#2-->
+                            <li>
+                                <div class="msg-line">
+                                    <span class="tit">楼栋信息</span>
+                                    <span class="con">御临天下[2号楼]</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">单元数量</span>
+                                    <span class="con">1个单元</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">楼栋层数</span>
+                                    <span class="con">23层</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">梯户配比</span>
+                                    <span class="con">两梯六户</span>
+                                </div>
+                            </li>
+                            <!--#3-->
+                            <li>
+                                <div class="msg-line">
+                                    <span class="tit">楼栋信息</span>
+                                    <span class="con">御临天下[3号楼]</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">单元数量</span>
+                                    <span class="con">1个单元</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">楼栋层数</span>
+                                    <span class="con">23层</span>
+                                </div>
+                                <div class="msg-line">
+                                    <span class="tit">梯户配比</span>
+                                    <span class="con">两梯六户</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--house-select-wrap end-->
+
+        <!--page-wrap start-->
+        <div class="page-wrap  mt48">
+            <!--page1-->
+            <div class="dz-house-flash dz-house-type active clear">
+                <!--left-box-->
+                <div class="left-box pull-left">
+                    <div class="type-msg">
+                        <div class="title">A-5-1户型</div>
+
+                        <div class="house-type-dsc">
+                            <span class="tit">户型结构</span>
+                            <span class="con">三室两厅两卫</span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">建筑面积</span>
+                            <span class="con">约118 <span class="gray">m<sup>2</sup></span></span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">户型描述</span>
+                            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--right-box-->
+                <div class="right-box pull-right">
+                    <div class="flexslider slider-r" style="width:766px;height:396px;">
+                        <ul class="slides">
+                            <li> <object width="100%" height="396px" title="户型图1" data="../../images/test/house.png"></object></li>
+                            <li> <object width="100%" height="396px" title="户型图2" data="../../images/test/slider1.png"></object></li>
+                            <li> <object width="100%" height="396px" title="户型图3" data="https://720yun.com/t/9434gq993piyjx78i8?pano_id=sIKurFUs9e0ot6RG"></object></li>
+                        </ul>
+                    </div>
+
+                    <!--thumbs-box-->
+                    <div class="thumbs-box">
+                        <div class="carousel carousel-r flex-control-thumbs" style="width:684px;height:104px;">
+                            <ul class="slides">
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider1.png" />
+                                        <p class="caption">户型图</p>
+                                    </div>
+                                </li>
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider2.png" />
+                                        <p class="caption">楼层平面图</p>
+                                    </div>
+                                </li>
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider1.png" />
+                                        <p class="caption">周边配套图</p>
+                                    </div>
+                                </li>
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider1.png" />
+                                        <p class="caption">样板间</p>
+                                    </div>
+                                </li>
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider2.png" />
+                                        <p class="caption">活动现场</p>
+                                    </div>
+                                </li>
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider2.png" />
+                                        <p class="caption">活动现场</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--page2-->
+            <div class="dz-house-flash dz-house-type active clear">
+                <!--left-box-->
+                <div class="left-box pull-left">
+                    <div class="type-msg">
+                        <div class="title">A-5-2户型</div>
+
+                        <div class="house-type-dsc">
+                            <span class="tit">户型结构</span>
+                            <span class="con">三室两厅两卫</span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">建筑面积</span>
+                            <span class="con">约118 <span class="gray">m<sup>2</sup></span></span>
+                        </div>
+                        <div class="house-type-dsc">
+                            <span class="tit">户型描述</span>
+                            <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--right-box-->
+                <div class="right-box pull-right">
+                    <div class="flexslider slider-r" style="width:766px;height:396px;">
+                        <ul class="slides">
+                            <li> <object width="100%" height="396px" title="户型图1" data="../../images/test/house.png"></object></li>
+                            <li> <object width="100%" height="396px" title="户型图2" data="../../images/test/slider1.png"></object></li>
+                            <li> <object width="100%" height="396px" title="户型图3" data="https://720yun.com/t/9434gq993piyjx78i8?pano_id=sIKurFUs9e0ot6RG"></object></li>
+                        </ul>
+                    </div>
+
+                    <!--thumbs-box-->
+                    <div class="thumbs-box">
+                        <div class="carousel carousel-r flex-control-thumbs" style="width:684px;height:104px;">
+                            <ul class="slides">
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider1.png" />
+                                        <p class="caption">户型图</p>
+                                    </div>
+                                </li>
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider1.png" />
+                                        <p class="caption">周边配套图</p>
+                                    </div>
+                                </li>
+                                <li class="flex-active-slide">
+                                    <div class="img-box">
+                                        <img src="../../images/test/slider2.png" />
+                                        <p class="caption">楼层平面图</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--page-wrap end-->
+
+        <!--house-type-tab start-->
+        <div class="house-type-tab">
+            <a href="#" class="active">全部</a>
+            <a href="#">一居(2)</a>
+            <a href="#">二居(2)</a>
+            <a href="#">三居(2)</a>
+        </div>
+        <div class="house-type-wrap">
+            <ul class="house-type-content clear">
+                <li class="active">
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <p class="p p1">A-5-1户型</p>
+                        <p class="p p2">二室两厅两卫</p>
+                        <p class="p p3">
+                            <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                        </p>
+                    </a>
+                    <i class="icon-suc"></i>
+                </li>
+            </ul>
+        </div>
+        <!--house-type-tab end-->
+    </div>
+</div>
+
 <!--footer-->
 <iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
 
 <script src="../../js/addons/layer/layer.js" type="text/javascript"></script>
 <!--layui-->
 <script src="../../js/addons/layer/layui.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../../js/public/house.js"></script>
+<script type="text/javascript" src="../../js/addons/imgView/spryMap-min2.js"></script>
+
 <script>
     $(function(){
+        /*顶部slider*/
+        $("#top-slider").flexslider({
+            prevText:'',
+            nextText:'',
+            directionNav: false,
+            slideshowSpeed: 4000,
+            animationSpeed: 400
+        });
+
         /*滚动刷新*/
         layui.use('flow',function(){
             var flow = layui.flow;
@@ -303,6 +680,18 @@
         /*大图显示*/
         bigImg('#progress-img');//建设进度
         bigImg('#map');//位置及周边
+
+        /*大图拖动*/
+        var map = new SpryMap({
+            id : "imgView",
+            height: 450,
+            width: 745,
+            startX: 200,
+            startY: 200,
+            cssClass: "mappy"
+        });
+        /*户型图楼栋分布图*/
+        thumbs2Sliders();
     });
 
     /*大图显示弹出层函数*/
@@ -314,6 +703,33 @@
                 photos: id,
                 shift:5
             });
+        });
+    }
+
+    /*户型图楼栋分布图*/
+    function thumbs2Sliders(){
+        $('#thumbs2').flexslider({
+            prevText:'',
+            nextText:'',
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            maxItems:6,
+            directionNav: true,
+            slideshow: false,
+            itemWidth: 62,
+            itemMargin: 0,
+            asNavFor: '.num-slider2'
+        });
+        $('.num-slider2').flexslider({
+            prevText:'',
+            nextText:'',
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,
+            animationLoop: false,
+            slideshow: false,
+            sync:'#thumbs2'
         });
     }
 </script>

@@ -21,16 +21,6 @@ $(function(){
         sliders(inx);//sliders
     });
 
-    /*协议同意验证*/
-    /*$('#rule').click(function(){
-     if(!this.checked){
-     $('.Validform_wrong').show();
-     }else{
-     $('.Validform_wrong').hide();
-     }
-     });*/
-
-
     /*
     * 2、我要定制
     * 选定此房源
@@ -43,7 +33,7 @@ $(function(){
     /*房源表tab切换*/
     sliders2();
     $('.menu-tab2 .tab').click(function(){
-        var inx=$(this).data('data-value')
+        var inx=$(this).data('value')
             ,mark=$('.house-mark .mark')
             ,num=$('.house-num-list li')
             ,slider=$('.num-slider .flex-control-nav>li a');
