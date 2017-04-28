@@ -126,9 +126,10 @@ css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明�
 @end 结束颜色
 */
 .linear-gradient(@start:#fff,@end:#eee){
+  background: @start;
   background:-webkit-gradient(linear,0 0, 0 100%,from(@start),to(@end));
   background:-moz-linear-gradient(bottom,@start,@end);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=@start ,endColorstr=@end ,grandientType=0);
+//  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=@start ,endColorstr=@end ,grandientType=0);
 }
 
 /*
