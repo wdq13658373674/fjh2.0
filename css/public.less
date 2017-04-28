@@ -321,3 +321,35 @@ sup{
   }
 }
 
+/*20161219计算器*/
+.d20161219-onsulting_tit{.wh(auto,40px,40px);border-bottom:1px solid @gray-border;}
+.d20161219-form{width:400px;
+  &.bg{background: url("../images/d_arrow.png") right center no-repeat;}
+
+  .group-box{margin-top:20px;
+    .label{color:@gray;margin-right:10px;float: left;font-size:14px;margin-top:10px;width:100px;text-align: left;font-weight: normal;}
+    .input{.wh(140px,40px,40px);border:1px solid @gray-border;padding:0 10px;
+      &.w2{.wh(67px,40px,40px);}
+      &.w3{width:209px;}
+    }
+    .select{.wh(140px,40px,40px);border:1px solid @gray-border;}
+    .radio{.wh(16px,16px);margin: 2px 0 0;}
+    .textarea{
+      width:209px;
+      min-height:87px;
+      _height:87px;
+      outline: none;
+      border:1px solid #e5e5e5;
+      padding:3px;
+      /*支持超出最大高度时显示竖直滚动条，不需要限定最大高度时可以去掉*/
+      word-wrap: break-word;
+      overflow-x:hidden;
+      overflow-y: auto;
+      _overflow-y: visible;
+    }
+  }
+
+  .btn-red{margin-right:10px; width:173px; .btn-red-full(46px)}
+  .btn-blue{.btn-blue-full(46px);width: 113px;}
+  .btn-title{.wh(112px,30px,30px);color:@red;border:1px solid @red;text-align: center;}
+}
