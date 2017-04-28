@@ -22,6 +22,11 @@
             padding-right:28px;
         }
         .house-num-list{cursor: pointer;}
+        /*设置最小宽度防止flexslider无法自动获取宽度*/
+        .house-num-list>li{min-width:62px;}
+        .num-slider2 .slides>li{min-width:318px;}
+        .slider-r .slides>li{min-width:764px;}
+        .carousel-r .slides>li{min-width:128px;}
     </style>
 </head>
 
@@ -36,7 +41,7 @@
         <div id="top-slider" class="flexslider" style="width:100%;height:448px;">
             <ul class="slides">
                 <li><a href="#"><img src="../../images/test/slider2.png" /></a></li>
-                <li><a href="#"><img src="../../images/test/slider1.png" /></a></li>
+                <li><a href="#"><img src="../../images/test/house.png" /></a></li>
                 <li><a href="#"><img src="../../images/test/slider2.png" /></a></li>
             </ul>
         </div>
@@ -110,7 +115,9 @@
                 </div>
             </div>
 
-            <a href="#" class="dz-btn">立即定制</a>
+            <!--<a href="#" class="dz-btn">立即定制</a>-->
+
+            <a href="javascript:void(0);"  class="btn-disabled" disabled="disabled">报名结束</a>
         </div>
     </div>
 </div>
@@ -118,16 +125,16 @@
 
 <!--menu-tab start-->
 <ul class="menu-tab clear">
-    <li class="tab">项目介绍</li>
+    <li class="tab active">项目介绍</li>
     <li class="tab">位置及周边</li>
     <li class="tab">建设进度</li>
     <li class="tab">项目介绍</li>
-    <li class="tab active">户型图</li>
+    <li id="house-map" class="tab">户型图</li>
 </ul>
 <!--menu-tab start-->
 
 <!--项目介绍-->
-<div class="tab-box">
+<div class="tab-box  active">
     <div class="tab-content pro-introduction">
         <img src="../../images/test/slider1.png" alt=""/>
     </div>
@@ -229,7 +236,7 @@
 </div>
 
 <!--户型图-->
-<div class="tab-box  active">
+<div class="tab-box">
     <div class="tab-content dz-reg-wrap">
         <!--dot-title-->
         <div class="dot-title clear" style="margin-top:0;">
@@ -608,8 +615,10 @@
 <script src="../../js/addons/layer/layer.js" type="text/javascript"></script>
 <!--layui-->
 <script src="../../js/addons/layer/layui.js" type="text/javascript"></script>
+<!--flash-->
 <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../../js/public/house.js"></script>
+<!--大图拖动-->
 <script type="text/javascript" src="../../js/addons/imgView/spryMap-min2.js"></script>
 
 <script>
