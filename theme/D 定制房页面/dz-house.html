@@ -22,6 +22,7 @@
             padding-right:28px;
         }
         .house-num-list{cursor: pointer;}
+
         /*设置最小宽度防止flexslider无法自动获取宽度*/
         .house-num-list>li{min-width:62px;}
         .num-slider2 .slides>li{min-width:318px;}
@@ -207,7 +208,7 @@
                     <p class="con">9月5日——土石方开标（施工材料准备）</p>
 
                     <!--进度图片列表 start-->
-                    <div id="progress-img" class="progress-img-list clear">
+                    <div class="progress-img-list progress-img clear">
                         <div class="img-box">
                             <img class="img" src="../../images/test/slider1.png" alt=""/>
                         </div>
@@ -230,6 +231,21 @@
                 <div class="content pull-left">
                     <p class="tit">土石方开标</p>
                     <p class="con">准备）9月12日——土石方动工（现已有共计40多辆运输车，15台挖掘机开始动工现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车现已有共计40多辆运输车。）</p>
+
+                    <!--进度图片列表 start-->
+                    <div class="progress-img-list progress-img clear">
+                        <div class="img-box">
+                            <img class="img" src="../../images/test/slider1.png" alt=""/>
+                        </div>
+
+                        <div class="img-box">
+                            <img class="img" src="../../images/test/slider1.png" alt=""/>
+                        </div>
+                        <div class="img-box">
+                            <img class="img" src="../../images/test/slider2.png" alt=""/>
+                        </div>
+                    </div>
+                    <!--进度图片列表 end-->
                 </div>
             </li>
         </ul>
@@ -273,10 +289,10 @@
                             <li>2#</li>
                             <li>3#</li>
                             <li>4#</li>
-                            <li>5#</li>
+                            <!--<li>5#</li>
                             <li>6#</li>
                             <li>7#</li>
-                            <li>8#</li>
+                            <li>8#</li>-->
                         </ul>
                     </div>
                     <script>
@@ -687,7 +703,7 @@
         });
 
         /*大图显示*/
-        bigImg('#progress-img');//建设进度
+        bigImg('.progress-img');//建设进度
         bigImg('#map');//位置及周边
 
         /*大图拖动*/
