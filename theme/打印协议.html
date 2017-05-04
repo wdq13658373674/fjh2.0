@@ -221,9 +221,12 @@
         var h2=$('.sy-img').height();
         var html='<img src="../images/watermark.png" class="sy-img" alt=""/>';
         var len=Math.ceil(h1 / h2);
-        for(i= 1;i<=len;i++){
-            container.append(html);
-            $('.sy-img').eq(i).css('top',i * h2);
+
+        if(h1>h2){
+            for(i= 1;i<len;i++){
+                container.append(html);
+                $('.sy-img').eq(i).css('top',i * h2);
+            }
         }
     })
 </script>
