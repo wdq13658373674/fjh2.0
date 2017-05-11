@@ -61,7 +61,7 @@
                 <div class="d-form-group clear">
                     <label class="label" for="IDcard">身份证号码</label>
                     <div class="d-form-control">
-                        <input class="inputxt" type="text" id="IDcard" name="IDcard" sucmsg=" " errormsg="请输入正确的身份证号码" placeholder="请输入身份证号码">
+                        <input class="inputxt" type="text" id="IDcard" name="IDcard" datatype=" /^\d{15}|(\d{17}(\d|x|X))$/" sucmsg=" " errormsg="请输入正确的身份证号码" placeholder="请输入身份证号码">
                         <span class="Validform_checktip tips-msg"></span>
                     </div>
                 </div>
@@ -104,11 +104,7 @@
         Dform.addRule([{
             ele:".inputxt:eq(0)",
             datatype:"zh2-12"
-        },
-            {
-                ele:".inputxt:eq(1)",
-                datatype:"ID_card"
-            }]);
+        }]);
     });
 </script>
 </html>
