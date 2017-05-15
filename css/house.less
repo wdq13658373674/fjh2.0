@@ -100,10 +100,10 @@
   }
 
   .right-box{.wh(377px,auto);
-    .top-box{.wh(100%,391px);background: #ffffff;overflow: hidden;
+    .top-box{.wh(100%,420px);background: #ffffff;overflow: hidden;
       .house-title{.wh(325px,49px,20px);overflow:hidden;font-size: 18px;color:@txt-black;margin:26px auto 0px;}
       /*描述列表*/
-      .desc-list{.wh(325px,29px);margin:0 auto 32px;
+      .desc-list{.wh(325px,29px);margin:0 auto 25px;
         span{float:left;}
       }
 
@@ -115,24 +115,29 @@
       }
     }
 
-    .bottom-box{.wh(100%,189px);background: #ffffff;margin-top:25px;padding-top:49px;
-      .icon{position:relative;.wh(34px,34px);margin-left:8px;display:block;float:right;.round(50%);
+    .bottom-box{.wh(100%,160px);background: #ffffff;margin-top:25px;padding-top:20px;
+      .icon{position:relative;.wh(25px,34px);margin-left:8px;display:block;float:right;.round(50%);
         &.thumbs{background: url("../images/house/thumbs.png") center no-repeat;
           &:hover{background: url("../images/house/thumbs_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);
             .float-phone{display:block;}
           }
         }
-        &.phone{background: url("../images/house/phone.png") center no-repeat;
+        /*&.phone{background: url("../images/house/phone.png") center no-repeat;
           &:hover{background: url("../images/house/phone_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);
+            .float-phone{display:block;}
+          }
+        }*/
+        &.th-mark{background: url("../images/icon/th_ico.png") center no-repeat;background-size: 100% auto;
+          &:hover{
             .float-phone{display:block;}
           }
         }
       }
-      .float-phone{display:none;min-width:163px;background:#ffffff;color:@txt-black;font-size:12px;position: absolute;top:-65px;left:50%;margin-left:-81.5px;padding:11px 14px 11px 15px;.box-shadow(0,1px,7px 0,#c3cad8);}
+      .float-phone{display:none;min-width:200px;line-height:20px;background:#ffffff;color:@txt-black;font-size:12px;position: absolute;bottom:30px;left:50%;margin-left:-100px;padding:11px 14px 11px 15px;.box-shadow(0,1px,7px 0,#c3cad8);}
 
       .price{.wh(326px,32px,32px);margin:0 auto;position:relative;}
       .dz-btn{.btn-red-full();width:326px;margin:41px auto 0;font-size:16px;}
-      .btn-disabled{.btn-disabled();width:326px;font-size:16px;margin:41px auto 0;color:#888888;.textshadow(0,2px,0,#ffffff);}
+      .btn-disabled{.btn-disabled();width:326px;font-size:16px;margin:34px auto 0;color:#888888;.textshadow(0,2px,0,#ffffff);}
     }
   }
 }
