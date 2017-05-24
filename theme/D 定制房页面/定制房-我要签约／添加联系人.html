@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>定制房</title>
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/house.css"/>
+
+    <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
+</head>
+
+<body class="wrap-gray-bg">
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+
+<!--dz-reg-msg-->
+<div class="dz-reg-wrap mb150">
+
+    <!--num-title-->
+    <div class="num-title clear" style="margin-top:33px;">
+        <div class="num pull-left">01</div>
+        <div class="tit pull-left">
+            <span class="top">STEP</span><br/>
+            <span>选择意向户型</span>
+        </div>
+    </div>
+
+    <form class="buyer-form clear" action="">
+        <div class="buyer-box border-right pull-left">
+            <div class="input-group">
+                <div>
+                    <label class="label">姓名</label>
+                    <input class="input" name="name" type="text" placeholder="请输入购房人姓名"/>
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <label class="label">电话</label>
+                    <input class="input" name="phone" type="number" placeholder="请输入购房人联系电话"/>
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <label class="label">地址</label>
+                    <input class="input" name="address" type="text" placeholder="请输入购房人地址"/>
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <label class="label">身份证</label>
+                    <input class="input" name="id" type="text" placeholder="请输入购房人身份证号码"/>
+                </div>
+            </div>
+        </div>
+        <div id="buyer-box2" class="buyer-box pull-left" >
+            <a href="javascript:;" class="add"><span class="add-ico">+</span>增加购房人</a>
+            <a href="javascript:;" class="remove"><span class="add-ico">-</span></a>
+        </div>
+    </form>
+    <!--隐藏表单-->
+    <div class="hide-form">
+        <div class="add-form">
+            <div class="input-group">
+                <div>
+                    <label class="label">姓名</label>
+                    <input class="input" name="name2" type="text" placeholder="请输入购房人姓名"/>
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <label class="label">电话</label>
+                    <input class="input" name="phone2" type="number" placeholder="请输入购房人联系电话"/>
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <label class="label">地址</label>
+                    <input class="input" name="address2" type="text" placeholder="请输入购房人地址"/>
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <label class="label">身份证</label>
+                    <input class="input" name="id2" type="text" placeholder="请输入购房人身份证号码"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--num-title-->
+    <div class="num-title clear">
+        <div class="num pull-left">02</div>
+        <div class="tit pull-left">
+            <span class="top">STEP</span><br/>
+            <span>全款或按揭</span>
+        </div>
+    </div>
+
+    <ul class="check-box">
+        <li class="clear">
+            <label class="check-list">
+                <input type="radio" name="pay-all" checked/>
+                <div class="content">全款付款</div>
+            </label>
+        </li>
+        <li class="clear">
+            <label class="check-list">
+                <input type="radio" name="pay-all"/>
+                <div class="content">按揭付款（首付20%）</div>
+            </label>
+            <label class="check-list">
+                <input type="radio" name="pay-all"/>
+                <div class="content">按揭付款（首付20%）</div>
+            </label>
+            <label class="check-list">
+                <input type="radio" name="pay-all"/>
+                <div class="content">按揭付款（首付20%）</div>
+            </label>
+            <label class="check-list">
+                <input type="radio" name="pay-all"/>
+                <div class="content">按揭付款（首付20%）</div>
+            </label>
+            <label class="check-list">
+                <input type="radio" name="pay-all"/>
+                <div class="content">按揭付款（首付20%）</div>
+            </label>
+            <label class="check-list">
+                <input type="radio" name="pay-all"/>
+                <div class="content">按揭付款（首付20%）</div>
+            </label>
+        </li>
+    </ul>
+
+
+    <!--num-title-->
+    <div class="num-title clear">
+        <div class="num pull-left">03</div>
+        <div class="tit pull-left">
+            <span class="top">STEP</span><br/>
+            <span>选择支付方式</span>
+        </div>
+    </div>
+
+    <!--pay-type-wrap-->
+    <div class="pay-type-wrap">
+        <div class="gray">
+            报名费用
+            <span class="f30 red bold">2000.00</span>
+            元
+        </div>
+
+        <ul class="pay-list clear">
+            <li value="0" class="active">
+                <a href="javascript:void(0);"><img src="../../images/house/bank1.png" alt=""/></a>
+                <i class="icon-suc"></i>
+            </li>
+            <li value="1">
+                <a href="javascript:void(0);"><img src="../../images/house/bank2.png" alt=""/></a>
+                <i class="icon-suc"></i>
+            </li>
+            <li value="2">
+                <a href="javascript:void(0);"><img src="../../images/house/bank3.png" alt=""/></a>
+                <i class="icon-suc"></i>
+            </li>
+            <li value="3">
+                <a href="javascript:void(0);"><img src="../../images/house/bank4.png" alt=""/></a>
+                <i class="icon-suc"></i>
+            </li>
+        </ul>
+
+        <div class="line"></div>
+    </div>
+
+    <!--rule-box-->
+    <div class="rule-box">
+        <div>
+            <input type="checkbox" id="rule" name="rule" datatype="*" nullmsg="请同意注册协议" sucmsg=" " checked="checked"/>
+            我已阅读并同意
+            <a href="#" class="red">《房计划平台报名规则》</a>
+        </div>
+    </div>
+    <a id="submit" href="#" class="order-btn">立即签约</a>
+</div>
+
+<!--footer-->
+<iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
+</body>
+<script>
+    $(function(){
+        var form=$('.hide-form').html();
+        /*添加购房人*/
+        $('.buyer-box .add').click(function(){
+            $(this).hide();
+            $('#buyer-box2').append(form);
+            $('.buyer-box .remove').show();
+        })
+        /*取消添加购房人*/
+        $('.buyer-box .remove').click(function(){
+            $(this).hide();
+            $('.buyer-box .add').show();
+            $('#buyer-box2').children('.add-form').remove();
+        });
+
+        /*选择付款方式*/
+        $('.pay-list>li').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+
+        /*表单验证*/
+        $('#submit').click(function(){
+            check();
+        })
+
+        function check(){
+            var input=$('.buyer-form .input');
+            var flag='';
+
+            input.each(function(){
+                if(this.value==''){
+                    flag=false;
+                }else{
+                    flag=true;
+                }
+
+                return flag;
+            });
+
+            if(!flag){
+                layer.alert('请填写完整购房人信息！');
+            }
+        }
+    })
+</script>
+</html>
