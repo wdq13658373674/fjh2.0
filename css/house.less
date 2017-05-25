@@ -442,9 +442,14 @@
     input{display:none;}
     .content{.wh(216px,69px,67px);border:1px solid @gray-border2;text-align: center;font-size:16px;.round(5px);
       &:hover{border:1px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);}
+      &.img{.wh(166px,69px);border:0;}
     }
 
-    input:checked+.content{border:2px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);line-height:65px;background: url("../images/house/suc.png") right bottom no-repeat;}
+    input:checked+.content{border:2px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);line-height:65px;background: url("../images/house/suc.png") right bottom no-repeat;
+        &.img{
+          img{margin-top:-2px;margin-left:-2px;}
+        }
+    }
   }
 }
 
