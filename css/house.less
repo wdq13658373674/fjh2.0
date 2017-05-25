@@ -437,19 +437,13 @@
 
 /*我要签约*/
 .check-box{.wh(1132px,auto);margin:33px auto 0;
-  .check-list{margin-right:18px;margin-top:32px;
-    float: left;
+  .check-list{margin-right:18px;margin-top:32px;float: left;
     input{display:none;}
     .content{.wh(216px,69px,67px);border:1px solid @gray-border2;text-align: center;font-size:16px;.round(5px);
       &:hover{border:1px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);}
-      &.img{.wh(166px,69px);border:0;}
     }
 
-    input:checked+.content{border:2px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);line-height:65px;background: url("../images/house/suc.png") right bottom no-repeat;
-        &.img{
-          img{margin-top:-2px;margin-left:-2px;}
-        }
-    }
+    input:checked+.content{border:2px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);line-height:65px;background: url("../images/house/suc.png") right bottom no-repeat;  }
   }
 }
 
@@ -465,6 +459,7 @@
 
     .add-ico{display:inline-block;.wh(25px,25px,25px);background: @red;.round(50%);font-size:16px;margin-right:7px;
       color: #ffffff;text-align: center;}
+
     .add{display:block;padding-left:63px;font-size:16px;height:26px;position:absolute;top:50%;margin-top:-13px;}
     .remove{z-index:999;position:absolute;top:50%;right:0px;height:26px;margin-top:-13px;display:none;}
     &.active{

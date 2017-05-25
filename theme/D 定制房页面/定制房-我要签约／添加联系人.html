@@ -154,26 +154,7 @@
             元
         </div>
 
-        <div class="check-box clear">
-            <label class="check-list">
-                <input type="radio" value="0" name="pay"/>
-                <div class="content img"><img src="../../images/house/bank1.png" alt=""/></div>
-            </label>
-            <label class="check-list">
-                <input type="radio" value="1" name="pay"/>
-                <div class="content img"><img src="../../images/house/bank2.png" alt=""/></div>
-            </label>
-            <label class="check-list">
-                <input type="radio" value="2" name="pay"/>
-                <div class="content img"><img src="../../images/house/bank3.png" alt=""/></div>
-            </label>
-            <label class="check-list">
-                <input type="radio" value="3" name="pay"/>
-                <div class="content img"><img src="../../images/house/bank4.png" alt=""/></div>
-            </label>
-        </div>
-
-       <!-- <ul class="pay-list clear">
+        <ul class="pay-list clear">
             <li value="0" class="active">
                 <a href="javascript:void(0);"><img src="../../images/house/bank1.png" alt=""/></a>
                 <i class="icon-suc"></i>
@@ -190,7 +171,7 @@
                 <a href="javascript:void(0);"><img src="../../images/house/bank4.png" alt=""/></a>
                 <i class="icon-suc"></i>
             </li>
-        </ul>-->
+        </ul>
 
         <div class="line"></div>
     </div>
@@ -224,8 +205,9 @@
             $(this).parent().removeClass('active');
             $('#buyer-box2').children('.add-form').remove();
         });
-
-        /*选择付款方式*/
+        /*
+         * 选择支付方式
+         * */
         $('.pay-list>li').click(function(){
             $(this).addClass('active').siblings().removeClass('active');
         });
