@@ -234,12 +234,12 @@
     function check(){
         $(".real_name").keyup(function () {
             var v = $(this).val();
-            cen1 = $.trim(v).replace(/[^\u2E80-\u9FFF\a-z]/g, '');
+            cen1 = $.trim(v).replace(/[^\u2E80-\u9FFF\a-z]/g, '');/*将不为汉字和字母替换为空*/
             $(this).val(cen1);
         });
         $(".real_name").blur(function () {
             var v = $(this).val();
-            cen1 = $.trim(v).replace(/[^\u2E80-\u9FFF]/g, '');
+            cen1 = $.trim(v).replace(/[^\u2E80-\u9FFF]/g, '');/*将不为中文的替换为空*/
             $(this).val(cen1);
         });
 

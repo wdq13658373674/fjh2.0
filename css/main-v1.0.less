@@ -14,46 +14,50 @@
 }
 
 /*标题*/
-.title-wrap{text-align: center;margin-top:80px;.main-width;
-  .hr-line{width: 452px;height: 3px;  border-top: solid 1px #c3cad8;margin-top:31px;}
-  .tit{width:294px;
-    .title{font-size: 30px;color:@txt-black;font-weight: bold;}
-    .tit{font-size: 14px;color:@gray;margin-top:6px;}
-  }
+.title-wrap{text-align: center;margin-top:102px;
+  .title{font-size: 30px;color:@txt-black;}
+  .tit{font-size: 14px;color:@gray;margin-top:15px;}
 }
 /*查看更多*/
-.link-more{display:block;margin-top:40px;color:@gray;.main-width;height:43px;line-height:43px;background: @gray-bg;text-align: center;
+.link-more{display:block;margin-top:20px;color:@gray;.main-width;height:43px;line-height:43px;background: @gray-bg;text-align: center;
   &:hover{.box-shadow(0,1px,3px 0,rgba(127, 133, 163, 0.6) inset);text-decoration: none;.transition(0.3s);}
 }
 
 /*定制项目*/
-.dz-wrap{.main-width;
-  .dz-house-container{width:1220px;}
-
-  .dz-house-list{.wh(386px,527px);display:block;float:left;margin-top:40px;border:1px solid @gray-border;position: relative;margin-right:20px;
+.dz-wrap{.main-width;overflow: hidden;
+  .dz-list-box{display:block;margin-top:40px;border:1px solid @gray-border;padding:40px 0px;position: relative;
     &:hover{border-color: @red;.box-shadow(0px,8px,8px,#E8E8E8);.transition(0.3s);}
+  }
 
-    .dz-left-box{.wh(100%,279px);overflow: hidden;position:relative;
-      .img{.wh(100%,100%);overflow: hidden;}
+  .dz-left-box{.wh(650px,365px);margin-left:40px;overflow: hidden;position:relative;
+    .img{.wh(650px,365px);overflow: hidden;}
+  }
+
+  .dz-right-box{margin-right:40px;.wh(427px,365px);overflow: hidden;
+    .dz-title{width:100%;font-size: 18px;color:@txt-black;.ellipse;}
+    .desc-list{.wh(325px,29px);overflow: hidden;margin-top:19px;
+      span{float:left;color:@blue;font-size:12px;display:block;height:29px;line-height:27px;padding:0 10px;margin-right:10px;border:1px solid @blue;.round(4px);}
     }
 
-    .dz-right-box{margin:0 20px;
-      .dz-title{.wh(100%,54px,54px);font-size: 18px;color:@txt-black;.ellipse;}
-      .text{.wh(100%,34px,34px);color:@gray;.ellipse;}
-
-      .desc-list{margin-bottom:16px;.wh(100%,29px);overflow: hidden;
-        span{float:left;color:@blue;font-size:12px;display:block;height:29px;line-height:27px;padding:0 10px;margin-right:10px;border:1px solid @blue;.round(4px);}
+    .dz-msg-list{margin-top:20px;
+      li{.ellipse;.wh(100%,40px,40px);
+        &:nth-child(odd){background: @gray-bg;}
+        &:nth-child(even){background: @gray-hover;}
       }
-
-      .bottom-box{.wh(100%,61px,61px);border-top:1px dotted @gray;color:@gray;font-size:12px;margin-top:16px;
-        .icon{display:inline-block;.wh(29px,100%);margin-right:9px;float: left;
-          &.address{background: url("../images/icon/main_ico1.png") left center no-repeat;background-size: 100% auto;}
-          &.thumbs{background: url("../images/icon/main_ico2.png") left center no-repeat;background-size: 100% auto;}
-        }
-        .txt{float:left;margin-right:28px;}
-      }
-      .black{color:@txt-black;}
+      .tit{margin-right:12px;color:@gray;margin-left:15px;}
+      .con{color:@txt-black;margin-right:15px;}
     }
+    .spe-price{color:@gray;.wh(100%,24px,24px);margin-top:22px;
+      &>.red{font-size:26px;}
+    }
+
+    .bottom-box{margin-top:20px;
+      .btn-sign{.btn-red-full();width:173px;font-size:16px;.textshadow(0,-1px,0,@red-dark);}
+      .btn-disabled{.btn-disabled();width:173px;font-size:16px;color:#888888;.textshadow(0,2px,0,#ffffff);}
+
+      .thumbs-box{height:24px;line-height:24px;margin-left:15px;margin-top:22px;padding-left:20px;background: url("../images/icon/thumbs.png") left center no-repeat;}
+    }
+
   }
 }
 /*mark图标
@@ -62,7 +66,7 @@ mark2:定制选房
 mark3:签约
 mark4:签约成功
 */
-.mark-icon{display:block;.wh(120px,120px);position: absolute;bottom:15px;right:15px;z-index:999;
+.mark-icon{display:block;.wh(120px,120px);position: absolute;top:35px;right:16px;
   &.mark0{background: url("../images/icon/threshold.png") no-repeat 100% 100%;}
   &.mark1{background: url("../images/icon/hmask1.png") no-repeat 100% 100%;}
   &.mark2{background: url("../images/icon/hmask2.png") no-repeat 100% 100%;}
@@ -131,15 +135,5 @@ mark4:签约成功
   }
   .add_map{.wh(980px,auto);
     label{max-width:500px}
-  }
-}
-
-/*认筹项目列表*/
-.house-type{.main-width;margin-top:40px;
-  .tit{color:@gray;margin-top:7px;}
-  .type-list{padding-left:75px;width:100%;
-    .type{display:block;float: left;padding:7px 25px;border:1px solid @gray-border2;.round(100px);margin-right:12px;margin-bottom:12px;
-      &.active{border-color:@blue;color:@blue;}
-    }
   }
 }
