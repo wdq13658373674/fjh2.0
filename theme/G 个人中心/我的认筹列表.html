@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/personal.css">
+    <script src="../../js/jQuery1.12.3-min.js"></script>
+    <script src="../../js/public.js"></script>
+
+    <title>我的认筹列表页</title>
+
+
+</head>
+<body>
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+
+<!--个人中心-->
+<div class="personalContainer clear center">
+    <!--左边菜单-->
+    <div class="personalLeftNav" id="leftBox">
+        <ul>
+            <li><a class="personalIcon-per" href="#">个人中心</a></li>
+            <li><a class="personalIcon-rec" href="#">交易记录</a></li>
+            <li><a class="personalIcon-cus" href="#">我的定制</a></li>
+            <li class="active"><a class="personalIcon-cus" href="#">我的认筹</a></li>
+            <li><a class="personalIcon-acc" href="#">账户管理</a></li>
+            <li><a class="personalIcon-mes" href="#">消息中心</a></li>
+            <li><a class="personalIcon-dat" href="#">个人资料</a></li>
+            <li><a class="personalIcon-cli" href="#">推荐客户</a></li>
+        </ul>
+    </div>
+    <!--左边菜单结束-->
+    <!--右边内容-->
+    <div class="personalRightCon personalRight" id="rightBox">
+        <div class="crumbs">
+            <a href="#">个人中心</a> >
+            <span>我的认筹列表</span>
+        </div>
+        <!--无信息时显示-->
+        <!--<div class="userCustomItem-item">-->
+        <!--<span class="nothingItem f14">你还未参加定制项目</span>-->
+        <!--</div>-->
+        <!--有信息时显示以下-->
+        <!--定制项目-->
+        <div class="userCustomItem">
+            <div class="my-project-box">
+                <a class="my-project" href="#">
+                    <div class="pro-title">
+                        <span>项目名称</span>
+                        <em>邻水县丨云鼎府邸</em>
+                    </div>
+                    <div class="line"></div>
+                    <div class="pro-con">
+                        <div class="pro-img">
+                            <img src="../../images/main/img.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <span>项目地址</span>
+                                <em>四川省邻水县西部新城</em>
+                            </li>
+                            <li>
+                                <span>建筑类型</span>
+                                <em>花园洋房</em>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>开发企业</span>
+                                <em>四川恒阳房地产开发有限公司</em>
+                            </li>
+                            <li>
+                                <span>咨询热线</span>
+                                <em>023-63544152</em>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--定制项目结束-->
+        <!--分页-->
+        <div class="pages">
+            <ul>
+                <li class="previous">
+                    <a href="#">&lt;</a>
+                </li>
+                <li class="page">
+                    <a href="#">1</a>
+                </li>
+                <li class="page selected ">
+                    <a>2</a>
+                </li>
+                <li class="page">
+                    <a href="#">3</a>
+                </li>
+                <li class="page">
+                    <a href="#">4</a>
+                </li>
+                <li class="page">
+                    <a href="#">5</a>
+                </li>
+                <li class="page">
+                    <a href="#">6</a>
+                </li>
+                <li class="page">
+                    <a href="#">7</a>
+                </li>
+                <li class="page">
+                    <a href="#">8</a>
+                </li>
+                <li class="page">
+                    <a href="#">9</a>
+                </li>
+                <li class="page">
+                    <a href="#">10</a>
+                </li>
+                <li class="next">
+                    <a href="#">&gt;</a>
+                </li>
+                <li class="last">
+                    <a href="#">末页&gt;&gt;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--右边内容结束-->
+</div>
+
+<!--footer-->
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+</body>
+</html>
