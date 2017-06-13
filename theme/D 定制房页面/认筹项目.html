@@ -26,10 +26,10 @@
 <div class="house-type clear">
     <span class="pull-left tit">建筑类型</span>
     <div class="type-list clear">
-        <a href="#" class="type active">全部</a>
-        <a href="#" class="type">高层</a>
-        <a href="#" class="type">洋房</a>
-        <a href="#" class="type">商业</a>
+        <a href="#" class="type active" data-value="">全部</a>
+        <a href="#" class="type" data-value="高层">高层</a>
+        <a href="#" class="type" data-value="洋房">洋房</a>
+        <a href="#" class="type" data-value="商业">商业</a>
     </div>
 </div>
 <!--认筹项目-->
@@ -391,4 +391,22 @@
 <!--footer-->
 <iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
 </body>
+<script src="../../js/addons/layer/layer.js" type="text/javascript"></script>
+<script>
+    $(function(){
+        $('.type-list .type').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            var type=$(this).data('value');
+
+            layer.load(1, {
+                shade: [0.3,'#000']
+            });
+            setTimeout(function(){
+                layer.closeAll('loading');
+            }, 1000);
+        })
+
+
+    })
+</script>
 </html>

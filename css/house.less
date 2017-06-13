@@ -442,13 +442,13 @@
   .check-list{margin-right:18px;margin-top:32px;float: left;
     input{display:none;}
     .content{.wh(216px,69px,67px);border:1px solid @gray-border2;text-align: center;font-size:16px;.round(5px);
-      &:hover{border:1px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);}
+      &:hover{border:1px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);cursor: pointer;}
       &.w2{width:270px;}
     }
     input:checked+.content{border:2px solid @red;.box-shadow(0,5px,4px 0,#c3cad8);line-height:65px;background: url("../images/house/suc.png") right bottom no-repeat;  }
 
     /*禁止选择*/
-    &.disabled{
+    &.disabled{/*pointer-events: none;*/
       .content{background-color: #ededed;color: #888;.textshadow(0 ,2px, 0, #fff);cursor: not-allowed;
         &:hover{border:1px solid @gray-border2;.box-shadow(0,0,0 0,#c3cad8);}
       }
