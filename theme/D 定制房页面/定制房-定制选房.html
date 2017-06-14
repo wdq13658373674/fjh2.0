@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/house.css"/>
 
     <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
+    <script src="../../js/public.js" type="text/javascript"></script>
 
     <!--slider-->
     <link rel="stylesheet" href="../../js/addons/flexSlider/flexslider.css"/>
@@ -129,6 +130,48 @@
                                 <img src="../../images/test/slider2.png"/>
 
                                 <p class="caption">楼层平面图</p>
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider1.png"/>
+
+                                <p class="caption">周边配套图</p>
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider1.png"/>
+
+                                <p class="caption">样板间</p>
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider2.png"/>
+
+                                <p class="caption">活动现场</p>
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider1.png"/>
+
+                                <p class="caption">周边配套图</p>
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider1.png"/>
+
+                                <p class="caption">样板间</p>
+                            </div>
+                        </li>
+                        <li class="flex-active-slide">
+                            <div class="img-box">
+                                <img src="../../images/test/slider2.png"/>
+
+                                <p class="caption">活动现场</p>
                             </div>
                         </li>
                         <li class="flex-active-slide">
@@ -363,15 +406,317 @@
     </ul>
 </div>
 
-<!--个性化定制需求-->
-<div class="single-title">其它个性化定制需求</div>
-<div>
-    <textarea class="textarea" name="" id=""></textarea>
-</div>
-
 <!--num-title-->
 <div class="num-title clear">
     <div class="num pull-left">02</div>
+    <div class="tit pull-left">
+        <span class="top">STEP</span><br/>
+        <span>选择楼栋房源</span>
+    </div>
+</div>
+
+<!--dot-title-->
+<div class="dot-title clear">
+    <i class="dot pull-left"></i>
+    <span class="pull-left">楼栋分布图</span>
+</div>
+
+<!--house-select-wrap-->
+<div class="house-select-wrap clear">
+    <div class="left-box pull-left">
+        <div id="imgView">
+            <img src="../../images/test/map.jpg" alt="" style="position: relative;"/>
+
+            <div class="house-mark">
+                <span class="mark active" style="top:50px;left:200px;">1#</span>
+                <span class="mark" style="top:80px;left:250px;">2#</span>
+                <span class="mark" style="top:100px;left:100px;">3#</span>
+                <span class="mark" style="top:100px;left:400px;">4#</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-box pull-right">
+        <div class="top">
+            <div id="thumbs" class="flex-control-thumbs">
+                <ul class="slides house-num-list">
+                    <li class="active">1#</li>
+                    <li>2#</li>
+                    <li>3#</li>
+                    <li>4#</li>
+                    <li>5#</li>
+                    <li>6#</li>
+                    <li>7#</li>
+                    <li>8#</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="bottom">
+            <div class="flexslider num-slider" style="width:100%;height:auto;margin:20px 0;">
+                <ul class="slides">
+                    <!--#1-->
+                    <li>
+                        <div class="msg-line">
+                            <span class="tit">楼栋信息</span>
+                            <span class="con">御临天下[1号楼]</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">单元数量</span>
+                            <span class="con">1个单元</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">楼栋层数</span>
+                            <span class="con">23层</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">梯户配比</span>
+                            <span class="con">两梯六户</span>
+                        </div>
+                    </li>
+                    <!--#2-->
+                    <li>
+                        <div class="msg-line">
+                            <span class="tit">楼栋信息</span>
+                            <span class="con">御临天下[2号楼]</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">单元数量</span>
+                            <span class="con">1个单元</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">楼栋层数</span>
+                            <span class="con">23层</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">梯户配比</span>
+                            <span class="con">两梯六户</span>
+                        </div>
+                    </li>
+                    <!--#3-->
+                    <li>
+                        <div class="msg-line">
+                            <span class="tit">楼栋信息</span>
+                            <span class="con">御临天下[3号楼]</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">单元数量</span>
+                            <span class="con">1个单元</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">楼栋层数</span>
+                            <span class="con">23层</span>
+                        </div>
+                        <div class="msg-line">
+                            <span class="tit">梯户配比</span>
+                            <span class="con">两梯六户</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--dot-title-->
+<div class="dot-title clear">
+    <i class="dot pull-left"></i>
+    <span class="pull-left">房源表</span>
+</div>
+
+<!--menu-tab-->
+<ul class="menu-tab2 clear">
+    <li class="tab active" data-value="0">1号楼</li>
+    <li class="tab" data-value="1">2号楼</li>
+    <li class="tab" data-value="2">3号楼</li>
+    <li class="tab" data-value="7">8号楼</li>
+</ul>
+<!--tab-box2-->
+<!--1-->
+<div class="tab-box2 active">
+    <div class="tab-content tab-table">
+        <table data-num="4" class="table table0" cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <td width="125px">楼栋</td>
+                <td width="125px">楼层</td>
+                <td width="125px">房号</td>
+                <td width="159px">户型编号</td>
+                <td width="188px">户型结构</td>
+                <td width="212px">建筑面积(平方米)</td>
+                <td width="137px">操作</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>4号楼</td>
+                <td>1层</td>
+                <td>4-2-1-1</td>
+                <td>A-1-1户型</td>
+                <td>四室两厅两卫</td>
+                <td>139</td>
+                <td>
+                    <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                    <span class="select-suc">已选定此房源</span>
+                </td>
+            </tr>
+            <tr>
+                <td>4号楼</td>
+                <td>1层</td>
+                <td>4-2-1-1</td>
+                <td>A-1-1户型</td>
+                <td>四室两厅两卫</td>
+                <td>139</td>
+                <td>
+                    <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                    <span class="select-suc">已选定此房源</span>
+                </td>
+            </tr>
+            <tr>
+                <td>4号楼</td>
+                <td>1层</td>
+                <td>4-2-1-1</td>
+                <td>A-1-1户型</td>
+                <td>四室两厅两卫</td>
+                <td>139</td>
+                <td>
+                    <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                    <span class="select-suc">已选定此房源</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--2-->
+<div class="tab-box2">
+    <div class="tab-content tab-table">
+        <table class="table table1" cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <td width="125px">楼栋</td>
+                <td width="125px">楼层</td>
+                <td width="125px">房号</td>
+                <td width="159px">户型编号</td>
+                <td width="188px">户型结构</td>
+                <td width="212px">建筑面积(平方米)</td>
+                <td width="137px">操作</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>4号楼</td>
+                <td>1层</td>
+                <td>4-2-1-1</td>
+                <td>A-1-1户型</td>
+                <td>四室两厅两卫</td>
+                <td>139</td>
+                <td>
+                    <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                    <span class="select-suc">已选定此房源</span>
+                </td>
+            </tr>
+            <tr>
+                <td>4号楼</td>
+                <td>1层</td>
+                <td>4-2-1-1</td>
+                <td>A-1-1户型</td>
+                <td>四室两厅两卫</td>
+                <td>139</td>
+                <td>
+                    <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                    <span class="select-suc">已选定此房源</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--3-->
+<div class="tab-box2">
+    <div class="tab-content tab-table">
+        <table class="table table2" cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <td width="125px">楼栋</td>
+                <td width="125px">楼层</td>
+                <td width="125px">房号</td>
+                <td width="159px">户型编号</td>
+                <td width="188px">户型结构</td>
+                <td width="212px">建筑面积(平方米)</td>
+                <td width="137px">操作</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>4号楼</td>
+                <td>1层</td>
+                <td>4-2-1-1</td>
+                <td>A-1-1户型</td>
+                <td>四室两厅两卫</td>
+                <td>139</td>
+                <td>
+                    <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                    <span class="select-suc">已选定此房源</span>
+                </td>
+            </tr>
+            <tr>
+                <td>4号楼</td>
+                <td>1层</td>
+                <td>4-2-1-1</td>
+                <td>A-1-1户型</td>
+                <td>四室两厅两卫</td>
+                <td>139</td>
+                <td>
+                    <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                    <span class="select-suc">已选定此房源</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--4-->
+<div class="tab-box2">
+    <div class="tab-content tab-table">
+        <table class="table table3" cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <td width="125px">楼栋</td>
+                <td width="125px">楼层</td>
+                <td width="125px">房号</td>
+                <td width="159px">户型编号</td>
+                <td width="188px">户型结构</td>
+                <td width="212px">建筑面积(平方米)</td>
+                <td width="137px">操作</td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>4号楼</td>
+                <td>1层</td>
+                <td>4-2-1-1</td>
+                <td>A-1-1户型</td>
+                <td>四室两厅两卫</td>
+                <td>139</td>
+                <td>
+                    <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                    <span class="select-suc">已选定此房源</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!--num-title-->
+<div class="num-title clear">
+    <div class="num pull-left">03</div>
     <div class="tit pull-left">
         <span class="top">STEP</span><br/>
         <span>选择支付方式</span>
@@ -426,5 +771,24 @@
 
 <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../../js/public/house.js"></script>
+<script type="text/javascript" src="../../js/addons/imgView/spryMap-min2.js"></script>
+<script>
+    $(function () {
+        /*.flex-direction-nav隐藏与显示*/
+        if ($('.house-num-list>li').length <= 6) {
+            $('#thumbs .flex-direction-nav').hide();
+        }
+
+        /*大图拖动*/
+        var map = new SpryMap({
+            id: "imgView",
+            height: 450,
+            width: 745,
+            startX: 200,
+            startY: 200,
+            cssClass: "mappy"
+        });
+    })
+</script>
 </body>
 </html>

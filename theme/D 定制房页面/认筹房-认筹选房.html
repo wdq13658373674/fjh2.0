@@ -2,8 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <title>定制房</title>
 
@@ -19,7 +19,8 @@
 
 <body class="wrap-gray-bg">
 <!--header-->
-<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+<iframe src="../header.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
 
 <!--dz-reg-msg-->
 <div class="dz-reg-wrap mb150">
@@ -31,7 +32,6 @@
         <span>选择认筹房源</span>
     </div>
 </div>
-
 <!--dot-title-->
 <div class="dot-title clear">
     <i class="dot pull-left"></i>
@@ -43,6 +43,7 @@
     <div class="left-box pull-left">
         <div id="imgView">
             <img src="../../images/test/map.jpg" alt="" style="position: relative;"/>
+
             <div class="house-mark">
                 <span class="mark active" style="top:50px;left:200px;">1#</span>
                 <span class="mark" style="top:80px;left:250px;">2#</span>
@@ -56,7 +57,7 @@
         <div class="top">
             <div id="thumbs" class="flex-control-thumbs">
                 <ul class="slides house-num-list">
-                    <li  class="active">1#</li>
+                    <li class="active">1#</li>
                     <li>2#</li>
                     <li>3#</li>
                     <li>4#</li>
@@ -329,133 +330,142 @@
     </div>
 </div>
 
-    <!--num-title-->
-    <div class="num-title clear">
-        <div class="num pull-left">02</div>
-        <div class="tit pull-left">
-            <span class="top">STEP</span><br/>
-            <span>选择认筹金额</span>
-        </div>
+<!--num-title-->
+<div class="num-title clear">
+    <div class="num pull-left">02</div>
+    <div class="tit pull-left">
+        <span class="top">STEP</span><br/>
+        <span>选择认筹金额</span>
+    </div>
+</div>
+
+<div class="check-box w2 clear">
+    <label class="check-list">
+        <input type="radio" value="0" name="pay-all"/>
+
+        <div class="content w2">认筹50000元 优惠50000元</div>
+    </label>
+
+    <!--
+        禁止选择状态：disabled
+    -->
+    <label class="check-list disabled">
+        <input type="radio" name="pay-all"/>
+
+        <div class="content w2">认筹50000元 优惠50000元</div>
+    </label>
+    <!---->
+
+    <label class="check-list">
+        <input type="radio" value="2" name="pay-all"/>
+
+        <div class="content w2">缴款80000元优惠80000元</div>
+    </label>
+    <label class="check-list">
+        <input type="radio" value="3" name="pay-all"/>
+
+        <div class="content w2">缴款80000元优惠80000元</div>
+    </label>
+    <label class="check-list">
+        <input type="radio" value="2" name="pay-all"/>
+
+        <div class="content w2">缴款80000元优惠80000元</div>
+    </label>
+    <label class="check-list">
+        <input type="radio" value="3" name="pay-all"/>
+
+        <div class="content w2">缴款80000元优惠80000元</div>
+    </label>
+    <label class="check-list">
+        <input type="radio" value="2" name="pay-all"/>
+
+        <div class="content w2">缴款80000元优惠80000元</div>
+    </label>
+    <label class="check-list">
+        <input type="radio" value="3" name="pay-all"/>
+
+        <div class="content w2">缴款80000元优惠80000元</div>
+    </label>
+</div>
+
+
+<!--num-title-->
+<div class="num-title clear">
+    <div class="num pull-left">03</div>
+    <div class="tit pull-left">
+        <span class="top">STEP</span><br/>
+        <span>选择支付方式</span>
+    </div>
+</div>
+
+<!--pay-type-wrap-->
+<div class="pay-type-wrap">
+    <div class="gray">
+        报名费用
+        <span class="f30 red bold">2000.00</span>
+        元
     </div>
 
-    <div class="check-box w2 clear">
-        <label class="check-list">
-            <input type="radio" value="0" name="pay-all"/>
-            <div class="content w2">认筹50000元 优惠50000元</div>
-        </label>
+    <ul class="pay-list clear">
+        <li value="0" class="active">
+            <a href="javascript:void(0);"><img src="../../images/house/bank1.png" alt=""/></a>
+            <i class="icon-suc"></i>
+        </li>
+        <li value="1">
+            <a href="javascript:void(0);"><img src="../../images/house/bank2.png" alt=""/></a>
+            <i class="icon-suc"></i>
+        </li>
+        <li value="2">
+            <a href="javascript:void(0);"><img src="../../images/house/bank3.png" alt=""/></a>
+            <i class="icon-suc"></i>
+        </li>
+        <li value="3">
+            <a href="javascript:void(0);"><img src="../../images/house/bank4.png" alt=""/></a>
+            <i class="icon-suc"></i>
+        </li>
+    </ul>
 
-        <!--
-            禁止选择状态：disabled
-        -->
-        <label class="check-list disabled">
-            <input type="radio" name="pay-all"/>
-            <div class="content w2">认筹50000元 优惠50000元</div>
-        </label>
-        <!---->
+    <div class="line"></div>
+</div>
 
-        <label class="check-list">
-            <input type="radio" value="2" name="pay-all"/>
-            <div class="content w2">缴款80000元优惠80000元</div>
-        </label>
-        <label class="check-list">
-            <input type="radio" value="3" name="pay-all"/>
-            <div class="content w2">缴款80000元优惠80000元</div>
-        </label>
-        <label class="check-list">
-            <input type="radio" value="2" name="pay-all"/>
-            <div class="content w2">缴款80000元优惠80000元</div>
-        </label>
-        <label class="check-list">
-            <input type="radio" value="3" name="pay-all"/>
-            <div class="content w2">缴款80000元优惠80000元</div>
-        </label>
-        <label class="check-list">
-            <input type="radio" value="2" name="pay-all"/>
-            <div class="content w2">缴款80000元优惠80000元</div>
-        </label>
-        <label class="check-list">
-            <input type="radio" value="3" name="pay-all"/>
-            <div class="content w2">缴款80000元优惠80000元</div>
-        </label>
+<!--rule-box-->
+<div class="rule-box">
+    <div>
+        <input type="checkbox" id="rule" name="rule" datatype="*" nullmsg="请同意注册协议" sucmsg=" " checked="checked"/>
+        我已阅读并同意
+        <a href="#" class="red">《房计划平台报名规则》</a>
     </div>
-
-
-    <!--num-title-->
-    <div class="num-title clear">
-        <div class="num pull-left">03</div>
-        <div class="tit pull-left">
-            <span class="top">STEP</span><br/>
-            <span>选择支付方式</span>
-        </div>
-    </div>
-
-    <!--pay-type-wrap-->
-    <div class="pay-type-wrap">
-        <div class="gray">
-            报名费用
-            <span class="f30 red bold">2000.00</span>
-            元
-        </div>
-
-        <ul class="pay-list clear">
-            <li value="0" class="active">
-                <a href="javascript:void(0);"><img src="../../images/house/bank1.png" alt=""/></a>
-                <i class="icon-suc"></i>
-            </li>
-            <li value="1">
-                <a href="javascript:void(0);"><img src="../../images/house/bank2.png" alt=""/></a>
-                <i class="icon-suc"></i>
-            </li>
-            <li value="2">
-                <a href="javascript:void(0);"><img src="../../images/house/bank3.png" alt=""/></a>
-                <i class="icon-suc"></i>
-            </li>
-            <li value="3">
-                <a href="javascript:void(0);"><img src="../../images/house/bank4.png" alt=""/></a>
-                <i class="icon-suc"></i>
-            </li>
-        </ul>
-
-        <div class="line"></div>
-    </div>
-
-    <!--rule-box-->
-    <div class="rule-box">
-        <div>
-            <input type="checkbox" id="rule" name="rule" datatype="*" nullmsg="请同意注册协议" sucmsg=" " checked="checked"/>
-            我已阅读并同意
-            <a href="#" class="red">《房计划平台报名规则》</a>
-        </div>
-    </div>
-    <a id="submit" href="#" class="order-btn">立即定制</a>
+</div>
+<a id="submit" href="#" class="order-btn">立即定制</a>
 </div>
 
 <!--footer-->
-<iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
+<iframe src="../footer.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:244px;"></iframe>
 </body>
 <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../../js/public/house.js"></script>
 <script type="text/javascript" src="../../js/addons/imgView/spryMap-min2.js"></script>
 <script>
-    $(function(){
+    $(function () {
         /*禁止选择*/
-        $('.check-list.disabled input').attr("disabled","disabled");
+        $('.check-list.disabled input').attr("disabled", "disabled");
 
         /*
          * 选择支付方式
          * */
-        $('.pay-list>li').click(function(){
+        $('.pay-list>li').click(function () {
             $(this).addClass('active').siblings().removeClass('active');
         });
 
         /*.flex-direction-nav左右箭头按钮隐藏与显示*/
-        if($('.house-num-list>li').length <= 6){
+        if ($('.house-num-list>li').length <= 6) {
             $('#thumbs .flex-direction-nav').hide();
         }
 
         /*大图拖动*/
         var map = new SpryMap({
-            id : "imgView",
+            id: "imgView",
             height: 450,
             width: 745,
             startX: 200,

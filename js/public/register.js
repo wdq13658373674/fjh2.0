@@ -15,22 +15,22 @@ function times() {
     } else {
         //$('#send').unbind("click");
         $("#send").addClass("disabled");
-        $("#send").html(wait+"秒后重发");
+        $("#send").html(wait + "秒后重发");
         wait--;
-        t = setTimeout(function() {
+        t = setTimeout(function () {
             times()
         }, 1000)
     }
 }
 
 /*
-* 注册表单验证
-* */
-$(function(){
+ * 注册表单验证
+ * */
+$(function () {
     $('.register-box').Validform({
-        tiptype:2,
-        showAllError:true,
-        callback:function(curform){
+        tiptype: 2,
+        showAllError: true,
+        callback: function (curform) {
             console.log(1);
         }
     })

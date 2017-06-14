@@ -2,8 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <title>personal-个人资料</title>
 
@@ -18,7 +18,8 @@
 </head>
 <body>
 <!--header-->
-<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+<iframe src="../header.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
 
 <!--个人中心-->
 <div class="personalContainer clear center">
@@ -104,10 +105,11 @@
                         </li>
                         <li>
                             <em>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</em>
+
                             <div class="select">
                                 <div class="select-box">
                                     <div class="form-control"><span>请选择</span></div>
-                                    <input type="hidden" datatype="check" id="sex" value="" name="" />
+                                    <input type="hidden" datatype="check" id="sex" value="" name=""/>
                                     <ul>
                                         <li value="1">男</li>
                                         <li value="2">女</li>
@@ -122,15 +124,18 @@
                         </li>
                         <li>
                             <em>联系地址</em>
-                            <span><input class="addr" id="password" errormsg="联系地址为5～30位" sucmsg=" " datatype="*5-30" type="text" placeholder="输入联系地址"></span>
+                            <span><input class="addr" id="password" errormsg="联系地址为5～30位" sucmsg=" " datatype="*5-30"
+                                         type="text" placeholder="输入联系地址"></span>
+
                             <div id="err-tips" class="err-tips"></div>
                         </li>
                         <li>
                             <em>婚姻情况</em>
+
                             <div class="select">
                                 <div class="select-box">
                                     <div class="form-control"><span>项目选择</span></div>
-                                    <input type="hidden" datatype="check" id="marry" value="" name="" />
+                                    <input type="hidden" datatype="check" id="marry" value="" name=""/>
                                     <ul>
                                         <li value="1">已婚</li>
                                         <li value="2">未婚</li>
@@ -151,14 +156,15 @@
 </div>
 
 <!--footer-->
-<iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:264px;"></iframe>
 <script>
     laydate({
         elem: '#birth',
         event: 'focus'
     });
-    (function($){
-        $(".btn_modify").click(function(){
+    (function ($) {
+        $(".btn_modify").click(function () {
             $(".u-update").show();
             $(".u-succeed").hide();
         });
@@ -168,14 +174,14 @@
         })
     })(jQuery);
     $('#u-update').Validform({
-        tiptype:function(msg,obj,cssctl){
+        tiptype: function (msg, obj, cssctl) {
             /*
              * msg:提示信息
              * obj:当前表单元素
              * cssctl:提示信息样式控制函数
              * */
-            var objtip=$("#err-tips");
-            cssctl(objtip,obj.type);
+            var objtip = $("#err-tips");
+            cssctl(objtip, obj.type);
             objtip.text(msg);
         }
     })

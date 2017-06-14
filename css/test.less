@@ -1,6 +1,27 @@
 @import "../cssControl/control";
 
-#parent{.wh(10px,500px);background: @gray;position: relative;float:left;}
-#child{.wh(10px,80px);.round(20px);background: @red;position: absolute;}
-#box{float:left;.wh(500px,500px);position: relative;overflow: hidden;border:1px solid @gray-border2;}
-#content{position: absolute ;}
+#parent {
+  .wh(10px, 500px);
+  background: @gray;
+  position: relative;
+  float: left;
+}
+
+#child {
+  .wh(10px, 80px);
+  .round(20px);
+  background: @red;
+  position: absolute;
+}
+
+#box {
+  float: left;
+  .wh(500px, 500px);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid @gray-border2;
+}
+
+#content {
+  position: absolute;
+}

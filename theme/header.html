@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <title>header</title>
 
     <link rel="stylesheet" href="../css/public.css"/>
@@ -54,11 +54,13 @@
         <form id="loginForm" class="login-box" action="">
             <div class="input-group">
                 <i class="ico-input ico-user"></i>
-                <input class="input" id="phone" type="text" errormsg="手机号或者邮箱输入不正确" sucmsg=" " datatype="m | e" placeholder="请输入手机号或者邮箱"/>
+                <input class="input" id="phone" type="text" errormsg="手机号或者邮箱输入不正确" sucmsg=" " datatype="m | e"
+                       placeholder="请输入手机号或者邮箱"/>
             </div>
             <div class="input-group">
                 <i class="ico-input ico-pas"></i>
-                <input class="input" id="password" type="text" errormsg="密码为6～16位" sucmsg=" " datatype="*6-16" placeholder="输入6-16位密码"/>
+                <input class="input" id="password" type="text" errormsg="密码为6～16位" sucmsg=" " datatype="*6-16"
+                       placeholder="输入6-16位密码"/>
             </div>
             <!--错误提示-->
             <div id="err-tips" class="err-tips"></div>
@@ -80,17 +82,17 @@
 <script>
     /*登陆弹窗*/
     var pub_html;
-    function login(){
-        if($(".login-wrap").length>0){
-            var html=$(".login-wrap").html();
-            this.pub_html=html;
+    function login() {
+        if ($(".login-wrap").length > 0) {
+            var html = $(".login-wrap").html();
+            this.pub_html = html;
         }
         $(".login-wrap").remove();
 
         layer.open({
             type: 1,
             title: false,
-            resize:false,
+            resize: false,
             closeBtn: true,
             area: ['465px', '425px'],
             shadeClose: true,
@@ -101,14 +103,14 @@
         checkForm();//表单验证
     }
     /*表单验证*/
-    function checkForm(){
+    function checkForm() {
         $('#loginForm').Validform({
-            tiptype:function(msg,o,cssctl){
-                var objtip=$("#err-tips");
-                cssctl(objtip,o.type);
+            tiptype: function (msg, o, cssctl) {
+                var objtip = $("#err-tips");
+                cssctl(objtip, o.type);
                 objtip.text(msg);
             }
-         });
+        });
     }
 </script>
 </body>

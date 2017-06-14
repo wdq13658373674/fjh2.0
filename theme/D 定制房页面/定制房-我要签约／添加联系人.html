@@ -2,8 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <title>定制房</title>
 
@@ -16,7 +16,8 @@
 
 <body class="wrap-gray-bg">
 <!--header-->
-<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+<iframe src="../header.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
 
 <!--dz-reg-msg-->
 <div class="dz-reg-wrap mb150">
@@ -26,7 +27,7 @@
         <div class="num pull-left">01</div>
         <div class="tit pull-left">
             <span class="top">STEP</span><br/>
-            <span>选择意向户型</span>
+            <span>完善购房人信息</span>
         </div>
     </div>
 
@@ -57,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div id="buyer-box2" class="buyer-box pull-left" >
+        <div id="buyer-box2" class="buyer-box pull-left">
             <a href="javascript:;" class="add"><span class="add-ico">+</span>增加购房人</a>
             <a href="javascript:;" class="remove"><span class="add-ico">-</span></a>
         </div>
@@ -105,32 +106,39 @@
         <li class="clear">
             <label class="check-list">
                 <input type="radio" value="6" name="pay-all" checked/>
+
                 <div class="content">全款付款</div>
             </label>
         </li>
         <li class="clear">
             <label class="check-list">
                 <input type="radio" value="0" name="pay-all"/>
+
                 <div class="content">按揭付款（首付20%）</div>
             </label>
             <label class="check-list">
                 <input type="radio" value="1" name="pay-all"/>
+
                 <div class="content">按揭付款（首付20%）</div>
             </label>
             <label class="check-list">
                 <input type="radio" value="2" name="pay-all"/>
+
                 <div class="content">按揭付款（首付20%）</div>
             </label>
             <label class="check-list">
                 <input type="radio" value="3" name="pay-all"/>
+
                 <div class="content">按揭付款（首付20%）</div>
             </label>
             <label class="check-list">
                 <input type="radio" value="4" name="pay-all"/>
+
                 <div class="content">按揭付款（首付20%）</div>
             </label>
             <label class="check-list">
                 <input type="radio" value="5" name="pay-all"/>
+
                 <div class="content">按揭付款（首付20%）</div>
             </label>
         </li>
@@ -188,58 +196,61 @@
 </div>
 
 <!--footer-->
-<iframe src="../footer.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:244px;"></iframe>
+<iframe src="../footer.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:244px;"></iframe>
 </body>
 <script src="../../js/addons/layer/layer.js" type="text/javascript"></script>
 <script>
-    $(function(){
-        var form=$('.hide-form').html();
+    $(function () {
+        var form = $('.hide-form').html();
         /*添加购房人*/
-        $('.buyer-box .add').click(function(){
+        $('.buyer-box .add').click(function () {
             $(this).parent().addClass('active');
             $('#buyer-box2').append(form);
             check();
         })
         /*取消添加购房人*/
-        $('.buyer-box .remove').click(function(){
+        $('.buyer-box .remove').click(function () {
             $(this).parent().removeClass('active');
             $('#buyer-box2').children('.add-form').remove();
         });
         /*
          * 选择支付方式
          * */
-        $('.pay-list>li').click(function(){
+        $('.pay-list>li').click(function () {
             $(this).addClass('active').siblings().removeClass('active');
         });
 
         /*表单验证*/
         check();
-        $('#submit').click(function(){
-            var input=$('.buyer-form .input');
-            var flag=true;
+        $('#submit').click(function () {
+            var input = $('.buyer-form .input');
+            var flag = true;
 
-            input.each(function(){
-                if(this.value==''){
-                    flag=false;
+            input.each(function () {
+                if (this.value == '') {
+                    flag = false;
                 }
             });
 
-            if(!flag){
+            if (!flag) {
                 layer.alert('请填写完整购房人信息！');
             }
         });
     })
 
     /*表单验证*/
-    function check(){
+    function check() {
         $(".real_name").keyup(function () {
             var v = $(this).val();
-            cen1 = $.trim(v).replace(/[^\u2E80-\u9FFF\a-z]/g, '');/*将不为汉字和字母替换为空*/
+            cen1 = $.trim(v).replace(/[^\u2E80-\u9FFF\a-z]/g, '');
+            /*将不为汉字和字母替换为空*/
             $(this).val(cen1);
         });
         $(".real_name").blur(function () {
             var v = $(this).val();
-            cen1 = $.trim(v).replace(/[^\u2E80-\u9FFF]/g, '');/*将不为中文的替换为空*/
+            cen1 = $.trim(v).replace(/[^\u2E80-\u9FFF]/g, '');
+            /*将不为中文的替换为空*/
             $(this).val(cen1);
         });
 
@@ -250,7 +261,7 @@
         });
         $(".phone").blur(function () {
             var v = $(this).val();
-            if(!is_mobile(v)){
+            if (!is_mobile(v)) {
                 $(this).val("");
             }
         });

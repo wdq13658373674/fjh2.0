@@ -9,10 +9,10 @@ $(function () {
     });
 
     $(".select-box ul li").click(function () {
-        var selectVlaue=$(this).attr("value");
-        var selectText=$(this).html();
+        var selectVlaue = $(this).attr("value");
+        var selectText = $(this).html();
 
-        var obj=$(this).parents(".select-box");
+        var obj = $(this).parents(".select-box");
 
         obj.find(".form-control").html(selectText);
         obj.find("input").val(selectVlaue);
@@ -22,9 +22,9 @@ $(function () {
     /*
      * tab切换
      * */
-    $('.menu-tab>.tab,.menu-tab2>.tab').click(function(){
-        var self=$(this),
-            inx=self.index();
+    $('.menu-tab>.tab,.menu-tab2>.tab').click(function () {
+        var self = $(this),
+            inx = self.index();
         self.addClass('active').siblings().removeClass('active');
         $('.tab-box,.tab-box2').eq(inx).addClass('active').siblings().removeClass('active');
     });

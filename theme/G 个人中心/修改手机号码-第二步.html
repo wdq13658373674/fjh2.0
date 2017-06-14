@@ -2,8 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <title>personal-个人资料修改</title>
 
@@ -15,12 +15,14 @@
 </head>
 <body>
 <!--header-->
-<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+<iframe src="../header.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
 
 <!--jump-->
 <div class="j-container center">
     <div class="verification">
         <h2 class="title">更改手机号码</h2>
+
         <div class="stepBox">
             <ol class="ui-step ui-step-3" style="overflow: visible">
                 <li class="ui-step-start ui-step-active">
@@ -48,15 +50,18 @@
 
             <div class="veriForm center">
                 <p>输入你的新手机号码</p>
+
                 <form action="#" method="post" class="d-form" id="d-form">
                     <div class="d-form-group clear">
                         <div class="d-form-control">
-                            <input class="inputxt" type="text" id="phone" name="phone" nullmsg="请输入手机号码" sucmsg=" "  errormsg="请输入正确的手机号码" placeholder="请输入原手机号码">
+                            <input class="inputxt" type="text" id="phone" name="phone" nullmsg="请输入手机号码" sucmsg=" "
+                                   errormsg="请输入正确的手机号码" placeholder="请输入原手机号码">
                         </div>
                     </div>
                     <div class="d-form-group clear">
                         <div class="d-form-control clear">
-                            <input class="inputxt pull-left d-code" type="text" nullmsg="验证码不能为空" sucmsg=" " id="code" name="code" placeholder="请输入验证码">
+                            <input class="inputxt pull-left d-code" type="text" nullmsg="验证码不能为空" sucmsg=" " id="code"
+                                   name="code" placeholder="请输入验证码">
                             <button type="button" class="pull-right code-btn " onclick="settimes(this);">获取验证码</button>
                         </div>
                     </div>
@@ -71,46 +76,48 @@
 </div>
 
 <!--footer-->
-<iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:264px;"></iframe>
 
 </body>
 <script>
 
-    var countdown=60;
+    var countdown = 60;
     function settimes(obj) {
         if (countdown == 0) {
             obj.removeAttribute("disabled");
-            obj.innerHTML="获取验证码";
+            obj.innerHTML = "获取验证码";
             obj.setAttribute("class", "code-btn");
             countdown = 60;
             return;
         } else {
             obj.setAttribute("disabled", true);
-            obj.innerHTML="重新发送(" + countdown + ")";
+            obj.innerHTML = "重新发送(" + countdown + ")";
             obj.setAttribute("class", "btn-disabled");
             countdown--;
         }
-        setTimeout(function() {
-                settime(obj) }
-            ,1000)
+        setTimeout(function () {
+                    settime(obj)
+                }
+                , 1000)
     }
-    $(function(){
-        var Dform=$(".d-form").Validform({
-            tiptype:3,
-            showAllError:true,
-            datatype:{
-                "zh1-6":/^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/
+    $(function () {
+        var Dform = $(".d-form").Validform({
+            tiptype: 3,
+            showAllError: true,
+            datatype: {
+                "zh1-6": /^[\u4E00-\u9FA5\uf900-\ufa2d]{1,6}$/
             }
         });
-        Dform.tipmsg.w["zh1-6"]="请输入1到6个中文字符！";
+        Dform.tipmsg.w["zh1-6"] = "请输入1到6个中文字符！";
 
         Dform.addRule([{
-                ele:".inputxt:eq(0)",
-                datatype:"m"
-            },
+            ele: ".inputxt:eq(0)",
+            datatype: "m"
+        },
             {
-                ele:".inputxt:eq(1)",
-                datatype:"n | s"
+                ele: ".inputxt:eq(1)",
+                datatype: "n | s"
             }]);
     });
 </script>

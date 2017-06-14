@@ -2,8 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <title>personal-个人资料修改</title>
 
@@ -14,14 +14,17 @@
 </head>
 <body>
 <!--header-->
-<iframe src="../header.html" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:108px;"></iframe>
+<iframe src="../header.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
 
 <!--jump-->
 <div class="j-container center">
     <div class="verification">
         <h2 class="title">选择支付方式</h2>
+
         <div class="selective-payment-box">
             <p>支付团购费用</p>
+
             <p class="payment-money"><span>2000.00</span>元</p>
             <ul class="pay-list clear">
                 <li class="active">
@@ -49,12 +52,13 @@
 </div>
 
 <!--footer-->
-<iframe src="../footer.html?=111" frameborder="0" marginheight="0"  scrolling="no" marginwidth="0" style="width:100%;height:264px;"></iframe>
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:264px;"></iframe>
 
 </body>
 <script>
     $(function () {
-        $('.pay-list>li').click(function(){
+        $('.pay-list>li').click(function () {
             $(this).addClass('active').siblings().removeClass('active');
         });
     })
