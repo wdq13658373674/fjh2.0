@@ -1560,11 +1560,6 @@ body {
 }
 
 /*我的认筹详情*/
-.plan {
-  position: relative;
-  margin-left: 50px;
-}
-
 .raise-box {
   width: 100%;
   .resources-box {
@@ -1610,39 +1605,37 @@ body {
   }
 }
 
-.thumbs-box {
+.carousel{ position: relative;
   width: 220px;
-  overflow: hidden;
-  .slides {
-    li {
+  margin-left: 16px;
+  .carousel-ul{
+    //overflow: hidden;
+    height: 72px;
+  }
+  .carousel-img{
+    width: 72px;
+    height: 72px;
+    float: left;
+    margin-left: 3px;
+    &:first-child{
+      margin-left: 0;
+    }
+    img{
       width: 72px;
       height: 72px;
-      background-color: #eff2f9;
-      border: solid 1px #c3cad8;
-      margin-left: 2px;
-      overflow: hidden;
-      &:first-child, :last-child {
-        margin-left: 0;
-      }
     }
   }
-
-  .flex-control-thumbs .flex-active-slide .img {
-    border: 1px solid #c3cad8;
-    img {
-      width: 100%;
-    }
+  .swiper-button-next, .swiper-button-prev{
+    -moz-background-size: 20px 28px;
+    -webkit-background-size: 20px 28px;
+    background-size: 20px 28px;
   }
-}
-
-.flex-control-thumbs .flex-direction-nav .flex-prev {
-  top: 5px;
-  left: -24px;
-}
-
-.flex-control-thumbs .flex-direction-nav .flex-next {
-  top: 5px;
-  right: -24px;
+  .swiper-button-prev{
+    left: -30px;
+  }
+  .swiper-button-next{
+    right: -30px;
+  }
 }
 
 .discount-box {

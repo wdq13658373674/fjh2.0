@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="stylesheet" href="../../css/public.css"/>
-    <link rel="stylesheet" href="../../js/addons/flexSlider/flexslider.css"/>
     <link rel="stylesheet" href="../../css/personal.css">
     <script src="../../js/jQuery1.12.3-min.js"></script>
     <script src="../../js/public.js"></script>
@@ -121,44 +120,37 @@
                     </div>
                     <div class="resources-control clear">
                         <span class="resources-control_label pt24">户型图</span>
+                        <div class="resources-control_content clear">
+                            <div class="carousel">
+                            <div class="swiper-container">
+                                <ul class="carousel-ul swiper-wrapper">
+                                    <li class="carousel-img swiper-slide">
+                                        <img src="../../images/test/slider1.png"/>
+                                    </li>
+                                    <li class="carousel-img swiper-slide">
+                                        <img src="../../images/test/slider1.png"/>
+                                    </li>
+                                    <li class="carousel-img swiper-slide">
+                                        <img src="../../images/test/slider1.png"/>
+                                    </li>
+                                    <li class="carousel-img swiper-slide">
+                                        <img src="../../images/test/slider1.png"/>
+                                    </li>
+                                    <li class="carousel-img swiper-slide">
+                                        <img src="../../images/test/slider1.png"/>
+                                    </li>
+                                    <li class="carousel-img swiper-slide">
+                                        <img src="../../images/test/slider1.png"/>
+                                    </li>
+                                    <li class="carousel-img swiper-slide">
+                                        <img src="../../images/test/slider1.png"/>
+                                    </li>
+                                </ul>
 
-                        <div class="plan resources-control_content clear">
-                            <div class="thumbs-box">
-                                <div class="carousel carousel-r flex-control-thumbs">
-                                    <ul class="slides">
-                                        <li class="flex-active-slide">
-                                            <div class="img">
-                                                <img src="../../images/test/slider1.png"/>
-                                            </div>
-                                        </li>
-                                        <li class="flex-active-slide">
-                                            <div class="img">
-                                                <img src="../../images/test/slider2.png"/>
-                                            </div>
-                                        </li>
-                                        <li class="flex-active-slide">
-                                            <div class="img">
-                                                <img src="../../images/test/slider1.png"/>
-                                            </div>
-                                        </li>
-                                        <li class="flex-active-slide">
-                                            <div class="img">
-                                                <img src="../../images/test/slider1.png"/>
-                                            </div>
-                                        </li>
-                                        <li class="flex-active-slide">
-                                            <div class="img">
-                                                <img src="../../images/test/slider2.png"/>
-                                            </div>
-                                        </li>
-                                        <li class="flex-active-slide">
-                                            <div class="img">
-                                                <img src="../../images/test/slider2.png"/>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -217,26 +209,16 @@
 <!--footer-->
 <iframe src="../footer.html?=111" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
         style="width:100%;height:264px;"></iframe>
-
-<script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="../../js/public/house.js"></script>
-
+<link rel="stylesheet" href="../../js/addons/swiper/swiper-3.4.2.min.css">
+<script src="../../js/addons/swiper/swiper-3.4.2.jquery.min.js"></script>
 <script type="text/javascript">
-    /*选择意向户型sliders*/
-    function sliders(inx) {
-
-        $('.carousel-r').eq(inx).flexslider({
-            prevText: '',
-            nextText: '',
-            animation: "slide",
-            controlNav: false,
-            animationLoop: false,
-            maxItems: 5,
-            slideshow: false,
-            itemWidth: 72,
-            itemHeight: 72
-        });
-    }
+    var mySwiper = new Swiper('.swiper-container', {
+        loop : false,
+        slidesPerView : 'auto',
+        loopedSlides :1,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+    })
 </script>
 
 </body>
