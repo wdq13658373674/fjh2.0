@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>定制房</title>
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/house.css"/>
+
+    <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
+    <script src="../../js/public.js" type="text/javascript"></script>
+
+    <!--slider-->
+    <link rel="stylesheet" href="../../js/addons/flexSlider/flexslider.css"/>
+</head>
+
+<body class="wrap-gray-bg">
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
+
+<!--dz-reg-msg-->
+<div class="dz-reg-wrap mb150">
+<!--num-title-->
+<div class="num-title clear">
+    <div class="num pull-left">01</div>
+    <div class="tit pull-left">
+        <span class="top">STEP</span><br/>
+        <span>转购信息</span>
+    </div>
+</div>
+<table>
+    <tbody>
+    <tr>
+        <td>确认单编号</td>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td>转购用户姓名</td>
+        <td></td>
+        <td>房计划注册手机号码</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>身份证号码</td>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td colspan="4">认筹楼盘信息</td>
+    </tr>
+    <tr>
+        <td>开发企业</td>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td>楼盘名称</td>
+        <td></td>
+        <td>楼盘地址</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>户型</td>
+        <td></td>
+        <td>楼栋</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>房号</td>
+        <td></td>
+        <td>建筑面积</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>认筹单价</td>
+        <td></td>
+        <td>认筹总价</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>认筹金</td>
+        <td></td>
+        <td>认筹优惠</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="4">转购楼盘信息</td>
+    </tr>
+    <tr>
+        <td>开发企业</td>
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td>楼盘名称</td>
+        <td></td>
+        <td>楼盘地址</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>户型</td>
+        <td></td>
+        <td>楼栋</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>房号</td>
+        <td></td>
+        <td>建筑面积约</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>定制单价</td>
+        <td></td>
+        <td>定制总价</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="4">转购内容</td>
+    </tr>
+    <tr>
+        <td>认筹金</td>
+        <td></td>
+        <td>认筹优惠</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!--pay-type-wrap-->
+    <div class="pay-type-wrap">
+        <div class="gray">转购注意事项</div>
+        <div class="line" style="margin-top: 10px; margin-bottom: 10px"></div>
+        <div class="gray" style="line-height: 30px;">
+            1、认筹用户转购其它楼盘的需同一用户才能转购。<br/>
+            2、签署本《认筹转购确认单》后原认筹确认单失效，认筹金和认筹优惠全部转入转购的楼盘使用。<br/>
+            3、每个项目认筹优惠使用规则具体以以房计划平台或营销中心现场公告为准。<br/>
+            4、转购房源信息最终以签订的《商品房买卖合同》约定为准。<br/>
+            5、以上转购活动最终解释权归平台方所有。
+        </div>
+    </div>
+
+<!--rule-box-->
+<div class="rule-box">
+    <div>
+
+    </div>
+</div>
+    <button type="submit" class="order-btn">立即转购</button>
+</div>
+
+<!--footer-->
+<iframe src="../footer.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:244px;"></iframe>
+</body>
+<script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../../js/public/house.js"></script>
+<script type="text/javascript" src="../../js/addons/imgView/spryMap-min2.js"></script>
+<script>
+    $(function () {
+        /*禁止选择*/
+        $('.check-list.disabled input').attr("disabled", "disabled");
+
+        /*
+         * 选择支付方式
+         * */
+        $('.pay-list>li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+
+        /*.flex-direction-nav左右箭头按钮隐藏与显示*/
+        if ($('.house-num-list>li').length <= 6) {
+            $('#thumbs .flex-direction-nav').hide();
+        }
+
+        /*大图拖动*/
+        var map = new SpryMap({
+            id: "imgView",
+            height: 450,
+            width: 745,
+            startX: 200,
+            startY: 200,
+            cssClass: "mappy"
+        });
+    })
+</script>
+</html>
