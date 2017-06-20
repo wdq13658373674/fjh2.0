@@ -1,0 +1,4 @@
+.idea/
+vendor/
+paint/Apps/Common/Conf/config.php
+composer.lock
