@@ -263,7 +263,7 @@
   .right-box {
     .wh(377px, auto);
     .top-box {
-      .wh(100%, 420px);
+      .wh(100%, 442px);
       background: #ffffff;
       overflow: hidden;
       .house-title {
@@ -276,7 +276,7 @@
       /*描述列表*/
       .desc-list {
         .wh(325px, 29px);
-        margin: 0 auto 25px;
+        margin: 0 auto 20px;
         span {
           float: left;
         }
@@ -286,7 +286,7 @@
         .wh(325px, auto);
         margin: 0 auto;
         li {
-          .wh(100%, 40px, 40px);
+          .wh(100%, 38px, 38px);
           overflow: hidden;
           background: url("../images/house/solid.png") left center repeat-x;
           .tit {
@@ -307,13 +307,16 @@
           }
         }
       }
+
+      .detail{.wh(325px, auto);
+        margin: 15px auto;}
     }
 
     .bottom-box {
-      .wh(100%, 160px);
+      .wh(100%, 138px);
       background: #ffffff;
       margin-top: 25px;
-      padding-top: 20px;
+      padding-top: 17px;
       .icon {
         position: relative;
         .wh(23px, 34px);
@@ -376,7 +379,7 @@
         .btn-disabled();
         width: 326px;
         font-size: 16px;
-        margin: 34px auto 0;
+        margin: 25px auto 0;
         color: #888888;
         .textshadow(0, 2px, 0, #ffffff);
       }
@@ -1304,3 +1307,35 @@
   display: none;
 }
 
+
+/*定制查看详情*/
+.d170629-dz-detail{margin:0 25px;
+  .house-title{margin-top:25px;font-size:24px;}
+
+  .desc-list{text-align: left;margin-top:30px;
+    span{margin-bottom:10px;}
+  }
+
+  .dz-msg-list {
+    margin: 21px 0 70px;
+    li {
+      .ellipse;
+      .wh(100%, 50px, 50px);
+      &:nth-child(odd) {
+        background: @gray-bg;
+      }
+      &:nth-child(even) {
+        background: @gray-hover;
+      }
+    }
+    .tit {
+      margin-right: 30px;
+      color: @gray;
+      margin-left: 15px;
+    }
+    .con {
+      color: @txt-black;
+      margin-right: 15px;
+    }
+  }
+}
