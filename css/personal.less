@@ -1692,6 +1692,8 @@ body {
   }
   .discount-content{
     margin-top: 15px;
+    height: 153px;
+    overflow: hidden;
     dt{
       margin-bottom: 16px;
       font-size: 14px;
@@ -1748,7 +1750,14 @@ body {
     background-color: #cd373a;
   }
 }
-
+.btn-disabled{
+  &:hover{
+    background: #ededed;
+  }
+  background: #ededed;
+  cursor: not-allowed;
+  color: #888
+}
 .dz-menu-wrap {
   .wh(1132px, auto);
   overflow: hidden;
