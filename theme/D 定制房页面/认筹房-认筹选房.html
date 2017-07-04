@@ -458,11 +458,6 @@
             $(this).addClass('active').siblings().removeClass('active');
         });
 
-        /*.flex-direction-nav左右箭头按钮隐藏与显示*/
-        if ($('.house-num-list>li').length <= 6) {
-            $('#thumbs .flex-direction-nav').hide();
-        }
-
         /*大图拖动*/
         var map = new SpryMap({
             id: "imgView",
@@ -472,6 +467,58 @@
             startY: 200,
             cssClass: "mappy"
         });
+
+        /*房源表tab切换*/
+        sliders2();
+        $('.menu-tab2 .tab').click(function () {
+
+            var inx = $(this).data('value')
+                    , mark = $('.house-mark .mark')
+                    , num = $('.house-num-list li')
+                    , slider = $('.num-slider .flex-control-nav>li a');
+
+
+            /*楼栋超出滚动*/
+            var n = parseInt(inx / 6);
+            $('#thumbs .flex-control-nav>li a').eq(n).click();
+            $('.num-slider .flex-control-nav>li a').eq(inx).click();
+
+            /*连带样式*/
+            num.eq(inx).addClass('active').siblings().removeClass('active');
+            mark.eq(inx).addClass('active').siblings().removeClass('active');
+            sliders2();
+        });
+
+        //选定此房源
+        $('.table .select-btn').click(function () {
+            $('.table tr').removeClass('active');
+            $(this).parents('tr').addClass('active');
+        });
+
+        /*选择楼栋房源sliders*/
+        function sliders2() {
+            $('#thumbs').flexslider({
+                prevText: '',
+                nextText: '',
+                animation: "slide",
+                controlNav: true,
+                animationLoop: false,
+                maxItems: 6,
+                directionNav: true,
+                slideshow: false,
+                itemWidth: 62,
+                itemMargin: 0
+            });
+            $('.num-slider').flexslider({
+                prevText: '',
+                nextText: '',
+                animation: "slide",
+                controlNav: true,
+                directionNav: false,
+                animationLoop: false,
+                slideshow: false
+            });
+        }
     })
 </script>
 </html>

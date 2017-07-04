@@ -23,7 +23,6 @@
     }
   }
 }
-
 .tab-box {
   .main-width;
   background: #ffffff;
@@ -41,23 +40,27 @@
   }
 }
 
+/*认筹选房-房源表选择*/
 .menu-tab2 {
   .wh(1132px, auto);
   margin: 38px auto 0;
   .tab {
-    .wh(100px, 45px, 45px);
+    .wh(100px, 48px, 48px);
     float: left;
     text-align: center;
     cursor: pointer;
-    &.active {
-      background: @gray-bg;
-    }
+
     &:hover {
       background: @gray-bg;
+      color:@txt-black;
+    }
+
+    &.active {
+      background: @gray-bg;
+      color:@txt-black;
     }
   }
 }
-
 .tab-box2 {
   .wh(1132px, auto);
   margin: 0 auto;
@@ -128,7 +131,6 @@
     border-width: 1px 0;
   }
 }
-
 .tab-box3 {
   display: none;
   &.active {
@@ -372,7 +374,7 @@
       .dz-btn {
         .btn-red-full();
         width: 326px;
-        margin: 41px auto 0;
+        margin: 25px auto 0;
         font-size: 16px;
       }
       .btn-disabled {
@@ -1316,34 +1318,41 @@
     span{margin-bottom:10px;}
   }
 
-  .dz-msg-list {
-    margin: 21px 0 70px;
-    li {
-      .ellipse;
-      .wh(100%, 50px, 50px);
-      &:nth-child(odd) {
-        background: @gray-bg;
-      }
-      &:nth-child(even) {
-        background: @gray-hover;
-      }
-    }
-    .tit {
-      margin-right: 30px;
-      color: @gray;
-      margin-left: 15px;
-    }
-    .con {
-      color: @txt-black;
-      margin-right: 15px;
-    }
-  }
-
-
   .tb-title{color:@gray;margin-top:30px;}
   .d170630-table{.wh(100%,auto);border-collapse:collapse;margin-top:15px;margin-bottom: 70px;
     tbody>tr>td{border:1px solid @gray-border2;padding:16px 22px;
       &.tit{width:192px;color:@gray;}
+    }
+  }
+}
+
+/*d170704定制选房-选择楼栋*/
+.d170704-menu-type{
+  width:1132px;
+  margin:15px auto 0;
+
+  .tit {
+    color: @gray;
+    margin-top: 27px;
+  }
+
+  .d170704-menu-tab2 {
+    padding-left: 75px;
+    width: 100%;
+    .tab {
+      color:@gray;
+      cursor: pointer;
+      display: block;
+      float: left;
+      padding: 5px 25px;
+      border: 1px solid @gray;
+      .round(100px);
+      margin-right: 12px;
+      margin-top: 22px;
+      &.active {
+        border-color: @blue;
+        color: @blue;
+      }
     }
   }
 }
