@@ -419,7 +419,7 @@
 <div class="d170704-menu-type">
     <span class="pull-left tit">选择楼栋</span>
 
-    <ul class="d170704-menu-tab2 clear">
+    <ul class="d170704-menu-tab2 clear" id="floor">
         <li class="tab active" data-value="0">1号楼</li>
         <li class="tab" data-value="1">2号楼</li>
         <li class="tab" data-value="2">3号楼</li>
@@ -427,8 +427,6 @@
     </ul>
 
 </div>
-
-<!--tab-box2-->
 
 <!--dot-title-->
 <div class="dot-title clear mt60">
@@ -752,7 +750,6 @@
         <input type="checkbox" id="rule" name="rule" datatype="*" nullmsg="请同意注册协议" sucmsg=" " checked="checked"/>
         我已阅读并同意
         <a href="#" class="red">《房计划注册协议》</a>
-        <!--<span class="Validform_wrong f12" style="display:none;">请同意并选择</span>-->
     </div>
 </div>
 <a href="#" class="order-btn">立即定制</a>
@@ -776,41 +773,6 @@
             startY: 200,
             cssClass: "mappy"
         });
-
-        //选择楼栋
-        sliders2();
-        $('.d170704-menu-tab2 .tab').click(function () {
-            var inx = $(this).data('value')
-                , mark = $('.house-mark .mark')
-                , slider = $('.num-slider .flex-control-nav>li a');
-
-            $(this).addClass('active').siblings().removeClass('active');
-            $('.tab-box2').eq(inx).addClass('active').siblings().removeClass('active');
-
-            mark.eq(inx).addClass('active').siblings().removeClass('active');//房源图标注
-            slider.eq(inx).click();//slider
-
-            sliders2();
-        });
-
-        //选定此房源
-        $('.table .select-btn').click(function () {
-            $('.table tr').removeClass('active');
-            $(this).parents('tr').addClass('active');
-        });
-
-        //选择楼栋房源sliders
-        function sliders2() {
-            $('.num-slider').flexslider({
-                prevText: '',
-                nextText: '',
-                animation: "slide",
-                controlNav: true,
-                directionNav: false,
-                animationLoop: false,
-                slideshow: false
-            });
-        }
     })
 </script>
 </body>

@@ -40,45 +40,6 @@
   }
 }
 
-/*认筹选房-房源表选择*/
-.menu-tab2 {
-  .wh(1132px, auto);
-  margin: 38px auto 0;
-  .tab {
-    .wh(100px, 48px, 48px);
-    float: left;
-    text-align: center;
-    cursor: pointer;
-
-    &:hover {
-      background: @gray-bg;
-      color:@txt-black;
-    }
-
-    &.active {
-      background: @gray-bg;
-      color:@txt-black;
-    }
-  }
-}
-.tab-box2 {
-  .wh(1132px, auto);
-  margin: 0 auto;
-  background: @gray-bg;
-  min-height: 100px;
-  overflow: hidden;
-  display: none;
-  &.active {
-    display: block;
-  }
-  .tab-content {
-    .wh(1071px, auto);
-    margin: 30px auto;
-    overflow: hidden;
-    background: #ffffff;
-  }
-}
-
 .menu-tab3 {
   .wh(100%, auto);
   .tab {
@@ -1337,24 +1298,40 @@
     color: @gray;
     margin-top: 27px;
   }
-
-  .d170704-menu-tab2 {
-    padding-left: 75px;
-    width: 100%;
-    .tab {
-      color:@gray;
-      cursor: pointer;
-      display: block;
-      float: left;
-      padding: 5px 25px;
-      border: 1px solid @gray;
-      .round(100px);
-      margin-right: 12px;
-      margin-top: 22px;
-      &.active {
-        border-color: @blue;
-        color: @blue;
-      }
+}
+.d170704-menu-tab2 {
+  padding-left: 75px;
+  width: 100%;
+  .tab {
+    color:@gray;
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 5px 25px;
+    border: 1px solid @gray;
+    .round(100px);
+    margin-right: 12px;
+    margin-top: 22px;
+    &.active {
+      border-color: @blue;
+      color: @blue;
     }
+  }
+}
+.tab-box2 {
+  .wh(1132px, auto);
+  margin: 0 auto;
+  background: @gray-bg;
+  min-height: 100px;
+  overflow: hidden;
+  display: none;
+  &.active {
+    display: block;
+  }
+  .tab-content {
+    .wh(1071px, auto);
+    margin: 30px auto;
+    overflow: hidden;
+    background: #ffffff;
   }
 }
