@@ -227,37 +227,19 @@
 
 <!--建设进度-->
 <div class="tab-box active">
-    <div class="tab-content pro-progress" style="margin-left:0;margin-right:0;width:100%;">
-        <ul id="pro-list" class="pro-list">
-            <li>
-                <a class="link clear" href="#">
-                    <div class="date pull-left">
-                        <p class="year">2016</p>
+    <div class="tab-content pro-progress">
+        <div class="title a_center f25">土石方开标</div>
+        <div>
+            <a class="f12 gray hover-dec" href="#"><< 返回</a>
+        </div>
+        <div class="a_center f14 gray">2016-09-11</div>
 
-                        <p class="mon">09-05</p>
-                    </div>
-                    <div class="content pull-left">
-                        <p class="tit">土石方开标</p>
-
-                        <p class="con">9月5日——土石方开标（施工材料准备）</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="link clear" href="#">
-                    <div class="date pull-left">
-                        <p class="year">2016</p>
-
-                        <p class="mon">09-05</p>
-                    </div>
-                    <div class="content pull-left">
-                        <p class="tit">土石方开标</p>
-
-                        <p class="con">9月5日——土石方开标（施工材料准备）</p>
-                    </div>
-                </a>
-            </li>
-        </ul>
+        <div class="detail-content">
+            <div class="tit">9月5日——土石方开标（施工材料准备）</div>
+            <div class="img">
+                <img src="../../images/test/house.jpg" alt=""/>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -724,7 +706,7 @@
                     setTimeout(function () {
                         var lis = [];
                         for (var i = 0; i < 8; i++) {
-                            lis.push('<li><a class="link">' + ( (page - 1) * 8 + i + 1 ) + '</a></li>')
+                            lis.push('<li>' + ( (page - 1) * 8 + i + 1 ) + '</li>')
                         }
 
                         //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
