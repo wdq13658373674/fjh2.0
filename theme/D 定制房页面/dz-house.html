@@ -227,37 +227,52 @@
 
 <!--建设进度-->
 <div class="tab-box active">
-    <div class="tab-content pro-progress" style="margin-left:0;margin-right:0;width:100%;">
+    <div class="tab-content pro-progress" style="margin: 0; width: 100%">
+        <!--列表 start-->
         <ul id="pro-list" class="pro-list">
-            <li>
-                <a class="link clear" href="#">
-                    <div class="date pull-left">
-                        <p class="year">2016</p>
+            <li class="clear">
+                <div class="date pull-left">
+                    <p class="year">2016</p>
 
-                        <p class="mon">09-05</p>
-                    </div>
-                    <div class="content pull-left">
-                        <p class="tit">土石方开标</p>
+                    <p class="mon">09-05</p>
+                </div>
+                <div class="content pull-left">
+                    <p class="tit">土石方开标</p>
 
-                        <p class="con">9月5日——土石方开标（施工材料准备）</p>
-                    </div>
-                </a>
+                    <p class="con">9月5日——土石方开标（施工材料准备）</p>
+                </div>
             </li>
-            <li>
-                <a class="link clear" href="#">
-                    <div class="date pull-left">
-                        <p class="year">2016</p>
+            <li class="clear">
+                <div class="date pull-left">
+                    <p class="year">2016</p>
 
-                        <p class="mon">09-05</p>
-                    </div>
-                    <div class="content pull-left">
-                        <p class="tit">土石方开标</p>
+                    <p class="mon">09-05</p>
+                </div>
+                <div class="content pull-left">
+                    <p class="tit">土石方开标</p>
 
-                        <p class="con">9月5日——土石方开标（施工材料准备）</p>
-                    </div>
-                </a>
+                    <p class="con">9月5日——土石方开标（施工材料准备）</p>
+                </div>
             </li>
         </ul>
+        <!--列表 end-->
+
+        <!--详情 start-->
+        <div class="pro-detail" style="margin: 35px;">
+            <div class="title a_center f25">土石方开标</div>
+            <div>
+                <a class="f12 gray hover-dec" href="javascript:void(0)" onclick="$(this).parents('.pro-progress').removeClass('show-detail')"><< 返回</a>
+            </div>
+            <div class="a_center f14 gray">2016-09-11</div>
+
+            <div class="detail-content">
+                <div class="tit">9月5日——土石方开标（施工材料准备）</div>
+                <div class="img">
+                    <img src="../../images/test/house.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+        <!--详情 end-->
     </div>
 </div>
 
@@ -756,6 +771,11 @@
 
             });
         });
+
+        /*点击进入详情*/
+        $('#pro-list').on('click','li',function(){
+            $(this).parents('.pro-progress').addClass('show-detail');
+        })
 
         /*大图显示*/
         bigImg('#map');//位置及周边

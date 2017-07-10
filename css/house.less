@@ -398,11 +398,11 @@
 /*建设进度*/
 .pro-progress {
   li {
+    display:block;
+    padding: 20px 35px;
     border-bottom: 1px solid @gray-hover;
 
-    .link{display:block;padding: 20px 32px;}
-
-    &:hover{background: #eff2f9;}
+    &:hover{background: #eff2f9;cursor: pointer;}
   }
   .date {
     width: 119px;
@@ -416,7 +416,7 @@
     }
   }
   .content {
-    width: 1012px;
+    width: 1010px;
     .tit {
       font-size: 16px;
       color: @txt-black;
@@ -429,12 +429,20 @@
 
 
   /*建设进度详情*/
-  .hover-dec:hover{text-decoration: underline !important;}
-  .detail-content{margin-top:20px;border-top:1px solid @gray-border2;
-    .tit{margin-top:15px;}
-    .img{margin-top:25px;
-      img{max-width: 100%;}
+  .pro-detail{display:none;
+    .hover-dec:hover{text-decoration: underline !important;}
+    .detail-content{margin-top:20px;border-top:1px solid @gray-border2;
+      .tit{margin-top:15px;}
+      .img{margin-top:25px;
+        img{max-width: 100%;}
+      }
     }
+  }
+
+
+  &.show-detail{
+    .pro-list{display:none;}
+    .pro-detail{display:block;}
   }
 }
 
