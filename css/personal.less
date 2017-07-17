@@ -1281,6 +1281,7 @@ body {
   }
 }
 
+//表格定制
 .pro-table {
   margin-top: 70px;
   width: 100%;
@@ -1458,6 +1459,31 @@ body {
     .icon("../images/icon/icon-three-full.png", no-repeat);
   }
 }
+.part2{
+  td{
+    border-bottom: 0;
+  }
+}
+.dz-ParkingLot{
+  >td{
+    height: 33px;
+    border-top: 0;
+    a{
+      display: block;
+      width: 765px;
+      height: 33px;
+      line-height: 33px;
+      background-color: #ebf6ff;
+      border: solid 1px #cdd7de;
+      margin-bottom: 30px;
+      text-align: center;
+      &:hover{
+        background-color: #d3e2f9;
+        border: solid 1px #cdd7de;
+      }
+    }
+  }
+}
 
 //账户管理
 .account {
@@ -1604,7 +1630,6 @@ body {
     margin-left: 25px;
     font-size: 14px;
     em {
-      font-size: 20px;
       font-style: normal;
       color: #7f85a3;
     }
