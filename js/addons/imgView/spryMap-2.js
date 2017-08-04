@@ -109,6 +109,7 @@ function SpryMap(param) {
         var e = b.clientX - m.mousePosition.x + parseInt(m.map.style.left),
             d = b.clientY - m.mousePosition.y + parseInt(m.map.style.top);
         MoveMap(e, d);
+
         m.mousePosition.x = b.clientX;
         m.mousePosition.y = b.clientY
     };

@@ -227,7 +227,7 @@
 
 <!--建设进度-->
 <div class="tab-box active">
-    <div class="tab-content pro-progress" style="margin: 0; width: 100%">
+    <div class="tab-content pro-progress" style="margin:35px 0; width: 100%">
         <!--列表 start-->
         <ul id="pro-list" class="pro-list">
             <li class="clear">
@@ -311,8 +311,8 @@
                     <li>1#</li>
                     <li>2#</li>
                     <li>3#</li>
-                    <li>4#</li>
-                    <!--<li>5#</li>
+                    <!--<li>4#</li>
+                    <li>5#</li>
                     <li>6#</li>
                     <li>7#</li>
                     <li>8#</li>-->
@@ -320,9 +320,10 @@
             </div>
             <script>
                 $(function () {
-                    if ($('.house-num-list>li').length <= 6) {
-                        console.log($('.house-num-list>li').length);
-                        $('#thumbs .flex-direction-nav').hide();
+                    var len=$('.house-num-list>li').length;
+                    if ( len<= 6) {
+                        console.log(len);
+                        $('.flex-direction-nav').hide();
                     }
                     /*.house-mark .mark添加active*/
                     $('.house-num-list>li').click(function () {

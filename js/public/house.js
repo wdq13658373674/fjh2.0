@@ -27,17 +27,17 @@ $(function () {
     sliders2();
     $('#floor .tab').click(function () {
         var inx = $(this).index()
-            , mark = $('.house-mark .mark')
-            , slider = $('.num-slider .flex-control-nav>li a');
+            ,id=$(this).data('value')//楼栋编号
+            ,slider = $('.num-slider .flex-control-nav>li a')
 
         //房源表切换
         $(this).addClass('active').siblings().removeClass('active');
         $('.tab-box2').eq(inx).addClass('active').siblings().removeClass('active');
 
-        mark.eq(inx).addClass('active').siblings().removeClass('active');//房源图标注切换
         slider.eq(inx).click();//slider切换
-
         sliders2();
+
+        markPos(id);//楼栋定位
     });
 
     //选定此房源
@@ -47,7 +47,9 @@ $(function () {
     });
 })
 
-/*选择意向户型*/
+/**
+ * 选择意向户型
+ * */
 function sliders(inx) {
     var nav = $('.slider-r').eq(inx);
     var sync = $('.carousel-r').eq(inx);
@@ -76,7 +78,9 @@ function sliders(inx) {
     });
 }
 
-//楼栋房源信息切换
+/**
+ * 楼栋房源信息切换
+ * */
 function sliders2() {
     $('.num-slider').flexslider({
         prevText: '',
@@ -88,4 +92,49 @@ function sliders2() {
         slideshow: false
     });
 }
+
+/**
+ * 房号坐标定位
+ * */
+function markPos(id){
+    var map=$('#map')
+        ,imgView=$('#imgView')
+        ,mark = $('.house-mark .mark');
+
+    mark.eq(id).addClass('active').siblings().removeClass('active');//房源图标注切换
+
+    /*中点*/
+    var centerX=parseInt(map.width() / 2);
+    var centerY=parseInt(map.height() / 2);
+    /*楼栋坐标*/
+    var markX=parseInt(mark.eq(id).css('left'));
+    var markY=parseInt(mark.eq(id).css('top'));
+
+    /*定位点*/
+    var left=-markX + centerX;
+    var top=-markY + centerY;
+
+    /*边界*/
+    var maxTop=map.height() - imgView.height();
+    var maxLeft=map.width() - imgView.width();
+
+    if(top > 0){
+        top=0;
+    }else if(top < maxTop){
+        top=maxTop;
+    }
+
+    if(left > 0){
+        left=0;
+    }else if(left < maxLeft){
+        left=maxLeft;
+    }
+
+    imgView.animate({
+        left:left + 'px',
+        top:top + 'px'
+    });
+}
+
+
 
