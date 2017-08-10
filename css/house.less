@@ -1,5 +1,28 @@
 @import "../cssControl/control";
 
+/*查看更多*/
+.link-more {
+  display: block;
+  margin-top: 40px;
+  cursor: pointer;
+  color: @gray;
+  width:100%;
+  height: 43px;
+  line-height: 43px;
+  background: @gray-bg;
+  text-align: center;
+  &:hover {
+    .box-shadow(0, 1px, 3px 0, rgba(127, 133, 163, 0.6) inset);
+    text-decoration: none;
+    .transition(0.3s);
+  }
+
+  .up{display:none;}
+  &.show{
+    .up{display:block;}
+    .down{display:none;}
+  }
+}
 /*tab切换*/
 .menu-tab {
   .main-width;
@@ -547,7 +570,8 @@
     margin: 0px auto; /*overflow: hidden;*/
   }
   .house-type-content {
-    .wh(1149px, auto);
+    .wh(1149px,auto);overflow: hidden;
+    &.show{height:432px;}
     li {
       position: relative;
       .wh(147px, 127px);
