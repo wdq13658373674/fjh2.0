@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <title>定制房</title>
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/house.css"/>
+
+    <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
+    <script src="../../js/public.js" type="text/javascript"></script>
+
+    <!--viewer-->
+    <link rel="stylesheet" href="../../js/addons/viewer/viewer.css"/>
+</head>
+
+<body class="wrap-gray-bg">
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
+
+<!--dz-reg-msg-->
+<div class="dz-reg-wrap mb150">
+    <div class="d20170831-house-type">
+        <div class="pull-left desc f16">楼栋分布图</div>
+        <div class="pull-right img-box docs-pictures">
+            <img class="img" data-original="../../images/test/slider2.png" src="../../images/test/map.jpg" alt="">
+        </div>
+    </div>
+
+    <!--（一）选择楼栋和户型-->
+    <div class="num-title clear">
+        <div class="num pull-left">01</div>
+        <div class="tit pull-left">
+            <span class="top">STEP</span><br/>
+            <span>选择楼栋和户型</span>
+        </div>
+    </div>
+    <!--选择楼栋-->
+    <div class="d170704-menu-type">
+        <!--dot-title-->
+        <div class="dot-title clear">
+            <i class="dot pull-left"></i>
+            <span class="pull-left">选择楼栋</span>
+        </div>
+
+        <ul class="d170704-menu-tab2 clear" id="floor" style="padding-left:0;">
+            <li class="tab active" data-value="0">1号楼</li>
+            <li class="tab" data-value="1">2号楼</li>
+            <li class="tab" data-value="2">3号楼</li>
+            <li class="tab" data-value="7">8号楼</li>
+        </ul>
+
+    </div>
+    <!--选择户型-->
+    <div class="dot-title clear">
+        <i class="dot pull-left"></i>
+        <span class="pull-left">选择户型</span>
+    </div>
+    <div class="house-type-tab" style="margin-top:22px;margin-bottom:6px;">
+        <a href="#" class="active">全部</a>
+        <a href="#">一居(2)</a>
+        <a href="#">二居(2)</a>
+        <a href="#">三居(2)</a>
+    </div>
+    <div class="house-type-wrap">
+        <ul class="house-type-content w129 clear">
+            <li class="active">
+                <a href="javascript:void(0)" class="box docs-pictures">
+                    <p class="p p1">A-5-1户型</p>
+
+                    <p class="p p2">三室二厅三卫（洋房跃层户型2层）</p>
+
+                    <p class="p p3">
+                        <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                    </p>
+                    <p class="p mt10">
+                        <span class="link">查看户型图</span>
+                    </p>
+                    <i class="icon-suc"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="box">
+                    <p class="p p1">A-5-1户型</p>
+
+                    <p class="p p2">三室二厅三卫</p>
+
+                    <p class="p p3">
+                        <span class="gray f12">约</span>108.85<span class="gray f12">m<sup>2</sup></span>
+                    </p>
+                    <p class="p mt10">
+                        <span class="link">查看户型图</span>
+                    </p>
+                    <i class="icon-suc"></i>
+                </a>
+            </li>
+        </ul>
+        <!--户型图-->
+        <div class="d20170831-pic docs-pictures" style="display: none;">
+            <img class="img" data-original="../../images/test/slider2.png" src="../../images/test/map.jpg" alt="">
+            <img class="img" data-original="../../images/test/slider1.png" src="../../images/test/slider1.png" alt="">
+        </div>
+    </div>
+
+    <!--（二）选择房源-->
+    <div class="num-title clear">
+        <div class="num pull-left">02</div>
+        <div class="tit pull-left">
+            <span class="top">STEP</span><br/>
+            <span>选择房源</span>
+        </div>
+    </div>
+    <div class="mt30">
+        <!--1-->
+        <div class="tab-box2 active">
+            <div class="tab-content tab-table">
+                <table data-num="4" class="table table0" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <td width="125px">楼栋</td>
+                        <td width="125px">楼层</td>
+                        <td width="125px">房号</td>
+                        <td width="159px">户型编号</td>
+                        <td width="188px">户型结构</td>
+                        <td width="212px">建筑面积(平方米)</td>
+                        <td width="137px">操作</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>4号楼</td>
+                        <td>1层</td>
+                        <td>4-2-1-1</td>
+                        <td>A-1-1户型</td>
+                        <td>四室两厅两卫</td>
+                        <td>139</td>
+                        <td>
+                            <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                            <span class="select-suc">已选定此房源</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4号楼</td>
+                        <td>1层</td>
+                        <td>4-2-1-1</td>
+                        <td>A-1-1户型</td>
+                        <td>四室两厅两卫</td>
+                        <td>139</td>
+                        <td>
+                            <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                            <span class="select-suc">已选定此房源</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4号楼</td>
+                        <td>1层</td>
+                        <td>4-2-1-1</td>
+                        <td>A-1-1户型</td>
+                        <td>四室两厅两卫</td>
+                        <td>139</td>
+                        <td>
+                            <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                            <span class="select-suc">已选定此房源</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--2-->
+        <div class="tab-box2">
+            <div class="tab-content tab-table">
+                <table class="table table1" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <td width="125px">楼栋</td>
+                        <td width="125px">楼层</td>
+                        <td width="125px">房号</td>
+                        <td width="159px">户型编号</td>
+                        <td width="188px">户型结构</td>
+                        <td width="212px">建筑面积(平方米)</td>
+                        <td width="137px">操作</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>4号楼</td>
+                        <td>1层</td>
+                        <td>4-2-1-1</td>
+                        <td>A-1-1户型</td>
+                        <td>四室两厅两卫</td>
+                        <td>139</td>
+                        <td>
+                            <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                            <span class="select-suc">已选定此房源</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4号楼</td>
+                        <td>1层</td>
+                        <td>4-2-1-1</td>
+                        <td>A-1-1户型</td>
+                        <td>四室两厅两卫</td>
+                        <td>139</td>
+                        <td>
+                            <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                            <span class="select-suc">已选定此房源</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--3-->
+        <div class="tab-box2">
+            <div class="tab-content tab-table">
+                <table class="table table2" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <td width="125px">楼栋</td>
+                        <td width="125px">楼层</td>
+                        <td width="125px">房号</td>
+                        <td width="159px">户型编号</td>
+                        <td width="188px">户型结构</td>
+                        <td width="212px">建筑面积(平方米)</td>
+                        <td width="137px">操作</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>4号楼</td>
+                        <td>1层</td>
+                        <td>4-2-1-1</td>
+                        <td>A-1-1户型</td>
+                        <td>四室两厅两卫</td>
+                        <td>139</td>
+                        <td>
+                            <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                            <span class="select-suc">已选定此房源</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4号楼</td>
+                        <td>1层</td>
+                        <td>4-2-1-1</td>
+                        <td>A-1-1户型</td>
+                        <td>四室两厅两卫</td>
+                        <td>139</td>
+                        <td>
+                            <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                            <span class="select-suc">已选定此房源</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--4-->
+        <div class="tab-box2">
+            <div class="tab-content tab-table">
+                <table class="table table3" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <td width="125px">楼栋</td>
+                        <td width="125px">楼层</td>
+                        <td width="125px">房号</td>
+                        <td width="159px">户型编号</td>
+                        <td width="188px">户型结构</td>
+                        <td width="212px">建筑面积(平方米)</td>
+                        <td width="137px">操作</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>4号楼</td>
+                        <td>1层</td>
+                        <td>4-2-1-1</td>
+                        <td>A-1-1户型</td>
+                        <td>四室两厅两卫</td>
+                        <td>139</td>
+                        <td>
+                            <a href="javascript:void(0);" class="select-btn">选定此房源</a>
+                            <span class="select-suc">已选定此房源</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--（三）选择支付方式-->
+    <div class="num-title clear">
+        <div class="num pull-left">03</div>
+        <div class="tit pull-left">
+            <span class="top">STEP</span><br/>
+            <span>选择支付方式</span>
+        </div>
+    </div>
+    <div class="pay-type-wrap">
+        <div class="gray">
+            报名费用
+            <span class="f30 red bold">2000.00</span>
+            元
+        </div>
+
+        <ul class="pay-list clear">
+            <li class="active">
+                <a href="javascript:void(0);"><img src="../../images/house/bank1.png" alt=""/></a>
+                <i class="icon-suc"></i>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><img src="../../images/house/bank2.png" alt=""/></a>
+                <i class="icon-suc"></i>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><img src="../../images/house/bank3.png" alt=""/></a>
+                <i class="icon-suc"></i>
+            </li>
+            <li>
+                <a href="javascript:void(0);"><img src="../../images/house/bank4.png" alt=""/></a>
+                <i class="icon-suc"></i>
+            </li>
+        </ul>
+
+        <div class="line"></div>
+    </div>
+    <div class="rule-box">
+        <div>
+            <input type="checkbox" id="rule" name="rule" datatype="*" nullmsg="请同意注册协议" sucmsg=" " checked="checked"/>
+            我已阅读并同意
+            <a href="#" class="red">《房计划注册协议》</a>
+        </div>
+    </div>
+    <button class="order-btn">立即定制</button>
+</div>
+
+<!--footer-->
+<iframe src="../footer.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:244px;"></iframe>
+
+<!--viewer-->
+<script src="../../js/addons/viewer/viewer.js?df"></script>
+<script src="../../js/addons/viewer/main.js"></script>
+<script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../../js/public/house.js"></script>
+<script>
+    $(function () {
+        $('.house-type-content .link').click(function(){
+            var inx=$(this).parents('li').index();
+            if(inx>=0){
+                $('.d20170831-pic .img').eq(inx).click();
+            }
+        })
+    })
+</script>
+</body>
+</html>
