@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="31ccff1a-9661-4176-88e7-425f70576321" name="New changelist" comment="样式修改" />
-    <list default="true" id="ccb60cda-b841-4a59-a5a6-1a92919cedfa" name="默认的" comment="默认的">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/icon/icon-zg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/theme/G 个人中心/我的认筹详情_V1.0.html" />
+    <list default="true" id="ccb60cda-b841-4a59-a5a6-1a92919cedfa" name="默认的" comment="我的认筹详情 我的定制详情">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/activity.css" afterPath="$PROJECT_DIR$/css/activity.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/currency.css" afterPath="$PROJECT_DIR$/css/currency.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/house.css" afterPath="$PROJECT_DIR$/css/house.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/news.css" afterPath="$PROJECT_DIR$/css/news.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/parking-lot.css" afterPath="$PROJECT_DIR$/css/parking-lot.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/personal.css" afterPath="$PROJECT_DIR$/css/personal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/personal.less" afterPath="$PROJECT_DIR$/css/personal.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/public.css" afterPath="$PROJECT_DIR$/css/public.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/test.css" afterPath="$PROJECT_DIR$/css/test.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/G 个人中心/recommend.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/recommend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/G 个人中心/我的认筹列表.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/我的认筹列表.html" />
     </list>
     <ignored path="fjh2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -345,14 +330,7 @@
       <workItem from="1501206926362" duration="819000" />
       <workItem from="1501727244208" duration="75000" />
       <workItem from="1501809439423" duration="1101000" />
-      <workItem from="1504159333960" duration="6508000" />
-    </task>
-    <task id="LOCAL-00075" summary="样式修改">
-      <created>1493461801741</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1493461801742</updated>
+      <workItem from="1504159333960" duration="6582000" />
     </task>
     <task id="LOCAL-00076" summary="样式修改">
       <created>1493476071294</created>
@@ -690,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501809851576</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="我的认筹详情 我的定制详情">
+      <created>1504169568410</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1504169568411</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21317000" />
+    <option name="totallyTimeSpent" value="21391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -791,7 +776,8 @@
     <MESSAGE value="加载页" />
     <MESSAGE value="查看详情" />
     <MESSAGE value="默认的" />
-    <option name="LAST_COMMIT_MESSAGE" value="默认的" />
+    <MESSAGE value="我的认筹详情 我的定制详情" />
+    <option name="LAST_COMMIT_MESSAGE" value="我的认筹详情 我的定制详情" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
