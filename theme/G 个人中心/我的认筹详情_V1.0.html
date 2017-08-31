@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../js/addons/swiper/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../../css/personal.css">
+    <script src="../../js/jQuery1.12.3-min.js"></script>
+    <script src="../../js/public.js"></script>
+</head>
+
+<title>我的认筹详情1.0页</title>
+
+
+</head>
+<body>
+<!--header-->
+<iframe src="../header.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
+
+<!--个人中心-->
+<div class="personalContainer clear center">
+    <!--左边菜单-->
+    <div class="personalLeftNav" id="leftBox">
+        <ul>
+            <li><a class="personalIcon-per" href="#">个人中心</a></li>
+            <li><a class="personalIcon-rec" href="#">交易记录</a></li>
+            <li><a class="personalIcon-cus" href="#">我的定制</a></li>
+            <li class="active"><a class="personalIcon-raise" href="#">我的认筹</a></li>
+            <li><a class="personalIcon-acc" href="#">账户管理</a></li>
+            <li><a class="personalIcon-mes" href="#">消息中心</a></li>
+            <li><a class="personalIcon-dat" href="#">个人资料</a></li>
+            <li><a class="personalIcon-cli" href="#">推荐客户</a></li>
+        </ul>
+    </div>
+    <!--左边菜单结束-->
+    <!--右边内容-->
+    <div class="personalRightCon personalRight" id="rightBox">
+        <div class="crumbs">
+            <a href="#">个人中心</a> >
+            <a href="#">我的认筹</a> >
+            <span>我的认筹详情</span>
+        </div>
+        <!--认筹项目-->
+        <div class="userCustomItem">
+            <!--<div class="userCustomItem-item">-->
+            <!--<span class="nothingItem f14">你还未参加定制项目</span>-->
+            <!--</div>-->
+            <div class="my-project-box">
+                <div class="my-project pro-details">
+                    <div class="pro-title">
+                        <span>项目名称</span>
+                        <em>邻水县丨云鼎府邸</em>
+                    </div>
+                    <div class="line"></div>
+                    <div class="pro-con">
+                        <div class="pro-img">
+                            <img src="../../images/main/img.png" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <span>项目地址</span>
+                                <em>四川省邻水县西部新城</em>
+                            </li>
+                            <li>
+                                <span>建筑类型</span>
+                                <em>花园洋房</em>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>项目状态</span>
+                                <em>报名中</em>
+                            </li>
+                            <li>
+                                <span>市场价（均价）</span>
+                                <em>4505.00<i>元/m<sup>2</sup></i></em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--认筹项目结束-->
+
+        <!--认筹详情  开始-->
+        <div class="raise-box clear">
+            <div class="rcInfo">
+                <h4 class="rc-title">认筹信息</h4>
+                <div class="rc-info">
+                    <!--已转购 图标-->
+                    <div class="to-purchase"></div>
+                    <!--已转购-->
+                    <ul class="rc-title_info clear">
+                        <li><span>可认筹总额</span>100,000.00</li>
+                        <li><span>可优惠总额</span>100,000.00</li>
+                        <li><span>转购项目</span>西城御府</li>
+                    </ul>
+                    <div class="rc-table">
+                        <div class="rc-table_th clear">
+                            <div class="rc-table_td">认筹时间</div>
+                            <div class="rc-table_td">认筹金额</div>
+                            <div class="rc-table_td">优惠金额</div>
+                        </div>
+                        <div class="rc-table_tr clear">
+                            <div class="rc-table_nothing">暂无认筹记录</div>
+                        </div>
+                        <div class="rc-table_tr clear">
+                            <div class="rc-table_td">2017/02/25</div>
+                            <div class="rc-table_td">100,000.00</div>
+                            <div class="rc-table_td">100,000.00</div>
+                        </div>
+                        <div class="rc-table_tr clear">
+                            <div class="rc-table_td">2017/03/01</div>
+                            <div class="rc-table_td">50,000.00</div>
+                            <div class="rc-table_td">50,000.00</div>
+                        </div>
+                        <div class="tc rc-table_tr clear">
+                            <!--<a class="btn-rc" href="#">继续认筹</a>-->
+                            <!--<a class="link" href="#">申请退款</a>-->
+                            <!--<a href="#" class="btn-zg">我要转购</a>-->
+                            <a href="#" class="btn-zg_suss">我要转购</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--右边内容结束-->
+</div>
+
+<!--footer-->
+<iframe src="../footer.html?=111" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:264px;"></iframe>
+<script src="../../js/addons/swiper/swiper-3.4.2.jquery.min.js"></script>
+<link rel="stylesheet" href="../../js/addons/viewer/viewer.css">
+<script src="../../js/addons/viewer/viewer.js"></script>
+<script src="../../js/addons/viewer/main.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        loop : false,
+        slidesPerView : 'auto',
+        loopedSlides :1,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next'
+    })
+</script>
+
+</body>
+</html>

@@ -1285,6 +1285,11 @@ body {
       }
     }
   }
+
+  .to-purchase{
+    background: url("../images/icon/icon-zg.png") no-repeat;
+    background-position: 99% 10px;
+  }
   .pro-details {
     box-shadow: 0 2px 5px 0 #c3cad8;
     &:hover {
@@ -1324,40 +1329,57 @@ body {
       .btn-red-full(34px);
     }
     .icon-suss {
-      position: absolute;
+      margin-top: 10px;
       width: 18px;
       height: 18px;
-      display: block;
+      display: inline-block;
       .icon("../images/icon/success_tips.png", no-repeat);
-      top: 32px;
-      right: 16%;
     }
     b {
-      display: inline;
+      display: inline-block;
       font-style: normal;
-      position: absolute;
       font-weight: normal;
-      left: 25%;
-      top: 0;
     }
   }
   .tip-gray {
     color: #c3c9d8;
   }
   .btn-see {
+    padding: 15px;
     text-align: center;
-    width: 90px;
     height: 34px;
     border-radius: 5px;
     border: solid 1px #fd5b5f;
     margin: 0 auto;
-    display: block;
-    line-height: 34px;
+    display: inline-block;
+    line-height: 1px;
     font-size: 12px;
     color: #fd5b5f;
     &:hover {
       background: #fd5b5f;
       color: #fff;
+    }
+  }
+  .btn-full_red{
+    padding: 0 18px;
+    display: inline-block;
+    height: 34px;
+    text-align: center;
+    border-radius: 2px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #fd5b5f;
+    &:hover{
+      padding: 0 18px;
+      display: inline-block;
+      height: 34px;
+      text-align: center;
+      border-radius: 2px;
+      line-height: 34px;
+      font-size: 14px;
+      color: #ffffff;
+      background-color: #fd3d44;
     }
   }
   .btn-st {
@@ -1476,26 +1498,26 @@ body {
     border-bottom: 0;
   }
 }
-.dz-ParkingLot{
-  >td{
-    height: 33px;
-    border-top: 0;
-    a{
-      display: block;
-      width: 765px;
-      height: 33px;
-      line-height: 33px;
-      background-color: #ebf6ff;
-      border: solid 1px #cdd7de;
-      margin-bottom: 30px;
-      text-align: center;
-      &:hover{
-        background-color: #d3e2f9;
-        border: solid 1px #cdd7de;
-      }
-    }
-  }
-}
+//.dz-ParkingLot{
+//  >td{
+//    height: 33px;
+//    border-top: 0;
+//    a{
+//      display: block;
+//      width: 765px;
+//      height: 33px;
+//      line-height: 33px;
+//      background-color: #ebf6ff;
+//      border: solid 1px #cdd7de;
+//      margin-bottom: 30px;
+//      text-align: center;
+//      &:hover{
+//        background-color: #d3e2f9;
+//        border: solid 1px #cdd7de;
+//      }
+//    }
+//  }
+//}
 
 //账户管理
 .account {
@@ -1619,6 +1641,124 @@ body {
       padding-top: 24px;
     }
   }
+
+
+  .rcInfo{
+    margin-top: 16px;
+    .rc-info{
+      position: relative;
+      margin-top: 32px;
+      .rc-title_info{
+        >li{
+          float: left;
+          margin-left: 66px;
+          font-size: 16px;
+          &:first-child{
+            margin-left: 0;
+          }
+          >span{
+            font-size: 14px;
+            color: #7f85a3;
+            margin-right: 13px;
+          }
+        }
+      }
+      .rc-table{
+        margin-top: 21px;
+        width: 100%;
+        border: 1px solid #c3cad8;
+        .rc-table_th{
+          line-height: 60px;
+          border-bottom: 1px solid #c3cad8;
+          .rc-table_td{
+            width: 33%;
+            text-align: center;
+            float: left;
+            color: #7f85a3;
+            font-size: 14px;
+          }
+        }
+
+        .rc-table_tr{
+          line-height: 60px;
+          border-bottom: 1px solid #c3cad8;
+          &:last-child{
+            border-bottom: 0;
+          }
+          .rc-table_td{
+            width: 33%;
+            text-align: center;
+            float: left;
+            font-size: 14px;
+          }
+          .rc-table_nothing{
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #7f85a3;
+          }
+        }
+      }
+      .to-purchase{
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        background: url("../images/icon/icon-zg.png") no-repeat;
+        top: -15px;
+        left: 81%;
+      }
+      .btn-rc{
+        margin: 25px auto;
+        text-align: center;
+        display: inline-block;
+        width: 173px;
+        height: 46px;
+        line-height: 46px;
+        border-radius: 3px;
+        background-color: #fd5b5f;
+        border: solid 0 #979797;
+        font-size: 16px;
+        color: #fff;
+      }
+      .btn-zg{
+        margin: 25px 22px;
+        text-align: center;
+        display: inline-block;
+        width: 173px;
+        height: 46px;
+        line-height: 46px;
+        border-radius: 3px;
+        background-color: #fd5b5f;
+        border: solid 0 #979797;
+        color: #fff;
+        font-size: 16px;
+      }
+      .btn-zg_suss{
+        margin: 25px auto;
+        text-align: center;
+        display: inline-block;
+        width: 173px;
+        height: 46px;
+        line-height: 46px;
+        border-radius: 2px;
+        background-color: #ededed;
+        border: solid 1px #d6d6d6;
+        font-size: 16px;
+        color: #888888;
+        text-shadow: 0 2px 0 #ffffff;
+      }
+      .link{
+        margin-left: 20px;
+        font-size: 14px;
+        color: #58a4e8;
+      }
+      .tc{
+        line-height: 70px;
+        text-align: center;
+      }
+    }
+  }
+
 }
 
 .resources-control {
@@ -1955,3 +2095,6 @@ body {
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAwCAMAAAAxSDrWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpjZTljODA2NC1lZTNjLWE2NDYtODU2OC1iNjYzNWEwZDMxZGYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTIyOEE1OEQ1RDM0MTFFN0EyNTI4NTFFNUY1MjdCNjQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTIyOEE1OEM1RDM0MTFFN0EyNTI4NTFFNUY1MjdCNjQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZTI1ZDFiNDAtMzRlZi0yZjRkLWI4NDktMTdjZjQwNTIwYzViIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MDJlZTc5NGQtNWQzMi0xMWU3LWI0MDktYjRhYTk1OTk1YWI0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+bC6caAAAAC1QTFRF////w8nYzNHe+fr8xcvZ7e/z7e/05+rw0dXh9vf65ujv4eTs+vr8ztPf/P39Jx/DJwAAAEBJREFUeNrsySkCACAMA7AWGDf8/7lYzKYQiMUGwK5MAtUMND/6+3/8heRSVxIZorbZ99GK76WZCwxzga7uEWAAewoDLui0oZMAAAAASUVORK5CYII=");
 }
+
+
+/*我的定制详情V1.0*/
