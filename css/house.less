@@ -570,7 +570,7 @@
     margin: 0px auto; /*overflow: hidden;*/
   }
   .house-type-content {
-    .wh(1149px,auto);overflow: hidden;
+    .wh(1149px,auto);
     &.show{height:432px;}
     li {
       position: relative;
@@ -1109,7 +1109,6 @@
     height: 105px;
   }
 }
-
 .dz-menu-wrap {
   .wh(1132px, auto);
   overflow: hidden;
@@ -1138,6 +1137,10 @@
       background: url('../images/house/dz_m4.png') left center no-repeat;
       background-size: auto 100%;
     }
+    &.bg5 {
+      background: url('../images/house/dz_m5.png') left center no-repeat;
+      background-size: auto 100%;
+    }
 
     &:hover {
       &.bg1 {
@@ -1156,6 +1159,10 @@
         background: url('../images/house/dz_mh4.png') left center no-repeat;
         background-size: auto 100%;
       }
+      &.bg5 {
+        background: url('../images/house/dz_mh5.png') left center no-repeat;
+        background-size: auto 100%;
+      }
     }
   }
 
@@ -1165,6 +1172,16 @@
     .textarea{width:487px;margin:0;}
   }
 }
+.d20170831-btn-box{.wh(1132px,260px);background: @gray-bg;margin:0 auto 34px;overflow: hidden;text-align: center;
+  .circle-btn{display:block;.wh(167px,167px);.round(50%);overflow:hidden;background: @red;margin:47px auto 0;color:#fff;text-align: center;font-size:16px;.textshadow(0 ,-1px, 1px, #dc4144);
+    .icon{display:block;.wh(52px,65px);margin:30px 58px 0;
+      &.icon1{background: url("../images/house/circle_btn1.png") no-repeat;background-size:100% auto;}
+      &.icon2{background: url("../images/house/circle_btn2.png") no-repeat;background-size:100% auto;margin-bottom:15px;}
+    }
+
+    &:hover{background: url("../images/house/circle_bg.png") no-repeat;.box-shadow(0, 13px, 17px 3px ,#c3cad8)}
+  }
+}
 
 /*查看我的选房*/
 .dz-type-message {
@@ -1172,7 +1189,10 @@
   overflow: hidden;
   margin: 28px auto 0;
   li {
-    .wh(100%, 60px, 60px);
+    .item{
+      .wh(283px, 60px, 60px);
+      float:left;
+    }
     border-bottom: 1px solid @gray-border2;
     overflow: hidden;
     .tit {
@@ -1180,8 +1200,9 @@
       color: @gray;
     }
     .con {
+      float: left;
+      margin-left:18px;
       display: block;
-      margin-left: 48px;
     }
   }
 }
@@ -1385,7 +1406,7 @@
 /*定制房-我要定制*/
 .d20170831-house-type{.wh(1132px,577px);margin:35px auto;background: @gray-bg url("../images/house/type_bg2.png") left bottom no-repeat;
   .img-box{.wh(825px,511px);text-align: center;overflow: hidden;margin-top:33px;margin-right:35px;
-    .img{.wh(auto,100%);}
+    .img{.wh(auto,100%);cursor: pointer;}
   }
   .desc{.wh(143px,143px,143px);text-align: center;color:#fff;background: @blue;margin-top:217px;margin-left:57px;.round(50%);}
 }
