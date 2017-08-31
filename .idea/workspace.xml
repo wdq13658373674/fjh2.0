@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list id="31ccff1a-9661-4176-88e7-425f70576321" name="New changelist" comment="样式修改" />
     <list default="true" id="ccb60cda-b841-4a59-a5a6-1a92919cedfa" name="默认的" comment="我的认筹详情 我的定制详情">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/personal.css" afterPath="$PROJECT_DIR$/css/personal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/personal.less" afterPath="$PROJECT_DIR$/css/personal.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/public.css" afterPath="$PROJECT_DIR$/css/public.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theme/G 个人中心/我的认筹详情_V1.0.html" afterPath="$PROJECT_DIR$/theme/G 个人中心/我的认筹详情_V1.0.html" />
     </list>
     <ignored path="fjh2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,33 +33,38 @@
           <file leaf-file-name="personal.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/personal.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-8">
-                  <caret line="1286" column="3" lean-forward="false" selection-start-line="1286" selection-start-column="3" selection-end-line="1286" selection-end-column="3" />
-                  <folding>
-                    <marker date="1504169362269" expanded="true" signature="34944:35345" ph="{...}" />
-                    <marker date="1504169362269" expanded="true" signature="34953:35341" ph="{...}" />
-                    <marker date="1504169362269" expanded="true" signature="35003:35335" ph="{...}" />
-                    <marker date="1504169362269" expanded="true" signature="35242:35327" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="我的定制-详情页v1.0.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="122" column="36" lean-forward="false" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
+                <state relative-caret-position="-518">
+                  <caret line="1300" column="12" lean-forward="true" selection-start-line="1300" selection-start-column="12" selection-end-line="1300" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="personal.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/css/personal.css">
+          <file leaf-file-name="我的定制-详情页v1.0.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="52" lean-forward="true" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+                <state relative-caret-position="510">
+                  <caret line="120" column="15" lean-forward="false" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="public.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/public.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="0" column="759" lean-forward="false" selection-start-line="0" selection-start-column="759" selection-end-line="0" selection-end-column="759" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="我的认筹详情_V1.0.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的认筹详情_V1.0.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -68,8 +77,8 @@
           <file leaf-file-name="personal.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/personal.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="417">
-                  <caret line="1334" column="28" lean-forward="false" selection-start-line="1334" selection-start-column="28" selection-end-line="1334" selection-end-column="28" />
+                <state relative-caret-position="319">
+                  <caret line="1320" column="12" lean-forward="false" selection-start-line="1320" selection-start-column="12" selection-end-line="1320" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -90,6 +99,7 @@
       <find>my-project</find>
       <find>raise-box</find>
       <find>to-purchase</find>
+      <find>pro-con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,9 +126,23 @@
         <option value="$PROJECT_DIR$/theme/D 定制房页面/v1.0-dz-house-建设进度修改.html" />
         <option value="$PROJECT_DIR$/theme/G 个人中心/我的认筹列表.html" />
         <option value="$PROJECT_DIR$/css/personal.css" />
+        <option value="$PROJECT_DIR$/css/news.css" />
+        <option value="$PROJECT_DIR$/css/activity.less" />
+        <option value="$PROJECT_DIR$/css/currency.less" />
+        <option value="$PROJECT_DIR$/css/house.less" />
+        <option value="$PROJECT_DIR$/css/main.less" />
+        <option value="$PROJECT_DIR$/css/news.less" />
+        <option value="$PROJECT_DIR$/css/parking-lot.less" />
+        <option value="$PROJECT_DIR$/css/public.less" />
+        <option value="$PROJECT_DIR$/css/reg.less" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/css/house.css" />
+        <option value="$PROJECT_DIR$/css/currency.css" />
+        <option value="$PROJECT_DIR$/css/activity.css" />
+        <option value="$PROJECT_DIR$/css/parking-lot.css" />
         <option value="$PROJECT_DIR$/theme/G 个人中心/我的认筹详情_V1.0.html" />
-        <option value="$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html" />
         <option value="$PROJECT_DIR$/css/personal.less" />
+        <option value="$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html" />
       </list>
     </option>
   </component>
@@ -168,7 +192,49 @@
               <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="fjh2.0" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="activity.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="currency.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="house.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="main.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="news.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="parking-lot.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
               <item name="personal.less" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fjh2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="public.less" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="fjh2.0" type="b2602c69:ProjectViewProjectNode" />
@@ -330,21 +396,7 @@
       <workItem from="1501206926362" duration="819000" />
       <workItem from="1501727244208" duration="75000" />
       <workItem from="1501809439423" duration="1101000" />
-      <workItem from="1504159333960" duration="6582000" />
-    </task>
-    <task id="LOCAL-00076" summary="样式修改">
-      <created>1493476071294</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1493476071294</updated>
-    </task>
-    <task id="LOCAL-00077" summary="样式修改">
-      <created>1493782542677</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1493782542677</updated>
+      <workItem from="1504159333960" duration="8959000" />
     </task>
     <task id="LOCAL-00078" summary="样式修改">
       <created>1493782814348</created>
@@ -675,11 +727,25 @@
       <option name="project" value="LOCAL" />
       <updated>1504169568411</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="我的认筹详情 我的定制详情">
+      <created>1504169584495</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1504169584495</updated>
+    </task>
+    <task id="LOCAL-00126" summary="样式压缩编译">
+      <created>1504169944666</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1504169944666</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21391000" />
+    <option name="totallyTimeSpent" value="23768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -690,14 +756,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="21" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7285852" sideWeight="0.37473348" order="21" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916266" sideWeight="0.62526655" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25364584" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2595949" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -777,54 +843,14 @@
     <MESSAGE value="查看详情" />
     <MESSAGE value="默认的" />
     <MESSAGE value="我的认筹详情 我的定制详情" />
-    <option name="LAST_COMMIT_MESSAGE" value="我的认筹详情 我的定制详情" />
+    <MESSAGE value="样式压缩编译" />
+    <option name="LAST_COMMIT_MESSAGE" value="样式压缩编译" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/public/house-v1.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="40" column="7" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="40" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/house-v1.0.less" />
-    <entry file="file://$PROJECT_DIR$/theme/Z 主页面/v1.0-index.html" />
-    <entry file="file://$PROJECT_DIR$/theme/test/test.html" />
-    <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/v1.0-定制房-定制选房.html" />
-    <entry file="file://$PROJECT_DIR$/images/test/house.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/test/slider1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/test/slider2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/test/585c8ffeaa778.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/test/house.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/house/houseCheck.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/Z 咨询公告/news-partner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -836,20 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/currency.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="445" column="12" lean-forward="false" selection-start-line="446" selection-start-column="3" selection-end-line="446" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/house.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -984,13 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/public.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="131" column="2" lean-forward="false" selection-start-line="131" selection-start-column="2" selection-end-line="131" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/Z 主页面/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -1022,13 +1027,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/theme/D 定制房页面/v1.0-dz-house-建设进度修改.html" />
     <entry file="file://$PROJECT_DIR$/.idea/.name" />
-    <entry file="file://$PROJECT_DIR$/css/activity.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的认筹详情.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
@@ -1045,22 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="819" column="1" lean-forward="false" selection-start-line="819" selection-start-column="1" selection-end-line="819" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的认筹详情_V1.0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="95" column="52" lean-forward="true" selection-start-line="95" selection-start-column="52" selection-end-line="95" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1069,31 +1051,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/personal.less">
+    <entry file="file://$PROJECT_DIR$/css/news.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="1286" column="3" lean-forward="false" selection-start-line="1286" selection-start-column="3" selection-end-line="1286" selection-end-column="3" />
-          <folding>
-            <marker date="1504169362269" expanded="true" signature="34944:35345" ph="{...}" />
-            <marker date="1504169362269" expanded="true" signature="34953:35341" ph="{...}" />
-            <marker date="1504169362269" expanded="true" signature="35003:35335" ph="{...}" />
-            <marker date="1504169362269" expanded="true" signature="35242:35327" ph="{...}" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html">
+    <entry file="file://$PROJECT_DIR$/css/activity.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="122" column="36" lean-forward="false" selection-start-line="122" selection-start-column="36" selection-end-line="122" selection-end-column="36" />
+        <state relative-caret-position="210">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/currency.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="443" column="0" lean-forward="false" selection-start-line="443" selection-start-column="0" selection-end-line="443" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/house.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/news.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/parking-lot.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/public.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/reg.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/test.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/personal.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="0" column="1393" lean-forward="false" selection-start-line="0" selection-start-column="1393" selection-end-line="0" selection-end-column="1393" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/parking-lot.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="52" lean-forward="true" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/activity.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/currency.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6090">
+          <caret line="0" column="9886" lean-forward="false" selection-start-line="0" selection-start-column="9886" selection-end-line="0" selection-end-column="9886" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/house.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的认筹详情_V1.0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/personal.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-518">
+          <caret line="1300" column="12" lean-forward="true" selection-start-line="1300" selection-start-column="12" selection-end-line="1300" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/public.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="0" column="759" lean-forward="false" selection-start-line="0" selection-start-column="759" selection-end-line="0" selection-end-column="759" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theme/G 个人中心/我的定制-详情页v1.0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="120" column="15" lean-forward="false" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="15" />
           <folding />
         </state>
       </provider>
