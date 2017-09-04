@@ -9,11 +9,11 @@
 
     <link rel="stylesheet" href="../../css/public.css"/>
     <link rel="stylesheet" href="../../css/house.css"/>
-
-    <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
-
     <!--slider-->
     <link rel="stylesheet" href="../../js/addons/flexSlider/flexslider.css"/>
+    <!--timer-->
+    <link rel="stylesheet" href="../../js/addons/countTimer/jquery.countdown.css">
+    <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
 </head>
 
 <body class="wrap-gray-bg">
@@ -69,6 +69,11 @@
             </div>
         </li>
     </ul>
+
+    <div class="count-timer mt30 ml36 clear">
+        <div class="tips pull-left">意向房源保留剩余时间</div>
+        <div id="countdown" class="timer pull-left"> </div>
+    </div>
 
     <div class="gray mt48 ml36">户型</div>
     <div class="dz-house-flash mt20 clear">
@@ -178,5 +183,17 @@
 
 <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../../js/public/house.js"></script>
+<script src="../../js/addons/countTimer/jquery.countdown.js?sada"></script>
+<script>
+    $(function(){
+        /*
+        * 参数:年，月，日，时，分，秒
+        * */
+        var ts = new Date(2017,8,5,16,30,59);
+        $('#countdown').countdown({
+            timestamp : ts
+        });
+    });
+</script>
 </body>
 </html>
