@@ -187,9 +187,9 @@
 <script>
     $(function(){
         /*
-        * 参数:年，月，日，时，分，秒
+        * 参数:年，月(0开始)，日，时，分，秒
         * */
-        var ts = new Date(2017,8,5,16,30,59);
+        var ts = new Date(2017,8,4,17,59);
         $('#countdown').countdown({
             timestamp : ts
         });

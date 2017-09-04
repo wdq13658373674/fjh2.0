@@ -37,7 +37,7 @@
                 <a class="opera down" href="javascript:void(0)">-</a>
                 <div  class="input">
                     <span class="txt gray">¥</span>
-                    <input id="rc-money" type="text" value="0" placeholder="0">
+                    <input id="rc-money" type="text" value="5000" placeholder="0">
                 </div>
                 <a class="opera up" href="javascript:void(0)">+</a>
             </div>
@@ -80,17 +80,25 @@
         var money=$('#rc-money');
         var rc_money =0 ;
         $('.count .down').click(function(){
-            rc_money=parseInt(money.val());
-            if(rc_money>0){
-                rc_money--;
-                money.val(rc_money);
+            rc_money=parseFloat(money.val());
+            if(!isNaN(rc_money)){
+                if(rc_money>0){
+                    rc_money--;
+                    money.val(rc_money);
+                }
+            }else {
+                alert('请输入数字');
             }
         })
 
         $('.count .up').click(function(){
-            rc_money=parseInt(money.val());
-            rc_money++;
-            money.val(rc_money);
+            rc_money=parseFloat(money.val());
+            if(!isNaN(rc_money)){
+                rc_money++;
+                money.val(rc_money);
+            }else {
+                alert('请输入数字');
+            }
         })
     })
 </script>
