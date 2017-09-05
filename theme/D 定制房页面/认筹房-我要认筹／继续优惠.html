@@ -77,22 +77,27 @@
         /*
         * 加减
         * */
+        $('#rc-money').blur(function(){
+            var self=$(this);
+            var val=self.val();
+
+            if(isNaN(val) || val < 0){
+                self.val(0);
+            }
+        })
+
         $('.count .opera').click(function(){
             var self=$(this);
             var money=$('#rc-money');
             var rc_money =parseFloat(money.val()) ;
 
-            if(!isNaN(rc_money)){
-                if(self.hasClass('down') && rc_money>0){ //--
-                    rc_money--;
-                }else  if(self.hasClass('up')){ //++
-                    rc_money++;
-                }
-
-                money.val(rc_money);
-            }else {
-                alert('请输入数字');
+            if(self.hasClass('down') && rc_money>0){ //--
+                rc_money--;
+            }else  if(self.hasClass('up')){ //++
+                rc_money++;
             }
+
+            money.val(rc_money);
         })
     })
 </script>
