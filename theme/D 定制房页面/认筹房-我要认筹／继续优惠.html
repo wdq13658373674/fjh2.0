@@ -79,9 +79,9 @@
         * */
         $('#rc-money').blur(function(){
             var self=$(this);
+            var reg=/^[1-9]\d*\.?\d*/;
             var val=self.val();
-
-            if(isNaN(val) || val < 0){
+            if(!reg.test(val)){
                 self.val(0);
             }
         })
