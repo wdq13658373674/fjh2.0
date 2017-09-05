@@ -79,7 +79,7 @@
         * */
         $('#rc-money').blur(function(){
             var self=$(this);
-            var val=parseFloat(self.val());
+            var val=self.val();
 
             if(isNaN(val) || val < 0){
                 self.val(0);
