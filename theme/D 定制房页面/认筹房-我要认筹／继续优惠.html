@@ -79,7 +79,7 @@
         * */
         $('#rc-money').blur(function(){
             var self=$(this);
-            var reg=/^[1-9]\d*$/gi;
+            var reg=/^(0|[1-9]\d*)(\.\d{0,2})?$/;
             var val=self.val();
             if(!reg.test(val)){
                 self.val(0);
