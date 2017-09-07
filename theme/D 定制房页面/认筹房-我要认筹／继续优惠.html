@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/house.css"/>
 
     <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
-    <script src="../../js/public.js" type="text/javascript"></script>
+    <script src="../../js/public.js?ss" type="text/javascript"></script>
 </head>
 
 <body class="wrap-gray-bg">
@@ -44,7 +44,7 @@
         </div>
         <!--right-->
         <div class="pay-box pull-right">
-            <div class="title">认筹金额 <span class="red f30">20000.00</span> 元</div>
+            <div class="title">认筹金额 <span class="red f30" id="money">20000.00</span> 元</div>
             <ul class="pay-list clear" style="width:auto;padding:0 60px;margin-top:30px;">
                 <li value="0" class="active">
                     <a href="javascript:void(0);"><img src="../../images/house/bank1.png" alt=""/></a>
@@ -92,12 +92,13 @@
             var rc_money =parseFloat(money.val()) ;
 
             if(self.hasClass('down') && rc_money>0){ //--
-                rc_money--;
+                rc_money=rc_money-10000;
             }else  if(self.hasClass('up')){ //++
-                rc_money++;
+                rc_money=rc_money+10000;
             }
 
             money.val(rc_money);
+            $("#money").html(fmoney(rc_money,2));
         })
     })
 </script>
