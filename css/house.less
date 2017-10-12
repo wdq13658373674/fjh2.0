@@ -646,6 +646,11 @@
   .pay-list {
     margin-top: 28px;
     li {
+      &.bank-icon{
+        display:block;line-height:69px;border:1px solid #c3cad8;.round();
+        a{display:block;height:100%;}
+      }
+
       position: relative;
       .wh(166px, 69px);
       float: left;;
@@ -668,6 +673,13 @@
           img {
             margin-left: -2px;
             margin-top: -2px;
+          }
+        }
+
+        &.bank-icon{
+          a{
+            margin-left: -1px;
+            margin-top: -1px;
           }
         }
       }
