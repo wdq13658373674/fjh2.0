@@ -1459,3 +1459,38 @@
 .dz-lc-box{text-align: center;padding:10px 0 50px;
   img{width:100%;height:auto;}
 }
+
+/*定制房-选房投影*/
+.dz-choose-house{.wh(95%,auto);margin:0 auto;
+  .top-content{margin-top:45px;
+    .title{font-size:30px;}
+
+    .project{margin-left:35px;
+      .icon{margin-right:8px;.wh(50px,50px);display:block;
+        &.icon1{background: url("../images/house/nav2.png") no-repeat;background-size:100% 100%;}
+        &.icon2{background: url("../images/house/dz_m5.png") no-repeat;background-size:100% 100%;}
+      }
+      .tit{font-size:14px;color:@gray;}
+      .con{font-size:20px;}
+    }
+
+    .floor{.wh(162px,58px,58px);text-align:center;.round(100px);color:#ffffff;font-size:27px;.textshadow(0 ,-1px, 0, #a42b2d);.linear-gradient(#fd815c,#fd625e)}
+  }
+
+  .choose-tip{.wh(auto,42px,42px);border-bottom: solid 2px #979797;
+    .icon{display:block;float:left;.wh(12px,12px);.round(2px);border:1px solid @gray;margin:15px 5px 0;
+      &.bg{background: @red;border-color:@red;}
+    }
+    .txt{display:block;float:left;margin-right:10px;}
+  }
+
+  .num-list-wrap{.wh(100%,auto);overflow: hidden;
+    .num-container{min-width:1120px;
+      .num-list{float: left;width:100%;
+        .num{float:left;display:block;.wh(76px,32px,32px);margin-top:16px;margin-right:10px;text-align:center;.round(8px);background: #fff;border:1px solid @gray;
+          &.selected{background: @red;color:#fff;border-color:@red;}
+        }
+      }
+    }
+  }
+}
