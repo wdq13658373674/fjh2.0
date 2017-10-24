@@ -168,6 +168,7 @@
                 $.each(data,function (i,v) {
                     i=parseInt(i);
                     if(i % 2 ==0){
+                        /*已售房源*/
                         str+='<span class="num selected" data-id="'+v.id+'">'+v.title+'</span>';
                     }else {
                         str+='<span class="num" data-id="'+v.id+'">'+v.title+'</span>';
