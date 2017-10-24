@@ -51,8 +51,7 @@
     <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
     <script>
         $(function(){
-            pageFn();
-
+            pageFn(2);
             /*自动播放*/
             $(".num-list-wrap").flexslider({
 //              animation: "slide",
@@ -61,19 +60,18 @@
                 directionNav:false,
                 controlNav: false,
                 slideshow: true,
-                slideshowSpeed: 6000,
+                slideshowSpeed: 6000,//自动播放速度
                 animationSpeed: 400
             });
 
-            /**
-             * 分页fun
+            /**分页fun
+             * lineLimit : 限定每页显示行数
              * */
-            function pageFn(){
+            function pageFn(lineLimit){
                 var conEle = $('.num-container')//容器dom
                     ,numEle = $('.num-list .num');//房号dom
 
                 var countTotal = 80//总个数
-                    ,lineLimit = 5;//限定每页行数
                 var clientWidth = conEle.width()//容器宽度
                     ,numWidth = numEle.outerWidth() + parseInt(numEle.css('marginRight'));//单个宽度
                 var lineCount= Math.floor(clientWidth / numWidth);//行个数
