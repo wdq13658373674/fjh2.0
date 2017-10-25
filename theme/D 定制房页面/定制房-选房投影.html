@@ -61,7 +61,7 @@
                 controlNav: false,
                 slideshow: true,
                 slideshowSpeed: 6000,//自动播放速度
-                animationSpeed: 400
+                animationSpeed: 600
             });
 
             /**分页fun
@@ -165,7 +165,7 @@
                 var str='<li class="num-list">';
                 $.each(data,function (i,v) {
                     i=parseInt(i);
-                    if(i % 2 ==0){
+                    if(v.id % 2 ==0){
                         /*已售房源*/
                         str+='<span class="num selected" data-id="'+v.id+'">'+v.title+'</span>';
                     }else {

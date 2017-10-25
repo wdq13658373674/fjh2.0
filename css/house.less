@@ -1460,8 +1460,34 @@
   img{width:100%;height:auto;}
 }
 
+/*定制房-选房投影-设置*/
+.choose-form {
+  .wh(1132px, auto);
+  margin: 50px auto 0;
+
+  .input-group{
+    margin-bottom:50px;
+    .label {
+      .wh(80px,46px,46px);
+      display: inline-block;
+      float: left;
+    }
+    .input {
+      padding-left: 18px;
+      width: 345px;
+      float: left;
+    }
+  }
+
+  .select{
+    float:left;
+    width:345px;
+    ul{border-left:1px solid @gray-border;border-right:1px solid @gray-border;}
+  }
+}
+
 /*定制房-选房投影*/
-.dz-choose-house{.wh(95%,auto);margin:0 auto;
+.dz-choose-house{margin:0 45px;
   .top-content{margin-top:45px;
     .title{font-size:30px;}
 
@@ -1487,7 +1513,7 @@
   .num-list-wrap{.wh(100%,auto);overflow: hidden;
     .num-container{min-width:1120px;
       .num-list{float: left;width:100%;
-        .num{float:left;display:block;.wh(76px,32px,32px);margin-top:16px;margin-right:10px;text-align:center;.round(8px);background: #fff;border:1px solid @gray;
+        .num{float:left;display:block;.wh(76px,32px,32px);margin-right:10px;margin-top:16px;text-align:center;.round(8px);background: #fff;border:1px solid @gray;
           &.selected{background: @red;color:#fff;border-color:@red;}
         }
       }
