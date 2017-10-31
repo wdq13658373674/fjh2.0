@@ -10,180 +10,107 @@
     <link rel="stylesheet" href="../../css/public.css"/>
 
     <link rel="stylesheet" href="../../css/house.css"/>
-    <link rel="stylesheet" href="../../js/addons/flexSlider/flexslider.css"/><!--slider-->
 </head>
 
 <body>
-<div class="dz-choose-house">
-    <div class="top-content clear">
-        <div class="title pull-left">邻水县丨云鼎府邸</div>
-        <div class="project pull-left">
-            <i class="icon icon1 pull-left"></i>
-            <div class="pull-left">
-                <div class="tit">建筑类型</div>
-                <div class="con">花园洋房</div>
-            </div>
+    <div class="dz-project-box">
+        <div class="title">邻水县丨云鼎府邸</div>
+        <div class="choose-tip clear">
+            <span class="icon"></span>
+            <span class="txt">未售</span>
+            <span class="icon bg"></span>
+            <span class="txt">已售</span>
         </div>
-        <div class="project pull-left">
-            <i class="icon icon2 pull-left"></i>
-            <div class="pull-left">
-                <div class="tit">项目阶段</div>
-                <div class="con">选房中</div>
-            </div>
-        </div>
-        <div class="floor pull-right">12栋</div>
+
+        <table class="project-table">
+            <thead>
+            <tr>
+                <td>12栋</td>
+                <td>12栋</td>
+                <td>12栋</td>
+                <td>12栋</td>
+                <td>12栋</td>
+                <td>12栋</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <ul class="num-list">
+                        <li class="num check">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="num-list">
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="num-list">
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="num-list">
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="num-list">
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul class="num-list">
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                        <li class="num">4-2-1</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-
-    <div class="choose-tip clear">
-        <span class="icon"></span>
-        <span class="txt">未售</span>
-        <span class="icon bg"></span>
-        <span class="txt">已售</span>
-    </div>
-
-    <div class="num-list-wrap">
-        <ul class="num-container slides clear" >
-            <li class="num-list"><span class="num">12-5-1-5</span></li><!--不要删除-->
-        </ul>
-    </div>
-
-    <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
-    <script>
-        $(function(){
-            pageFn(2);
-
-            /*自动播放*/
-            $(".num-list-wrap").flexslider({
-//              animation: "slide",
-                prevText: '',
-                nextText: '',
-                directionNav:false,
-                controlNav: false,
-                slideshow: true,
-                slideshowSpeed: 6000,//自动播放速度
-                animationSpeed: 600
-            });
-
-            /**分页fun
-             * lineLimit : 限定每页显示行数
-             * */
-            function pageFn(lineLimit){
-                var conEle = $('.num-container')//容器dom
-                    ,numEle = $('.num-list .num');//房号dom
-
-                var countTotal = 80//总个数
-                var clientWidth = conEle.width()//容器宽度
-                    ,numWidth = numEle.outerWidth() + parseInt(numEle.css('marginRight'));//单个宽度
-                var lineCount= Math.floor(clientWidth / numWidth);//行个数
-                var pageCount = lineLimit * lineCount;//每页个数
-
-                /*var lineTotal = Math.ceil(countTotal / lineCount);//总行数
-                 var page =Math.ceil( lineTotal / lineLimit);//总页数*/
-                var data={
-                    0: { "id": "1", "title": "1-8-6-1"},
-                    1: { "id": "2", "title": "1-8-6-2"},
-                    2: { "id": "3", "title": "1-8-6-3"},
-                    3: { "id": "4", "title": "1-8-6-4"},
-                    4: { "id": "5", "title": "1-8-6-5"},
-                    5: { "id": "6", "title": "1-8-6-6"},
-                    6: { "id": "7", "title": "1-8-6-8"},
-                    7: { "id": "8", "title": "1-8-6-8"},
-                    8: { "id": "9", "title": "1-8-6-8"},
-                    9: { "id": "10", "title": "1-8-6-8"},
-                    10: { "id": "11", "title": "1-8-6-8"},
-                    11: { "id": "12", "title": "1-8-6-8"},
-                    12: { "id": "13", "title": "1-8-6-8"},
-                    13: { "id": "14", "title": "1-8-6-8"},
-                    14: { "id": "15", "title": "1-8-6-8"},
-                    15: { "id": "16", "title": "1-8-6-8"},
-                    16: { "id": "17", "title": "1-8-6-8"},
-                    17: { "id": "18", "title": "1-8-6-8"},
-                    18: { "id": "19", "title": "1-8-6-8"},
-                    19: { "id": "1", "title": "1-8-6-8"},
-                    20: { "id": "1", "title": "1-8-6-8"},
-                    21: { "id": "1", "title": "1-8-6-8"},
-                    22: { "id": "1", "title": "1-8-6-8"},
-                    23: { "id": "1", "title": "1-8-6-8"},
-                    24: { "id": "1", "title": "1-8-6-8"},
-                    25: { "id": "1", "title": "1-8-6-8"},
-                    26: { "id": "1", "title": "1-8-6-8"},
-                    27: { "id": "1", "title": "1-8-6-8"},
-                    28: { "id": "1", "title": "1-8-6-8"},
-                    29: { "id": "1", "title": "1-8-6-8"},
-                    30: { "id": "1", "title": "1-8-6-8"},
-                    31: { "id": "1", "title": "1-8-6-8"},
-                    32: { "id": "1", "title": "1-8-6-8"},
-                    33: { "id": "1", "title": "1-8-6-8"},
-                    34: { "id": "1", "title": "1-8-6-8"},
-                    35: { "id": "1", "title": "1-8-6-8"},
-                    36: { "id": "1", "title": "1-8-6-8"},
-                    37: { "id": "1", "title": "1-8-6-8"},
-                    38: { "id": "1", "title": "1-8-6-8"},
-                    39: { "id": "1", "title": "1-8-6-8"},
-                    40: { "id": "1", "title": "1-8-6-1"},
-                    41: { "id": "2", "title": "1-8-6-2"},
-                    42: { "id": "3", "title": "1-8-6-3"},
-                    43: { "id": "4", "title": "1-8-6-4"},
-                    44: { "id": "5", "title": "1-8-6-5"},
-                    45: { "id": "6", "title": "1-8-6-6"},
-                    46: { "id": "7", "title": "1-8-6-8"},
-                    47: { "id": "8", "title": "1-8-6-8"},
-                    48: { "id": "9", "title": "1-8-6-8"},
-                    49: { "id": "10", "title": "1-8-6-8"},
-                    50: { "id": "11", "title": "1-8-6-8"},
-                    51: { "id": "12", "title": "1-8-6-8"},
-                    52: { "id": "13", "title": "1-8-6-8"},
-                    53: { "id": "14", "title": "1-8-6-8"},
-                    54: { "id": "15", "title": "1-8-6-8"},
-                    55: { "id": "16", "title": "1-8-6-8"},
-                    56: { "id": "17", "title": "1-8-6-8"},
-                    57: { "id": "18", "title": "1-8-6-8"},
-                    58: { "id": "19", "title": "1-8-6-8"},
-                    59: { "id": "1", "title": "1-8-6-8"},
-                    60: { "id": "1", "title": "1-8-6-8"},
-                    61: { "id": "1", "title": "1-8-6-8"},
-                    62: { "id": "1", "title": "1-8-6-8"},
-                    63: { "id": "1", "title": "1-8-6-8"},
-                    64: { "id": "1", "title": "1-8-6-8"},
-                    65: { "id": "1", "title": "1-8-6-8"},
-                    66: { "id": "1", "title": "1-8-6-8"},
-                    67: { "id": "1", "title": "1-8-6-8"},
-                    68: { "id": "1", "title": "1-8-6-8"},
-                    69: { "id": "1", "title": "1-8-6-8"},
-                    70: { "id": "1", "title": "1-8-6-8"},
-                    71: { "id": "1", "title": "1-8-6-8"},
-                    72: { "id": "1", "title": "1-8-6-8"},
-                    73: { "id": "1", "title": "1-8-6-8"},
-                    74: { "id": "1", "title": "1-8-6-8"},
-                    75: { "id": "1", "title": "1-8-6-8"},
-                    76: { "id": "1", "title": "1-8-6-8"},
-                    77: { "id": "1", "title": "1-8-6-8"},
-                    78: { "id": "1", "title": "1-8-6-8"},
-                    79: { "id": "1", "title": "1-8-6-80"},
-                };
-                var str='<li class="num-list">';
-                $.each(data,function (i,v) {
-                    i=parseInt(i);
-                    if(v.id % 2 ==0){
-                        /*已售房源*/
-                        str+='<span class="num selected" data-id="'+v.id+'">'+v.title+'</span>';
-                    }else {
-                        str+='<span class="num" data-id="'+v.id+'">'+v.title+'</span>';
-                    }
-
-                    if((i + 1) % pageCount == 0){
-                        str+='</li>';
-
-                        if(pageCount % countTotal != 0){
-                            str += '<li class="num-list">';
-                        }
-                    }
-                });
-                str += '</li>';
-                conEle.html(str);
-            }
-        })
-    </script>
 </body>
 </html>

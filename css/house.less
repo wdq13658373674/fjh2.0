@@ -1470,7 +1470,7 @@
 }
 
 /*定制房-选房投影-设置*/
-.choose-form {
+/*.choose-form {
   .wh(1132px, auto);
   margin: 50px auto 0;
 
@@ -1493,10 +1493,10 @@
     width:345px;
     ul{border-left:1px solid @gray-border;border-right:1px solid @gray-border;}
   }
-}
+}*/
 
-/*定制房-选房投影*/
-.dz-choose-house{margin:0 45px;
+/*定制房-选房投影_备份*/
+/*.dz-choose-house{margin:0 45px;
   .top-content{margin-top:45px;
     .title{font-size:30px;}
 
@@ -1528,7 +1528,7 @@
       }
     }
   }
-}
+}*/
 
 /*定制房-查看我的报名／参与认筹优惠活动*/
 .dz-list-auto{
@@ -1550,4 +1550,28 @@
 
   }
 
+}
+
+
+/*定制房-选房投影*/
+.dz-project-box{margin:0 10px;
+  .title{margin-top:20px;font-size:30px;text-align: center;}
+
+  .choose-tip{.wh(120px,42px,42px);margin:0 auto;
+    .icon{display:block;float:left;.wh(12px,12px);.round(2px);border:1px solid @gray;margin:15px 5px 0;
+      &.bg{background: @red;border-color:@red;}
+    }
+    .txt{display:block;float:left;margin-right:10px;}
+  }
+
+  .project-table{width:100%;
+    thead>tr>td{text-align: center;padding:12px;border:1px solid #979797;width:16%;font-size:15px;}
+    tbody>tr>td{font-size:12px;vertical-align: top;}
+
+    .num-list{width:100%;float:left;border-top:1px solid #979797;border-left:1px solid #979797;
+      .num{width:20%;float: left;text-align:center;padding:3px 0;border:1px solid #979797;border-left:0;border-top:0;
+        &.check{background: @red;color:#fff;}
+      }
+    }
+  }
 }
