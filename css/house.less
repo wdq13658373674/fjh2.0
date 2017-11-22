@@ -711,10 +711,10 @@
   margin: 48px 0 0 35px;
 }
 
-/*我要定制*/
+/*定制房-选房页面*/
 .dot-title {
   .wh(1132px, auto);
-  margin: 30px auto 0;
+  margin: 26px auto 0;
   font-size: 16px;
   height: 21px;
   .dot {
@@ -873,6 +873,46 @@
     background: url("../images/icon/success_tips.png") right center no-repeat;
     padding-right: 23px;
   }
+}
+
+.floor-table{.wh(1132px,auto);margin:30px auto 0;
+  td{border:1px solid @gray-border2;padding:9px;}
+  tbody .con{padding:9px 0px 9px 12px;}
+  .head{background: #144e81;color:#fff;text-align: center;}
+  .tit{.wh(84px,auto);text-align:center;}
+  .num{display:block;float:left;.wh(76px,31px,31px);font-size:14px;color:@gray;margin-right:10px;text-align:center;border:1px solid @gray-border2;.round(5px);
+    &.active{
+      border-color: #fd5b5f;
+      color: #fd5b5f;
+      background: url(../images/house/houseCheck.png) bottom -1px right no-repeat;
+    }
+  }
+}
+
+.select-house-msg{
+  display:none;
+  .wh(1132px,106px);
+  .round(6px);
+  background-color: #ebf6ff;
+  border: solid 1px #77bfff;
+  margin:32px auto 0;
+  &.fixed{
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    transition: all .5s ease-in-out;
+  }
+
+  .success{.wh(auto,40px,40px);padding-left:50px;background:url("../images/icon/success_tips.png") left center no-repeat;background-size:auto 40px;margin-top:40px;margin-left:49px;}
+
+  .msg-table{margin-top:18px;
+    td{.wh(auto,68px);padding:0 30px;border-right:1px solid #bbcedd;}
+    .con{font-size:22px;margin-top:5px;}
+    .img{.wh(60px,60px);border:1px solid @gray-border2;}
+  }
+
+  .top{display:block;.wh(42px,auto);text-align:center;margin:18px 32px 0;background:url("../images/user/triangle-up.png") center top no-repeat;background-size:20px auto;padding-top:14px;}
 }
 
 /*VR展示*/
@@ -1573,5 +1613,17 @@
         &.check{background: @red;color:#fff;}
       }
     }
+  }
+}
+
+/*售房部付款页面*/
+.d171122-pay-page{
+  .title{font-size:24px;margin-top:65px;text-align:center;}
+
+  .msg-list{.wh(445px,auto);background:#f7ffef;margin:50px auto;.round(20px);border:1px solid @gray-border2;text-align:center;}
+
+  .pay-type{.wh(886px,auto);text-align:center;border:1px solid @gray-border2;.round(6px);margin:68px auto 0;position: relative;
+    .center-title{.wh(240px,38px,38px);background:#fff;margin:-18px auto 0;text-align: center;padding:0 10px;font-size:18px;}
+    .img{.wh(auto,69px);margin:34px auto;margin-right:30px;}
   }
 }
