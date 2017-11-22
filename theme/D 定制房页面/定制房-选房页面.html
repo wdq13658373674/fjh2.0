@@ -205,9 +205,10 @@
         function fixed(top){
             var tableDom = $('.floor-table')
                 ,msgDom = $('.select-house-msg');
-            var offset = tableDom.offset().top - parseInt(tableDom.height()) - 100;
+            var offset = tableDom.offset().top - parseInt(tableDom.height());
 
             if(top >= offset){
+                console.log(offset);
                 msgDom.removeClass('fixed');
             }else {
                 msgDom.addClass('fixed');
