@@ -888,6 +888,9 @@
   }
 }
 
+.select-house-box{
+  position: relative;
+}
 .select-house-msg{
   display:none;
   .wh(1132px,106px);
@@ -895,15 +898,9 @@
   background-color: #ebf6ff;
   border: solid 1px #77bfff;
   margin:32px auto 0;
-  &.fixed{
-    position: fixed;
-    left:0;
-    right:0;
-    bottom:0;
-    transition: all .5s ease-in-out;
-  }
+  position: absolute; left: 34px; top: 0;
 
-  .success{.wh(auto,40px,40px);padding-left:50px;background:url("../images/icon/success_tips.png") left center no-repeat;background-size:auto 40px;margin-top:40px;margin-left:49px;}
+  .success{.wh(auto,40px,40px);padding-left:40px;background:url("../images/icon/success_tips.png") left center no-repeat;background-size:auto 30px;margin-top:40px;margin-left:49px;}
 
   .msg-table{margin-top:18px;
     td{.wh(auto,68px);padding:0 30px;border-right:1px solid #bbcedd;}
