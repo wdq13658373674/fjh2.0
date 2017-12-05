@@ -421,7 +421,11 @@ mark4:签约成功
   padding-top:53px;
   background-size:1026px 53px;
 
-  .page{.transition(.2s);display:block;.wh(215px,365px);overflow: hidden;margin:0 26px;float: left;background-color:#000;.bg-rgba(rgba(0, 0, 0, 0.8));
+  .page{.transition(.2s);display:block;.wh(215px,365px);overflow: hidden;margin:0 26px;float: left;
+    background-color:#000;
+    .bg-rgba(rgba(0, 0, 0, 0.8));
+    background-position:center;background-repeat:no-repeat;background-size: 171px 301px;
+
     &.active{
       background-color:#d21211;
       .bg-rgba(rgba(210, 18, 17, 0.8)) !important;
@@ -431,14 +435,12 @@ mark4:签约成功
       transform: translate3d(0, -6px, 0);
     }
 
-    .item{.wh(171px,301px);margin:32px auto 0;overflow: hidden;
-      &.item1{background:url("../images/main/bg1.png") center no-repeat;background-size: 100% 100%;}
-      &.item2{background:url("../images/main/bg2.png") center no-repeat;background-size: 100% 100%;}
-      &.item3{background:url("../images/main/bg3.png") center no-repeat;background-size: 100% 100%;}
-      &.item4{background:url("../images/main/bg4.png") center no-repeat;background-size: 100% 100%;}
+    &.page1{background-image:url("../images/main/bg1.png");}
+    &.page2{background-image:url("../images/main/bg2.png");}
+    &.page3{background-image:url("../images/main/bg3.png");}
+    &.page4{background-image:url("../images/main/bg4.png");}
 
-      .txt{font-size:30px;color:#fff;margin-top:170px;}
-    }
+    .txt{font-size:30px;color:#fff;margin-top:203px;margin-left:22px;}
   }
 }
 .swiper-bottom{
