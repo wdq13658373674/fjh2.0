@@ -408,14 +408,14 @@ mark4:签约成功
 }
 
 /*main.html*/
-.logo2{display:block;position:absolute;z-index:9;top:40px;.wh(1016px,auto);left:0;right:0;margin:0px auto;}
+.logo2{display:block;position:absolute;z-index:9;top:40px;.wh(1016px,auto);left:0;right:0;margin:0 auto;}
 .my-pagination{
+  .wh(1068px,365px);
   position: absolute;
   top:50%;
   left:0;
   right:0;
   z-index:10;
-  .wh(1068px,365px);
   margin:-150px auto 0;
   background: url("../images/main/title.png") 30px top no-repeat;
   padding-top:53px;
@@ -437,20 +437,21 @@ mark4:签约成功
       transform: translate3d(0, -6px, 0);
     }
 
-    &.page1{background-image:url("../images/main/bg1.png");}
-    &.page2{background-image:url("../images/main/bg2.png");}
-    &.page3{background-image:url("../images/main/bg3.png");}
-    &.page4{background-image:url("../images/main/bg4.png");}
+    &.p1{background-image:url("../images/main/bg1.png");}
+    &.p2{background-image:url("../images/main/bg2.png");}
+    &.p3{background-image:url("../images/main/bg3.png");}
+    &.p4{background-image:url("../images/main/bg4.png");}
 
     .txt{font-size:30px;color:#fff;margin-top:203px;margin-left:22px;}
   }
 }
 .swiper-bottom{
+  .wh(100%,68px,68px);
   position:absolute;
   bottom:0;
   left:0;
   z-index:10;
-  .wh(100%,68px,68px);
+  background: #000;
   .bg-rgba(rgba(0, 0, 0, 0.8));
   color:#fff;
   text-align: center;
