@@ -1,28 +1,5 @@
 @import "../cssControl/control";
 
-/*查看更多*/
-.link-more {
-  display: block;
-  margin-top: 40px;
-  cursor: pointer;
-  color: @gray;
-  width:100%;
-  height: 43px;
-  line-height: 43px;
-  background: @gray-bg;
-  text-align: center;
-  &:hover {
-    .box-shadow(0, 1px, 3px 0, rgba(127, 133, 163, 0.6) inset);
-    text-decoration: none;
-    .transition(0.3s);
-  }
-
-  .up{display:none;}
-  &.show{
-    .up{display:block;}
-    .down{display:none;}
-  }
-}
 /*tab切换*/
 .menu-tab {
   .main-width;
@@ -123,6 +100,57 @@
   }
 }
 
+/*下三角*/
+.tangle {
+  display: block;
+  .wh(16px, 8px);
+  background: url("../images/user/triangle-down.png") center no-repeat;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;
+}
+
+.desc-list {
+  overflow: hidden;
+  text-align: center;
+  span {
+    color: @blue;
+    font-size: 12px;
+    display: inline-block;
+    *zoom: 1;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid @blue;
+    .round(4px);
+  }
+}
+
+.link-more {
+  display: block;
+  margin-top: 40px;
+  cursor: pointer;
+  color: @gray;
+  width:100%;
+  height: 43px;
+  line-height: 43px;
+  background: @gray-bg;
+  text-align: center;
+  &:hover {
+    .box-shadow(0, 1px, 3px 0, rgba(127, 133, 163, 0.6) inset);
+    text-decoration: none;
+    .transition(0.3s);
+  }
+
+  .up{display:none;}
+  &.show{
+    .up{display:block;}
+    .down{display:none;}
+  }
+}
+
 /*
 滚动加载loading重置
 <i class="layui-anim layui-anim-rotate layui-anim-loop layui-icon ">&#xe63e;</i>
@@ -145,36 +173,7 @@
   color: @txt-black;
 }
 
-/*下三角*/
-.tangle {
-  display: block;
-  .wh(16px, 8px);
-  background: url("../images/user/triangle-down.png") center no-repeat;
-  position: absolute;
-  bottom: -7px;
-  left: 50%;
-  margin-left: -8px;
-}
-
-/*描述列表*/
-.desc-list {
-  overflow: hidden;
-  text-align: center;
-  span {
-    color: @blue;
-    font-size: 12px;
-    display: inline-block;
-    *zoom: 1;
-    height: 29px;
-    line-height: 29px;
-    padding: 0 10px;
-    margin-right: 10px;
-    border: 1px solid @blue;
-    .round(4px);
-  }
-}
-
-/*定制房详情*/
+/*dz-house*/
 .dz-house-wrap {
   .main-width;
   margin-top: 25px;
@@ -321,11 +320,7 @@
             }
           }
         }
-        /*&.phone{background: url("../images/house/phone.png") center no-repeat;
-          &:hover{background: url("../images/house/phone_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);
-            .float-phone{display:block;}
-          }
-        }*/
+
         &.th-mark {
           background: url("../images/icon/th_ico.png") center no-repeat;
           background-size: 100% auto;
@@ -373,13 +368,9 @@
     }
   }
 }
-
-/*项目介绍*/
 .pro-introduction {
   //  img{width:100%;}
 }
-
-/*位置及周边*/
 .pro-address {
   .title {
     font-size: 16px;
@@ -418,8 +409,6 @@
     }
   }
 }
-
-/*建设进度*/
 .pro-progress {
   li {
     display:block;
@@ -471,7 +460,7 @@
   }
 }
 
-/*定制房我要报名*/
+/*定制房-我要报名*/
 .icon-suc {
   .wh(28px, 28px);
   display: none;
@@ -480,7 +469,6 @@
   right: 0px;
   background: url("../images/house/suc.png") no-repeat;
 }
-
 .dz-reg-wrap {
   .main-width;
   margin-top: 25px;
@@ -571,7 +559,7 @@
   }
   .house-type-content {
     .wh(1149px,auto);
-    &.show{height:432px;}
+    &.show{height:432px;overflow: hidden;}
     li {
       position: relative;
       .wh(147px, 127px);
@@ -706,7 +694,6 @@
     margin: 28px auto 156px;
   }
 }
-
 .single-title {
   margin: 48px 0 0 35px;
 }
@@ -727,7 +714,6 @@
 
   &.mt60{margin-top:60px;}
 }
-
 .house-select-wrap {
   .wh(1132px, auto);
   margin: 28px auto 0;
@@ -826,7 +812,6 @@
     }
   }
 }
-
 .tab-table {
   .table {
     .wh(100%, auto);
@@ -874,7 +859,6 @@
     padding-right: 23px;
   }
 }
-
 .floor-table{.wh(1132px,auto);margin:30px auto 0;
   tr:hover{background: #eff2f9;}
   td{border:1px solid @gray-border2;padding:9px;}
@@ -888,7 +872,6 @@
     }
   }
 }
-
 .select-house-msg{
   display:none;
   .wh(1132px,106px);
@@ -897,6 +880,8 @@
   border: solid 1px #77bfff;
   margin:32px auto 0;
   &.fixed{
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     position: fixed;
     left:0;
     right:0;
@@ -904,7 +889,7 @@
     transition: all .5s ease-in-out;
   }
 
-  .success{.wh(auto,40px,40px);padding-left:40px;background:url("../images/icon/success_tips.png") left center no-repeat;background-size:auto 30px;margin-top:40px;margin-left:49px;}
+  .success{.wh(auto,40px,40px);padding-left:40px;background:url("../images/icon/success_tips.png") left center no-repeat;background-size:auto 30px;margin-top:33px;margin-left:49px;}
 
   .msg-table{margin-top:18px;
     td{.wh(auto,68px);padding:0 30px;border-right:1px solid #bbcedd;}
@@ -915,7 +900,7 @@
   .top{display:block;.wh(42px,auto);text-align:center;margin:18px 32px 0;background:url("../images/user/triangle-up.png") center top no-repeat;background-size:20px auto;padding-top:14px;}
 }
 
-/*VR展示*/
+/*定制房-vr展示页*/
 .line-title {
   text-align: center;
   .inline-block {
@@ -932,14 +917,12 @@
     text-align: center;
   }
 }
-
 .white-bg-wrap {
   .main-width;
   margin-top: 25px;
   background: #ffffff;
   overflow: hidden;
 }
-
 .vr-wrap {
   .wh(1100px, auto);
   margin: 28px auto 0;
@@ -1036,7 +1019,6 @@
     }
   }
 }
-
 .d160525-lay-box {
   .wh(698px, 541px);
   background: #fff;
@@ -1055,7 +1037,7 @@
   }
 }
 
-/*查看我的定制*/
+/*定制房-查看我的定制*/
 .dz-house-flash {
   .wh(1132px, auto);
   overflow: hidden;
@@ -1241,7 +1223,7 @@
   }
 }
 
-/*查看我的选房*/
+/*定制房-查看我的选房*/
 .dz-type-message {
   .wh(1132px, auto);
   overflow: hidden;
@@ -1265,7 +1247,7 @@
   }
 }
 
-/*我要签约/我要认筹*/
+/*定制房-我要签约/我要认筹*/
 .check-box {
   .wh(1132px, auto);
   margin: 33px auto 0;
@@ -1318,7 +1300,6 @@
     }
   }
 }
-
 .buyer-form {
   .wh(1132px, auto);
   margin: 65px auto 0;
@@ -1390,13 +1371,11 @@
     }
   }
 }
-
 .hide-form {
   display: none;
 }
 
-
-/*定制查看详情*/
+/*定制房-项目详情*/
 .d170629-dz-detail{margin:0 25px;
   .house-title{margin-top:25px;font-size:24px;}
 
@@ -1421,7 +1400,7 @@
   }
 }
 
-/*d170704定制选房-选择楼栋*/
+/*认筹房-认筹选房*/
 .d170704-menu-type{
   width:1132px;
   margin:15px auto 0;
@@ -1468,8 +1447,7 @@
   }
 }
 
-
-/*定制房-我要定制*/
+/*定制房-选房页面*/
 .d20170831-house-type{.wh(1132px,577px);margin:35px auto;background: @gray-bg url("../images/house/type_bg2.png") left bottom no-repeat;
   .img-box{.wh(825px,511px);text-align: center;overflow: hidden;margin-top:33px;margin-right:35px;
     .img{.wh(auto,100%);cursor: pointer;}
@@ -1483,7 +1461,6 @@
     }
   }
 }
-
 
 /*认筹房-我要认筹*/
 .r20170904-container{.wh(1132px,auto);margin:93px auto 107px;
@@ -1503,7 +1480,7 @@
   }
 }
 
-/*定制流程*/
+/*定制房-定制流程*/
 .dz-lc-box{text-align: center;padding:10px 0 50px;
   img{width:100%;height:auto;}
 }
@@ -1534,64 +1511,6 @@
   }
 }
 
-/*定制房-选房投影_备份*/
-/*.dz-choose-house{margin:0 45px;
-  .top-content{margin-top:45px;
-    .title{font-size:30px;}
-
-    .project{margin-left:35px;
-      .icon{margin-right:8px;.wh(50px,50px);display:block;
-        &.icon1{background: url("../images/house/nav2.png") no-repeat;background-size:100% 100%;}
-        &.icon2{background: url("../images/house/dz_m5.png") no-repeat;background-size:100% 100%;}
-      }
-      .tit{font-size:14px;color:@gray;}
-      .con{font-size:20px;}
-    }
-
-    .floor{.wh(162px,58px,58px);text-align:center;.round(100px);color:#ffffff;font-size:27px;.textshadow(0 ,-1px, 0, #a42b2d);.linear-gradient(#fd815c,#fd625e)}
-  }
-
-  .choose-tip{.wh(auto,42px,42px);border-bottom: solid 2px #979797;
-    .icon{display:block;float:left;.wh(12px,12px);.round(2px);border:1px solid @gray;margin:15px 5px 0;
-      &.bg{background: @red;border-color:@red;}
-    }
-    .txt{display:block;float:left;margin-right:10px;}
-  }
-
-  .num-list-wrap{.wh(100%,auto);overflow: hidden;
-    .num-container{min-width:1120px;
-      .num-list{float: left;width:100%;
-        .num{float:left;display:block;.wh(76px,32px,32px);margin-right:10px;margin-top:16px;text-align:center;.round(8px);background: #fff;border:1px solid @gray;
-          &.selected{background: @red;color:#fff;border-color:@red;}
-        }
-      }
-    }
-  }
-}*/
-
-/*定制房-查看我的报名／参与认筹优惠活动*/
-.dz-list-auto{
-  .wh(1132px, auto);
-  overflow: hidden;
-  .item{
-    .wh(283px,auto);
-    float:left;
-
-    .tit {
-      float: left;
-      color: @gray;
-    }
-    .con {
-      display: block;
-      padding:0 10px 0 70px;
-      line-height:20px;
-    }
-
-  }
-
-}
-
-
 /*定制房-选房投影*/
 .dz-project-box{margin:0 10px;
   .title{margin-top:20px;font-size:30px;text-align: center;}
@@ -1613,6 +1532,28 @@
       }
     }
   }
+}
+
+/*定制房-查看我的报名／参与认筹优惠活动*/
+.dz-list-auto{
+  .wh(1132px, auto);
+  overflow: hidden;
+  .item{
+    .wh(283px,auto);
+    float:left;
+
+    .tit {
+      float: left;
+      color: @gray;
+    }
+    .con {
+      display: block;
+      padding:0 10px 0 70px;
+      line-height:20px;
+    }
+
+  }
+
 }
 
 /*售房部付款页面*/
