@@ -1,0 +1,150 @@
+@import "../cssControl/control";
+
+.fix-bg{
+  .wh(100%,320px);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  &.bg1{height:152px;background-image: url("../images/tz/bg_01.png");}
+  &.bg2{background-image: url("../images/tz/bg_02.png");}
+  &.bg3{background-image: url("../images/tz/bg_03.png");}
+  &.bg4{background-image: url("../images/tz/bg_04.png");}
+}
+
+.tz-banner{
+  height:710px;
+  background-size:cover;
+  background: url("../images/tz/ads1.png") center no-repeat;
+  overflow: hidden;
+
+  .banner{
+    .main-width;
+    .phone{
+      .wh(262px,521px);
+      margin-left:209px;
+      margin-top:137px;
+    }
+
+    .content{
+      margin-top:137px;
+      margin-right:80px;
+    }
+
+    .animated {
+      -webkit-animation-duration: .7s;
+      animation-duration: .7s;
+    }
+
+    .ew{
+      .item{
+        position: relative;
+        float: left;
+        display:block;
+        margin-top:22px;
+        .wh(140px,140px);
+        border:1px solid @gray-border2;
+        margin-right:30px;
+        .round(11px);
+        overflow: hidden;
+        cursor: pointer;
+
+        .img{
+          .wh(100%,100%);
+          overflow: hidden;
+          position: absolute;
+          top:0;
+          left: 0;
+          transition: 0.6s;
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
+        }
+
+        .pre{
+          z-index: 2;
+          transform: rotateY(0deg);
+        }
+        .after{
+          transform: rotateY(180deg);
+        }
+
+        &.active{
+          .pre{
+            transform: rotateY(180deg);
+          }
+          .after{
+            transform: rotateY(0deg);
+          }
+        }
+
+        &:hover{
+          .active;
+        }
+      }
+    }
+  }
+}
+
+.tz-ads{
+  display:block;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height:640px;
+  overflow: hidden;
+
+  &.ads1{
+    background-image: url("../images/tz/ads2.png");
+  }
+  &.ads2{
+    background-image: url("../images/tz/ads3.png");
+  }
+  &.ads3{
+    background-image: url("../images/tz/ads4.png");
+  }
+}
+
+
+/*
+.flip-container {
+  perspective: 1000;
+}
+!* flip the pane when hovered *!
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 480px;
+}
+
+!* flip speed goes here *!
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+!* hide back of pane during swap *!
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+!* front pane, placed above back *!
+.front {
+  z-index: 2;
+}
+
+!* back, initially hidden pane *!
+.back {
+  transform: rotateY(180deg);
+}
+*/

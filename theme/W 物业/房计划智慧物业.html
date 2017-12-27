@@ -21,7 +21,7 @@
     <div class="min-width">
         <div class="text-box flash pull-left"  style="margin-top:88px;">
             <div class="tit animated fadeInUp">房计划物业</div>
-            <div class="en  animated fadeInUp delay10">property of FangJiHua</div>
+            <div class="en  animated fadeInUp delay10">PROPERTY OF FANGJIHUA</div>
             <div class="con animated fadeInUp delay20">
                 房计划物业涵盖住宅物业服
                 务、商用物业服务、综合体物业服
@@ -38,7 +38,7 @@
     <div class="min-width">
         <div class="text-box flash pull-right" style="margin-top:223px;">
             <div class="tit2 animated lightSpeedIn">亲情式的菜单服务内容</div>
-            <div class="en a_center animated fadeInUp delay60">Service content</div>
+            <div class="en indent animated fadeInUp delay60">Service content</div>
             <div class="con animated fadeInUp delay80">
                 以业主需求为导向，贴心管家式定制服务，全过程、全方位、全时空的满足业主需求。
             </div>
@@ -49,7 +49,7 @@
     <div class="min-width">
         <div class="text-box flash pull-left" style="margin-top:170px;">
             <div class="tit2 animated lightSpeedIn">精细化的服务标准</div>
-            <div class="en a_center animated fadeInUp delay60">Service standards</div>
+            <div class="en indent animated fadeInUp delay60">Service standards</div>
             <div class="con animated fadeInUp delay80">
                 房计划物业根据各岗位系统性作业标准，提供给业主可知、可感、可辨、可验的服务体验
 
@@ -61,9 +61,9 @@
     <div class="min-width">
         <div class="text-box flash pull-left">
             <div class="tit animated fadeInDown">规范化的服务控制</div>
-            <div class="en a_center animated fadeInUp delay20">Service control</div>
-            <div class="con animated fadeInUp delay40">
-                房计划物业坚持贯彻ISO三标体系管理文件，一丝不苟实行每周专业巡检，月度综合巡检和每年度的满意度调查，自觉接受业主、开发商、政府主管部门的监督。
+            <div class="en indent animated fadeInUp ">Service control</div>
+            <div class="con animated fadeInUp ">
+                房计划物业坚持贯彻 ISO 三标体系管理文件，一丝不苟实行每周专业巡检，月度综合巡检和每年度的满意度调查，自觉接受业主、开发商、政府主管部门的监督。
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
 <div class="property property-box6 a_center">
     <div class="min-width">
         <div class="text-box flash" style="margin:0 auto;">
-            <div class="tit2 animated fadeInUp">智慧社区服务平台</div>
+            <div class="tit2 animated fadeInUp">智慧社区服务平台手</div>
             <div class="en animated fadeInUp delay10">Intelligence community</div>
             <div class="con animated fadeInUp delay30">
                 建立智能化综合社区服务平台，将网络信息化，电子商务平台与物业管理服务相融合，打造科技、便捷、智能的现代化智慧社区。
@@ -102,10 +102,8 @@
 
             txts.each(function(){
                 var self = $(this);
-                if(isVisible(self)){
+                if(isVisible(self) && !self.hasClass('active')){
                     self.addClass('active');
-                }else {
-                    self.removeClass('active');
                 }
             })
         }
