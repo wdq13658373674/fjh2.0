@@ -1,0 +1,149 @@
+@import "../cssControl/control";
+
+.own-content{
+  width:1059px;
+  margin:0 auto;
+  font-size:16px;
+  font-weight:300;
+  line-height:26px;
+  min-height:146px;
+}
+
+.greens{
+  color:#738c6f;
+}
+
+.decration{
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+
+  .text-box{
+    .wh(1100px,auto);
+    margin:0 auto 0;
+    overflow: hidden;
+
+    .text{
+      line-height:26px;
+      color:#3e3e3e;
+    }
+
+    .con{
+      font-weight:300;
+    }
+  }
+
+  .con-list{
+    width:324px;
+    overflow: hidden;
+    .dot{
+      display:block;
+      float:left;
+      .wh(11px,11px);
+      background: #ffffff;
+      .round(50%);
+      margin-right:18px;
+      margin-top:3px;
+    }
+
+    .list{
+      .wh(auto,18px,18px);
+      font-size:18px;
+      font-weight:300;
+    }
+
+    .animated {
+      -webkit-animation-duration: .8s;
+      animation-duration: .8s;
+    }
+  }
+
+  &.bg1{
+    height:365px;
+    background-image: url("../images/decration/bg1.jpg");
+  }
+  &.bg2{
+    height:413px;
+    background-image: url("../images/decration/bg2.jpg");
+  }
+  &.bg3{
+    height:668px;
+    margin: 48px 0;
+    background-image: url("../images/decration/bg3.jpg");
+
+    .text{
+      width:475px;
+      margin-top:278px;
+    }
+
+    .con{
+      font-size:18px;
+      line-height:30px;
+    }
+  }
+  &.bg4{
+    height:664px;
+    background-image: url("../images/decration/bg4.jpg");
+
+    .text{
+      margin-top:80px;
+    }
+
+    .con{
+      font-size:18px;
+      color:#fff;
+    }
+
+    .list{
+      color:#fff;
+      margin-bottom:37px;
+    }
+  }
+  &.bg5{
+    height:636px;
+    background-image: url("../images/decration/bg5.jpg");
+    margin-top:70px;
+  }
+  &.bg6{
+    margin: 125px 0;
+    height:623px;
+    background-image: url("../images/decration/bg6.jpg");
+
+    .text{
+      width:440px;
+    }
+    .con{
+      font-size:16px;
+    }
+
+    .dot{
+      background: #738c6f;
+    }
+    .list{
+      margin-bottom:26px;
+    }
+  }
+  &.bg7{
+    height:40px;
+    background:#738c6f;
+  }
+}
+.flash{
+  position: relative;
+  .animated{
+    display:none;
+    overflow: hidden;
+  }
+  &.active{
+    .animated{
+      display:block;
+    }
+  }
+}
+.footer-bottom {
+  .wh(100%,50px,50px);
+  text-align: center;
+  min-width: 1200px;
+  overflow: hidden;
+}

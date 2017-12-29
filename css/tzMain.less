@@ -1,17 +1,17 @@
 @import "../cssControl/control";
 
 .fix-bg{
-  .wh(100%,320px);
+  .wh(100%,630px);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
   overflow: hidden;
 
-  &.bg1{height:152px;background-image: url("../images/tz/bg_01.jpg");}
+  &.bg1{background-image: url("../images/tz/bg_01.jpg");}
   &.bg2{background-image: url("../images/tz/bg_02.jpg");}
   &.bg3{background-image: url("../images/tz/bg_03.jpg");}
-  &.bg4{background-image: url("../images/tz/bg_04.jpg");}
+  &.bg4{height:400px;background-image: url("../images/tz/bg_04.jpg");}
 }
 
 .tz-banner{
@@ -89,7 +89,7 @@
 
 .tz-ads{
   display:block;
-  background-size: auto 100%;
+  //background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center center;
   height:640px;
@@ -107,44 +107,3 @@
 }
 
 
-/*
-.flip-container {
-  perspective: 1000;
-}
-!* flip the pane when hovered *!
-.flip-container:hover .flipper, .flip-container.hover .flipper {
-  transform: rotateY(180deg);
-}
-
-.flip-container, .front, .back {
-  width: 320px;
-  height: 480px;
-}
-
-!* flip speed goes here *!
-.flipper {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-
-  position: relative;
-}
-
-!* hide back of pane during swap *!
-.front, .back {
-  backface-visibility: hidden;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-!* front pane, placed above back *!
-.front {
-  z-index: 2;
-}
-
-!* back, initially hidden pane *!
-.back {
-  transform: rotateY(180deg);
-}
-*/
