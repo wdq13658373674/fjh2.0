@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>index</title>
+
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link href="../../css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/decration.css"/>
+
+    <script src="../../js/jQuery1.12.3-min.js" type="text/javascript"></script>
+</head>
+<body>
+<!--header-->
+<iframe src="../header3.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
+        style="width:100%;height:108px;"></iframe>
+
+<div class="decration bg1"></div>
+<div class="decration bg2"></div>
+<div class="decration bg3">
+    <div class="text-box clear">
+        <div class="text flash pull-right">
+            <img class="tit animated fadeInUp delay20" src="../../images/decration/tit0.png" alt="">
+            <div class="con animated fadeInUp delay40" style="margin-top:45px;">
+                <p>全球化直采，</p>
+                <p>0中间商价格，</p>
+                <p>供应链成本降低，</p>
+                <p>品质升级，</p>
+                <p>从工厂到用户，</p>
+                <p>节省中间商费用30%。</p>
+            </div>
+            <div class="con animated fadeInUp delay80" style="margin-top:25px;font-size:16px;">
+                批量化采购一线品牌材料，精心挑选口碑好材料，<span class="greens">环保安全</span>，让你的家好住不贵，打造放心环保家装。
+            </div>
+        </div>
+    </div>
+</div>
+<div class="decration bg4">
+    <div class="text-box clear">
+        <div class="text flash pull-left">
+            <img class="tit  fadeInUp delay20" src="../../images/decration/tit.png" alt="">
+            <div class="con  fadeInUp delay50" style="margin-top:36px;">
+                管家全程监督，无忧售后系统，贴心管家式服务，省心法宝，装修就是这么轻松！
+            </div>
+            <ul class="con-list" style="margin-top:120px;">
+                <li class="list   fadeInRight delay60"><i class="dot"></i>施工项目一对一服务</li>
+                <li class="list   fadeInRight delay80"><i class="dot"></i>各节点专业人士陪同服务</li>
+                <li class="list   fadeInRight delay100"><i class="dot"></i>施工工地随时预约参观</li>
+                <li class="list   fadeInRight delay120"><i class="dot"></i>施工进度网站展示</li>
+                <li class="list   fadeInRight delay140"><i class="dot"></i>售后顾问7*12小时在线受理</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="decration bg5">
+    <div class="text-box own-content">
+        <div class="text flash" style="margin-top:80px;">
+            <img class="tit animated fadeInUp delay20" src="../../images/decration/tit2.png" alt="">
+            <div class="con animated fadeInUp delay40" style="margin-top:37px;">房计划装修采用班组制施工，自有产业工人，考核上岗。对工艺严格把控，八大核心工艺再升级，施工质量我们要求精益求精。拒绝家装雾霾，拒绝以次充好，拒绝偷工减料，让您的家更环保更安全。真正做到为您的健康着想，用心营造舒适的室内环境。</div>
+        </div>
+    </div>
+</div>
+<div class="decration bg6">
+    <div class="text-box clear">
+        <div class="text flash pull-right">
+            <img class="tit animated fadeInUp delay20" src="../../images/decration/tit3.png" alt="">
+            <div class="con animated fadeInUp delay40" style="margin-top:97px;">
+                家装作为一件半手工活，施工艺和品质不仅取决于施工管理和创新，更注重装修的环保性和耐久性。房计划装修将德标材料系统，德标工艺系统，应用到家庭装修，分别对油漆、水电、防水、吊顶、木作、防潮抗霉、防开裂、隔音和生态胶工艺进行全面升级，采用甲醛趋零，VOC趣零的德标材料，杜绝装修后的空气污染，产品使用寿命也更为经久耐用。
+            </div>
+            <ul class="con-list greens" style="margin-top:90px;">
+                <li class="list animated fadeInRight delay80"><i class="dot"></i>质量管理机制</li>
+                <li class="list animated fadeInRight delay100"><i class="dot"></i>德系辅材</li>
+                <li class="list animated fadeInRight delay120"><i class="dot"></i>高规格施工工艺</li>
+                <li class="list animated fadeInRight delay140"><i class="dot"></i>专业级环境保障措施</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="decration bg7"></div>
+
+<!--footer-->
+<div class="footer-bottom">© 2015 重庆怡瑞房地产营销顾问有限公司 渝 ICP 备 17005218 号</div>
+
+<script>
+    $(function(){
+        handleDefer();
+        /**滚动**/
+        $(document).scroll(function(){
+            setTimeout(function(){
+                handleDefer();
+            },500)
+        })
+
+        /**
+         * 添加class='active'
+         * */
+        function handleDefer(){
+            var txts = $('.flash');
+
+            txts.each(function(){
+                var self = $(this);
+                if(isVisible(self) && !self.hasClass('active')){
+                    self.addClass('active');
+                }
+            })
+        }
+
+        /**
+         * 判断可视区域
+         * */
+        function isVisible(node) {
+            var scrollTop =parseInt($(document).scrollTop())
+                ,innerHeight =parseInt($(window).height())
+
+                ,offTop = parseInt(node.offset().top)
+                ,offsetHeight = parseInt(node.height());
+
+            return scrollTop + innerHeight >= offTop && scrollTop <= offTop + offsetHeight;
+        }
+    })
+</script>
+</body>
+</html>
