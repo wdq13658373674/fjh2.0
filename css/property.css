@@ -1,1 +1,284 @@
-.main-width{width:1200px;min-width:1200px;margin-left:auto;margin-right:auto}.ellipse{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}input,button{font-size:14px}button{cursor:pointer}.select{width:100%;height:45px;position:relative;font-size:14px}.select .form-control{width:100%;height:45px;line-height:45px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;color:#7f85a3;padding:0 40px 0 12px;box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);-webkit-box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);-moz-box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);background:#eff2f9;background:url("../images/icon/select_ico.png") right 20px center no-repeat,linear-gradient(to bottom, #eff2f9, #dbe0ed)}.select .select-box{position:relative;width:100%}.select .select-box ul{background:#fff;display:none;border-bottom:1px solid #c3c9d8}.select .select-box ul li{width:100%;height:auto;line-height:20px;border-top:1px solid #c3c9d8;color:#7f85a3;padding:10px 12px;cursor:pointer}.select .select-box ul li:hover{background:#eff2f9;color:#7f85a3;border-top-color:#c3c9d8}.select .select-box:hover ul{display:block}.property{overflow:hidden}.property .min-width{width:1300px;height:100%;margin:0 auto}.property .text-box{width:605px;height:auto;overflow:hidden}.property .text-box .tit{width:auto;height:44px;line-height:44px;font-size:28px;color:#21233e}.property .text-box .tit2{width:auto;height:44px;line-height:44px;font-size:28px;color:#21233e;font-weight:300;background:url("../images/property/rec.png") left center no-repeat;padding-left:13px}.property .text-box .tit2.animated{-webkit-animation-duration:.8s;animation-duration:.8s}.property .text-box .en{font-size:22px;font-weight:300;color:#d4d4d4;width:auto;height:60px;line-height:60px}.property .text-box .en.indent{text-indent:6.5em}.property .text-box .con{font-size:18px;color:#595757;font-weight:300;line-height:26px}.property.property-box1{width:100%;height:482px;background:#fdfdf1 url("../images/property/img1.jpg") center top no-repeat;background-size:auto 100%}.property.property-box2{width:100%;height:459px;background:#fdfdf1 url("../images/property/img2.jpg") top center no-repeat;background-size:auto 100%}.property.property-box2 .tit{font-size:35px;padding-left:15px;background:url("../images/property/arrow.png") left center no-repeat;background-size:7px 10px}.property.property-box3{width:100%;height:491px;background:url("../images/property/img3.jpg") top center no-repeat;background-size:auto 100%}.property.property-box4{width:100%;height:479px;background:url("../images/property/img4.jpg") top center no-repeat;background-size:auto 100%}.property.property-box5{width:100%;height:577px;background:url("../images/property/img5.jpg") top center no-repeat;background-size:auto 100%}.property.property-box5 .tit{color:#fff;margin-top:100px;font-weight:300}.property.property-box5 .con{color:#fff}.property.property-box6{margin-top:117px;height:176px}.property.property-box6 .tit2{width:519px;height:44px;line-height:44px;margin:0 auto}.property.property-box6 .con{width:512px;height:auto;margin:0 auto;text-align:left}.property.property-box7{margin-top:76px;width:100%;height:574px;background:url("../images/property/img6.jpg") top center no-repeat;background-size:auto 100%}.footer-bottom{width:100%;height:68px;line-height:68px;text-align:center;min-width:1200px;background:#000;font-size:12px;color:#b7b7b7;overflow:hidden;margin-top:75px}
+/*函数文件*/
+/*路径定义*/
+/*网站总宽*/
+.main-width {
+  width: 1200px;
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*网站主色*/
+/*字体颜色*/
+/*提示颜色*/
+/*失效颜色*/
+/*文字省略*/
+.ellipse {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*样式函数定义*/
+/*
+盒子阴影
+@s 右边阴影为正数 左边负数
+@y 下边阴影为正数 上边负数
+@blur  阴影大小
+@color 阴影颜色
+*/
+/*
+定义圆角
+@radius 圆角大小
+*/
+/*
+文字阴影,可以指定多组阴影
+@right_left1 右边阴影为正数 左边负数
+@bottom_top1 下边阴影为正数 上边负数
+<a href="http://my.oschina.net/text" class="referer" target="_blank">@text</a>  阴影大小
+@text_color 阴影颜色
+*/
+/*
+透明度 或渐变 1为不透明 0透明
+css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明值
+用来兼容所有浏览器
+*/
+/*
+透明背景
+@bg:背景色
+*/
+/*背景渐变
+@drc:渐变方向
+@start  渐变开始颜色
+@end 结束颜色
+*/
+/*
+旋转角度
+IE不支持 滤镜支持0，1，2，3
+*/
+/*背景图*/
+/*
+@url    图片路径
+@r      是否重复(no-repeat)
+@x      背景定位 x 轴
+@y      背景定位 y 轴
+*/
+/*按钮预定义文件*/
+/*
+按钮按下
+@red-dark：鼠标按下背景颜色
+*/
+/*
+.btn-*-full：填充背景的按钮（*表示 red：红色，blue：蓝色）
+@h：按钮高度变量
+通过外部自定义 width 控制按钮宽度
+*/
+/*
+.btn-*-empty：没有背景色（即背景色为白色）的按钮（ * 表示 red：红色，blue：蓝色 ，gray：灰色）
+@h：按钮高度变量
+通过外部自定义 width 控制按钮宽度
+*/
+/*
+失效按钮（禁止点击）
+@h：高度变量
+*/
+/*表单组件（下拉框等）预定义文件*/
+input,
+button {
+  font-size: 14px;
+}
+button {
+  cursor: pointer;
+}
+/*下拉选择框*/
+.select {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  font-size: 14px;
+}
+.select .form-control {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  color: #7f85a3;
+  padding: 0 40px 0 12px;
+  box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  background: #eff2f9;
+  background: url("../images/icon/select_ico.png") right 20px center no-repeat, linear-gradient(to bottom, #eff2f9, #dbe0ed);
+}
+.select .select-box {
+  position: relative;
+  width: 100%;
+}
+.select .select-box ul {
+  background: #fff;
+  display: none;
+  border-bottom: 1px solid #c3c9d8;
+}
+.select .select-box ul li {
+  width: 100%;
+  height: auto;
+  line-height: 20px;
+  border-top: 1px solid #c3c9d8;
+  color: #7f85a3;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.select .select-box ul li:hover {
+  background: #eff2f9;
+  color: #7f85a3;
+  border-top-color: #c3c9d8;
+}
+.select .select-box:hover ul {
+  display: block;
+}
+/*input输入框
+@h:输入框高度
+@p:文本框座padding
+*/
+.property {
+  overflow: hidden;
+}
+.property .min-width {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+.property .text-box {
+  width: 605px;
+  height: auto;
+  overflow: hidden;
+}
+.property .text-box .tit {
+  width: auto;
+  height: 44px;
+  line-height: 44px;
+  font-size: 28px;
+  color: #21233e;
+}
+.property .text-box .tit2 {
+  width: auto;
+  height: 44px;
+  line-height: 44px;
+  font-size: 28px;
+  color: #21233e;
+  font-weight: 300;
+  background: url("../images/property/rec.png") left center no-repeat;
+  padding-left: 13px;
+}
+.property .text-box .tit2.animated {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+}
+.property .text-box .en {
+  font-size: 22px;
+  font-weight: 300;
+  color: #d4d4d4;
+  width: auto;
+  height: 60px;
+  line-height: 60px;
+}
+.property .text-box .en.indent {
+  text-indent: 6.5em;
+}
+.property .text-box .con {
+  font-size: 18px;
+  color: #595757;
+  font-weight: 300;
+  line-height: 26px;
+}
+.property.property-box1 {
+  width: 100%;
+  height: 482px;
+  background: #fdfdf1 url("../images/property/img1.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.property.property-box2 {
+  width: 100%;
+  height: 459px;
+  background: #fdfdf1 url("../images/property/img2.jpg") top center no-repeat;
+  background-size: auto 100%;
+}
+.property.property-box2 .tit {
+  font-size: 35px;
+  padding-left: 15px;
+  background: url("../images/property/arrow.png") left center no-repeat;
+  background-size: 7px 10px;
+}
+.property.property-box3 {
+  width: 100%;
+  height: 491px;
+  background: url("../images/property/img3.jpg") top center no-repeat;
+  background-size: auto 100%;
+}
+.property.property-box4 {
+  width: 100%;
+  height: 479px;
+  background: url("../images/property/img4.jpg") top center no-repeat;
+  background-size: auto 100%;
+}
+.property.property-box5 {
+  width: 100%;
+  height: 577px;
+  background: url("../images/property/img5.jpg") top center no-repeat;
+  background-size: auto 100%;
+}
+.property.property-box5 .tit {
+  color: #ffffff;
+  margin-top: 100px;
+  font-weight: 300;
+}
+.property.property-box5 .con {
+  color: #ffffff;
+}
+.property.property-box6 {
+  margin-top: 117px;
+  height: 176px;
+}
+.property.property-box6 .tit2 {
+  width: 519px;
+  height: 44px;
+  line-height: 44px;
+  margin: 0 auto;
+}
+.property.property-box6 .con {
+  width: 512px;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+.property.property-box7 {
+  margin-top: 76px;
+  width: 100%;
+  height: 574px;
+  background: url("../images/property/img6.jpg") top center no-repeat;
+  background-size: auto 100%;
+}
+/*.flash{
+  position: relative;
+  .animated{
+    display:none;
+    overflow: hidden;
+  }
+  &.active{
+    .animated{
+      display:block;
+    }
+  }
+}*/
+.footer-bottom {
+  width: 100%;
+  height: 68px;
+  line-height: 68px;
+  text-align: center;
+  min-width: 1200px;
+  background: #000000;
+  font-size: 12px;
+  color: #b7b7b7;
+  overflow: hidden;
+  margin-top: 75px;
+}

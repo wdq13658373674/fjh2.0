@@ -1,1 +1,278 @@
-.main-width{width:1200px;min-width:1200px;margin-left:auto;margin-right:auto}.ellipse{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}input,button{font-size:14px}button{cursor:pointer}.select{width:100%;height:45px;position:relative;font-size:14px}.select .form-control{width:100%;height:45px;line-height:45px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;color:#7f85a3;padding:0 40px 0 12px;box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);-webkit-box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);-moz-box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);background:#eff2f9;background:url("../images/icon/select_ico.png") right 20px center no-repeat,linear-gradient(to bottom, #eff2f9, #dbe0ed)}.select .select-box{position:relative;width:100%}.select .select-box ul{background:#fff;display:none;border-bottom:1px solid #c3c9d8}.select .select-box ul li{width:100%;height:auto;line-height:20px;border-top:1px solid #c3c9d8;color:#7f85a3;padding:10px 12px;cursor:pointer}.select .select-box ul li:hover{background:#eff2f9;color:#7f85a3;border-top-color:#c3c9d8}.select .select-box:hover ul{display:block}.greens{color:#738c6f}.decration{background-size:auto 100%;background-repeat:no-repeat;background-position:top center;overflow:hidden}.decration .text-box{width:1100px;height:auto;margin:0 auto 0;overflow:hidden}.decration .text-box .text{line-height:26px;color:#3e3e3e}.decration .text-box .con{font-weight:300}.decration .con-list{width:324px;overflow:hidden}.decration .con-list .dot{display:block;float:left;width:11px;height:11px;background:#fff;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;margin-right:18px;margin-top:3px}.decration .con-list .list{width:auto;height:18px;line-height:18px;font-size:18px;font-weight:300}.decration .con-list .animated{-webkit-animation-duration:.8s;animation-duration:.8s}.decration.bg1{height:365px;background-image:url("../images/decration/bg1.jpg")}.decration.bg2{height:413px;background-image:url("../images/decration/bg2.jpg")}.decration.bg3{height:668px;margin:48px 0;background-image:url("../images/decration/bg3.jpg")}.decration.bg3 .text{width:475px;margin-top:278px}.decration.bg3 .con{font-size:18px;line-height:30px}.decration.bg4{height:664px;background-image:url("../images/decration/bg4.jpg")}.decration.bg4 .text{margin-top:80px}.decration.bg4 .con{font-size:18px;color:#fff}.decration.bg4 .list{color:#fff;margin-bottom:37px}.decration.bg5{height:929px;background-image:url("../images/decration/bg5.jpg")}.decration.bg5 .text{width:1059px;margin:0 auto;font-size:16px}.decration.bg6{margin:125px 0;height:623px;background-image:url("../images/decration/bg6.jpg")}.decration.bg6 .text{width:440px}.decration.bg6 .con{font-size:16px}.decration.bg6 .dot{background:#738c6f}.decration.bg6 .list{margin-bottom:26px}.decration.bg7{height:40px;background:#738c6f}.footer-bottom{width:100%;height:50px;line-height:50px;text-align:center;min-width:1200px;overflow:hidden;background:#fff}
+/*函数文件*/
+/*路径定义*/
+/*网站总宽*/
+.main-width {
+  width: 1200px;
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*网站主色*/
+/*字体颜色*/
+/*提示颜色*/
+/*失效颜色*/
+/*文字省略*/
+.ellipse {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*样式函数定义*/
+/*
+盒子阴影
+@s 右边阴影为正数 左边负数
+@y 下边阴影为正数 上边负数
+@blur  阴影大小
+@color 阴影颜色
+*/
+/*
+定义圆角
+@radius 圆角大小
+*/
+/*
+文字阴影,可以指定多组阴影
+@right_left1 右边阴影为正数 左边负数
+@bottom_top1 下边阴影为正数 上边负数
+<a href="http://my.oschina.net/text" class="referer" target="_blank">@text</a>  阴影大小
+@text_color 阴影颜色
+*/
+/*
+透明度 或渐变 1为不透明 0透明
+css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明值
+用来兼容所有浏览器
+*/
+/*
+透明背景
+@bg:背景色
+*/
+/*背景渐变
+@drc:渐变方向
+@start  渐变开始颜色
+@end 结束颜色
+*/
+/*
+旋转角度
+IE不支持 滤镜支持0，1，2，3
+*/
+/*背景图*/
+/*
+@url    图片路径
+@r      是否重复(no-repeat)
+@x      背景定位 x 轴
+@y      背景定位 y 轴
+*/
+/*按钮预定义文件*/
+/*
+按钮按下
+@red-dark：鼠标按下背景颜色
+*/
+/*
+.btn-*-full：填充背景的按钮（*表示 red：红色，blue：蓝色）
+@h：按钮高度变量
+通过外部自定义 width 控制按钮宽度
+*/
+/*
+.btn-*-empty：没有背景色（即背景色为白色）的按钮（ * 表示 red：红色，blue：蓝色 ，gray：灰色）
+@h：按钮高度变量
+通过外部自定义 width 控制按钮宽度
+*/
+/*
+失效按钮（禁止点击）
+@h：高度变量
+*/
+/*表单组件（下拉框等）预定义文件*/
+input,
+button {
+  font-size: 14px;
+}
+button {
+  cursor: pointer;
+}
+/*下拉选择框*/
+.select {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  font-size: 14px;
+}
+.select .form-control {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  color: #7f85a3;
+  padding: 0 40px 0 12px;
+  box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  background: #eff2f9;
+  background: url("../images/icon/select_ico.png") right 20px center no-repeat, linear-gradient(to bottom, #eff2f9, #dbe0ed);
+}
+.select .select-box {
+  position: relative;
+  width: 100%;
+}
+.select .select-box ul {
+  background: #fff;
+  display: none;
+  border-bottom: 1px solid #c3c9d8;
+}
+.select .select-box ul li {
+  width: 100%;
+  height: auto;
+  line-height: 20px;
+  border-top: 1px solid #c3c9d8;
+  color: #7f85a3;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.select .select-box ul li:hover {
+  background: #eff2f9;
+  color: #7f85a3;
+  border-top-color: #c3c9d8;
+}
+.select .select-box:hover ul {
+  display: block;
+}
+/*input输入框
+@h:输入框高度
+@p:文本框座padding
+*/
+.greens {
+  color: #738c6f;
+}
+.decration {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+}
+.decration .text-box {
+  width: 1100px;
+  height: auto;
+  margin: 0 auto 0;
+  overflow: hidden;
+}
+.decration .text-box .text {
+  line-height: 26px;
+  color: #3e3e3e;
+}
+.decration .text-box .con {
+  font-weight: 300;
+}
+.decration .con-list {
+  width: 324px;
+  overflow: hidden;
+}
+.decration .con-list .dot {
+  display: block;
+  float: left;
+  width: 11px;
+  height: 11px;
+  background: #ffffff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  margin-right: 18px;
+  margin-top: 3px;
+}
+.decration .con-list .list {
+  width: auto;
+  height: 18px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.decration .con-list .animated {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+}
+.decration.bg1 {
+  height: 365px;
+  background-image: url("../images/decration/bg1.jpg");
+}
+.decration.bg2 {
+  height: 413px;
+  background-image: url("../images/decration/bg2.jpg");
+}
+.decration.bg3 {
+  height: 668px;
+  margin: 48px 0;
+  background-image: url("../images/decration/bg3.jpg");
+}
+.decration.bg3 .text {
+  width: 475px;
+  margin-top: 278px;
+}
+.decration.bg3 .con {
+  font-size: 18px;
+  line-height: 30px;
+}
+.decration.bg4 {
+  height: 664px;
+  background-image: url("../images/decration/bg4.jpg");
+}
+.decration.bg4 .text {
+  margin-top: 80px;
+}
+.decration.bg4 .con {
+  font-size: 18px;
+  color: #fff;
+}
+.decration.bg4 .list {
+  color: #fff;
+  margin-bottom: 37px;
+}
+.decration.bg5 {
+  height: 929px;
+  background-image: url("../images/decration/bg5.jpg");
+}
+.decration.bg5 .text {
+  width: 1059px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.decration.bg6 {
+  margin: 125px 0;
+  height: 623px;
+  background-image: url("../images/decration/bg6.jpg");
+}
+.decration.bg6 .text {
+  width: 440px;
+}
+.decration.bg6 .con {
+  font-size: 16px;
+}
+.decration.bg6 .dot {
+  background: #738c6f;
+}
+.decration.bg6 .list {
+  margin-bottom: 26px;
+}
+.decration.bg7 {
+  height: 40px;
+  background: #738c6f;
+}
+/*.flash{
+  position: relative;
+  .animated{
+    opacity: 0;
+    overflow: hidden;
+  }
+  &.active{
+    .animated{
+      opacity: 1;
+    }
+  }
+}*/
+.footer-bottom {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  min-width: 1200px;
+  overflow: hidden;
+  background: #fff;
+}

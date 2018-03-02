@@ -1,1 +1,600 @@
-.main-width{width:1200px;min-width:1200px;margin-left:auto;margin-right:auto}.ellipse{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}input,button{font-size:14px}button{cursor:pointer}.select{width:100%;height:45px;position:relative;font-size:14px}.select .form-control{width:100%;height:45px;line-height:45px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;color:#7f85a3;padding:0 40px 0 12px;box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);-webkit-box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);-moz-box-shadow:inset 0 1px 3px 0 rgba(127,133,163,0.53);background:#eff2f9;background:url("../images/icon/select_ico.png") right 20px center no-repeat,linear-gradient(to bottom, #eff2f9, #dbe0ed)}.select .select-box{position:relative;width:100%}.select .select-box ul{background:#fff;display:none;border-bottom:1px solid #c3c9d8}.select .select-box ul li{width:100%;height:auto;line-height:20px;border-top:1px solid #c3c9d8;color:#7f85a3;padding:10px 12px;cursor:pointer}.select .select-box ul li:hover{background:#eff2f9;color:#7f85a3;border-top-color:#c3c9d8}.select .select-box:hover ul{display:block}.d6128-tit{background:#fff url("../images/activity/sm_02.jpg") center no-repeat;width:auto;height:150px}.d6128-info1{width:auto;height:auto;padding-bottom:50px;overflow:hidden}.d6128-tits{width:100%;height:55px;line-height:55px;color:#4c5374;font-size:22px;border-bottom:1px dotted #7f85a3;margin-top:20px}.d6128-tits1{width:100%;height:55px;line-height:55px;color:#4c5374;font-size:16px;margin-top:45px}.d6128-txt{font-size:16px;color:#4c5374;line-height:24pt;margin-top:20px}.d6128-info2{width:auto;height:auto;padding-bottom:50px;background:#fff;overflow:hidden}.d6128-info2 .main-width,.d6128-info1 .main-width{width:980px}.d6329-tits1{width:100%;height:40px;line-height:40px;color:#4c5374;font-size:20px;margin-top:45px}.d6329-txt{font-size:16px;color:#4c5374;line-height:24pt}.d6329-tits{width:100%;height:30px;line-height:30px;color:#4c5374;border-bottom:1px dotted #7f85a3}.img_w980{width:980px;height:auto}.d20170512-bg{width:100%;overflow:hidden;min-width:1300px}.d20170512-bg.img1{height:1062px;background:url("../images/activity/fel_img_01.jpg") center top no-repeat;background-size:auto 100%}.d20170512-bg.img2{height:754px;background:url("../images/activity/fel_img_02.jpg") center top no-repeat;background-size:auto 100%}.d20170512-bg.img3{height:541px;background:url("../images/activity/fel_img_03.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg{width:100%;overflow:hidden;background:#242434;font-weight:lighter}.d20170810-bg.img1{height:660px;background:url("../images/activity/dyf/dyf_01.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg.img2{height:556px;background:url("../images/activity/dyf/dyf_02.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg.img3 .content{width:682px;margin:30px auto;color:#f1ecd3;font-size:23px;line-height:36px;text-align:center}.d20170810-bg.img4{height:615px;background:url("../images/activity/dyf/dyf_04.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg.img4 .content{width:853px;height:auto;line-height:20px;color:#f1ecd3;font-size:20px;margin:119px auto 0}.d20170810-bg.img4 .content .items{width:1080px;height:auto}.d20170810-bg.img4 .content .item{display:block;width:381px;height:83px;line-height:25px;overflow:hidden;background-color:#242434;float:left;margin-right:156px;padding:15px 50px 0 0}.d20170810-bg.img5{height:636px;background:url("../images/activity/dyf/dyf_05.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg.img5 .content{width:853px;height:auto;line-height:20px;color:#f1ecd3;font-size:20px;margin:136px auto 0}.d20170810-bg.img5 .content .items{width:1080px;height:auto}.d20170810-bg.img5 .content .item{display:block;width:381px;height:80px;line-height:25px;overflow:hidden;background-color:#242434;float:left;margin-right:156px;padding:15px 50px 0 0}.d20170810-bg.img6{height:340px;background:url("../images/activity/dyf/dyf_06.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg.img7{height:717px;background:url("../images/activity/dyf/dyf_07.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg.img7 .flexslider{width:930px;height:600px;margin:65px auto 0;background:#242434}.d20170810-bg.img7 .flexslider .slides{width:100%;height:549px;overflow:hidden}.d20170810-bg.img7 .flexslider .flex-control-nav li a{width:16px;height:16px;border:1px solid #924b48;background:none}.d20170810-bg.img7 .flexslider .flex-control-nav li a.flex-active{background:#924b48;cursor:default}.d20170810-bg.img8{height:352px;background:url("../images/activity/dyf/dyf_08.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg.img9 .content{width:945px;margin:40px auto;color:#f1ecd3;font-size:20px;line-height:35px;text-indent:2em}.d20170810-bg.img10{height:820px;background:url("../images/activity/dyf/dyf_10.jpg") center top no-repeat;background-size:auto 100%}.d20170810-bg.img11{height:413px;background:url("../images/activity/dyf/dyf_11.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg{width:100%;min-width:1200px;overflow:hidden;background:#fff}.d20170925-bg.img1{height:809px;background:url("../images/activity/dyf2/img_01.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg.img2{height:790px;background:url("../images/activity/dyf2/img_02.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg.img3{height:589px;background:url("../images/activity/dyf2/img_03.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg.img4{height:1023px;background:url("../images/activity/dyf2/img_04.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg.img5{height:822px;background:url("../images/activity/dyf2/img_05.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg.img6{height:1009px;background:url("../images/activity/dyf2/img_06.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg.img7{height:420px;background:url("../images/activity/dyf2/img_07.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg.img8{height:774px;background:url("../images/activity/dyf2/img_08.jpg") center top no-repeat;background-size:auto 100%}.d20170925-bg.img8 .flexslider{width:1033px;height:645px;margin:33px auto 0}.d20170925-bg.img8 .flexslider .slides{width:100%;height:575px;overflow:hidden}.d20170925-bg.img8 .flexslider .flex-control-nav{bottom:10px}.d20170925-bg.img8 .flexslider .flex-control-nav li a{width:30px;height:30px;border:1px solid #924b48;background:none}.d20170925-bg.img8 .flexslider .flex-control-nav li a.flex-active{background:#924b48;cursor:default}.d20171020-bg{width:100%;min-width:1200px;overflow:hidden}.d20171020-bg.img1{height:739px;background:url("../images/activity/dyf3/img_01.jpg") center top no-repeat;background-size:auto 100%}.d20171020-bg.img2{height:736px;background:url("../images/activity/dyf3/img_02.jpg") center top no-repeat;background-size:auto 100%}.d20171020-bg.img3{height:794px;background:url("../images/activity/dyf3/img_03.jpg") center top no-repeat;background-size:auto 100%}.d20171020-bg.img4{height:710px;background:url("../images/activity/dyf3/img_04.jpg") center top no-repeat;background-size:auto 100%}.d20171020-bg.img5{height:568px;background:url("../images/activity/dyf3/img_05.jpg") center top no-repeat;background-size:auto 100%}.d20171020-bg.img6{height:784px;background:url("../images/activity/dyf3/img_06.jpg") center top no-repeat;background-size:auto 100%}.d20171020-bg.img7{height:690px;background:url("../images/activity/dyf3/img_07.jpg") center top no-repeat;background-size:auto 100%}.d20171020-bg.img7 .title{font-size:28px;color:#a44b49;text-align:center;margin-top:60px}.d20171020-bg.img7 .flexslider{background:none;width:930px;height:540px;margin:20px auto 0}.d20171020-bg.img7 .flexslider .slides{width:100%;height:495px;overflow:hidden}.d20171020-bg.img7 .flexslider .flex-control-nav{bottom:10px}.d20171020-bg.img7 .flexslider .flex-control-nav li a{width:18px;height:18px;border:1px solid #924b48;background:none}.d20171020-bg.img7 .flexslider .flex-control-nav li a.flex-active{background:#924b48;cursor:default}.d20171020-bg.img8{height:571px;background:url("../images/activity/dyf3/img_08.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg{width:100%;min-width:1200px;overflow:hidden}.d20171204-bg.img1{height:253px;background:url("../images/activity/xc/xc_01.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img2{height:543px;background:url("../images/activity/xc/xc_02.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img3{height:682px;background:url("../images/activity/xc/xc_03.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img4{height:509px;background:url("../images/activity/xc/xc_04.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img5{height:329px;background:url("../images/activity/xc/xc_05.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img6{height:676px;background:url("../images/activity/xc/xc_06.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img7{height:588px;background:url("../images/activity/xc/xc_07.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img8{height:747px;background:url("../images/activity/xc/xc_08.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img9{height:690px;background:url("../images/activity/xc/xc_09.jpg") center top no-repeat;background-size:auto 100%}.d20171204-bg.img9 .title{font-size:28px;color:#a44b49;text-align:center;margin-top:60px}.d20171204-bg.img9 .flexslider{background:none;width:930px;height:540px;margin:20px auto 0}.d20171204-bg.img9 .flexslider .slides{width:100%;height:495px;overflow:hidden}.d20171204-bg.img9 .flexslider .flex-control-nav{bottom:10px}.d20171204-bg.img9 .flexslider .flex-control-nav li a{width:18px;height:18px;border:1px solid #924b48;background:none}.d20171204-bg.img9 .flexslider .flex-control-nav li a.flex-active{background:#924b48;cursor:default}.d20171204-bg.img10{height:577px;background:url("../images/activity/xc/xc_10.jpg") center top no-repeat;background-size:auto 100%}
+/*函数文件*/
+/*路径定义*/
+/*网站总宽*/
+.main-width {
+  width: 1200px;
+  min-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*网站主色*/
+/*字体颜色*/
+/*提示颜色*/
+/*失效颜色*/
+/*文字省略*/
+.ellipse {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*样式函数定义*/
+/*
+盒子阴影
+@s 右边阴影为正数 左边负数
+@y 下边阴影为正数 上边负数
+@blur  阴影大小
+@color 阴影颜色
+*/
+/*
+定义圆角
+@radius 圆角大小
+*/
+/*
+文字阴影,可以指定多组阴影
+@right_left1 右边阴影为正数 左边负数
+@bottom_top1 下边阴影为正数 上边负数
+<a href="http://my.oschina.net/text" class="referer" target="_blank">@text</a>  阴影大小
+@text_color 阴影颜色
+*/
+/*
+透明度 或渐变 1为不透明 0透明
+css3 rgba(110, 142, 185, .4)!important;前三个是颜色值 后一个是透明值
+用来兼容所有浏览器
+*/
+/*
+透明背景
+@bg:背景色
+*/
+/*背景渐变
+@drc:渐变方向
+@start  渐变开始颜色
+@end 结束颜色
+*/
+/*
+旋转角度
+IE不支持 滤镜支持0，1，2，3
+*/
+/*背景图*/
+/*
+@url    图片路径
+@r      是否重复(no-repeat)
+@x      背景定位 x 轴
+@y      背景定位 y 轴
+*/
+/*按钮预定义文件*/
+/*
+按钮按下
+@red-dark：鼠标按下背景颜色
+*/
+/*
+.btn-*-full：填充背景的按钮（*表示 red：红色，blue：蓝色）
+@h：按钮高度变量
+通过外部自定义 width 控制按钮宽度
+*/
+/*
+.btn-*-empty：没有背景色（即背景色为白色）的按钮（ * 表示 red：红色，blue：蓝色 ，gray：灰色）
+@h：按钮高度变量
+通过外部自定义 width 控制按钮宽度
+*/
+/*
+失效按钮（禁止点击）
+@h：高度变量
+*/
+/*表单组件（下拉框等）预定义文件*/
+input,
+button {
+  font-size: 14px;
+}
+button {
+  cursor: pointer;
+}
+/*下拉选择框*/
+.select {
+  width: 100%;
+  height: 45px;
+  position: relative;
+  font-size: 14px;
+}
+.select .form-control {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  color: #7f85a3;
+  padding: 0 40px 0 12px;
+  box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(127, 133, 163, 0.53);
+  background: #eff2f9;
+  background: url("../images/icon/select_ico.png") right 20px center no-repeat, linear-gradient(to bottom, #eff2f9, #dbe0ed);
+}
+.select .select-box {
+  position: relative;
+  width: 100%;
+}
+.select .select-box ul {
+  background: #fff;
+  display: none;
+  border-bottom: 1px solid #c3c9d8;
+}
+.select .select-box ul li {
+  width: 100%;
+  height: auto;
+  line-height: 20px;
+  border-top: 1px solid #c3c9d8;
+  color: #7f85a3;
+  padding: 10px 12px;
+  cursor: pointer;
+}
+.select .select-box ul li:hover {
+  background: #eff2f9;
+  color: #7f85a3;
+  border-top-color: #c3c9d8;
+}
+.select .select-box:hover ul {
+  display: block;
+}
+/*input输入框
+@h:输入框高度
+@p:文本框座padding
+*/
+/*20150128 众筹规则与流程*/
+.d6128-tit {
+  background: #ffffff url("../images/activity/sm_02.jpg") center no-repeat;
+  width: auto;
+  height: 150px;
+}
+.d6128-info1 {
+  width: auto;
+  height: auto;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+.d6128-tits {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  color: #4c5374;
+  font-size: 22px;
+  border-bottom: 1px dotted #7f85a3;
+  margin-top: 20px;
+}
+.d6128-tits1 {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  color: #4c5374;
+  font-size: 16px;
+  margin-top: 45px;
+}
+.d6128-txt {
+  font-size: 16px;
+  color: #4c5374;
+  line-height: 24pt;
+  margin-top: 20px;
+}
+.d6128-info2 {
+  width: auto;
+  height: auto;
+  padding-bottom: 50px;
+  background: #fff;
+  overflow: hidden;
+}
+.d6128-info2 .main-width,
+.d6128-info1 .main-width {
+  width: 980px;
+}
+.d6329-tits1 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: #4c5374;
+  font-size: 20px;
+  margin-top: 45px;
+}
+.d6329-txt {
+  font-size: 16px;
+  color: #4c5374;
+  line-height: 24pt;
+}
+.d6329-tits {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #4c5374;
+  border-bottom: 1px dotted #7f85a3;
+}
+.img_w980 {
+  width: 980px;
+  height: auto;
+}
+/*西城御府-房未来*/
+.d20170512-bg {
+  width: 100%;
+  overflow: hidden;
+  min-width: 1300px;
+}
+.d20170512-bg.img1 {
+  height: 1062px;
+  background: url("../images/activity/fel_img_01.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170512-bg.img2 {
+  height: 754px;
+  background: url("../images/activity/fel_img_02.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170512-bg.img3 {
+  height: 541px;
+  background: url("../images/activity/fel_img_03.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+/*武胜东樾府专题页*/
+.d20170810-bg {
+  width: 100%;
+  overflow: hidden;
+  background: #242434;
+  font-weight: lighter;
+}
+.d20170810-bg.img1 {
+  height: 660px;
+  background: url("../images/activity/dyf/dyf_01.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170810-bg.img2 {
+  height: 556px;
+  background: url("../images/activity/dyf/dyf_02.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170810-bg.img3 .content {
+  width: 682px;
+  margin: 30px auto;
+  color: #f1ecd3;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+}
+.d20170810-bg.img4 {
+  height: 615px;
+  background: url("../images/activity/dyf/dyf_04.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170810-bg.img4 .content {
+  width: 853px;
+  height: auto;
+  line-height: 20px;
+  color: #f1ecd3;
+  font-size: 20px;
+  margin: 119px auto 0;
+}
+.d20170810-bg.img4 .content .items {
+  width: 1080px;
+  height: auto;
+}
+.d20170810-bg.img4 .content .item {
+  display: block;
+  width: 381px;
+  height: 83px;
+  line-height: 25px;
+  overflow: hidden;
+  background-color: #242434;
+  float: left;
+  margin-right: 156px;
+  padding: 15px 50px 0 0;
+}
+.d20170810-bg.img5 {
+  height: 636px;
+  background: url("../images/activity/dyf/dyf_05.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170810-bg.img5 .content {
+  width: 853px;
+  height: auto;
+  line-height: 20px;
+  color: #f1ecd3;
+  font-size: 20px;
+  margin: 136px auto 0;
+}
+.d20170810-bg.img5 .content .items {
+  width: 1080px;
+  height: auto;
+}
+.d20170810-bg.img5 .content .item {
+  display: block;
+  width: 381px;
+  height: 80px;
+  line-height: 25px;
+  overflow: hidden;
+  background-color: #242434;
+  float: left;
+  margin-right: 156px;
+  padding: 15px 50px 0 0;
+}
+.d20170810-bg.img6 {
+  height: 340px;
+  background: url("../images/activity/dyf/dyf_06.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170810-bg.img7 {
+  height: 717px;
+  background: url("../images/activity/dyf/dyf_07.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170810-bg.img7 .flexslider {
+  width: 930px;
+  height: 600px;
+  margin: 65px auto 0;
+  background: #242434;
+}
+.d20170810-bg.img7 .flexslider .slides {
+  width: 100%;
+  height: 549px;
+  overflow: hidden;
+}
+.d20170810-bg.img7 .flexslider .flex-control-nav li a {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #924b48;
+  background: none;
+}
+.d20170810-bg.img7 .flexslider .flex-control-nav li a.flex-active {
+  background: #924b48;
+  cursor: default;
+}
+.d20170810-bg.img8 {
+  height: 352px;
+  background: url("../images/activity/dyf/dyf_08.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170810-bg.img9 .content {
+  width: 945px;
+  margin: 40px auto;
+  color: #f1ecd3;
+  font-size: 20px;
+  line-height: 35px;
+  text-indent: 2em;
+}
+.d20170810-bg.img10 {
+  height: 820px;
+  background: url("../images/activity/dyf/dyf_10.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170810-bg.img11 {
+  height: 413px;
+  background: url("../images/activity/dyf/dyf_11.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+/*东樾府活动页*/
+.d20170925-bg {
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+  background: #fff;
+}
+.d20170925-bg.img1 {
+  height: 809px;
+  background: url("../images/activity/dyf2/img_01.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170925-bg.img2 {
+  height: 790px;
+  background: url("../images/activity/dyf2/img_02.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170925-bg.img3 {
+  height: 589px;
+  background: url("../images/activity/dyf2/img_03.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170925-bg.img4 {
+  height: 1023px;
+  background: url("../images/activity/dyf2/img_04.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170925-bg.img5 {
+  height: 822px;
+  background: url("../images/activity/dyf2/img_05.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170925-bg.img6 {
+  height: 1009px;
+  background: url("../images/activity/dyf2/img_06.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170925-bg.img7 {
+  height: 420px;
+  background: url("../images/activity/dyf2/img_07.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170925-bg.img8 {
+  height: 774px;
+  background: url("../images/activity/dyf2/img_08.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20170925-bg.img8 .flexslider {
+  width: 1033px;
+  height: 645px;
+  margin: 33px auto 0;
+}
+.d20170925-bg.img8 .flexslider .slides {
+  width: 100%;
+  height: 575px;
+  overflow: hidden;
+}
+.d20170925-bg.img8 .flexslider .flex-control-nav {
+  bottom: 10px;
+}
+.d20170925-bg.img8 .flexslider .flex-control-nav li a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #924b48;
+  background: none;
+}
+.d20170925-bg.img8 .flexslider .flex-control-nav li a.flex-active {
+  background: #924b48;
+  cursor: default;
+}
+/*东樾府活动页*/
+.d20171020-bg {
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+}
+.d20171020-bg.img1 {
+  height: 739px;
+  background: url("../images/activity/dyf3/img_01.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171020-bg.img2 {
+  height: 736px;
+  background: url("../images/activity/dyf3/img_02.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171020-bg.img3 {
+  height: 794px;
+  background: url("../images/activity/dyf3/img_03.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171020-bg.img4 {
+  height: 710px;
+  background: url("../images/activity/dyf3/img_04.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171020-bg.img5 {
+  height: 568px;
+  background: url("../images/activity/dyf3/img_05.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171020-bg.img6 {
+  height: 784px;
+  background: url("../images/activity/dyf3/img_06.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171020-bg.img7 {
+  height: 690px;
+  background: url("../images/activity/dyf3/img_07.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171020-bg.img7 .title {
+  font-size: 28px;
+  color: #a44b49;
+  text-align: center;
+  margin-top: 60px;
+}
+.d20171020-bg.img7 .flexslider {
+  background: none;
+  width: 930px;
+  height: 540px;
+  margin: 20px auto 0;
+}
+.d20171020-bg.img7 .flexslider .slides {
+  width: 100%;
+  height: 495px;
+  overflow: hidden;
+}
+.d20171020-bg.img7 .flexslider .flex-control-nav {
+  bottom: 10px;
+}
+.d20171020-bg.img7 .flexslider .flex-control-nav li a {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #924b48;
+  background: none;
+}
+.d20171020-bg.img7 .flexslider .flex-control-nav li a.flex-active {
+  background: #924b48;
+  cursor: default;
+}
+.d20171020-bg.img8 {
+  height: 571px;
+  background: url("../images/activity/dyf3/img_08.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+/*西城御府-未来智慧生活家*/
+.d20171204-bg {
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+}
+.d20171204-bg.img1 {
+  height: 253px;
+  background: url("../images/activity/xc/xc_01.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img2 {
+  height: 543px;
+  background: url("../images/activity/xc/xc_02.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img3 {
+  height: 682px;
+  background: url("../images/activity/xc/xc_03.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img4 {
+  height: 509px;
+  background: url("../images/activity/xc/xc_04.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img5 {
+  height: 329px;
+  background: url("../images/activity/xc/xc_05.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img6 {
+  height: 676px;
+  background: url("../images/activity/xc/xc_06.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img7 {
+  height: 588px;
+  background: url("../images/activity/xc/xc_07.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img8 {
+  height: 747px;
+  background: url("../images/activity/xc/xc_08.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img9 {
+  height: 690px;
+  background: url("../images/activity/xc/xc_09.jpg") center top no-repeat;
+  background-size: auto 100%;
+}
+.d20171204-bg.img9 .title {
+  font-size: 28px;
+  color: #a44b49;
+  text-align: center;
+  margin-top: 60px;
+}
+.d20171204-bg.img9 .flexslider {
+  background: none;
+  width: 930px;
+  height: 540px;
+  margin: 20px auto 0;
+}
+.d20171204-bg.img9 .flexslider .slides {
+  width: 100%;
+  height: 495px;
+  overflow: hidden;
+}
+.d20171204-bg.img9 .flexslider .flex-control-nav {
+  bottom: 10px;
+}
+.d20171204-bg.img9 .flexslider .flex-control-nav li a {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #924b48;
+  background: none;
+}
+.d20171204-bg.img9 .flexslider .flex-control-nav li a.flex-active {
+  background: #924b48;
+  cursor: default;
+}
+.d20171204-bg.img10 {
+  height: 577px;
+  background: url("../images/activity/xc/xc_10.jpg") center top no-repeat;
+  background-size: auto 100%;
+}

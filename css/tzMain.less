@@ -44,44 +44,52 @@
         float: left;
         display:block;
         margin-top:22px;
-        .wh(140px,140px);
-        border:1px solid @gray-border2;
+        .wh(140px,auto);
         margin-right:30px;
-        .round(11px);
         overflow: hidden;
         cursor: pointer;
 
         .img{
-          .wh(100%,100%);
-          overflow: hidden;
-          position: absolute;
-          top:0;
-          left: 0;
-          transition: 0.6s;
-          transform-style: preserve-3d;
-          backface-visibility: hidden;
+          .wh(100%,auto);
+          border:1px solid @gray-border2;
+          .round(11px);
         }
 
-        .pre{
-          z-index: 2;
-          transform: rotateY(0deg);
-        }
-        .after{
-          transform: rotateY(180deg);
-        }
-
-        &.active{
-          .pre{
-            transform: rotateY(180deg);
-          }
-          .after{
-            transform: rotateY(0deg);
-          }
+        .tit{
+          text-align: center;
+          color:#fff;
+          font-size:14px;
+          margin-top:10px;
         }
 
-        /*&:hover{
-          .active;
-        }*/
+        //翻转
+        //.img{
+        //  .wh(100%,100%);
+        //  overflow: hidden;
+        //  position: absolute;
+        //  top:0;
+        //  left: 0;
+        //  transition: 0.6s;
+        //  transform-style: preserve-3d;
+        //  backface-visibility: hidden;
+        //}
+
+        //.pre{
+        //  z-index: 2;
+        //  transform: rotateY(0deg);
+        //}
+        //.after{
+        //  transform: rotateY(180deg);
+        //}
+        //
+        //&.active{
+        //  .pre{
+        //    transform: rotateY(180deg);
+        //  }
+        //  .after{
+        //    transform: rotateY(0deg);
+        //  }
+        //}
       }
     }
   }
