@@ -622,76 +622,144 @@
   .textarea {
     margin-top: 18px;
     .textarea();
-    width: 554px;
+    width: 1132px;
+    height:159px;
     margin-left: 35px;
   }
 
-  .pay-type-wrap {
-    .wh(1132px, auto);
-    margin: 42px auto 0;
-  }
+  //.pay-type-wrap {
+  //  .wh(1132px, auto);
+  //  margin: 42px auto 0;
+  //}
+  //
+  //.pay-list {
+  //  margin-top: 28px;
+  //  li {
+  //    &.bank-icon{
+  //      display:block;line-height:69px;border:1px solid #c3cad8;.round();
+  //      a{display:block;height:100%;}
+  //    }
+  //
+  //    position: relative;
+  //    .wh(166px, 69px);
+  //    float: left;;
+  //    .round(5px);
+  //    margin-top: 10px;
+  //    margin-right: 17px;
+  //    overflow: hidden;
+  //    &.active {
+  //      border: 2px solid @red;
+  //      .box-shadow(0, 5px, 4px 0, #c3cad8);
+  //      .icon-suc {
+  //        display: block;
+  //      }
+  //      img {
+  //        margin-left: -2px;
+  //        margin-top: -2px;
+  //      }
+  //      &:hover {
+  //        border: solid 2px @red;
+  //        img {
+  //          margin-left: -2px;
+  //          margin-top: -2px;
+  //        }
+  //      }
+  //
+  //      &.bank-icon{
+  //        a{
+  //          margin-left: -1px;
+  //          margin-top: -1px;
+  //        }
+  //      }
+  //    }
+  //
+  //    &:hover {
+  //      border: 1px solid @red;
+  //      .box-shadow(0, 5px, 4px 0, #c3cad8);
+  //      img {
+  //        margin-left: -1px;
+  //        margin-top: -1px;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //.rule-box {
+  //  text-align: center;
+  //}
 
-  .pay-list {
-    margin-top: 28px;
-    li {
-      &.bank-icon{
-        display:block;line-height:69px;border:1px solid #c3cad8;.round();
-        a{display:block;height:100%;}
+  .tz-door{
+    overflow: hidden;
+    width:1132px;
+    margin:0 auto;
+
+    .dz-door-list{
+      width:1192px;
+      .item{
+        margin-top:49px;
+        .wh(240px,auto);
+        margin-right:58px;
+        float: left;
       }
 
-      position: relative;
-      .wh(166px, 69px);
-      float: left;;
-      .round(5px);
-      margin-top: 10px;
-      margin-right: 17px;
-      overflow: hidden;
-      &.active {
-        border: 2px solid @red;
-        .box-shadow(0, 5px, 4px 0, #c3cad8);
-        .icon-suc {
-          display: block;
-        }
-        img {
-          margin-left: -2px;
-          margin-top: -2px;
-        }
-        &:hover {
-          border: solid 2px @red;
-          img {
-            margin-left: -2px;
-            margin-top: -2px;
-          }
-        }
+      .img-box{
+        .wh(100%,170px,170px);
+        overflow: hidden;
+        background: #000;
 
-        &.bank-icon{
-          a{
-            margin-left: -1px;
-            margin-top: -1px;
-          }
+        .img{
+          width:100%;
+          vertical-align: middle;
         }
       }
 
-      &:hover {
-        border: 1px solid @red;
-        .box-shadow(0, 5px, 4px 0, #c3cad8);
-        img {
-          margin-left: -1px;
-          margin-top: -1px;
+      .txt{
+        .wh(100%,30px,30px);
+        .ellipse;
+        padding: 0 10px;
+        color:#fff;
+        background: #000;
+      }
+
+      .count{
+        .wh(100%,56px,56px);
+        font-size:12px;
+        color: @gray;
+        text-align: center;
+
+        .icon{
+          background: url("../images/icon/thumbs.png") left center no-repeat;
+          padding:20px 0 20px 20px;
+        }
+      }
+
+      .radio-check{
+        display:block;
+        margin:0 auto;
+        .wh(24px,24px);
+        .round(50%);
+        border: solid 1px #7f85a3;
+        .check{display: none;}
+        .radio{
+          .wh(12px,12px);
+          margin:5px;
+          .round(50%);
+          background: #fff;
+        }
+
+        .check:checked+.radio{
+          background:@red;
         }
       }
     }
   }
 
-  .rule-box {
-    text-align: center;
-  }
   .order-btn {
     .btn-red-full();
     width: 326px;
     .textshadow(0, -1px, 0, #dc4144);
     font-size: 16px;
-    margin: 28px auto 156px;
+    margin: 28px auto 90px;
   }
 }
 .single-title {
