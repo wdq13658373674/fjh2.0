@@ -85,7 +85,7 @@
     width: 1220px;
   }
 
-  .dz-house-list {
+  /*.dz-house-list {
     .wh(386px, 527px);
     display: block;
     float: left;
@@ -173,6 +173,118 @@
         color: @txt-black;
       }
     }
+  }*/
+
+  .dz-house-list {
+    .wh(1200px, 445px);
+    display: block;
+    float: left;
+    margin-top: 40px;
+    border: 1px solid @gray-border;
+    position: relative;
+    margin-right: 20px;
+    &:hover {
+      border-color: @red;
+      .box-shadow(0px, 8px, 8px, #E8E8E8);
+      .transition(0.3s);
+    }
+
+    .dz-left-box {
+      .wh(650px, 365px);
+      margin:40px 0px 0px 40px;
+      overflow: hidden;
+      position: relative;
+      .img {
+        .wh(100%, 100%);
+        overflow: hidden;
+      }
+    }
+
+    .dz-right-box {
+      .wh(442px, 365px);
+      margin:40px 40px 0px 0px;
+      .dz-title {
+        .wh(100%, 40px);
+        font-size: 18px;
+        color: @txt-black;
+        .ellipse;
+      }
+
+      .text-box{
+        height:160px;
+        overflow: hidden;
+      }
+      .text {
+        .wh(100%, 40px, 40px);
+        padding:0 15px;
+        color: @gray;
+        .ellipse;
+
+        .ml15{
+          margin-right:15px;
+        }
+        &:nth-child(even){
+          background: #dbe0ed;
+        }
+        &:nth-child(odd){
+          background: #eff2f9;
+        }
+      }
+
+      .desc-list {
+        margin-bottom: 16px;
+        .wh(100%, 40px);
+        overflow: hidden;
+        span {
+          float: left;
+          color: @blue;
+          font-size: 12px;
+          display: block;
+          height: 29px;
+          line-height: 27px;
+          padding: 0 10px;
+          margin-right: 10px;
+          border: 1px solid @blue;
+          .round(4px);
+        }
+      }
+
+      .bottom-box {
+        .wh(100%, 61px, 61px);
+        color: @gray;
+        font-size: 12px;
+        .icon {
+          display: inline-block;
+          .wh(29px, 100%);
+          margin-right: 9px;
+          float: left;
+          &.address {
+            background: url("../images/icon/main_ico1.png") left center no-repeat;
+            background-size: 100% auto;
+          }
+          &.thumbs {
+            background: url("../images/icon/main_ico2.png") left center no-repeat;
+            background-size: 100% auto;
+          }
+        }
+        .txt {
+          float: left;
+          display: block;
+          margin-right: 28px;
+          max-width: 35%;
+          .ellipse;
+        }
+      }
+      .black {
+        color: @txt-black;
+      }
+
+      .h-btn{
+        display:block;
+        width:173px;
+        .btn-red-full()
+      }
+    }
   }
 }
 
@@ -186,7 +298,7 @@ mark4:签约成功
   display: block;
   .wh(120px, 120px);
   position: absolute;
-  bottom: 15px;
+  top: 15px;
   right: 15px;
   z-index: 999;
   &.mark0 {
