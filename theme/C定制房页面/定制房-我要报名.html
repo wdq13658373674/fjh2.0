@@ -446,11 +446,75 @@
     </div>
 </div>
 
+<!--弹窗-->
+<div class="wy-wrap">
+    <div class="wy-layer">
+        <div class="tit">
+            <span class="wy-line l"></span>
+            请选择物业类型
+            <span class="wy-line r"></span>
+        </div>
+        <div class="wy-list clear">
+            <a href="dz-house.html" class="item">
+                <div class="img">
+                    <img src="../../images/house/wy1.png" alt="">
+                </div>
+                <p class="txt">高层</p>
+            </a>
+            <a href="#" class="item">
+                <div class="img">
+                    <img src="../../images/house/wy2.png" alt="">
+                </div>
+                <p class="txt">洋房</p>
+            </a>
+            <a href="#" class="item">
+                <div class="img">
+                    <img src="../../images/house/wy3.png" alt="">
+                </div>
+                <p class="txt">商业</p>
+            </a>
+            <a href="#" class="item">
+                <div class="img">
+                    <img src="../../images/house/wy4.png" alt="">
+                </div>
+                <p class="txt">车位</p>
+            </a>
+        </div>
+        <button class="wy-btn">确定</button>
+    </div>
+</div>
+
 <!--footer-->
 <iframe src="../footer.html" frameborder="0" marginheight="0" scrolling="no" marginwidth="0"
         style="width:100%;height:244px;"></iframe>
 
 <script type="text/javascript" src="../../js/addons/flexSlider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="../../js/public/house.js"></script>
+<script src="../../js/addons/layer/layer.js" type="text/javascript"></script>
+<script>
+    $(function(){
+        //弹窗
+        $('.dz-reg-wrap').click(wy_layer);
+
+        var pub_html='';
+        function wy_layer(){
+            var dom=$('.wy-wrap');
+            if(dom.length>0){
+                pub_html=dom.html()
+            }
+            dom.remove();
+
+            layer.open({
+                type: 1,
+                title: false,
+                resize: false,
+                closeBtn: false,
+                area: ['655px', '425px'],
+                shadeClose: true,
+                content: pub_html
+            });
+        }
+    })
+</script>
 </body>
 </html>

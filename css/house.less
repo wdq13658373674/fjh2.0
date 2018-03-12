@@ -249,7 +249,7 @@
   .right-box {
     .wh(377px, auto);
     .top-box {
-      .wh(100%, 442px);
+      .wh(100%, 268px);
       background: #ffffff;
       overflow: hidden;
       .house-title {
@@ -262,7 +262,7 @@
       /*描述列表*/
       .desc-list {
         .wh(325px, 29px);
-        margin: 0 auto 20px;
+        margin: 0 auto 10px;
         span {
           float: left;
         }
@@ -295,14 +295,14 @@
       }
 
       .detail{.wh(325px, auto);
-        margin: 15px auto;}
+        margin: 10px auto;}
     }
 
     .bottom-box {
-      .wh(100%, 138px);
+      .wh(100%, 312px);
       background: #ffffff;
       margin-top: 25px;
-      padding-top: 17px;
+      overflow: hidden;
       .icon {
         position: relative;
         .wh(23px, 34px);
@@ -320,41 +320,62 @@
             }
           }
         }
+        //&.th-mark {
+        //  background: url("../images/icon/th_ico.png") center no-repeat;
+        //  background-size: 100% auto;
+        //  &:hover {
+        //    .float-phone {
+        //      display: block;
+        //    }
+        //  }
+        //}
+      }
+      //.float-phone {
+      //  display: none;
+      //  min-width: 200px;
+      //  line-height: 20px;
+      //  background: #ffffff;
+      //  color: @txt-black;
+      //  font-size: 12px;
+      //  position: absolute;
+      //  bottom: 30px;
+      //  left: 50%;
+      //  margin-left: -100px;
+      //  padding: 11px 14px 11px 15px;
+      //  .box-shadow(0, 1px, 7px 0, #c3cad8);
+      //}
 
-        &.th-mark {
-          background: url("../images/icon/th_ico.png") center no-repeat;
-          background-size: 100% auto;
-          &:hover {
-            .float-phone {
-              display: block;
-            }
+      .text-box{
+        .wh(326px,160px);
+        overflow: hidden;
+        margin: 25px auto 0;
+        .text {
+          .wh(100%, 40px, 40px);
+          padding:0 15px;
+          color: @gray;
+          .ellipse;
+
+          .ml15{
+            margin-right:15px;
+          }
+          &:nth-child(even){
+            background: #dbe0ed;
+          }
+          &:nth-child(odd){
+            background: #eff2f9;
           }
         }
-      }
-      .float-phone {
-        display: none;
-        min-width: 200px;
-        line-height: 20px;
-        background: #ffffff;
-        color: @txt-black;
-        font-size: 12px;
-        position: absolute;
-        bottom: 30px;
-        left: 50%;
-        margin-left: -100px;
-        padding: 11px 14px 11px 15px;
-        .box-shadow(0, 1px, 7px 0, #c3cad8);
       }
 
       .price {
         .wh(326px, 32px, 32px);
-        margin: 0 auto;
+        margin: 10px auto 0;
         position: relative;
       }
       .dz-btn {
         .btn-red-full();
         width: 326px;
-        margin: 25px auto 0;
+        margin: 16px auto 0;
         font-size: 16px;
       }
       .btn-disabled {
@@ -763,6 +784,83 @@
     margin: 28px auto 90px;
   }
 }
+
+.wy-layer{
+  overflow: hidden;
+  .tit{
+    height:24px;
+    font-size: 16px;
+    margin-top:45px;
+    text-align: center;
+    position:relative;
+
+    .wy-line{
+      position: absolute;
+      top:0;
+      display:block;
+      .wh(103px,12px);
+      border-bottom: solid 1px #c3c9d8;
+
+      &.l{
+        left:147px;
+      }
+
+      &.r{
+        right:147px;
+      }
+    }
+  }
+
+  .wy-list{
+    .wh(604px,auto);
+    margin-top:53px;
+    font-size:16px;
+    margin-left:39px;
+
+    .item{
+      .wh(124px,auto);
+      float: left;
+      margin-right:27px;
+      cursor: pointer;
+
+      .img{
+        .wh(124px,124px,124px);
+        overflow: hidden;
+        text-align: center;
+        .round(50%);
+        border: solid 1px #7f85a3;
+      }
+
+      .txt{
+        .wh(80px,34px,34px);
+        text-align: center;
+        .round(16px);
+        margin:10px auto 0;
+      }
+
+      &:hover{
+        .txt{
+          background: @red;
+          color:#fff;
+        }
+
+        .img{
+          .wh(124px,124px,118px);
+          border:4px solid @red;
+        }
+      }
+    }
+  }
+
+  .wy-btn {
+    .btn-red-full();
+    width: 326px;
+    .textshadow(0, -1px, 0, #dc4144);
+    font-size: 16px;
+    margin: 53px auto 0px;
+  }
+}
+
 .single-title {
   margin: 48px 0 0 35px;
 }
