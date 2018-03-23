@@ -210,6 +210,18 @@
         .ellipse;
       }
 
+      .dz-hr{.wh(235px,22px); border-bottom: 1px solid #dae0ec; margin: 0 auto; margin-bottom: 22px; text-align: center;
+        .hr-txt{
+          .wh(112px,22px,22px);
+          font-size: 14px;
+          font-weight: bold;
+          color: #8085a5;
+          background: #fff;
+          margin: 0 auto;
+          position: relative;
+          top:11px;}
+      }
+
       .text-box{
         height:160px;
         overflow: hidden;
@@ -222,12 +234,14 @@
           .ml15{
             margin-right:15px;
           }
-          &:nth-child(even){
-            background: #dbe0ed;
-          }
-          &:nth-child(odd){
-            background: #eff2f9;
-          }
+          background: #eff2f9;
+          border-bottom: 1px solid #fff;
+          //&:nth-child(even){
+          //  background: #dbe0ed;
+          //}
+          //&:nth-child(odd){
+          //  background: #eff2f9;
+          //}
         }
       }
 
@@ -250,13 +264,16 @@
       }
 
       .bottom-box {
-        .wh(100%, 61px, 61px);
+        padding-left: 10px;
+        .wh(268px, 61px, 61px);
         color: @gray;
         font-size: 12px;
+        margin-top: 11px;
+        .box-left{width: 122px; height: 61px}
         .icon {
           display: inline-block;
-          .wh(29px, 100%);
-          margin-right: 9px;
+          .wh(25px, 100%);
+          margin-right: 5px;
           float: left;
           &.address {
             background: url("../images/icon/main_ico1.png") left center no-repeat;
@@ -270,8 +287,8 @@
         .txt {
           float: left;
           display: block;
-          margin-right: 28px;
-          max-width: 35%;
+          //margin-right: 28px;
+          //max-width: 35%;
           .ellipse;
         }
       }
