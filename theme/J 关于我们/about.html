@@ -161,7 +161,7 @@
             </a>
         </div>
 
-        <img data-kui-anim="fadeInDown" class="img img1" src="../../images/about/img5_1.png" alt="">
+        <img data-kui-anim="bounceInDown" class="img img1" src="../../images/about/img5_1.png" alt="">
         <img data-kui-anim="fadeInLeft" class="img img2 delay20" src="../../images/about/img5_2.png" alt="">
         <img data-kui-anim="zoomIn" class="img img3 delay40" src="../../images/about/img5_3.png" alt="">
         <img data-kui-anim="fadeInRight" class="img img4 delay60" src="../../images/about/img5_4.png" alt="">
@@ -250,6 +250,7 @@
 </script>
 <script>
     $(function(){
+        /*案例swiper*/
         var pagination=$('.case-pagination .item');
         var mySwiper = new Swiper('.case-swiper', {
             // autoplay: 2000,
@@ -265,7 +266,6 @@
                 pagination.eq(current).addClass('active').siblings().removeClass('active');
             }
         })
-
         pagination.hover(function(){
             var inx = $(this).index();
             $(this).addClass('active').siblings().removeClass('active');
@@ -275,6 +275,7 @@
             mySwiper.startAutoplay();
         })
 
+        /*定制生活swiper*/
         var mySwiper2 = new Swiper ('.life-swiper', {
             autoplay: 2000,
             effect : 'fade',
@@ -283,6 +284,7 @@
             },
         })
 
+        /*图片放大*/
         var close=$('.close');
         $('#imgList .item').click(function(){
             $(this).addClass('active');
