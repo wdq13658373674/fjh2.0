@@ -44,7 +44,7 @@
   }
 
   .text{
-    margin-top:69px;
+    margin-top:38px;
     .wh(548px,auto);
     color:#565f65;
   }
@@ -116,6 +116,7 @@
 
   .case-swiper{
     position: relative;
+    margin-top:30px;
 
     .swiper-slide{
       height:540px;
@@ -124,17 +125,26 @@
       float:right;
       .wh(422px,auto);
       .p1{
-        margin-top:300px;
+        margin-top:230px;
         font-size:35px;
         color:#5e5e5d;
       }
-      .p2{
-        font-size:16px;
-        line-height:24px;
-        color:#646464;
-        margin-top:30px;
+    }
+    .content-msg{
+      margin-top:30px;
+      .p{
+        font-size:14px;
+        margin-top:15px;
+        color:#5e5e5d;
+        span{
+          display: inline-block;
+          width:64px;
+          color:#a4a4a3;
+          margin-right:10px;
+        }
       }
     }
+
     .data{
       position:absolute;
     }
@@ -197,9 +207,11 @@
   .wh(100%,896px);
   min-width:1200px;
   position: relative;
+  border-top:0;
 
   .message{
-    .wh(50%,100%);
+    border-top:6px solid #fff;
+    .wh(60%,100%);
     background:#22272a url("../images/about/bg2.jpg") top right no-repeat;
     background-size: auto 896px;
   }
@@ -238,20 +250,19 @@
   .img-list{
     width:50%;
     float: right;
-    margin-top:-5px;
     .item {
-      .wh(33.3%, 445px, 445px);
+      .wh(33.3%, 451px, 445px);
       background: #22272a;
-      border-left:5px solid #fff;
-      border-top:5px solid #fff;
+      border-left:6px solid #fff;
+      border-top:6px solid #fff;
       float:left;
       .transition(.4s);
+      overflow: hidden;
+      cursor: pointer;
 
       &:hover{
         .img-box{
-          .img{
-            transform: scale(1.5);
-          }
+          transform: scale(1.1);
         }
       }
 
@@ -268,11 +279,11 @@
       .wh(100%,100%);
       text-align: center;
       overflow: hidden;
+      .transition(.5s);
 
       .img{
         max-height: 100%;
         max-width: 100%;
-        .transition(.5s);
       }
     }
   }
@@ -334,7 +345,7 @@
     position: absolute;
 
     &.img1{
-      top:0;
+      top:0px;
       right:170px;
     }
 
