@@ -83,15 +83,21 @@
   }
 
   .hotel-column{
-    .wh(auto, 675px);
+    .wh(100%, 675px);
     .hotel-body{
       float: left;
-      .wh(808px, auto);
-      padding: 317px 80px 123px 364px;
+      .wh(43%, 675px);
+      position: relative;
       background: url("../images/property/hotel-bg.png");
+      .hotel-body-animat{
+        .wh(382px, auto);
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+      }
     }
     .hotel-animat{
-      .wh(1095px, auto);
+      .wh(57%, 675px);
       float: left;
       position: relative;
       .img{
@@ -192,14 +198,22 @@
   }
 
   .column-four{
+    .wh(100%, 758px);
     margin-top: 235px;
     .left{
       overflow: hidden;
+      .wh(52%, 758px);
       float: left;
-      padding-left: 366px;
-      padding-top: 506px;
+      position: relative;
+      .left-animat{
+        position: absolute;
+        .wh(530px, auto);
+        right: 7%;
+        bottom: 5%;
+      }
     }
     .right{
+      .wh(48%, 758px);
       float: right;
       z-index: 999;
     }
@@ -243,7 +257,7 @@
         }
         .jump{
           display: inline-block;
-          margin-top: 45px;
+          margin-top: 65px;
           margin-left: 200px;
           animation-duration:2s;
           p{
