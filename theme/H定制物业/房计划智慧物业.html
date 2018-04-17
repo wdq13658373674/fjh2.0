@@ -37,9 +37,9 @@
                 <li><a href="javascript:void(0);">3</a></li>
             </ul>
             <ul class="slider">
-                <li class="at"><img src="../../images/property/fl_img01.png" alt=""></li>
-                <li><img src="../../images/property/fl_img02.png" alt=""></li>
-                <li><img src="../../images/property/fl_img03.png" alt=""></li>
+                <li class="at animated fadeIn"><img src="../../images/property/fl_img01.png" alt=""></li>
+                <li class="animated fadeIn"><img src="../../images/property/fl_img02.png" alt=""></li>
+                <li class="animated fadeIn"><img src="../../images/property/fl_img03.png" alt=""></li>
             </ul>
         </div>
         <div class="property-body">
@@ -175,7 +175,7 @@
             <div class="diamond"></div>
             <div class="phone">
                 <div class="phone-gj">
-                    <p class="column-message wow animated fadeInRight">“金牌管家”定制服务</p>
+                    <p class="column-message wow animated fadeInRight">"金牌管家"定制服务</p>
                     <p class="column-english wow animated fadeIn">
                         <img src="../../images/property/custom-service.png" alt="">
                     </p>
@@ -184,7 +184,6 @@
                     </div>
                     <a class="jump wow animated bounce" href="javascript:void(0);">
                         <img src="../../images/property/phone-point.png" alt="">
-                        <p>点击进入定制服务</p>
                     </a>
                 </div>
 
@@ -262,15 +261,15 @@
             //当鼠标进去当前li
             $(this).on('mouseenter',function() {
                 //设置当前元素宽度
-                $(this).stop().animate({ "height": "574px" }, 500, "linear")
+                $(this).stop().animate({ "height": "574px" }, 200, "linear")
                 //设置同胞元素宽度
                     .siblings().stop()
-                    .animate({ "height": "50px" }, 500, "linear");
+                    .animate({ "height": "50px" }, 200, "linear");
             });
         });
 
         $(".hotel-animat").on("mouseout", function(){
-            $(this).find(".img").stop().animate({"height": "225px"}, 500, "linear")
+            $(this).find(".img").stop().animate({"height": "225px"}, 100, "linear")
         });
 
         /*点击切换*/
