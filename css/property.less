@@ -33,6 +33,299 @@
       animation-duration:3s;
     }
   }
+
+  .property-column{
+    .wh(1920px, 665px);
+    padding: 96px 360px 120px 366px;
+    background: url("../images/property/propertybg1.png");
+    position: relative;
+    .flash{
+      .wh(493px, 475px);
+      position: relative;
+      float: left;
+      .position{
+        position: absolute;
+        .wh(168px, auto);
+        .active{
+          border-bottom: 3px solid #c99a49;
+        }
+        li{
+          border-bottom: 3px solid rgba(0,0,0,0);
+          margin-top: 10px;
+          padding: 6px 0;
+        }
+        a{
+          display: block;
+        }
+      }
+
+      .slider{
+        li{
+          display: none;
+        }
+        .at{
+          display: block;
+        }
+      }
+    }
+    .property-body{
+      position: relative;
+      .wh(606px, auto);
+      float: right;
+    }
+    .line-vertical{
+      .wh(4px, 225px);
+      position: absolute;
+      background: url("../images/property/line-vertical.png") no-repeat;
+      right: -60px;
+      bottom: 0;
+    }
+  }
+
+  .hotel-column{
+    .wh(auto, 675px);
+    .hotel-body{
+      float: left;
+      .wh(808px, auto);
+      padding: 317px 80px 123px 364px;
+      background: url("../images/property/hotel-bg.png");
+    }
+    .hotel-animat{
+      .wh(1095px, auto);
+      float: left;
+      position: relative;
+      .img{
+        width: 100%;
+        height: 225px;
+      }
+      .img1{
+        background: url("../images/property/hotel-big-img3.png") no-repeat left 50%;
+      }
+      .img2{
+        background: url("../images/property/hotel-big-img1.png") no-repeat left 50%;
+      }
+      .img3{
+        background: url("../images/property/hotel-big-img2.png") no-repeat left 50%;
+      }
+    }
+  }
+  .server-column{
+    background: url("../images/property/propertybg1.png");
+    .server-body{
+      padding-top: 115px;
+      .wh(410px, auto);
+      margin: 0 auto;
+      text-align: center;
+      .column-txt{
+        p{
+          margin-top: 0;
+          &:first-child{
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+    .server-img{
+      img{
+        margin-top: 58px;
+        margin-left: 547px;
+      }
+    }
+    .point{
+      .wh(auto, 228px);
+      background: url("../images/property/jiantou.png") no-repeat;
+    }
+  }
+
+  .heart-column{
+    background: url("../images/property/propertybg1.png");
+    .column-one{
+      .wh(543px, auto);
+      margin: 44px auto 0 auto;
+      text-align: center;
+    }
+    .heart-list{
+      .wh(1003px, auto);
+      margin: 74px auto 0 auto;
+      .heart-icon{
+        .wh(156px, 156px);
+        float: left;
+        margin-left: 55px;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+      .heart-love{
+        background: url("../images/property/heart-love.png") no-repeat;
+      }
+      .heart-confidence{
+        background: url("../images/property/heart-confidence.png") no-repeat;
+      }
+      .heart-careful{
+        background: url("../images/property/heart-careful.png") no-repeat;
+      }
+      .heart-patience{
+        background: url("../images/property/heart-patience.png") no-repeat;
+      }
+      .heart-Perseverance{
+        background: url("../images/property/heart-Perseverance.png") no-repeat;
+      }
+    }
+    .column-two{
+      .wh(553px, auto);
+      margin: 44px auto 0 auto;
+      text-align: center;
+    }
+    .img{
+      margin-top: 60px;
+      text-align: center;
+      img{
+        text-align: center;
+      }
+    }
+
+    .column-three{
+      margin-top: 160px;
+      .wh(874px, auto);
+      text-align: center;
+    }
+  }
+
+  .column-four{
+    margin-top: 235px;
+    .left{
+      float: left;
+      padding-left: 366px;
+      padding-top: 506px;
+    }
+    .right{
+      float: right;
+    }
+  }
+
+  .phone-column{
+    padding-top: 246px;
+    padding-bottom: 94px;
+    background: url("../images/property/propertybg1.png");
+    position: relative;
+    .diamond{
+      position: absolute;
+      .wh(735px, 1091px);
+      background: #f2e9db;
+      top: 494px;
+      left: 0;
+    }
+    .phone{
+      position: relative;
+      margin: 0 auto;
+      .wh(846px, 1583px);
+      background: url("../images/property/phone.png") no-repeat;
+
+      .phone-gj{
+        display: block;
+        overflow: hidden;
+        padding-top: 395px;
+        position: absolute;
+        .wh(609px, 1082px);
+        left: 117px;
+        top: 251px;
+        border-radius: 2px;
+        background-color: #f2e9db;
+        text-align: center;
+        .column-txt{
+          .wh(471px, auto);
+          margin: 0 auto;
+          p{
+            text-align: left;
+          }
+        }
+        .jump{
+          display: inline-block;
+          margin-top: 45px;
+          margin-left: 200px;
+          animation-duration:2s;
+          p{
+            margin-top: 10px;
+          }
+        }
+      }
+      .phone-dz{
+        display: none;
+        overflow: hidden;
+        padding-top: 73px;
+        position: absolute;
+        .wh(609px, 1082px);
+        left: 117px;
+        top: 251px;
+        border-radius: 2px;
+        background: url("../images/property/dzwy.png") no-repeat;
+        .phone-time{
+          text-align: center;
+          color: #7e7f85;
+        }
+        .talk{
+          position: absolute;
+        }
+        .talk-1{
+          margin-top: 10px;
+          right: 0;
+        }
+        .phone-time2{
+          text-align: center;
+          color: #c99a49;
+          margin-top: 469px;
+          display: none;
+        }
+        .talk-2,.talk-3,.talk-4,.talk-5{
+          left: 0;
+        }
+        .talk-2{
+          top: 276px;
+        }
+        .talk-3{
+          top: 405px;
+        }
+        .talk-4{
+          top: 611px;
+        }
+        .talk-5{
+          top: 759px;
+        }
+      }
+
+    }
+  }
+
+  .column-title{
+    display: inline-block;
+    .wh(139px, 32px, 32px);
+    text-align: center;
+    background-color: #c99a49;
+    font-size: 20px;
+    color: #fff;
+  }
+  .column-message{
+    margin-top: 26px;
+    font-size: 47px;
+    font-weight: bold;
+    color: #000;
+    animation-duration:1s;
+  }
+  .column-english{
+    margin-top: 24px;
+    animation-duration:5s;
+  }
+  .column-txt{
+    font-size: 14px;
+    line-height: 20px;
+    p{
+      margin-top: 26px;
+      animation-duration:2s;
+    }
+  }
+
+
+
   //.text-box{
   //  .wh(605px,auto);
   //  overflow: hidden;
