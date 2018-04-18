@@ -1,7 +1,7 @@
 @import "../cssControl/control";
 
 .about{
-  .wh(100%,896px);
+  .wh(100%,auto);
   min-width: 1200px;
   overflow: hidden;
   border-top:6px solid #fff;
@@ -107,7 +107,8 @@
 }
 
 .about-case{
-  background: url("../images/about/bg6.png") top center no-repeat;
+  //background:#e5e5e5 url("../images/about/bg6.png") top center no-repeat;
+  background:#e5e5e5;
   background-size: auto 900px;
 
   .p1{
@@ -117,13 +118,16 @@
   .case-swiper{
     position: relative;
     margin-top:30px;
+    margin-bottom:100px;
+    overflow: hidden;
 
     .swiper-slide{
       height:540px;
+      margin-bottom:100px;
     }
     .con{
       float:right;
-      .wh(422px,auto);
+      .wh(380px,auto);
       .p1{
         margin-top:230px;
         font-size:35px;
@@ -361,7 +365,7 @@
 
     &.img4{
       bottom:0;
-      right:-300px;
+      right:0;
     }
   }
 }
