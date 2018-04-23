@@ -62,38 +62,46 @@
             </a>
         </div>
     </div>
-    <ul class="img-list pull-right" id="imgList">
-        <li class="item">
-            <div class="img-box">
-                <img src="../../images/about/type1.jpg" class="img" alt="">
-            </div>
-        </li>
-        <li class="item">
-            <div class="img-box">
-                <img src="../../images/about/type2.jpg" class="img" alt="">
-            </div>
-        </li>
-        <li class="item">
-            <div class="img-box">
-                <img src="../../images/about/type3.jpg" class="img" alt="">
-            </div>
-        </li>
-        <li class="item">
-            <div class="img-box">
-                <img src="../../images/about/type4.jpg" class="img" alt="">
-            </div>
-        </li>
-        <li class="item">
-            <div class="img-box">
-                <img src="../../images/about/type5.jpg" class="img" alt="">
-            </div>
-        </li>
-        <li class="item">
-            <div class="img-box">
-                <img src="../../images/about/type6.jpg" class="img" alt="">
-            </div>
-        </li>
-    </ul>
+
+    <div class="img-list pull-right">
+        <ul id="imgList" class="clear">
+            <li class="item">
+                <div class="img-box">
+                    <img data-src="../../images/about/large1.jpg" src="../../images/about/type1.jpg" class="img" alt="">
+                </div>
+            </li>
+            <li class="item">
+                <div class="img-box">
+                    <img data-src="../../images/about/large2.jpg" src="../../images/about/type2.jpg" class="img" alt="">
+                </div>
+            </li>
+            <li class="item">
+                <div class="img-box">
+                    <img data-src="../../images/about/large3.jpg" src="../../images/about/type3.jpg" class="img" alt="">
+                </div>
+            </li>
+            <li class="item">
+                <div class="img-box">
+                    <img data-src="../../images/about/large4.jpg" src="../../images/about/type4.jpg" class="img" alt="">
+                </div>
+            </li>
+            <li class="item">
+                <div class="img-box">
+                    <img data-src="../../images/about/large5.jpg" src="../../images/about/type5.jpg" class="img" alt="">
+                </div>
+            </li>
+            <li class="item">
+                <div class="img-box">
+                    <img data-src="../../images/about/large6.jpg" src="../../images/about/type6.jpg" class="img" alt="">
+                </div>
+            </li>
+        </ul>
+
+        <div class="large-img">
+            <img src="../../images/about/large1.jpg" alt="">
+        </div>
+    </div>
+
     <div class="close">
         <img src="../../images/icon/layer_close.png" alt="">
     </div>
@@ -309,15 +317,44 @@
             },
         })
 
-        /*图片放大*/
+        /*户型图放大查看*/
         var close=$('.close');
         $('#imgList .item').click(function(){
-            $(this).addClass('active');
+            var self=$(this);
+            var inx=self.index();
+
+            var w=self.outerWidth()+2
+                ,y=parseInt(-inx/3) * 467
+                ,x=-inx%3 * w;
+
+            var img=self.find('img')
+                ,imgUrl=img.data('src')
+                ,largeImg=$('.large-img');
+
+            $('#imgList').css({
+                'transform':'scaleX(3.1) scaleY(2.1) translate('+x+'px,'+y+'px)',
+                '-webkit-transform':'scaleX(3.1) scaleY(2.1) translate('+x+'px,'+y+'px)',
+                '-moz-transform':'scaleX(3.1) scaleY(2.1) translate('+x+'px,'+y+'px)'
+            })
+
+            img.addClass('opacity');
+            largeImg.find('img').attr('src',imgUrl);
+            largeImg.addClass('show');
             close.addClass('show');
+
+            /*关闭*/
+            close.click(function(){
+                $(this).removeClass('show');
+                $('#imgList').css({
+                    'transform':'scaleX(1) scaleY(1)',
+                });
+                largeImg.removeClass('show');
+                img.removeClass('opacity');
+            })
         })
-        close.click(function(){
-            $(this).removeClass('show');
-            $('#imgList .item').removeClass('active');
+
+        $('.large-img').click(function () {
+            $('.close').trigger('click');
         })
     })
 </script>
