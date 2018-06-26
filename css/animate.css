@@ -15,8 +15,6 @@
   animation-fill-mode: both;
 }
 
-<<<<<<< HEAD
-=======
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -283,7 +281,6 @@
 
 
 
->>>>>>> b3f0f7ef5a1492a4a911f610d285a07509c14ca8
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;

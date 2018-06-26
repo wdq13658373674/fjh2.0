@@ -25,7 +25,7 @@ $(function () {
      */
     //选择楼栋
     sliders2();
-    $('#floor .tab').click(function () {
+    $('.d170704-menu-tab2 .tab').click(function () {
         var inx = $(this).index()
             ,id=$(this).data('value')//楼栋编号
             ,slider = $('.num-slider .flex-control-nav>li a')

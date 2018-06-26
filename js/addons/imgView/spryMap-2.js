@@ -153,7 +153,7 @@ function SpryMap(param) {
     /**
      * mousedown event handler
      */
-    AddListener(m.viewingBox, "mousedown", function (e) {
+    AddListener(m.viewingBox, "touchmove", function (e) {
         m.viewingBox.style.cursor = "move";
 
         // Save the current mouse position so we can later find how far the
@@ -162,7 +162,7 @@ function SpryMap(param) {
         m.mousePosition.y = e.clientY;
 
         // Start paying attention to when the mouse moves
-        AddListener(document, "mousemove", MouseMove);
+        AddListener(document, "touchend", MouseMove);
         m.mouseDown = true;
 
         // If the map is set to continue scrolling after the mouse is released,
@@ -188,10 +188,10 @@ function SpryMap(param) {
         if (m.mouseDown) {
             var handler = MouseMove;
             if (document.detachEvent) {
-                document.detachEvent("onmousemove", document["mousemove" + handler]);
+                document.detachEvent("touchmove", document["mousemove" + handler]);
                 document["mousemove" + handler] = null;
             } else {
-                document.removeEventListener("mousemove", handler, false);
+                document.removeEventListener("touchend", handler, false);
             }
 
             m.mouseDown = false;

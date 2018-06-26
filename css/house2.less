@@ -1,0 +1,1589 @@
+@import "../cssControl/control";
+
+/*查看更多*/
+.link-more {
+  display: block;
+  margin-top: 40px;
+  cursor: pointer;
+  color: @gray;
+  width:100%;
+  height: 43px;
+  line-height: 43px;
+  background: @gray-bg;
+  text-align: center;
+  &:hover {
+    .box-shadow(0, 1px, 3px 0, rgba(127, 133, 163, 0.6) inset);
+    text-decoration: none;
+    .transition(0.3s);
+  }
+
+  .up{display:none;}
+  &.show{
+    .up{display:block;}
+    .down{display:none;}
+  }
+}
+/*tab切换*/
+.menu-tab {
+  .main-width;
+  margin-top: 50px;
+  .tab {
+    .wh(140px, 55px, 55px);
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: @txt-black;
+    cursor: pointer;
+    &.active {
+      background: #ffffff;
+      border-top: 4px solid @red;
+      line-height:47px;
+      &:hover {
+        background: #ffffff;
+      }
+    }
+    &:hover {
+      background: @gray-hover;
+    }
+  }
+}
+.tab-box {
+  .main-width;
+  background: #ffffff;
+  min-height: 800px;
+  margin-bottom: 150px;
+  overflow: hidden;
+  display: none;
+  &.active {
+    display: block;
+  }
+  .tab-content {
+    .wh(1131px, auto);
+    margin: 35px auto;
+    overflow: hidden;
+  }
+}
+
+.menu-tab3 {
+  .wh(100%, auto);
+  .tab {
+    .wh(100%, 60px, 60px);
+    cursor: pointer;
+    padding-left: 69px;
+    display: block;
+    &.icon1 {
+      background: url("../images/house/nav_s1.png") 31px center no-repeat;
+      &:hover {
+        background: url("../images/house/nav_sh1.png") 31px center no-repeat;
+      }
+      &.active {
+        background: url("../images/house/nav_sh1.png") 31px center no-repeat;
+      }
+    }
+    &.icon2 {
+      background: url("../images/house/nav_s2.png") 31px center no-repeat;
+      &:hover {
+        background: url("../images/house/nav_sh2.png") 31px center no-repeat;
+      }
+      &.active {
+        background: url("../images/house/nav_sh2.png") 31px center no-repeat;
+      }
+    }
+    &.icon3 {
+      background: url("../images/house/nav_s3.png") 31px center no-repeat;
+      &:hover {
+        background: url("../images/house/nav_sh3.png") 31px center no-repeat;
+      }
+      &.active {
+        background: url("../images/house/nav_sh3.png") 31px center no-repeat;
+      }
+    }
+
+    &.active {
+      color: @red;
+    }
+    &:hover {
+      color: @red;
+    }
+  }
+
+  .title {
+    background: @gray-bg;
+    .wh(100%, 40px, 40px);
+    text-align: center;
+    border: solid 1px #c3cad8;
+    display: block;
+    border-width: 1px 0;
+  }
+}
+.tab-box3 {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+/*
+滚动加载loading重置
+<i class="layui-anim layui-anim-rotate layui-anim-loop layui-icon ">&#xe63e;</i>
+*/
+.layui-scoll-load {
+  height: 50px;
+  display: block;
+  background: url("../js/addons/layer/skin/default/loading-2.gif") center no-repeat;
+}
+
+.layui-flow-more {
+  margin: 10px 0;
+  text-align: center;
+  color: #999;
+  font-size: 14px
+}
+
+.layui-flow-more > a {
+  display: block;
+  color: @txt-black;
+}
+
+/*下三角*/
+.tangle {
+  display: block;
+  .wh(16px, 8px);
+  background: url("../images/user/triangle-down.png") center no-repeat;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;
+}
+
+/*描述列表*/
+.desc-list {
+  overflow: hidden;
+  text-align: center;
+  span {
+    color: @blue;
+    font-size: 12px;
+    display: inline-block;
+    *zoom: 1;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid @blue;
+    .round(4px);
+  }
+}
+
+/*定制房详情*/
+.dz-house-wrap {
+  .main-width;
+  margin-top: 25px;
+  .left-box {
+    .wh(798px, auto);
+    background: #ffffff;
+    overflow: hidden;
+    .progress-box {
+      .wh(100%, 41px, 41px);
+      overflow: hidden;
+      background: url("../images/house/progress0.png") left center no-repeat;
+      /*进度说明
+        bg1：报名
+        bg2：定制
+        bg3：签约
+      */
+      &.bg1 {
+        background: url("../images/house/progress1.png") left center no-repeat;
+        .progress1 {
+          color: #fff;
+        }
+      }
+      &.bg2 {
+        background: url("../images/house/progress2.png") left center no-repeat;
+        .progress2 {
+          color: #fff;
+        }
+      }
+      &.bg3 {
+        background: url("../images/house/progress3.png") left center no-repeat;
+        .progress3 {
+          color: #fff;
+        }
+      }
+
+      li {
+        .wh(266px, 41px, 41px);
+        float: left;
+        text-align: center;
+        color: @txt-black;
+      }
+    }
+
+    .nav-box {
+      .wh(100%, 116px, 116px);
+      overflow: hidden;
+      background: #fff;
+      li {
+        .wh(207px, 116px, 116px);
+        float: left;
+        margin-left: 59px;
+        padding-left: 62px;
+        color: @txt-black;
+        &.icon1 {
+          background: url("../images/house/nav1.png") left center no-repeat;
+        }
+        &.icon2 {
+          background: url("../images/house/nav2.png") left center no-repeat;
+        }
+        &.icon3 {
+          background: url("../images/house/nav10.png") left center no-repeat;
+          padding-left: 0;
+          span {
+            display: block;
+            color: @txt-black;
+            padding-left: 62px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-box {
+    .wh(377px, auto);
+    .top-box {
+      .wh(100%, 442px);
+      background: #ffffff;
+      overflow: hidden;
+      .house-title {
+        .wh(325px, 49px, 20px);
+        overflow: hidden;
+        font-size: 18px;
+        color: @txt-black;
+        margin: 26px auto 0px;
+      }
+      /*描述列表*/
+      .desc-list {
+        .wh(325px, 29px);
+        margin: 0 auto 20px;
+        span {
+          float: left;
+        }
+      }
+
+      .dz-msg-list {
+        .wh(325px, auto);
+        margin: 0 auto;
+        li {
+          .wh(100%, 38px, 38px);
+          overflow: hidden;
+          background: url("../images/house/solid.png") left center repeat-x;
+          .tit {
+            height: 40px;
+            line-height: 40px;
+            color: @gray;
+            padding-right: 12px;
+            float: left;
+            background: #ffffff;
+          }
+          .con {
+            height: 40px;
+            line-height: 40px;
+            color: @txt-black;
+            padding-left: 12px;
+            float: right;
+            background: #ffffff;
+          }
+        }
+      }
+
+      .detail{.wh(325px, auto);
+        margin: 15px auto;}
+    }
+
+    .bottom-box {
+      .wh(100%, 138px);
+      background: #ffffff;
+      margin-top: 25px;
+      padding-top: 17px;
+      .icon {
+        position: relative;
+        .wh(23px, 34px);
+        margin-left: 8px;
+        display: block;
+        float: right;
+        .round(50%);
+        &.thumbs {
+          background: url("../images/house/thumbs.png") center no-repeat;
+          &:hover {
+            background: url("../images/house/thumbs_hover.png") center no-repeat;
+            .box-shadow(0, 3px, 4px 0, @gray-hover);
+            .float-phone {
+              display: block;
+            }
+          }
+        }
+        /*&.phone{background: url("../images/house/phone.png") center no-repeat;
+          &:hover{background: url("../images/house/phone_hover.png") center no-repeat;.box-shadow(0,3px,4px 0,@gray-hover);
+            .float-phone{display:block;}
+          }
+        }*/
+        &.th-mark {
+          background: url("../images/icon/th_ico.png") center no-repeat;
+          background-size: 100% auto;
+          &:hover {
+            .float-phone {
+              display: block;
+            }
+          }
+        }
+      }
+      .float-phone {
+        display: none;
+        min-width: 200px;
+        line-height: 20px;
+        background: #ffffff;
+        color: @txt-black;
+        font-size: 12px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -100px;
+        padding: 11px 14px 11px 15px;
+        .box-shadow(0, 1px, 7px 0, #c3cad8);
+      }
+
+      .price {
+        .wh(326px, 32px, 32px);
+        margin: 0 auto;
+        position: relative;
+      }
+      .dz-btn {
+        .btn-red-full();
+        width: 326px;
+        margin: 25px auto 0;
+        font-size: 16px;
+      }
+      .btn-disabled {
+        .btn-disabled();
+        width: 326px;
+        font-size: 16px;
+        margin: 25px auto 0;
+        color: #888888;
+        .textshadow(0, 2px, 0, #ffffff);
+      }
+    }
+  }
+}
+
+/*项目介绍*/
+.pro-introduction {
+  //  img{width:100%;}
+}
+
+/*位置及周边*/
+.pro-address {
+  .title {
+    font-size: 16px;
+    color: @txt-black;
+  }
+  .left-box {
+    .wh(604px, auto);
+    .img-box {
+      .wh(604px, auto);
+      background: @gray-bg;
+      border: solid 1px @gray-hover;
+      margin-top: 29px;
+      padding: 29px;
+      .img {
+        width: 100%;
+      }
+      .zoom-img {
+        position: absolute;
+        top: 50%;
+        margin-top: -26px;
+        left: 50%;
+        margin-left: -26px;
+      }
+    }
+  }
+
+  .right-box {
+    .wh(481px, auto);
+    .tit {
+      color: @blue;
+      margin-top: 29px;
+      margin-bottom: 8px;
+    }
+    .con {
+      color: @txt-black;
+    }
+  }
+}
+
+/*建设进度*/
+.pro-progress {
+  li {
+    display:block;
+    padding: 20px 35px;
+    border-bottom: 1px solid @gray-hover;
+
+    &:hover{background: #eff2f9;cursor: pointer;}
+  }
+  .date {
+    width: 119px;
+    .year {
+      font-size: 12px;
+      color: @gray;
+    }
+    .mon {
+      font-size: 30px;
+      color: @gray;
+    }
+  }
+  .content {
+    width: 1010px;
+    .tit {
+      margin-top: 19px;
+      font-size: 16px;
+      color: @txt-black;
+    }
+    .con {
+      color: @gray;
+      margin-top: 8px;
+    }
+  }
+
+
+  /*建设进度详情*/
+  .pro-detail{display:none;
+    .hover-dec:hover{text-decoration: underline !important;}
+    .detail-content{margin-top:20px;border-top:1px solid @gray-border2;
+      .tit{margin-top:15px;}
+      .img{margin-top:25px;
+        img{max-width: 100%;}
+      }
+    }
+  }
+
+
+  &.show-detail{
+    .pro-list{display:none;}
+    .pro-detail{display:block;}
+  }
+}
+
+/*定制房我要报名*/
+.icon-suc {
+  .wh(28px, 28px);
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: url("../images/house/suc.png") no-repeat;
+}
+
+.dz-reg-wrap {
+  .main-width;
+  margin-top: 25px;
+  overflow: hidden;
+  background: #ffffff;
+  /*num-title*/
+  .num-title {
+    .wh(1132px, 78px);
+    margin: 90px auto 0;
+    background: #ffffff url("../images/house/tit_line.png") left bottom no-repeat;
+    background-size: 100% auto;
+    .num {
+      .wh(auto, 78px, 65px);
+      font-size: 70px;
+      color: @blue-light;
+      vertical-align: top;
+    }
+    .tit {
+      font-size: 16px;
+      .top {
+        font-size: 8px;
+      }
+    }
+
+    &.single {
+      height: 40px;
+      line-height: 40px;
+      margin: 33px 35px 0;
+      font-size: 16px;
+    }
+  }
+
+  .dz-reg-msg {
+    .wh(1132px, auto);
+    margin: 34px auto 0;
+    .round(5px);
+    border: 1px solid @gray-hover;
+    .box-shadow(0, 7px, 4px 0, @gray-bg);
+    .msg-tit {
+      margin-left: 40px;
+      margin-top: 67px;
+    }
+    .msg-list {
+      .wh(776px, auto);
+      margin-right: 40px;
+      overflow: hidden;
+      li {
+        .wh(100%, auto);
+        min-height: 65px;
+        float: left;
+        border-bottom: 1px solid @gray-border2;
+        margin-bottom: -1px;
+        .column {
+          .wh(50%, auto);
+          margin: 22px 0;
+        }
+      }
+    }
+  }
+
+  .page-wrap {
+    .wh(1132px, 511px);
+    overflow: hidden;
+    margin: 28px auto 0;
+  }
+  .dz-house-type {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+  .house-type-tab {
+    .wh(1132px, auto);
+    margin: 30px auto 0;
+    a {
+      font-size: 12px;
+      margin-right: 20px;
+      margin-top: 10px;
+      &.active {
+        color: @red;
+      }
+    }
+  }
+  .house-type-wrap {
+    .wh(1132px, auto);
+    margin: 0px auto; /*overflow: hidden;*/
+  }
+  .house-type-content {
+    .wh(1149px,auto);
+    &.show{height:432px;}
+    li {
+      position: relative;
+      .wh(147px, 127px);
+      background: #fcfcfc;
+      float: left;
+      margin: 16.5px 16.5px 0 0;
+      border: solid 1px #c3cad8;
+      overflow: hidden;
+      &.active {
+        background: #ffffff;
+        .box-shadow(0, 5px, 4px 0, #c3cad8);
+        border: solid 3px @red;
+        a {
+          margin-left: -2px;
+          margin-top: -2px;
+        }
+        .icon-suc {
+          display: block;
+        }
+        &:hover {
+          border: solid 3px @red;
+        }
+      }
+      &:hover {
+        border: 1px solid @red;
+        .box-shadow(0, 5px, 4px 0, #c3cad8);
+      }
+
+      a {
+        display: block;
+        overflow: hidden;
+        .wh(100%, 100%);
+      }
+      .p {
+        margin: 0 10px;
+        &.p1 {
+          font-size: 18px;
+          margin-top: 15px;
+          height: 24px;
+        }
+        &.p2 {
+          font-size: 12px;
+          height: 39px;
+          line-height: 16px;
+          overflow: hidden;
+          margin-top: 7px;
+        }
+        &.p3 {
+          font-size: 20px;
+          height: 26px;
+        }
+      }
+    }
+  }
+
+  .pay-list {
+    .wh(1132px, auto);
+    margin: 48px auto 0;
+  }
+  .textarea {
+    margin-top: 18px;
+    .textarea();
+    width: 554px;
+    margin-left: 35px;
+  }
+
+  .pay-type-wrap {
+    .wh(1132px, auto);
+    margin: 42px auto 0;
+  }
+
+  .pay-list {
+    margin-top: 28px;
+    li {
+      &.bank-icon{
+        display:block;line-height:69px;border:1px solid #c3cad8;.round();
+        a{display:block;height:100%;}
+      }
+
+      position: relative;
+      .wh(166px, 69px);
+      float: left;;
+      .round(5px);
+      margin-top: 10px;
+      margin-right: 17px;
+      overflow: hidden;
+      &.active {
+        border: 2px solid @red;
+        .box-shadow(0, 5px, 4px 0, #c3cad8);
+        .icon-suc {
+          display: block;
+        }
+        img {
+          margin-left: -2px;
+          margin-top: -2px;
+        }
+        &:hover {
+          border: solid 2px @red;
+          img {
+            margin-left: -2px;
+            margin-top: -2px;
+          }
+        }
+
+        &.bank-icon{
+          a{
+            margin-left: -1px;
+            margin-top: -1px;
+          }
+        }
+      }
+
+      &:hover {
+        border: 1px solid @red;
+        .box-shadow(0, 5px, 4px 0, #c3cad8);
+        img {
+          margin-left: -1px;
+          margin-top: -1px;
+        }
+      }
+    }
+  }
+
+  .rule-box {
+    text-align: center;
+  }
+  .order-btn {
+    .btn-red-full();
+    width: 326px;
+    .textshadow(0, -1px, 0, #dc4144);
+    font-size: 16px;
+    margin: 28px auto 156px;
+  }
+}
+
+.single-title {
+  margin: 48px 0 0 35px;
+}
+
+/*我要定制*/
+.dot-title {
+  .wh(1132px, auto);
+  margin: 30px auto 0;
+  font-size: 16px;
+  height: 21px;
+  .dot {
+    .wh(8px, 8px);
+    .round(50%);
+    background: @blue;
+    margin-right: 10px;
+    margin-top: 6px;
+  }
+
+  &.mt60{margin-top:60px;}
+}
+
+.house-select-wrap {
+  .wh(1132px, auto);
+  margin: 28px auto 0;
+  .left-box {
+    .house-mark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      .mark {
+        display: block;
+        .wh(40px, 30px, 25px);
+        text-align: center;
+        position: absolute;
+        background: url("../images/house/shape_gray.png") no-repeat;
+        &.active {
+          background: url("../images/house/shape_red.png") no-repeat;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .right-box {
+    .wh(374px, 450px);
+    overflow: hidden;
+    border: solid 1px #c3cad8;
+    .top {
+      .wh(100%, 50px);
+      overflow: hidden;
+      position: relative;
+      border-bottom: solid 1px #c3cad8;
+      .house-num-list {
+        .wh(auto, 50px);
+        li {
+          .wh(62px, 50px, 50px);
+          float: left;
+          text-align: center;
+          &:nth-child(odd) {
+            background: @gray-hover;
+          }
+          &:nth-child(even) {
+            background: @gray-bg;
+          }
+
+          &.active {
+            background: @red;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .flex-control-thumbs {
+        a {
+          .wh(13px, 50px);
+          background-color: @gray;
+          &:hover {
+            background-color: @blue;
+          }
+
+          &.flex-prev {
+            left: 0px;
+          }
+          &.flex-next {
+            right: 0px;
+          }
+        }
+      }
+
+      #thumbs .flex-control-nav {
+        display: none;
+      }
+    }
+    .bottom {
+      .wh(318px, auto);
+      margin: 0 auto;
+      .slides {
+        .msg-line {
+          border-bottom: 1px dotted #c3cad8;
+          .wh(100%, 54px, 54px);
+          font-size: 16px;
+          overflow: hidden;
+        }
+        .tit {
+          color: @gray;
+          margin-right: 20px;
+        }
+        .con {
+        }
+      }
+
+      .num-slider {
+        .flex-control-nav {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.tab-table {
+  .table {
+    .wh(100%, auto);
+    border-collapse: collapse;
+    tr > td {
+      border: 1px solid #c3cad8;
+      height: 45px;
+      text-align: center;
+      padding: 0 10px;
+    }
+    thead > tr > td {
+      color: @gray;
+    }
+    tbody > tr {
+      &.active {
+        color: #ffffff;
+        background: @red;
+        .box-shadow(0, 5px, 4px 0, #c3cad8);
+        .select-btn {
+          display: none;
+        }
+        .select-suc {
+          display: block;
+        }
+      }
+      &:hover {
+        color: #ffffff;
+        background: @red;
+      }
+    }
+  }
+
+  .select-btn {
+    display: block;
+    margin: auto;
+    font-size: 12px;
+    .wh(83px, 27px, 26px);
+    .round(3px);
+    .linear-gradient(#ffffff, #eff2f9);
+    border: solid 1px #c3cad8;
+  }
+  .select-suc {
+    display: none;
+    background: url("../images/icon/success_tips.png") right center no-repeat;
+    padding-right: 23px;
+  }
+}
+
+/*VR展示*/
+.line-title {
+  text-align: center;
+  .inline-block {
+    .wh(auto, 40px, 40px);
+    display: inline-block;
+    *zoom: 1;
+    background: url("../images/house/solid.png") left center repeat-x;
+    padding: 0 100px;
+  }
+  .title {
+    padding: 0 56px;
+    background: #ffffff;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.white-bg-wrap {
+  .main-width;
+  margin-top: 25px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.vr-wrap {
+  .wh(1100px, auto);
+  margin: 28px auto 0;
+  overflow: hidden;
+  /*描述列表*/
+  .desc-list {
+    margin-top: 10px;
+    span {
+      margin: 10px 5px 0;
+    }
+  }
+
+  .vr-tab-wrap {
+    .wh(100%, auto);
+    overflow: hidden;
+    .left-box {
+      .wh(917px, 515px);
+      overflow: hidden;
+      border: solid 1px #c3cad8;
+      border-width: 1px 0px 1px 1px;
+    }
+    .right-box {
+      .wh(183px, 515px);
+      overflow: hidden;
+      border: solid 1px #c3cad8;
+      border-top-width: 0;
+    }
+    .slide-caption {
+      .wh(100%, 40px, 40px);
+      background: @gray-bg;
+      padding: 0 23px;
+    }
+  }
+
+  .nav-box {
+    .wh(1200px, auto);
+    overflow: hidden;
+    background: #fff;
+    border-bottom: 1px solid @gray-border2;
+    .box {
+      .wh(326.6px, 137px, 137px);
+      float: left;
+      padding-left: 62px;
+      color: @txt-black;
+      overflow: hidden;
+      &:last-child {
+        border-right: 0;
+      }
+      &.icon1 {
+        background: url("../images/house/nav4.png") left center no-repeat;
+      }
+      &.icon2 {
+        background: url("../images/house/nav2.png") left center no-repeat;
+        margin-left: 82px;
+      }
+      &.icon3 {
+        background: url("../images/house/nav5.png") left center no-repeat;
+        margin-left: 82px;
+      }
+
+      .tit {
+        color: @gray;
+        margin-right: 5px;
+      }
+      .v-line {
+        display: block;
+        .wh(3px, 34px);
+        border-right: 1px solid @gray-border2;
+        margin-top: 51.5px;
+      }
+    }
+  }
+
+  .vr-table {
+    .wh(100%, auto);
+    tr {
+      &.no-border > td {
+        border: none;
+      }
+      td {
+        width: 275px;
+        padding-top: 86px;
+        padding-bottom: 48px;
+        border-bottom: 1px dotted @gray-border2;
+        padding-right: 30px;
+      }
+      .tit {
+        font-size: 12px;
+        color: @gray;
+      }
+      .con {
+        margin-top: 13px;
+      }
+    }
+  }
+}
+
+.d160525-lay-box {
+  .wh(698px, 541px);
+  background: #fff;
+  border: 10px solid @gray-dark;
+  .box-tit {
+    .wh(90%, 73px, 73px);
+    border-bottom: 1px dotted @gray-border2;
+    color: @gray
+  }
+  .box-content {
+    .wh(90%, auto, 25px);
+    overflow: hidden;
+    margin-top: 20px;
+    color: @gray-dark;
+    padding-bottom: 15px
+  }
+}
+
+/*查看我的定制*/
+.dz-house-flash {
+  .wh(1132px, auto);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  .left-box {
+    .wh(343px, 511px);
+    overflow: hidden;
+    background: @gray-bg;
+  }
+  .right-box {
+    .wh(766px, 511px);
+    overflow: hidden;
+  }
+
+  .type-msg {
+    overflow: hidden;
+    .title {
+      font-size: 30px;
+      margin: 20px 20px 34px;
+      .wh(auto, 40px, 40px);
+    }
+    .house-type-dsc {
+      .wh(100%, auto);
+      min-height: 19px;
+      float: left;
+      margin-bottom: 14px;
+      overflow: hidden;
+      .tit {
+        color: @gray;
+        display: block;
+        float: left;
+        .wh(56px, auto);
+        margin-right: 15px;
+        margin-left: 20px;
+      }
+      .con {
+        display: block;
+        float: left;
+        .wh(216px, auto);
+        margin-right: 20px;
+      }
+
+      &.h303 {
+        height: 289px;
+      }
+    }
+  }
+
+  .selec-btn {
+    .btn-gray-empty();
+    .wh(128px, 27px, 25px);
+    margin-left: 20px;
+    border: solid 1px #c3cad8;
+    font-size: 12px;
+    .linear-gradient(#ffffff, #eff2f9);
+  }
+
+  .slider-r {
+    border: 1px solid @gray-border2;
+  }
+
+  .thumbs-box {
+    .wh(766px, 105px);
+    overflow: hidden;
+    position: relative;
+    margin-top: 11px;
+  }
+  .carousel-r {
+    margin: 0 41px;
+    position: absolute;
+    li {
+      height: 105px;
+      margin-right: 11px;
+      overflow: hidden;
+      border: 1px solid @gray-border2;
+      .img-box {
+        position: relative;
+        .wh(100%, 100%);
+        .caption {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          z-index: 10;
+          .wh(128px, 30px, 30px);
+          text-align: center;
+          .bg-rgba(rgba(42, 48, 76, 0.7));
+          color: #ffffff;
+          font-size: 12px;
+        }
+        img {
+          margin: 0 auto;
+        }
+      }
+
+      &:hover {
+        border-color: @blue;
+      }
+    }
+  }
+
+  .flex-control-thumbs .flex-direction-nav a {
+    height: 105px;
+  }
+}
+.dz-menu-wrap {
+  .wh(1132px, auto);
+  overflow: hidden;
+  margin: 79px auto 0;
+  border-top: 1px dotted @gray-border2;
+  padding: 48px 0;
+  .menu {
+    display: block;
+    .wh(auto, 74px, 74px);
+    padding-left: 92px;
+    float: left;
+    margin-right: 103px;
+    &.bg1 {
+      background: url('../images/house/dz_m1.png') left center no-repeat;
+      background-size: auto 100%;
+    }
+    &.bg2 {
+      background: url('../images/house/dz_m2.png') left center no-repeat;
+      background-size: auto 100%;
+    }
+    &.bg3 {
+      background: url('../images/house/dz_m3.png') left center no-repeat;
+      background-size: auto 100%;
+    }
+    &.bg4 {
+      background: url('../images/house/dz_m4.png') left center no-repeat;
+      background-size: auto 100%;
+    }
+    &.bg5 {
+      background: url('../images/house/dz_m5.png') left center no-repeat;
+      background-size: auto 100%;
+    }
+
+    &:hover {
+      &.bg1 {
+        background: url('../images/house/dz_mh1.png') left center no-repeat;
+        background-size: auto 100%;
+      }
+      &.bg2 {
+        background: url('../images/house/dz_mh2.png') left center no-repeat;
+        background-size: auto 100%;
+      }
+      &.bg3 {
+        background: url('../images/house/dz_mh3.png') left center no-repeat;
+        background-size: auto 100%;
+      }
+      &.bg4 {
+        background: url('../images/house/dz_mh4.png') left center no-repeat;
+        background-size: auto 100%;
+      }
+      &.bg5 {
+        background: url('../images/house/dz_mh5.png') left center no-repeat;
+        background-size: auto 100%;
+      }
+    }
+  }
+
+  &.d170817-menu{padding:0;margin-bottom:90px;overflow: hidden;
+    .menu{margin-top:52px;}
+    .single-title{margin:0;height:52px;line-height:52px;}
+    .textarea{width:487px;margin:0;}
+  }
+}
+.d20170831-btn-box{.wh(1132px,260px);background: @gray-bg;margin:0 auto 34px;overflow: hidden;text-align: center;
+  .circle-btn{display:block;.wh(167px,167px);.round(50%);overflow:hidden;background: @red;margin:47px auto 0;color:#fff;text-align: center;font-size:16px;.textshadow(0 ,-1px, 1px, #dc4144);
+    .icon{display:block;.wh(52px,65px);margin:30px 58px 0;
+      &.icon1{background: url("../images/house/circle_btn1.png") no-repeat;background-size:100% auto;}
+      &.icon2{background: url("../images/house/circle_btn2.png") no-repeat;background-size:100% auto;margin-bottom:15px;}
+    }
+
+    &:hover{background: url("../images/house/circle_bg.png") no-repeat;.box-shadow(0, 13px, 17px 3px ,#c3cad8);}
+  }
+
+  .circle-btn-gray{display:block;.wh(167px,167px);.round(50%);overflow:hidden;background-color: #ececec;border: solid 1px #d5d5d5;margin:47px auto 0;color:@gray;text-align: center;font-size:16px;.textshadow(0 ,2px ,0 ,#ffffff);
+    .icon{display:block;.wh(52px,65px);margin:30px 58px 0;
+      &.icon1{background: url("../images/house/circle_btn1_gray.png") no-repeat;background-size:100% auto;}
+    }
+  }
+}
+
+/*查看我的选房*/
+.dz-type-message {
+  .wh(1132px, auto);
+  overflow: hidden;
+  margin: 28px auto 0;
+  li {
+    .item{
+      .wh(283px, 60px, 60px);
+      float:left;
+    }
+    border-bottom: 1px solid @gray-border2;
+    overflow: hidden;
+    .tit {
+      float: left;
+      color: @gray;
+    }
+    .con {
+      float: left;
+      margin-left:18px;
+      display: block;
+    }
+  }
+}
+
+/*我要签约/我要认筹*/
+.check-box {
+  .wh(1132px, auto);
+  margin: 33px auto 0;
+  &.w2 {
+    width: 1160px;
+  }
+
+  .check-list {
+    margin-right: 18px;
+    margin-top: 32px;
+    float: left;
+    input {
+      display: none;
+    }
+    .content {
+      .wh(216px, 69px, 67px);
+      border: 1px solid @gray-border2;
+      text-align: center;
+      font-size: 16px;
+      .round(5px);
+      &:hover {
+        border: 1px solid @red;
+        .box-shadow(0, 5px, 4px 0, #c3cad8);
+        cursor: pointer;
+      }
+      &.w2 {
+        width: 270px;
+      }
+    }
+    input:checked + .content {
+      border: 2px solid @red;
+      .box-shadow(0, 5px, 4px 0, #c3cad8);
+      line-height: 65px;
+      background: url("../images/house/suc.png") right bottom no-repeat;
+    }
+
+    /*禁止选择*/
+    &.disabled {
+      /*pointer-events: none;*/
+      .content {
+        background-color: #ededed;
+        color: #888;
+        .textshadow(0, 2px, 0, #fff);
+        cursor: not-allowed;
+        &:hover {
+          border: 1px solid @gray-border2;
+          .box-shadow(0, 0, 0 0, #c3cad8);
+        }
+      }
+    }
+  }
+}
+
+.buyer-form {
+  .wh(1132px, auto);
+  margin: 65px auto 0;
+  #buyer-box2 {
+    width: 50%;
+  }
+  .buyer-box {
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    &.border-right {
+      border-right: 1px solid @gray-border2;
+      padding-right: 63px;
+    }
+
+    .input-group {
+      margin-bottom: 32px;
+      .label {
+        width: 65px;
+        display: inline-block;
+      }
+      .input {
+        padding-left: 18px;
+        width: 345px;
+      }
+    }
+
+    .add-ico {
+      display: inline-block;
+      .wh(25px, 25px, 25px);
+      background: @red;
+      .round(50%);
+      font-size: 16px;
+      margin-right: 7px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .add {
+      display: block;
+      padding-left: 63px;
+      font-size: 16px;
+      height: 26px;
+      position: absolute;
+      top: 50%;
+      margin-top: -13px;
+    }
+    .remove {
+      z-index: 999;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      height: 26px;
+      margin-top: -13px;
+      display: none;
+    }
+    &.active {
+      .add {
+        display: none;
+      }
+      .remove {
+        display: block;
+      }
+    }
+
+    .add-form {
+      margin-left: 63px;
+      position: relative;
+    }
+  }
+}
+
+.hide-form {
+  display: none;
+}
+
+
+/*定制查看详情*/
+.d170629-dz-detail{margin:0 25px;
+  .house-title{margin-top:25px;font-size:24px;}
+
+  .desc-list{text-align: left;margin-top:30px;
+    span{margin-bottom:10px;}
+  }
+
+  .tb-title{color:@gray;margin-top:30px;}
+  .d170630-table{.wh(100%,auto);border-collapse:collapse;margin-top:15px;margin-bottom: 70px;
+    tbody>tr>td{border:1px solid @gray-border2;padding:16px 22px;
+      &.tit{width:192px;color:@gray;}
+    }
+  }
+
+  .d171026-table{.wh(100%,auto);border-collapse:collapse;margin-top:33px;margin-bottom: 42px;
+    tbody>tr>{border:1px solid @gray-border2;}
+    tbody>tr>td{padding:16px 0px 16px 22px;
+      &.tit{width:95px;color:@gray;}
+    }
+    .icon-l{.wh(auto,42px);margin-right:5px;}
+    .icon-txt{line-height:42px;}
+  }
+}
+
+/*d170704定制选房-选择楼栋*/
+.d170704-menu-type{
+  width:1132px;
+  margin:15px auto 0;
+
+  .tit {
+    color: @gray;
+    margin-top: 27px;
+  }
+}
+.d170704-menu-tab2 {
+  padding-left: 75px;
+  width: 100%;
+  .tab {
+    color:@gray;
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 5px 25px;
+    border: 1px solid @gray;
+    .round(5px);
+    margin-right: 12px;
+    margin-top: 22px;
+    &.active {
+      border-color: @red;
+      color: @red;
+      background: url("../images/house/houseCheck.png") bottom -1px right no-repeat;
+    }
+  }
+}
+.tab-box2 {
+  .wh(1132px, auto);
+  margin: 0 auto;
+  background: @gray-bg;
+  min-height: 100px;
+  overflow: hidden;
+  display: none;
+  &.active {
+    display: block;
+  }
+  .tab-content {
+    .wh(1071px, auto);
+    margin: 30px auto;
+    overflow: hidden;
+    background: #ffffff;
+  }
+}
+
+
+/*定制房-我要定制*/
+.d20170831-house-type{.wh(1132px,577px);margin:35px auto;background: @gray-bg url("../images/house/type_bg2.png") left bottom no-repeat;
+  .img-box{.wh(825px,511px);text-align: center;overflow: hidden;margin-top:33px;margin-right:35px;
+    .img{.wh(auto,100%);cursor: pointer;}
+  }
+  .desc{.wh(143px,143px,143px);text-align: center;color:#fff;background: @blue;margin-top:217px;margin-left:57px;.round(50%);}
+}
+.dz-reg-wrap{
+  .house-type-content.w129{width:1170px;
+    li{.wh(129px,160px);.round(7px);
+      .p.mt10{font-size:12px;color:@blue;margin-top:10px;}
+    }
+  }
+}
+
+
+/*认筹房-我要认筹*/
+.r20170904-container{.wh(1132px,auto);margin:93px auto 107px;
+  .money-box{.wh(500px,140px);.round(10px);background: @gray-bg;}
+  .pay-box{.wh(611px,140px);.round(10px);background:#fff;border:1px solid @gray-border2;
+    .title{.wh(auto,24px,24px);padding:0 10px;margin:-20px 0 0 50px;background: #fff;float: left;color:@gray;}
+  }
+
+  .count{margin-top:45px;margin-left:39px;}
+  .opera{display:block;margin:5px 12px;color:#7f85a3;float:left;text-align:center;font-size:24px;.wh(40px,40px,40px);border:1px solid @gray;background: #dbe0ed;.round(5px);
+    &:hover{color:#fff;background: @red;border:1px solid #dc4144;.transition(.2s);}
+    &:active{.btn-active(@red-dark);}
+  }
+  .input{.wh(270px,50px,50px);overflow:hidden;background:#fff;float:left;border:1px solid @red;.round(5px);.box-shadow(0, 2px, 7px 0 ,#c3cad8);
+    .txt{display:block;float:left;margin-left:17px;font-size:24px;}
+    input{display:block;.wh(75%,50px);border:none;margin-left:48px;font-size:24px;color:#2a304c;}
+  }
+}
+
+/*定制流程*/
+.dz-lc-box{text-align: center;padding:10px 0 50px;
+  img{width:100%;height:auto;}
+}
+
+/*定制房-选房投影-设置*/
+.choose-form {
+  .wh(1132px, auto);
+  margin: 50px auto 0;
+
+  .input-group{
+    margin-bottom:50px;
+    .label {
+      .wh(80px,46px,46px);
+      display: inline-block;
+      float: left;
+    }
+    .input {
+      padding-left: 18px;
+      width: 345px;
+      float: left;
+    }
+  }
+
+  .select{
+    float:left;
+    width:345px;
+    ul{border-left:1px solid @gray-border;border-right:1px solid @gray-border;}
+  }
+}
+
+/*定制房-选房投影_备份*/
+.dz-choose-house{margin:0 45px;
+  .top-content{margin-top:45px;
+    .title{font-size:30px;}
+
+    .project{margin-left:35px;
+      .icon{margin-right:8px;.wh(50px,50px);display:block;
+        &.icon1{background: url("../images/house/nav2.png") no-repeat;background-size:100% 100%;}
+        &.icon2{background: url("../images/house/dz_m5.png") no-repeat;background-size:100% 100%;}
+      }
+      .tit{font-size:14px;color:@gray;}
+      .con{font-size:20px;}
+    }
+
+    .floor{.wh(162px,58px,58px);text-align:center;.round(100px);color:#ffffff;font-size:27px;.textshadow(0 ,-1px, 0, #a42b2d);.linear-gradient(#fd815c,#fd625e)}
+  }
+
+  .choose-tip{.wh(auto,42px,42px);border-bottom: solid 2px #979797;
+    .icon{display:block;float:left;.wh(12px,12px);.round(2px);border:1px solid @gray;margin:15px 5px 0;
+      &.bg{background: @red;border-color:@red;}
+    }
+    .txt{display:block;float:left;margin-right:10px;}
+  }
+
+  .num-list-wrap{.wh(100%,auto);overflow: hidden;
+    .num-container{min-width:1120px;
+      .num-list{float: left;width:100%;
+        .num{float:left;display:block;.wh(76px,32px,32px);margin-right:10px;margin-top:16px;text-align:center;.round(8px);background: #fff;border:1px solid @gray;
+          &.selected{background: @red;color:#fff;border-color:@red;}
+        }
+      }
+    }
+  }
+}
+
+/*定制房-查看我的报名／参与认筹优惠活动*/
+.dz-list-auto{
+  .wh(1132px, auto);
+  overflow: hidden;
+  .item{
+    .wh(283px,auto);
+    float:left;
+
+    .tit {
+      float: left;
+      color: @gray;
+    }
+    .con {
+      display: block;
+      padding:0 10px 0 70px;
+      line-height:20px;
+    }
+
+  }
+
+}
+
+
+/*定制房-选房投影*/
+.dz-project-box{margin:0 10px;
+  .title{margin-top:20px;font-size:30px;text-align: center;}
+
+  .choose-tip{.wh(120px,42px,42px);margin:0 auto;
+    .icon{display:block;float:left;.wh(12px,12px);.round(2px);border:1px solid @gray;margin:15px 5px 0;
+      &.bg{background: @red;border-color:@red;}
+    }
+    .txt{display:block;float:left;margin-right:10px;}
+  }
+
+  .project-table{width:100%;
+    .title>td{text-align: center;padding:12px;border:1px solid #979797;width:16%;font-size:15px;}
+    .content>td{font-size:12px;vertical-align: top;}
+
+    .num-list{width:100%;float:left;border-top:1px solid #979797;border-left:1px solid #979797;
+      .num{width:60px;float: left;text-align:center;padding:3px 0;border:1px solid #979797;border-left:0;border-top:0;
+        &.check{background: @red;color:#fff;}
+      }
+    }
+  }
+}
+
+/*售房部付款页面*/
+.d171122-pay-page{
+  .title{font-size:24px;margin-top:65px;text-align:center;}
+
+  .msg-list{.wh(445px,auto);background:#f7ffef;margin:50px auto;.round(20px);border:1px solid @gray-border2;text-align:center;}
+
+  .pay-type{.wh(886px,auto);text-align:center;border:1px solid @gray-border2;.round(6px);margin:68px auto 0;position: relative;
+    .center-title{.wh(240px,38px,38px);background:#fff;margin:-18px auto 0;text-align: center;padding:0 10px;font-size:18px;}
+    .img{.wh(auto,69px);margin:34px 10px;}
+  }
+}
